@@ -1,0 +1,2073 @@
+{
+  "id": "lenguajes-de-marcas",
+  "title": "Leng. de Marcas",
+  "description": "HTML, XML y Sistemas de Gestión de Información",
+  "icon": "💅🏻",
+  "items": [
+    {
+      "kind": "lesson",
+      "name": "Lenguajes de Marcas y Sistemas de Gestión de Información",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el propósito principal de los lenguajes de marcas?",
+          "options": [
+            "Crear documentos para representar información que se puede visualizar en un navegador web",
+            "Únicamente diseñar páginas web estáticas",
+            "Reemplazar completamente los lenguajes de programación",
+            "Crear únicamente archivos de configuración"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Los lenguajes de marcas permiten crear documentos para representar información que se puede visualizar en navegadores web, usar como ficheros de configuración o utilizar en el intercambio de información entre aplicaciones informáticas."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteres se utilizan para definir las etiquetas en los lenguajes de marcas?",
+          "options": [
+            "( ) y |",
+            "< > y /",
+            "[ ] y \\",
+            "{ } y *"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para definir las etiquetas en los lenguajes de marcas se utilizan los caracteres <, > y /."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica de los lenguajes de marcas respecto al tipo de texto que utilizan?",
+          "options": [
+            "Utilizan texto cifrado",
+            "Utilizan texto plano",
+            "Utilizan texto comprimido",
+            "Utilizan únicamente texto HTML"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes de marcas utilizan texto plano, lo que permite que puedan ser editados por cualquier editor o procesador de textos y los hace independientes de la plataforma."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que los lenguajes de marcas sean 'compactos'?",
+          "options": [
+            "Ocupan muy poco espacio en disco",
+            "Las marcas se incluyen dentro del propio contenido pero no se muestran en el resultado final",
+            "Son más rápidos que otros lenguajes",
+            "Tienen menos funcionalidades que otros lenguajes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La característica de 'compacto' significa que las marcas se incluyen dentro del propio contenido, pero no se muestran en el resultado final. Por ejemplo, con <b>Hola mundo</b>, las marcas <b> y </b> no aparecen en el navegador."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue el origen de los lenguajes de marcas?",
+          "options": [
+            "HTML",
+            "XML",
+            "GML (Generalized Markup Language)",
+            "XHTML"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El origen de los lenguajes de marcas es el GML (Generalized Markup Language), que surgió como una forma de estandarizar la manera en que se compartía información en los sistemas informáticos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué estándar evolucionó a partir de GML?",
+          "options": [
+            "HTML",
+            "XML",
+            "SGML (Standard Generalized Markup Language)",
+            "XHTML"
+          ],
+          "correctAnswer": 2,
+          "explanation": "GML evolucionó hacia SGML (Standard Generalized Markup Language) que solventó deficiencias de GML dando lugar a la ISO 8879."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Quién creó HTML y en qué década?",
+          "options": [
+            "Bill Gates en los años 80",
+            "Tim Berners-Lee en los años 90",
+            "Steve Jobs en los años 90",
+            "Mark Zuckerberg en los años 2000"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En los años 90, Tim Berners-Lee simplifica SGML y crea el lenguaje de marcas HTML, que permite que se visualice información en un navegador web."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿En qué año se establece el estándar XML?",
+          "options": [
+            "1995",
+            "1998",
+            "2000",
+            "2002"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para resolver las deficiencias de HTML en el uso de etiquetas y creación de contenido dinámico, en 1998 se establece el estándar XML."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres tipos de clasificación de los lenguajes de marcas?",
+          "options": [
+            "Simple, complejo y avanzado",
+            "Básico, intermedio y experto",
+            "De presentación, de procedimiento y descriptivo o semántico",
+            "Estático, dinámico y híbrido"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los lenguajes de marcas se clasifican en tres tipos: de presentación, de procedimiento, y descriptivo o semántico."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a los lenguajes de marcas de presentación?",
+          "options": [
+            "Se utilizan para describir estructuras de datos",
+            "Se utilizan para el diseño y muestra del texto de un documento",
+            "Se utilizan únicamente para programación",
+            "Se utilizan para crear bases de datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes de marcas de presentación se utilizan para el diseño y muestra del texto de un documento, siendo útiles para información pequeña pero inviables para proyectos más voluminosos."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué añaden los lenguajes de marcas de procedimiento a los de presentación?",
+          "options": [
+            "Mayor velocidad de procesamiento",
+            "Visibilidad de lo que se está editando",
+            "Menor consumo de memoria",
+            "Compatibilidad con más navegadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes de marcas de procedimiento disponen de la funcionalidad de presentación, pero también incluyen visibilidad de lo que se está editando."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son ejemplos de lenguajes descriptivos o semánticos?",
+          "options": [
+            "Word y Excel",
+            "SGML, HTML, XML y XHTML",
+            "JavaScript y Python",
+            "CSS y Bootstrap"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En los lenguajes descriptivos o semánticos tenemos SGML y sus derivados como HTML, XML y XHTML."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es uno de los usos más demandados de los lenguajes de marcas?",
+          "options": [
+            "Crear videojuegos",
+            "Compartir información entre plataformas",
+            "Diseñar interfaces gráficas únicamente",
+            "Crear sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Uno de los usos más demandados de los lenguajes de marcas es compartir información entre plataformas, aprovechando su independencia de plataforma y tecnología."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta básica se puede usar para trabajar con lenguajes de marcas?",
+          "options": [
+            "Microsoft Word",
+            "Adobe Photoshop",
+            "Bloc de notas",
+            "Excel"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La forma más inmediata de trabajar con lenguajes de marcas es utilizar el bloc de notas, ya que al ser texto plano no hay problemas para utilizarlo."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja ofrece Notepad++ para trabajar con lenguajes de marcas?",
+          "options": [
+            "Es más rápido que otros editores",
+            "Colorea las etiquetas según el lenguaje seleccionado",
+            "Compila automáticamente el código",
+            "Incluye un navegador web integrado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Notepad++ colorea las etiquetas o palabras reservadas según el lenguaje elegido, lo que permite identificar visualmente los diferentes bloques del documento."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué característica especial tiene Visual Studio Code mencionada en el documento?",
+          "options": [
+            "Es gratis para estudiantes",
+            "Autocompletado de etiquetas y posibilidad de instalar plugins",
+            "Únicamente funciona con HTML",
+            "No requiere instalación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Visual Studio Code tiene el autocompletado de ciertas etiquetas a medida que se escribe y la posibilidad de instalar plugins que aumenten su capacidad."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Por qué se considera XML un metalenguaje?",
+          "options": [
+            "Porque es muy complejo",
+            "Porque gracias a él se pueden definir otros lenguajes específicos",
+            "Porque es el más rápido",
+            "Porque sustituye a HTML"
+          ],
+          "correctAnswer": 1,
+          "explanation": "XML se puede considerar un metalenguaje porque gracias a él se pueden definir otros lenguajes específicos como por ejemplo XHTML."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de XML respecto a HTML?",
+          "options": [
+            "Es más rápido",
+            "No está limitado a un número concreto de etiquetas",
+            "Es más fácil de aprender",
+            "Consume menos memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una ventaja de XML respecto a HTML es que no está limitado a un número concreto de etiquetas y cuando estas se definen se está indicando el significado de los datos que contienen."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las dos partes principales de un documento XML?",
+          "options": [
+            "Cabecera y contenido",
+            "Inicio y final",
+            "Prólogo y cuerpo",
+            "Declaración y datos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un documento XML consta de dos partes principales: Prólogo (aparece al comienzo y contiene referencias de cómo está definido el contenido) y Cuerpo (contiene la información en sí)."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué debe contener el prólogo de un documento XML?",
+          "options": [
+            "Únicamente el nombre del archivo",
+            "La versión y el tipo de codificación de idioma",
+            "Solo comentarios sobre el documento",
+            "La fecha de creación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El prólogo debe indicar la versión y el tipo de codificación de idioma del documento. Es importante la codificación para que no haya problemas con caracteres como la ñ o acentos."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que un documento XML esté 'bien formado'?",
+          "options": [
+            "Que es visualmente atractivo",
+            "Que cumple las reglas sintácticas definidas en la recomendación W3C",
+            "Que es pequeño en tamaño",
+            "Que funciona en todos los navegadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un documento XML está bien formado cuando cumple las reglas sintácticas que son definidas en la recomendación W3C con respecto al estándar XML."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una regla básica para que un documento XML esté bien formado?",
+          "options": [
+            "Debe tener menos de 100 líneas",
+            "Siempre debe existir un nodo raíz del que parta el resto de información",
+            "Debe incluir imágenes",
+            "Debe estar en inglés"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Al tener una estructura en forma de árbol, siempre debe existir un nodo raíz del que partirá el resto de la información."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cómo deben ir los atributos de las etiquetas XML?",
+          "options": [
+            "Sin comillas",
+            "Encerrados entre comillas simples o dobles",
+            "Solo entre paréntesis",
+            "Entre corchetes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos de las etiquetas deberán ir encerrados entre comillas simples o dobles y no se pueden repetir dentro de la misma etiqueta."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Es XML sensible a mayúsculas y minúsculas?",
+          "options": [
+            "No, no hace diferencia",
+            "Sí, <coche> es diferente a <Coche>",
+            "Solo en los atributos",
+            "Depende del navegador"
+          ],
+          "correctAnswer": 1,
+          "explanation": "XML es sensible a mayúsculas y minúsculas. Por lo tanto, la etiqueta <coche> es diferente a la etiqueta <Coche>."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representan los comentarios en XML?",
+          "options": [
+            "// comentario",
+            "/* comentario */",
+            "<!-- comentario -->",
+            "# comentario"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los comentarios deben ir fuera de las etiquetas y se representan con los símbolos <!-- para su apertura y --> para su cierre."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Para qué se utilizan los espacios de nombres en XML?",
+          "options": [
+            "Para ahorrar espacio en disco",
+            "Para evitar la ambigüedad de etiquetas cuando se unen ficheros XML",
+            "Para acelerar el procesamiento",
+            "Para cifrar el contenido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Con el uso del espacio de nombres se puede evitar la ambigüedad de etiquetas cuando se unen dos o más ficheros XML que contienen elementos con el mismo nombre."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Cómo se declara un espacio de nombres en XML?",
+          "options": [
+            "Mediante el atributo xmlns",
+            "Mediante el atributo namespace",
+            "Mediante el atributo space",
+            "Mediante el atributo ns"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Para utilizar los prefijos en un espacio de nombres hay que declararlo e indicarle un índice con el URI que tenga asociado mediante el atributo especial xmlns."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué formato se recomienda para compartir información de empleados entre diferentes aplicaciones?",
+          "options": [
+            "Excel",
+            "Word",
+            "XML",
+            "PDF"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El formato ideal sería XML porque permite que se pueda visualizar en cualquier plataforma o aplicación, aprovechando su característica de independencia de plataforma."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué plugin de Visual Studio Code se menciona para crear un servidor local?",
+          "options": [
+            "Local server",
+            "Live server",
+            "Web server",
+            "Auto server"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un ejemplo de plugin es live server, que crea un servidor local que permite la recarga en vivo del documento HTML que se esté creando."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la relación entre XML e HTML según el documento?",
+          "options": [
+            "XML sustituye completamente a HTML",
+            "XML no sustituye a HTML, sino que es otro tipo de lenguaje de marcas",
+            "HTML es mejor que XML",
+            "Son exactamente lo mismo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Es importante indicar que XML no sustituye a HTML, sino que es otro tipo de lenguaje de marcas con diferentes propósitos y características."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta se menciona para comprobar si un documento XML está bien formado?",
+          "options": [
+            "XML Validator",
+            "XML Copy Editor",
+            "XML Checker",
+            "XML Parser"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para poder comprobar si un documento está bien formado existen herramientas que ayudan, entre ellas está XML Copy Editor."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué representa XHTML?",
+          "options": [
+            "Una versión anterior de HTML",
+            "Una nueva versión de HTML basada en XML",
+            "Un reemplazo de XML",
+            "Un tipo de CSS"
+          ],
+          "correctAnswer": 1,
+          "explanation": "XHTML (Extensible HyperText Markup Language) es una nueva versión de HTML basada en XML que hace que el documento HTML sea más robusto y más estricto en la construcción de páginas web."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Qué permite XML al tener información estructurada en el contexto de bases de datos?",
+          "options": [
+            "Crear tablas automáticamente",
+            "Interrogarla para obtener resultados filtrados",
+            "Cifrar los datos",
+            "Comprimir la información"
+          ],
+          "correctAnswer": 1,
+          "explanation": "XML al tener información estructurada permite interrogarla para obtener resultados filtrados, lo que lo hace útil para trabajar como base de datos."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un lenguaje de marcas de tipo descriptivo o semántico según la tabla del documento?",
+          "options": [
+            "XML",
+            "HTML",
+            "JSON",
+            "TeX"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Según la tabla de clasificación, TeX es un lenguaje de marcas procedimental y de presentación, no descriptivo o semántico. XML, HTML y JSON son descriptivos o semánticos."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "¿Qué característica hace que los lenguajes de marcas sean flexibles?",
+          "options": [
+            "Su velocidad de procesamiento",
+            "Su tamaño compacto",
+            "Al basarse en etiquetas, lo que permite su utilización en diferentes áreas de trabajo",
+            "Su compatibilidad con todos los navegadores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los lenguajes de marcas son flexibles porque al basarse en etiquetas les otorga una flexibilidad muy alta que permite su utilización en diferentes áreas de trabajo."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Introducción al Documento HTML",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué significa HTML?",
+          "options": [
+            "HyperText Markup Language",
+            "High Technology Modern Language",
+            "HyperText Modern Language",
+            "High Text Markup Language"
+          ],
+          "correctAnswer": 0,
+          "explanation": "HTML significa HyperText Markup Language, que es el lenguaje de marcas estándar para crear páginas web."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la sintaxis correcta para delimitar un párrafo en HTML?",
+          "options": [
+            "<p>nombre de párrafo</p>",
+            "[p]nombre de párrafo[/p]",
+            "{p}nombre de párrafo{/p}",
+            "<párrafo>nombre de párrafo</párrafo>"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La sintaxis correcta utiliza etiquetas entre corchetes angulares < y >, con una etiqueta de apertura <p> y una de cierre </p>."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos símbolos se utiliza para indicar una etiqueta de cierre en HTML?",
+          "options": [
+            "\\",
+            "/",
+            "-",
+            "*"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El carácter barra (/) se utiliza para indicar una etiqueta de cierre, por ejemplo </p>."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estas etiquetas NO requiere etiqueta de cierre?",
+          "options": [
+            "<p>",
+            "<div>",
+            "<img>",
+            "<span>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <img> es una etiqueta vacía que no requiere etiqueta de cierre, al igual que <hr>."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿HTML diferencia entre mayúsculas y minúsculas?",
+          "options": [
+            "Sí, siempre diferencia",
+            "No, no diferencia",
+            "Solo en algunos casos",
+            "Depende del navegador"
+          ],
+          "correctAnswer": 1,
+          "explanation": "HTML no diferencia entre mayúsculas y minúsculas, por lo que <p> y <P> son equivalentes, aunque es buena práctica usar minúsculas."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la sintaxis correcta para incluir un atributo en una etiqueta HTML?",
+          "options": [
+            "<etiqueta atributo=valor>",
+            "<etiqueta atributo='valor'>",
+            "<etiqueta [atributo]='valor'>",
+            "<etiqueta {atributo='valor'}>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis correcta requiere que el valor del atributo esté entre comillas: <etiqueta atributo='valor'>."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de la etiqueta <img> especifica la ubicación de la imagen?",
+          "options": [
+            "alt",
+            "src",
+            "href",
+            "title"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo 'src' hace referencia al lugar donde se encuentra el fichero que contiene la imagen."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo proporciona texto alternativo para una imagen?",
+          "options": [
+            "title",
+            "src",
+            "alt",
+            "description"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El atributo 'alt' proporciona información que se mostrará cuando haya problemas para mostrar la imagen."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la sintaxis correcta para incluir un comentario en HTML?",
+          "options": [
+            "// Esto es un comentario",
+            "/* Esto es un comentario */",
+            "<!-- Esto es un comentario -->",
+            "# Esto es un comentario"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los comentarios en HTML deben estar entre <!-- y --> y no se muestran en el navegador."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué función cumple el atributo 'id' en HTML?",
+          "options": [
+            "Indica el estilo de la etiqueta",
+            "Especifica la URL de un enlace",
+            "Identifica de manera única un elemento",
+            "Proporciona información extra sobre una etiqueta"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El atributo 'id' se utiliza para identificar de manera única un elemento del documento HTML."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué componentes forman un elemento HTML completo?",
+          "options": [
+            "Solo la etiqueta de apertura",
+            "Etiqueta de apertura y contenido",
+            "Etiqueta de apertura, atributos, contenido y etiqueta de cierre",
+            "Solo atributos y contenido"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un elemento HTML completo está formado por: etiqueta de apertura, cero o más atributos, información entre las etiquetas y etiqueta de cierre."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre elementos en línea y de bloque?",
+          "options": [
+            "Los elementos en línea son más grandes",
+            "Los elementos de bloque ocupan solo el espacio necesario",
+            "Los elementos en línea ocupan solo el espacio necesario según su contenido",
+            "No hay diferencia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los elementos en línea solo ocupan el espacio necesario según su contenido, mientras que los elementos de bloque ocupan el ancho completo disponible."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se publicó la primera versión de HTML?",
+          "options": [
+            "1989",
+            "1991",
+            "1995",
+            "1999"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La primera versión de HTML fue desarrollada en 1991 por Tim Berners-Lee, considerado el padre de la web."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue la primera versión de HTML recomendada por la W3C?",
+          "options": [
+            "HTML 2.0",
+            "HTML 3.2",
+            "HTML 4.01",
+            "HTML 5"
+          ],
+          "correctAnswer": 1,
+          "explanation": "HTML 3.2, publicado en 1997, fue la primera versión recomendada por el W3C e incluía tablas y applets de Java."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica principal aporta HTML5?",
+          "options": [
+            "Soporte para tablas",
+            "Mejores formularios",
+            "Significado semántico",
+            "Compatibilidad con scripts"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La característica principal de HTML5 es que aporta significado semántico, además de nuevas etiquetas e integración de audio y vídeo."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se publicó HTML5?",
+          "options": [
+            "2010",
+            "2012",
+            "2014",
+            "2016"
+          ],
+          "correctAnswer": 2,
+          "explanation": "HTML5 se publicó en 2014 y aportó nuevas etiquetas, integración de audio y vídeo, y significado semántico."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué organización define las versiones de HTML?",
+          "options": [
+            "Mozilla Foundation",
+            "Google",
+            "W3C (World Wide Web Consortium)",
+            "Microsoft"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El W3C (World Wide Web Consortium) es el organismo internacional que define las versiones de HTML."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cómo se puede acceder al código fuente de una página web en el navegador?",
+          "options": [
+            "Presionando F12",
+            "Botón derecho y 'Ver código fuente de la página'",
+            "Menú Archivo > Código fuente",
+            "Todas las anteriores"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Se puede acceder al código fuente mediante botón derecho y 'Ver código fuente', F12, o desde el menú, dependiendo del navegador."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué es XHTML?",
+          "options": [
+            "Una versión obsoleta de HTML",
+            "Una adaptación de HTML al lenguaje XML",
+            "Un lenguaje completamente diferente a HTML",
+            "La versión más reciente de HTML"
+          ],
+          "correctAnswer": 1,
+          "explanation": "XHTML es una adaptación del lenguaje HTML al lenguaje de marcas XML, incorporando las reglas más estrictas de XML."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una restricción de XHTML que no tiene HTML?",
+          "options": [
+            "Permite mayúsculas y minúsculas indistintamente",
+            "No requiere etiquetas de cierre",
+            "Todos los nombres deben escribirse en minúsculas",
+            "Los atributos pueden ir sin comillas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En XHTML, todos los nombres de etiquetas y atributos deben escribirse en minúsculas, a diferencia de HTML que no diferencia entre mayúsculas y minúsculas."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuántas versiones de XHTML existen actualmente?",
+          "options": [
+            "Una (1.0)",
+            "Dos (1.0 y 1.1)",
+            "Tres (1.0, 1.1 y 2.0)",
+            "Cuatro (1.0, 1.1, 2.0 y 2.1)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Actualmente existen dos versiones de XHTML: la 1.0 y la 1.1. La versión 1.0 se considera similar a HTML 4.0."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué servicio online de W3C permite validar documentos XHTML?",
+          "options": [
+            "W3C HTML Validator",
+            "W3C Markup Validation Service",
+            "W3C Code Checker",
+            "W3C Document Validator"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El W3C Markup Validation Service es el servicio online que permite verificar si un documento XHTML es válido."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta offline se menciona para validar documentos XHTML?",
+          "options": [
+            "HTML Validator",
+            "XML Copy Editor",
+            "Sublime Text",
+            "Visual Studio Code"
+          ],
+          "correctAnswer": 1,
+          "explanation": "XML Copy Editor es la herramienta offline mencionada que permite validar documentos XHTML al estar basada en XML."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué extensión de Chrome permite conocer el código exacto del color de un elemento web?",
+          "options": [
+            "WhatFont",
+            "Colorzilla",
+            "ColorPicker",
+            "WebColors"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Colorzilla es la extensión para Chrome que permite conocer el código exacto del color de cualquier elemento de una página web."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué recurso proporciona tipografías gratuitas para diseños web?",
+          "options": [
+            "WhatFont",
+            "Google Fonts",
+            "Iconfinder",
+            "MockFlow"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Google Fonts es la base de tipografías gratuitas que se puede utilizar en diseños web."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta permite crear bocetos de diseños web?",
+          "options": [
+            "Pixabay",
+            "Gimp",
+            "MockFlow",
+            "WhatFont"
+          ],
+          "correctAnswer": 2,
+          "explanation": "MockFlow es la herramienta que permite crear bocetos de cómo se quiere que quede el diseño web."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué es Pixabay?",
+          "options": [
+            "Un editor de imágenes",
+            "Un banco de imágenes de calidad",
+            "Una fuente de iconos",
+            "Un validador de código"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Pixabay es un banco de imágenes de calidad que proporciona recursos visuales para diseño web."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué editor de texto avanzado y multiplataforma se menciona en el documento?",
+          "options": [
+            "Notepad++",
+            "Visual Studio Code",
+            "Sublime Text",
+            "Atom"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Sublime Text es el editor de texto avanzado y multiplataforma mencionado que soporta múltiples lenguajes incluyendo HTML y XML."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿En qué modelo arquitectónico se basa el funcionamiento de las páginas web?",
+          "options": [
+            "Modelo peer-to-peer",
+            "Modelo cliente-servidor",
+            "Modelo distribuido",
+            "Modelo centralizado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las páginas web funcionan bajo el modelo cliente-servidor, donde el navegador actúa como cliente y solicita páginas al servidor web."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Qué atributos de la etiqueta <img> permiten especificar el tamaño de la imagen?",
+          "options": [
+            "size y dimension",
+            "width y height",
+            "largo y ancho",
+            "x y y"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos 'width' (ancho) y 'height' (altura) permiten especificar el tamaño de la imagen en píxeles."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué característica de HTML5 permite integrar contenido multimedia?",
+          "options": [
+            "Soporte para plugins Flash",
+            "Integración de audio y vídeo directamente sin plugins",
+            "Mejor soporte para Java applets",
+            "Compatibilidad con ActiveX"
+          ],
+          "correctAnswer": 1,
+          "explanation": "HTML5 permite integrar audio y vídeo directamente sin necesidad de plugins externos, lo cual es una de sus principales novedades."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Cómo afectan los espacios en blanco y saltos de línea en la visualización de un documento HTML?",
+          "options": [
+            "Se muestran exactamente como se escriben",
+            "El navegador los pasa por alto",
+            "Solo se respetan los saltos de línea",
+            "Solo se respetan los espacios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los espacios en blanco, saltos de línea y tabuladores no aportan nada en la visualización final del documento HTML, ya que el navegador los pasa por alto."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la recomendación actual sobre qué versión de HTML usar para nuevos proyectos?",
+          "options": [
+            "HTML 4.01 por su estabilidad",
+            "XHTML por su validación estricta",
+            "HTML5 por su rápido crecimiento y funcionalidad mejorada",
+            "No importa la versión"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Se recomienda HTML5 debido a su rápido crecimiento, funcionalidad mejorada y el significado semántico que aporta a la estructura web."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Estructura de un documento HTML",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres partes principales de un documento HTML?",
+          "options": [
+            "Título, cuerpo y pie de página",
+            "Declaración de tipo de documento, cabecera y cuerpo",
+            "Header, main y footer",
+            "Introducción, desarrollo y conclusión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un documento HTML tiene tres partes claramente diferenciadas: una primera línea que contiene información sobre la versión de HTML (DOCTYPE), una cabecera con información sobre la página web (head), y un cuerpo que contiene la información del documento (body)."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta representa la raíz de la estructura HTML?",
+          "options": [
+            "<root>",
+            "<html>",
+            "<document>",
+            "<page>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Todo documento tiene que ir acotado entre las etiquetas <html></html>; esta será la primera etiqueta que encontraremos tras indicar la versión de HTML y representa la raíz de nuestra estructura."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Para qué versión de HTML se simplifica la declaración DOCTYPE a '<!DOCTYPE html>'?",
+          "options": [
+            "HTML 4.01",
+            "XHTML 1.0",
+            "HTML5",
+            "HTML 3.2"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En caso de que trabajemos con la versión de HTML5, la manera de indicarlo se simplifica, porque simplemente tendríamos que poner la etiqueta <!DOCTYPE html>."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el juego de caracteres predeterminado para HTML5?",
+          "options": [
+            "ASCII",
+            "ISO-8859-1",
+            "ANSI",
+            "UTF-8"
+          ],
+          "correctAnswer": 3,
+          "explanation": "UTF-8 salva las limitaciones de los juegos anteriores, pues UTF-8 cubre casi todos los caracteres y símbolos del mundo. Para HTML5 este es el conjunto de caracteres predeterminado."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para indicar el título de la página que aparece en las pestañas del navegador?",
+          "options": [
+            "<header>",
+            "<title>",
+            "<name>",
+            "<caption>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dentro de la cabecera, tendremos la etiqueta <title></title> donde indicamos el título de la página. Es importante que elijamos uno adecuado, relacionado con el contenido de la web."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuántos caracteres alfanuméricos definió originalmente el estándar ASCII?",
+          "options": [
+            "64",
+            "128",
+            "256",
+            "512"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ASCII (American Standard Code for Information Interchange) fue el primer estándar para codificar los caracteres. Definió 128 caracteres alfanuméricos, aunque actualmente admite más."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para crear párrafos de texto o imágenes?",
+          "options": [
+            "<paragraph>",
+            "<text>",
+            "<p>",
+            "<content>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <p> nos va a permitir crear párrafos de texto o imágenes."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta permite separar elementos con una línea horizontal?",
+          "options": [
+            "<line>",
+            "<separator>",
+            "<hr>",
+            "<break>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <hr> nos permite separar elementos con una línea horizontal. No es necesario etiqueta de cierre."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función principal de la etiqueta <div>?",
+          "options": [
+            "Crear títulos y subtítulos",
+            "Agrupar otros elementos HTML para crear una agrupación mayor",
+            "Insertar imágenes",
+            "Crear enlaces"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Esta etiqueta nos va a permitir agrupar otros elementos HTML (párrafos, tablas, otras divisiones, etc.) para crear una agrupación mayor. A las divisiones también se les suele llamar capas."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para incluir texto largo que puede contener varios párrafos?",
+          "options": [
+            "<quote>",
+            "<blockquote>",
+            "<longtext>",
+            "<citation>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <blockquote> permite incluir un texto 'largo' que, a su vez, puede contener varios párrafos o, incluso, otras etiquetas. Como regla general, los navegadores suelen mostrar este bloque con un margen a izquierda y derecha."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Para qué se utiliza la etiqueta <pre>?",
+          "options": [
+            "Para crear títulos principales",
+            "Para mantener los espacios, tabuladores y diseño del texto original",
+            "Para insertar imágenes",
+            "Para crear listas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Esta etiqueta se utiliza cuando se quiere mantener los espacios, tabuladores y diseño del texto original."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estas etiquetas representa el título más grande por defecto?",
+          "options": [
+            "<h6>",
+            "<h3>",
+            "<h1>",
+            "<h4>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Si al documento HTML no se le indica alguna hoja de estilo, el navegador trabaja con la hoja estilo por defecto. En esta, las etiquetas de título se muestran en tamaño inverso al número indicado en su etiqueta. Por lo tanto, <h1> será la etiqueta que mostrará el título más grande."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué sucede si no se indica el tipo de documento en HTML?",
+          "options": [
+            "El navegador muestra un error",
+            "El documento no se carga",
+            "El navegador pasa a un modo no estándar y se activa el modo de compatibilidad",
+            "Se usa automáticamente HTML5"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Si no se indica el tipo de documento, el navegador pasa a un modo no estándar y se activa el modo de compatibilidad con páginas antiguas. Esto puede ser peligroso porque algunas etiquetas se pueden interpretar de forma diferente."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tipos de documento posibles para HTML 4.01?",
+          "options": [
+            "Básico, intermedio y avanzado",
+            "Simple, complejo y mixto",
+            "Estricto, transicional y frameset",
+            "Público, privado y comercial"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los tipos de documentos posibles para la versión de HTML 4.01 son: Estricto (permite usar etiquetas HTML 4.01 pero no admite etiquetas obsoletas), Transicional (se pueden usar etiquetas de cualquier versión de HTML) y Frameset (soporte para frames)."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué meta etiqueta se utiliza para indicar el conjunto de caracteres usado?",
+          "options": [
+            "<meta name=\"charset\" content=\"UTF-8\">",
+            "<meta charset=\"UTF-8\">",
+            "<meta encoding=\"UTF-8\">",
+            "<meta type=\"charset\" value=\"UTF-8\">"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <meta charset=\"UTF-8\"> indica el conjunto de caracteres usado. En este caso se usa UTF-8."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuántos caracteres diferentes admite ISO-8859-1?",
+          "options": [
+            "128",
+            "256",
+            "512",
+            "1024"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ISO-8859-1 era el juego de caracteres usado para HTML4. Admite 256 caracteres diferentes."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para enlazar CSS externo?",
+          "options": [
+            "<style>",
+            "<css>",
+            "<link>",
+            "<stylesheet>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <link> se utiliza para enlazar CSS externo. Siempre es una buena práctica indicar CSS en ficheros externos."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿En qué sección del documento HTML se define el contenido total de la página web?",
+          "options": [
+            "En la cabecera (head)",
+            "En el cuerpo (body)",
+            "En el tipo de documento (DOCTYPE)",
+            "En los metadatos (meta)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Dentro de las etiquetas <body></body> vamos a incluir elementos del cuerpo. En esta sección tendremos el mayor número de etiquetas, ya que aquí se define el contenido total de nuestra página web."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la buena práctica respecto al uso de divisiones (<div>)?",
+          "options": [
+            "Usarlas en todos los elementos",
+            "Usarlas solo cuando hay que agrupar más de un elemento",
+            "Evitarlas completamente",
+            "Usarlas solo para títulos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Es muy útil usar divisiones, pero no hay que abusar de ello. Es una buena práctica usarlas solo cuando hay que agrupar más de un elemento. En cambio, una división será innecesaria si sólo va a contener un párrafo."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cómo deben usarse las etiquetas de título (<h1>, <h2>, etc.)?",
+          "options": [
+            "En cualquier orden",
+            "Solo <h1> y <h6>",
+            "De manera jerárquica, sin saltarse niveles",
+            "Solo una vez por página"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las etiquetas <h1> deben usarse de manera jerárquica, es decir, no podemos saltarnos niveles. De esta manera, no debemos anteponer un <h2> a un <h1>, por ejemplo."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué clasificación de etiquetas incluye párrafo, separador y división?",
+          "options": [
+            "Secciones",
+            "Texto",
+            "Bloques de contenido",
+            "Enlaces"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las etiquetas de bloques de contenido nos van a permitir crear bloques de elementos que vamos a poder distribuir a lo largo de la página web. Distinguimos: Párrafo (<p>), Separador (<hr>) y División (<div>)."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el número HTML correspondiente al símbolo de admiración '!'?",
+          "options": [
+            "&#32;",
+            "&#33;",
+            "&#34;",
+            "&#35;"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la tabla de código ASCII proporcionada, el símbolo '!' tiene el HTML number &#33;."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué meta etiqueta permite indicar palabras clave para los motores de búsqueda?",
+          "options": [
+            "<meta name=\"description\" content=\"...\">",
+            "<meta name=\"keywords\" content=\"...\">",
+            "<meta name=\"author\" content=\"...\">",
+            "<meta charset=\"UTF-8\">"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <meta name=\"keywords\" content=\"palabras clave\"> permite indicar palabras clave para los motores de búsqueda."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué representa el juego de caracteres ANSI?",
+          "options": [
+            "El estándar americano original",
+            "El juego original de Windows, igual que ISO-8859-1 pero con 32 caracteres más",
+            "El predecesor de UTF-8",
+            "Un juego de caracteres para idiomas asiáticos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ANSI fue el juego original de Windows. Es igual que ISO-8859-1, pero tiene 32 caracteres más."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Para qué se suele usar la etiqueta <h1>?",
+          "options": [
+            "Para subtítulos",
+            "Para un apartado principal",
+            "Para notas al pie",
+            "Para contenido secundario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "<h1> suele usarse para un apartado principal, <h2> para un apartado dentro del apartado principal, <h3> un subapartado incluido en el anterior, y así sucesivamente."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de etiquetas se pueden clasificar dentro del cuerpo del documento?",
+          "options": [
+            "Solo bloques de contenido y texto",
+            "Bloques de contenido, secciones, texto, enlaces, listas, contenido incrustado, tablas, formularios y elementos interactivos",
+            "Únicamente títulos y párrafos",
+            "Solo elementos de formato"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Podemos clasificar los tipos de etiquetas en los siguientes grupos: Bloques de contenido, Secciones, Texto, Enlaces, Listas, Contenido incrustado, Tablas, Formularios y Elementos interactivos."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja tiene UTF-8 sobre ASCII e ISO-8859-1?",
+          "options": [
+            "Es más rápido de procesar",
+            "Ocupa menos espacio",
+            "Cubre casi todos los caracteres y símbolos del mundo",
+            "Es más compatible con navegadores antiguos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "UTF-8 salva las limitaciones de los dos juegos anteriores, pues UTF-8 cubre casi todos los caracteres y símbolos del mundo."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué DOCTYPE se considera actualmente desfasado debido al poco uso de frames?",
+          "options": [
+            "Estricto",
+            "Transicional",
+            "Frameset",
+            "Básico"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Frameset tendría soporte para frames (marcos que se crean en las páginas web). Actualmente lo podemos considerar desfasado, pues los frames se usan cada vez menos."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Cómo se comporta visualmente la etiqueta <blockquote> por defecto en los navegadores?",
+          "options": [
+            "Sin ningún formato especial",
+            "Con texto en cursiva",
+            "Con márgenes a izquierda y derecha",
+            "Con texto en negrita"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Como regla general, los navegadores suelen mostrar este bloque con un margen a izquierda y derecha."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre HTML 4.01 estricto y transicional?",
+          "options": [
+            "El estricto es más rápido",
+            "El estricto no permite etiquetas obsoletas, el transicional permite etiquetas de cualquier versión",
+            "El transicional es solo para móviles",
+            "No hay diferencia significativa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Estricto permite usar etiquetas HTML 4.01, pero no va a admitir etiquetas obsoletas. Transicional permite usar etiquetas de cualquier versión de HTML."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta permite incluir un script en línea o referenciar un fichero externo con script?",
+          "options": [
+            "<javascript>",
+            "<code>",
+            "<script>",
+            "<js>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <script> se indica un script en línea o la referencia a un fichero externo con el script, normalmente JavaScript."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que las divisiones se pueden 'anidar'?",
+          "options": [
+            "Que se pueden eliminar fácilmente",
+            "Que se pueden incluir unas dentro de otras para estructurar el contenido",
+            "Que se pueden duplicar",
+            "Que se pueden ocultar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Como hemos comentado, las divisiones se pueden anidar, lo cual nos permitirá estructurar el contenido de nuestra página web en bloques mayores."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Etiquetas y Atributos",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta HTML se utiliza para insertar saltos de línea?",
+          "options": ["<break>", "<br>", "<line>", "<nl>"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <br> permite insertar saltos de línea en el documento HTML."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función principal de la etiqueta <span>?",
+          "options": ["Crear párrafos", "No tiene significado definido y se usa cuando no existe ninguna etiqueta adecuada", "Insertar imágenes", "Crear enlaces"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <span> no tiene un significado definido y se usa cuando no existe ninguna etiqueta adecuada. Se le suele asociar una clase en CSS para modificar su aspecto."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para enfatizar partes del texto?",
+          "options": ["<strong>", "<em>", "<i>", "<b>"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <em> permite enfatizar partes del texto. El estilo por defecto de los navegadores suele mostrar este texto en cursiva."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre <strong> y <b>?",
+          "options": ["No hay diferencia", "<strong> tiene significado semántico mientras <b> no", "<b> es más moderno que <strong>", "<strong> solo funciona en HTML5"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <strong> indica que el texto es importante y tiene significado semántico, mientras que <b> solo se usa para destacar visualmente sin implicar importancia."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para crear texto en subíndice?",
+          "options": ["<sub>", "<down>", "<lower>", "<subscript>"],
+          "correctAnswer": 0,
+          "explanation": "La etiqueta <sub> permite identificar texto en subíndice."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para crear texto en superíndice?",
+          "options": ["<super>", "<up>", "<sup>", "<high>"],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <sup> permite identificar texto en superíndice."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta identifica contenido incorrecto que se quiere mostrar tachado?",
+          "options": ["<del>", "<s>", "<strike>", "<cross>"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <s> identifica contenido incorrecto y que se quiere mostrar tachado."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para resaltar texto que tiene un significado especial?",
+          "options": ["<em>", "<strong>", "<i>", "<mark>"],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <i> se utiliza para resaltar texto que tiene un significado especial. El navegador lo suele mostrar en cursiva."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para indicar información secundaria?",
+          "options": ["<small>", "<secondary>", "<minor>", "<aside>"],
+          "correctAnswer": 0,
+          "explanation": "La etiqueta <small> se utiliza para indicar información que es secundaria y se suele mostrar en letra más pequeña."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta permite resaltar un texto como si usáramos un rotulador fluorescente?",
+          "options": ["<highlight>", "<mark>", "<yellow>", "<fluorescent>"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <mark> permite resaltar un texto que originalmente no lo estaba, como si usáramos un rotulador fluorescente. Se suele marcar en amarillo."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para crear enlaces en HTML?",
+          "options": ["<link>", "<a>", "<href>", "<url>"],
+          "correctAnswer": 1,
+          "explanation": "Los enlaces se crean en HTML con la etiqueta <a>."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de la etiqueta <a> indica el destino del enlace?",
+          "options": ["src", "href", "link", "destination"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <a> dispone del atributo href, que va a indicar el destino de ese enlace en formato URI."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué carácter se utiliza para referenciar un elemento específico dentro de una página?",
+          "options": ["@", "#", "&", "%"],
+          "correctAnswer": 1,
+          "explanation": "La referencia en href hay que indicarla con el carácter almohadilla (#) junto con el id del elemento al que queremos acceder."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué valor del atributo target abre el contenido en una pestaña nueva?",
+          "options": ["_new", "_blank", "_tab", "_window"],
+          "correctAnswer": 1,
+          "explanation": "El valor _blank del atributo target hace que el contenido se abra en una pestaña nueva del navegador."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué valor del atributo target abre el contenido en la misma pestaña?",
+          "options": ["_same", "_self", "_current", "_this"],
+          "correctAnswer": 1,
+          "explanation": "El valor _self hace que el contenido se abra en la misma pestaña, quitando el contenido actual para mostrar el nuevo."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuántos tipos de listas dispone HTML?",
+          "options": ["2", "3", "4", "5"],
+          "correctAnswer": 1,
+          "explanation": "HTML dispone de tres tipos de listas: ordenadas (<ol>), no ordenadas (<ul>) y de definición (<dl>)."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para crear listas ordenadas?",
+          "options": ["<ul>", "<ol>", "<dl>", "<list>"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <ol> se utiliza para crear listas ordenadas."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para crear listas no ordenadas?",
+          "options": ["<ul>", "<ol>", "<dl>", "<unordered>"],
+          "correctAnswer": 0,
+          "explanation": "La etiqueta <ul> se utiliza para crear listas no ordenadas."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta delimita los elementos individuales dentro de una lista?",
+          "options": ["<item>", "<li>", "<element>", "<entry>"],
+          "correctAnswer": 1,
+          "explanation": "Los elementos incluidos en las listas están delimitados por la etiqueta <li>."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre listas ordenadas y no ordenadas?",
+          "options": ["El color de los elementos", "Las ordenadas enumeran los elementos, las no ordenadas usan símbolos gráficos", "El tamaño de la fuente", "No hay diferencia"],
+          "correctAnswer": 1,
+          "explanation": "La única diferencia es que en las listas ordenadas los elementos se van enumerando, mientras que en las no ordenadas se muestran con símbolos gráficos."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se utiliza para incluir imágenes en HTML?",
+          "options": ["<image>", "<img>", "<picture>", "<photo>"],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <img> permite incluir imágenes en la página web."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de <img> indica dónde se encuentra el archivo de imagen?",
+          "options": ["href", "src", "file", "path"],
+          "correctAnswer": 1,
+          "explanation": "El atributo src indica dónde se encuentra el fichero externo de la imagen."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de <img> introduce texto alternativo cuando no se puede mostrar la imagen?",
+          "options": ["title", "alt", "alternative", "text"],
+          "correctAnswer": 1,
+          "explanation": "El atributo alt introduce texto alternativo cuando no se pueda mostrar la imagen en el navegador."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de <img> se muestra cuando el ratón pasa por encima de la imagen?",
+          "options": ["alt", "title", "tooltip", "hover"],
+          "correctAnswer": 1,
+          "explanation": "El atributo title se muestra cuando el ratón pasa por encima de la imagen, mejorando la accesibilidad."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué atributos de <img> permiten indicar las dimensiones de la imagen?",
+          "options": ["size y dimension", "width y height", "w y h", "x y y"],
+          "correctAnswer": 1,
+          "explanation": "Los atributos width y height permiten indicar el ancho y el alto de la imagen en píxeles."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta permite incluir un documento HTML dentro de otro?",
+          "options": ["<embed>", "<include>", "<iframe>", "<frame>"],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <iframe> permite incluir un documento HTML dentro de otro documento HTML."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de <iframe> indica que no queremos que tenga borde?",
+          "options": ["border=0", "frameborder=0", "noborder", "borderless"],
+          "correctAnswer": 1,
+          "explanation": "El atributo frameborder=0 indica que no queremos que el iframe tenga borde."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de elementos son las imágenes en HTML?",
+          "options": ["Elementos de bloque", "Elementos en línea", "Elementos flotantes", "Elementos fijos"],
+          "correctAnswer": 1,
+          "explanation": "Las imágenes son elementos en línea en HTML."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué significa HTML?",
+          "options": ["Hyper Text Markup Language", "High Tech Modern Language", "Home Tool Markup Language", "Hyperlink and Text Markup Language"],
+          "correctAnswer": 0,
+          "explanation": "HTML significa Hypertext Markup Language (lenguaje de marcas de hipertexto), lo que permite crear relaciones (enlaces) entre documentos."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Qué sucede cuando se anidan listas en HTML?",
+          "options": ["No es posible anidar listas", "El navegador añade tabuladores para facilitar la visualización de la jerarquía", "Se genera un error", "Las listas se fusionan"],
+          "correctAnswer": 1,
+          "explanation": "Cuando se incluye una lista dentro de otra, el navegador va añadiendo tabuladores que facilitan la visualización de esa jerarquía."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "En las listas desordenadas anidadas, ¿qué ocurre con los símbolos?",
+          "options": ["Se mantiene el mismo símbolo", "Se incluye otro tipo de símbolo para diferenciar cada nivel", "Desaparecen los símbolos", "Se numeran automáticamente"],
+          "correctAnswer": 1,
+          "explanation": "En las listas desordenadas, cada vez que se haga una sublista, se incluirá otro tipo de símbolo para diferenciarla."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué aplicaciones se pueden incluir comúnmente en un iframe?",
+          "options": ["Solo documentos HTML locales", "Mapas de Google, servicios web, estado del tiempo", "Solo imágenes", "Solo videos"],
+          "correctAnswer": 1,
+          "explanation": "Son numerosas las aplicaciones que se pueden incluir en iframe: mapas de Google, servicios web de Internet, estado del tiempo, etc."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el propósito principal de las etiquetas de texto en HTML?",
+          "options": ["Cambiar el color del texto", "Marcar, referenciar, estilizar o destacar partes del contenido", "Aumentar el tamaño de la fuente", "Crear animaciones"],
+          "correctAnswer": 1,
+          "explanation": "Las etiquetas de texto permiten marcar, referenciar, estilizar o destacar partes del contenido que tenga un significado que queramos resaltar."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Qué ocurre cuando se pulsa en un enlace con referencia local (usando #)?",
+          "options": ["Se abre una nueva pestaña", "Se recarga la página", "La página hace scroll hasta visualizar el elemento referenciado", "Se cierra la página"],
+          "correctAnswer": 2,
+          "explanation": "Cuando se pulse en un enlace con referencia local, la página hará el scroll necesario hasta visualizar el elemento referenciado."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "¿Qué valor del atributo target abre el contenido en el elemento de nivel más alto?",
+          "options": ["_top", "_parent", "_high", "_master"],
+          "correctAnswer": 0,
+          "explanation": "El valor _top abre el contenido en el elemento cuyo nivel sea el más alto, que es la ventana del navegador."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Tablas y Formularios",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la etiqueta principal para crear una tabla en HTML?",
+          "options": [
+            "<table>",
+            "<tab>",
+            "<tbl>",
+            "<grid>"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La etiqueta <table> es la etiqueta principal que se utiliza para crear una tabla en HTML."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se usa para crear el título de una tabla?",
+          "options": [
+            "<title>",
+            "<caption>",
+            "<header>",
+            "<thead>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <caption> se utiliza para identificar el título de la tabla."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estas etiquetas se usa para crear la cabecera de una tabla?",
+          "options": [
+            "<tbody>",
+            "<tfoot>",
+            "<thead>",
+            "<header>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <thead> se utiliza para identificar las celdas que van a formar parte de la cabecera de la tabla."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta contiene las celdas con el contenido principal de la tabla?",
+          "options": [
+            "<thead>",
+            "<tbody>",
+            "<tfoot>",
+            "<tcontent>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <tbody> va a contener las celdas con el contenido de la tabla."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la etiqueta para crear una fila en una tabla?",
+          "options": [
+            "<tr>",
+            "<row>",
+            "<td>",
+            "<th>"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La etiqueta <tr> se utiliza para crear filas (table row) en una tabla HTML."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se usa para crear celdas de datos en una tabla?",
+          "options": [
+            "<th>",
+            "<tc>",
+            "<td>",
+            "<data>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <td> se utiliza para crear celdas de datos (table data) en una tabla."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se usa para crear celdas de cabecera en una tabla?",
+          "options": [
+            "<td>",
+            "<th>",
+            "<header>",
+            "<head>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <th> se utiliza para crear celdas de cabecera (table header) en una tabla."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo se usa para unir celdas horizontalmente?",
+          "options": [
+            "rowspan",
+            "colspan",
+            "merge",
+            "unite"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo colspan se utiliza para unir celdas de manera horizontal en una tabla."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo se usa para unir celdas verticalmente?",
+          "options": [
+            "colspan",
+            "rowspan",
+            "vertical",
+            "vmerge"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo rowspan se utiliza para unir celdas de manera vertical en una tabla."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la etiqueta principal para crear un formulario en HTML?",
+          "options": [
+            "<form>",
+            "<input>",
+            "<field>",
+            "<formular>"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La etiqueta <form> es la etiqueta que engloba los controles de un formulario HTML."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo del formulario indica la página web que va a recibir los datos?",
+          "options": [
+            "method",
+            "action",
+            "target",
+            "send"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo action indica la página web que va a recibir los datos que hemos introducido en el formulario."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos métodos principales para enviar datos de un formulario?",
+          "options": [
+            "send y receive",
+            "post y put",
+            "get y post",
+            "submit y reset"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los dos métodos principales para enviar información de un formulario son get y post."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tiene el método GET al enviar datos de un formulario?",
+          "options": [
+            "Los datos se envían de manera oculta",
+            "Los datos aparecen en la URL",
+            "Es más seguro que POST",
+            "No se pueden ver los datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Con el método GET, la información aparece en la propia llamada de la página web, por lo tanto, los datos se pueden ver en la URL."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tiene el método POST al enviar datos?",
+          "options": [
+            "Los datos aparecen en la URL",
+            "Es menos seguro que GET",
+            "Los datos se envían de manera oculta",
+            "No funciona con formularios"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Con el método POST, la información se envía de manera oculta y no aparece en la barra del navegador."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo identifica a un control de manera única en un formulario?",
+          "options": [
+            "id",
+            "name",
+            "value",
+            "type"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo name identifica al control de manera única en un formulario."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo permite dar un valor inicial a un control?",
+          "options": [
+            "name",
+            "type",
+            "value",
+            "initial"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El atributo value permite dar un valor inicial al control."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo indica que un campo es obligatorio?",
+          "options": [
+            "mandatory",
+            "required",
+            "obligatory",
+            "needed"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo required se indica que el campo es obligatorio. Hasta que no se complete no se podrá enviar el formulario."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de botón permite enviar los datos del formulario al servidor?",
+          "options": [
+            "type=\"button\"",
+            "type=\"submit\"",
+            "type=\"reset\"",
+            "type=\"send\""
+          ],
+          "correctAnswer": 1,
+          "explanation": "El botón con type=\"submit\" es un tipo especial que permite enviar los datos del formulario al fichero de procesamiento en el servidor."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de botón permite borrar toda la información del formulario?",
+          "options": [
+            "type=\"submit\"",
+            "type=\"button\"",
+            "type=\"reset\"",
+            "type=\"clear\""
+          ],
+          "correctAnswer": 2,
+          "explanation": "El botón con type=\"reset\" permite borrar toda la información incluida en el formulario y muestra los valores iniciales."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de input se usa para crear una caja de texto alfanumérica?",
+          "options": [
+            "type=\"text\"",
+            "type=\"string\"",
+            "type=\"alpha\"",
+            "type=\"input\""
+          ],
+          "correctAnswer": 0,
+          "explanation": "El input con type=\"text\" permite introducir texto alfanumérico."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de input oculta lo que se está escribiendo con caracteres como asteriscos?",
+          "options": [
+            "type=\"hidden\"",
+            "type=\"secret\"",
+            "type=\"password\"",
+            "type=\"secure\""
+          ],
+          "correctAnswer": 2,
+          "explanation": "El input con type=\"password\" es un tipo especial que cuando escribimos aparecen caracteres tipo *, que nos oculta lo que se está escribiendo."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta permite introducir más de una línea de texto?",
+          "options": [
+            "<input>",
+            "<textarea>",
+            "<textbox>",
+            "<multitext>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <textarea> permite introducir más de una línea de texto."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué atributos de <textarea> indican las filas y columnas iniciales?",
+          "options": [
+            "width y height",
+            "rows y cols",
+            "lines y columns",
+            "r y c"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos rows y cols indican las filas y columnas iniciales del área de texto."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de input permite marcar o desmarcar casillas?",
+          "options": [
+            "type=\"radio\"",
+            "type=\"checkbox\"",
+            "type=\"select\"",
+            "type=\"option\""
+          ],
+          "correctAnswer": 1,
+          "explanation": "El input con type=\"checkbox\" permite marcar o desmarcar casillas de verificación."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de control permite elegir solo una opción entre varias opciones excluyentes?",
+          "options": [
+            "checkbox",
+            "radio",
+            "select",
+            "option"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los botones radio (type=\"radio\") permiten elegir solo una opción entre varias, siendo las opciones excluyentes."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo deben tener en común los botones radio para formar un grupo excluyente?",
+          "options": [
+            "type",
+            "value",
+            "name",
+            "id"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para que los botones radio formen un grupo y las opciones sean excluyentes, el atributo name de todos los botones radio tiene que ser el mismo."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se usa para crear una lista desplegable?",
+          "options": [
+            "<dropdown>",
+            "<list>",
+            "<select>",
+            "<options>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etiqueta <select> se utiliza para mostrar opciones en una lista desplegable."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se usa dentro de <select> para definir las opciones?",
+          "options": [
+            "<choice>",
+            "<item>",
+            "<option>",
+            "<value>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Dentro de <select>, las opciones se definen con la etiqueta <option>."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo de <option> indica que esa opción está seleccionada por defecto?",
+          "options": [
+            "default",
+            "checked",
+            "selected",
+            "active"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El atributo selected asociado a <option> indica la opción seleccionada por defecto."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta permite agrupar controles en un formulario?",
+          "options": [
+            "<group>",
+            "<fieldset>",
+            "<controls>",
+            "<section>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La etiqueta <fieldset> permite agrupar controles. En el navegador se mostrarán rodeados de una línea."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué etiqueta se debe incluir primera dentro de <fieldset> para dar título al grupo?",
+          "options": [
+            "<title>",
+            "<caption>",
+            "<legend>",
+            "<header>"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La primera etiqueta que hay que incluir en el grupo <fieldset> es <legend>, que dará el título al grupo de controles."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué etiquetas permiten agrupar columnas en una tabla para aplicarles estilos especiales?",
+          "options": [
+            "<column> y <columngroup>",
+            "<col> y <colgroup>",
+            "<cols> y <colsgroup>",
+            "<c> y <cgroup>"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las etiquetas <col> y <colgroup> permiten agrupar columnas para identificar algunas que tengan un significado especial y aplicarles estilos."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el método por defecto si no se especifica ninguno en un formulario?",
+          "options": [
+            "post",
+            "get",
+            "send",
+            "submit"
+          ],
+          "correctAnswer": 1,
+          "explanation": "GET es el método por defecto si no se indica ninguno en el atributo method del formulario."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo permite deshabilitar un control haciéndolo aparecer en tono gris?",
+          "options": [
+            "readonly",
+            "disabled",
+            "inactive",
+            "hidden"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo disabled permite deshabilitar el control. Aparecerá en un tono gris y no permitirá acceder al mismo."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "¿Qué atributo hace que un control no pueda ser modificado pero sí puede coger el foco?",
+          "options": [
+            "disabled",
+            "readonly",
+            "locked",
+            "fixed"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El atributo readonly hace que el control no pueda ser modificado, aunque sí puede coger el foco."
+        }
+      ]
+    }
+  ]
+}

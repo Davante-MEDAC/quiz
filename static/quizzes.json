@@ -1,0 +1,46 @@
+{
+  "subjects": [
+    {
+      "id": "bases-de-datos",
+      "title": "Bases de Datos",
+      "description": "Fundamentos de bases de datos, incluyendo conceptos clave, estructuras y operaciones básicas.",
+      "icon": "📀"
+    },
+    {
+      "id": "digitalizacion",
+      "title": "Digitalización Aplicada. Sec. Productivos",
+      "description": "Cuestionario sobre digitalización aplicada a los sectores productivos.",
+      "icon": "🚀"
+    },
+    {
+      "id": "entornos-de-desarrollo",
+      "title": "Entornos de Desarrollo",
+      "description": "Aprende sobre los entornos de desarrollo integrados (IDE) y su importancia en la programación.",
+      "icon": "☕️"
+    },
+    {
+      "id": "empleabilidad",
+      "title": "Itinerario Personal para la Empleabilidad",
+      "description": "Fundamentos de bases de datos, incluyendo conceptos clave, estructuras y operaciones básicas.",
+      "icon": "💼"
+    },
+    {
+      "id": "lenguajes-de-marcas",
+      "title": "Leng. de Marcas",
+      "description": "HTML, XML y Sistemas de Gestión de Información",
+      "icon": "💅🏻"
+    },
+    {
+      "id": "programacion",
+      "title": "Programación",
+      "description": "Cuestionario sobre los fundamentos de la programación, elementos de un programa informático y programación estructurada.",
+      "icon": "👩🏻‍💻"
+    },
+    {
+      "id": "sistemas-informaticos",
+      "title": "Sistemas Informáticos",
+      "description": "Componentes y funcionamiento de los sistemas informáticos.",
+      "icon": "💾"
+    }
+  ]
+}

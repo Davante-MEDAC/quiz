@@ -1,0 +1,2066 @@
+{
+  "id": "digitalizacion",
+  "title": "Digitalización Aplicada. Sec. Productivos",
+  "description": "Cuestionario sobre digitalización aplicada a los sectores productivos.",
+  "icon": "🚀",
+  "items": [
+    {
+      "kind": "lesson",
+      "name": "La IV Industrial",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Quién acuñó el término 'Cuarta Revolución Industrial'?",
+          "options": [
+            "Bill Gates",
+            "Klaus Schwab",
+            "Elon Musk",
+            "Tim Berners-Lee"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Klaus Schwab, fundador del Foro Económico Mundial, acuñó el término 'Cuarta Revolución Industrial'."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue la característica principal de la Primera Revolución Industrial?",
+          "options": [
+            "La electrificación",
+            "La automatización",
+            "La transición de la producción manual a la mecanizada",
+            "La digitalización"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La Primera Revolución Industrial se caracterizó principalmente por la transición de la producción manual a la mecanizada, especialmente en sectores como el textil, la minería y la metalurgia."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿En qué periodo temporal se desarrolló la Segunda Revolución Industrial?",
+          "options": [
+            "Finales del siglo XVIII - mediados del siglo XIX",
+            "1870 - Segunda Guerra Mundial",
+            "Desde el fin de la Segunda Guerra Mundial hasta nuestros días",
+            "Siglo XXI hasta la actualidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La Segunda Revolución Industrial se desarrolló entre 1870 y la Segunda Guerra Mundial."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnología NO es característica de la Segunda Revolución Industrial?",
+          "options": [
+            "La electricidad",
+            "El motor de combustión interna",
+            "La producción en cadena",
+            "Internet"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Internet es característico de la Tercera Revolución Industrial. La Segunda se caracterizó por la electricidad, el motor de combustión interna y la producción en cadena."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica distintiva de la digitalización en los sectores productivos?",
+          "options": [
+            "Reducción de la conectividad",
+            "Automatización de tareas repetitivas",
+            "Menor flexibilidad operativa",
+            "Disminución de la personalización"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La automatización de tareas repetitivas y rutinarias es una característica distintiva clave de la digitalización, que reduce errores y aumenta la velocidad de producción."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas THD?",
+          "options": [
+            "Tecnologías de Hardware Digital",
+            "Tecnologías Habilitadoras Digitales",
+            "Transformación Híbrida Digital",
+            "Tendencias de Hardware Desarrollado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "THD significa Tecnologías Habilitadoras Digitales, que son tecnologías identificadas como impulsoras de innovaciones en diversos sectores económicos."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas CPS en el contexto de sistemas ciberfísicos?",
+          "options": [
+            "Computer Processing Systems",
+            "Cyber-Physical Systems",
+            "Connected Production Systems",
+            "Centralized Platform Systems"
+          ],
+          "correctAnswer": 1,
+          "explanation": "CPS significa Cyber-Physical Systems (Sistemas Ciberfísicos), que son sistemas integrados que combinan componentes físicos y virtuales."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una función principal de los sistemas ciberfísicos?",
+          "options": [
+            "Desconectar los procesos físicos de los virtuales",
+            "Monitorear y controlar procesos físicos en tiempo real",
+            "Reducir la automatización",
+            "Eliminar el uso de sensores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los sistemas ciberfísicos están diseñados para monitorear y controlar procesos físicos en tiempo real, utilizando información obtenida a través de sensores y actuadores."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "En el caso práctico farmacéutico, ¿en qué porcentaje se redujo el tiempo de desarrollo de nuevos medicamentos?",
+          "options": [
+            "20%",
+            "25%",
+            "30%",
+            "35%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según el caso práctico del laboratorio farmacéutico, la implementación de tecnologías de la Cuarta Revolución Industrial redujo el tiempo de desarrollo de nuevos medicamentos en un 30%."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál NO es una característica de las Tecnologías Habilitadoras Digitales (THD)?",
+          "options": [
+            "Alto nivel de investigación y desarrollo",
+            "Ciclos de innovación ágiles",
+            "Fuerte inversión de capital en infraestructura",
+            "Baja integración de avances físicos y digitales"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Las THD se caracterizan por la integración de avances tanto físicos como digitales, no por una baja integración."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue el impacto de la línea de ensamblaje en la fábrica de Ford en 1913?",
+          "options": [
+            "Redujo el tiempo de ensamblaje de 12 horas a 1 hora y 30 minutos",
+            "Aumentó el tiempo de ensamblaje",
+            "No tuvo impacto significativo",
+            "Solo mejoró la calidad, no la velocidad"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La implementación de la línea de ensamblaje en Ford redujo el tiempo necesario para ensamblar un automóvil Modelo T de más de 12 horas a aproximadamente 1 hora y 30 minutos."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnología permite la 'personalización masiva' en la Cuarta Revolución Industrial?",
+          "options": [
+            "Máquinas de vapor",
+            "Líneas de ensamblaje tradicionales",
+            "Tecnologías digitales y análisis de datos",
+            "Telégrafos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las tecnologías digitales permiten la personalización masiva de productos y servicios, adaptándose a las necesidades específicas de cada cliente mediante análisis de datos."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un desafío importante en la implementación de sistemas ciberfísicos?",
+          "options": [
+            "Menor eficiencia energética",
+            "Ciberseguridad",
+            "Reducción de la automatización",
+            "Menor conectividad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ciberseguridad es un desafío importante porque la interconexión de sistemas físicos y virtuales aumenta la exposición a amenazas cibernéticas como malware y ataques de denegación de servicio."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de Automatix, ¿qué tecnología se implementó para mejorar el ensamblaje?",
+          "options": [
+            "Máquinas de escribir",
+            "Sensores inteligentes y brazos robóticos",
+            "Telares automáticos",
+            "Motores de combustión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Automatix implementó sensores inteligentes en cada estación de trabajo y brazos robóticos que ajustan automáticamente la posición de los componentes según las mediciones de los sensores."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a la Tercera Revolución Industrial?",
+          "options": [
+            "Máquinas de vapor",
+            "Producción en cadena",
+            "Automatización, informática y globalización",
+            "Impresión 3D exclusivamente"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La Tercera Revolución Industrial está marcada por la automatización, la informática, la tecnología digital y la globalización."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un impacto de la interconexión de tecnologías en la cadena de valor?",
+          "options": [
+            "Aumento de costos operativos",
+            "Reducción de la eficiencia",
+            "Optimización de procesos de producción, logística y distribución",
+            "Menor personalización"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La integración de tecnologías permite una optimización más precisa y eficiente de los procesos de producción, logística y distribución."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "Según el Foro Económico Mundial, ¿cuántos empleos podrían crearse para 2025 debido a la automatización e IA?",
+          "options": [
+            "85 millones",
+            "97 millones",
+            "50 millones",
+            "120 millones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el informe del Foro Económico Mundial, se anticipa la creación de 97 millones de nuevos empleos para 2025, focalizados en informática, tecnología y habilidades socioemocionales."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué elementos fusiona la Cuarta Revolución Industrial?",
+          "options": [
+            "Solo lo físico y lo mecánico",
+            "Lo físico, lo digital y lo biológico",
+            "Solo lo digital y lo virtual",
+            "Solo lo biológico y lo químico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La Cuarta Revolución Industrial representa una era de transformación impulsada por avances tecnológicos que fusionan lo físico, lo digital y lo biológico."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de la 'analítica avanzada' en los sectores productivos?",
+          "options": [
+            "Reducir la recopilación de datos",
+            "Identificar patrones, tendencias y oportunidades de mejora",
+            "Eliminar el uso de inteligencia artificial",
+            "Disminuir la velocidad de procesamiento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La analítica avanzada facilita la recopilación, procesamiento y análisis de grandes volúmenes de datos (big data) mediante algoritmos y herramientas de IA, permitiendo identificar patrones, tendencias y oportunidades de mejora."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué período de tiempo se considera para el potencial transformador de las THD?",
+          "options": [
+            "5-8 años",
+            "10-15 años",
+            "20-25 años",
+            "2-3 años"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las Tecnologías Habilitadoras Digitales tienen el potencial de causar importantes transformaciones en la economía y la sociedad en los próximos 10-15 años."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "En la evolución del análisis de datos a través de las revoluciones industriales, ¿qué caracteriza a la Revolución 4.0?",
+          "options": [
+            "Datos escritos a mano en pergaminos",
+            "Máquinas de escribir y calculadoras mecánicas",
+            "Programación en COBOL y FORTRAN",
+            "Científicos de datos usando machine learning y análisis predictivo"
+          ],
+          "correctAnswer": 3,
+          "explanation": "En la Revolución Industrial 4.0, el puesto se amplía para ser científico de datos, trabajando con grandes volúmenes de información y utilizando machine learning, análisis predictivo y minería de datos."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un beneficio de la 'conectividad' en la digitalización de sectores productivos?",
+          "options": [
+            "Reducción de la interconexión de dispositivos",
+            "Monitorización en tiempo real y toma de decisiones basada en información actualizada",
+            "Eliminación de las redes IoT",
+            "Disminución de la recopilación de datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La conectividad facilita la interconexión de dispositivos, máquinas y sistemas a través de IoT, permitiendo la monitorización en tiempo real, la recopilación de datos y la toma de decisiones basada en información actualizada."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué aspecto NO es mencionado como desafío en la implementación de sistemas ciberfísicos?",
+          "options": [
+            "Ciberseguridad",
+            "Interoperabilidad",
+            "Privacidad y ética",
+            "Reducción de costos"
+          ],
+          "correctAnswer": 3,
+          "explanation": "La reducción de costos es más bien un beneficio de la digitalización. Los desafíos mencionados incluyen ciberseguridad, interoperabilidad, privacidad y ética, y formación y capacitación."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica de 'flexibilidad y agilidad' en la digitalización?",
+          "options": [
+            "Menor capacidad de adaptación al mercado",
+            "Procesos rígidos e inflexibles",
+            "Capacidad de reconfigurar procesos y sistemas de manera ágil",
+            "Resistencia al cambio operativo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La flexibilidad y agilidad permite a las empresas adaptarse rápidamente a cambios en el mercado, la demanda del cliente o las condiciones operativas, con capacidad de reconfigurar procesos y sistemas de manera ágil."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué resultado obtuvo la empresa Automatix tras implementar sistemas ciberfísicos?",
+          "options": [
+            "Aumento de tiempos de ciclo",
+            "Mayor tasa de defectos",
+            "Reducción de tiempos de ciclo y mejora de la calidad",
+            "Pérdida de trazabilidad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Automatix logró una reducción de tiempos de ciclo (la línea de producción se volvió más ágil), mejora de la calidad (los sensores detectan desviaciones en tiempo real), mejor trazabilidad y mayor eficiencia energética."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Entornos IT y OT",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas IT en el contexto empresarial?",
+          "options": [
+            "Internet Technology",
+            "Tecnologías de la Información",
+            "Industrial Technology",
+            "Integrated Technology"
+          ],
+          "correctAnswer": 1,
+          "explanation": "IT significa Tecnologías de la Información, que se refiere al conjunto de tecnologías, sistemas y procesos utilizados para almacenar, recuperar, procesar y transmitir datos e información en una organización."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas OT en el ámbito industrial?",
+          "options": [
+            "Operational Technology",
+            "Tecnologías Operativas",
+            "Ambas respuestas son correctas",
+            "Office Technology"
+          ],
+          "correctAnswer": 2,
+          "explanation": "OT significa tanto Operational Technology en inglés como Tecnologías Operativas en español, refiriéndose a tecnologías utilizadas para monitorear, controlar y gestionar procesos físicos y operativos en entornos industriales."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las Tecnologías de la Información (IT)?",
+          "options": [
+            "Controlar procesos físicos de producción",
+            "Gestionar y manipular datos para facilitar la toma de decisiones",
+            "Automatizar robots industriales",
+            "Supervisar la cadena de suministro física"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El objetivo principal de IT es gestionar y manipular datos para facilitar la toma de decisiones, mejorar la eficiencia operativa y proporcionar información útil para la organización."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las Tecnologías Operativas (OT)?",
+          "options": [
+            "Gestionar bases de datos empresariales",
+            "Garantizar la operación segura y eficiente de los sistemas físicos",
+            "Desarrollar aplicaciones de software",
+            "Administrar redes informáticas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El objetivo principal de OT es garantizar la operación segura y eficiente de los sistemas físicos y la producción de bienes y servicios en entornos industriales."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de estructura organizativa tienden a adoptar las empresas digitales?",
+          "options": [
+            "Jerarquías rígidas y silos departamentales",
+            "Estructuras más planas y redes interconectadas",
+            "Organizaciones completamente centralizadas",
+            "Departamentos totalmente independientes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las empresas digitales tienden a adoptar estructuras más planas y redes interconectadas, lo que permite una toma de decisiones más rápida, comunicación más fluida y mayor capacidad de adaptación."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál NO es una característica de las Tecnologías de la Información (IT)?",
+          "options": [
+            "Se enfoca en la disponibilidad, integridad y confidencialidad de la información",
+            "Utiliza sensores y actuadores para controlar sistemas físicos",
+            "Utiliza redes de comunicación para transmitir datos",
+            "Se centra en la eficiencia y toma de decisiones basada en datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Utilizar sensores y actuadores para controlar sistemas físicos es una característica de OT, no de IT. IT se enfoca más en el procesamiento y gestión de datos e información."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué sistemas están incluidos en las Tecnologías Operativas (OT)?",
+          "options": [
+            "Sistemas de gestión de bases de datos",
+            "Aplicaciones de software empresarial",
+            "Sistemas SCADA y sistemas de control de procesos",
+            "Servicios en la nube"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las Tecnologías Operativas incluyen sistemas SCADA (Supervisory Control and Data Acquisition), sistemas de control de procesos, sistemas de automatización industrial y sistemas de gestión de activos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué significa SCADA?",
+          "options": [
+            "System Control and Data Analysis",
+            "Supervisory Control and Data Acquisition",
+            "Secure Control and Digital Automation",
+            "Smart Control and Data Application"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SCADA significa Supervisory Control and Data Acquisition (Supervisión, Control y Adquisición de Datos), que permite la supervisión y control remoto de procesos industriales."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja clave de la integración entre IT y OT?",
+          "options": [
+            "Reducción de la conectividad entre sistemas",
+            "Toma de decisiones informadas combinando datos operativos y empresariales",
+            "Separación completa de procesos físicos y digitales",
+            "Eliminación de la necesidad de personal técnico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La integración entre IT y OT permite tomar decisiones más informadas al combinar datos operativos en tiempo real de OT con datos empresariales históricos de IT."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una tecnología habilitadora digital clave en el entorno IT?",
+          "options": [
+            "Sistemas SCADA",
+            "Cloud computing",
+            "Sensores industriales",
+            "Controladores de procesos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cloud computing es una tecnología habilitadora digital clave en el entorno IT que permite el almacenamiento escalable de datos y la ejecución de aplicaciones en servidores remotos."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una tecnología habilitadora digital clave en el entorno OT?",
+          "options": [
+            "Big data y analítica",
+            "Seguridad cibernética",
+            "Internet de las cosas (IoT)",
+            "Inteligencia artificial"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El Internet de las cosas (IoT) es una tecnología habilitadora digital clave en el entorno OT que conecta dispositivos físicos y sensores para recopilar datos en tiempo real."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "Según McKinsey, ¿cuánto valor económico podría generar la implementación de tecnologías digitales en la cadena de suministro?",
+          "options": [
+            "500 mil millones de dólares",
+            "1 billón de dólares",
+            "1,5 billones de dólares",
+            "2 billones de dólares"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un informe de McKinsey estima que la implementación de tecnologías digitales en la cadena de suministro podría generar hasta 1,5 billones de dólares en valor económico."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera etapa en el proceso de transformación digital de una empresa?",
+          "options": [
+            "Adopción de tecnología",
+            "Evaluación y planificación",
+            "Formación y capacitación",
+            "Integración de sistemas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La primera etapa es la evaluación y planificación, donde se comprenden las necesidades de la empresa, se identifican áreas de mejora y se establece en cuáles actuar."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de Innovatech S.A., ¿qué departamentos fueron incluidos en el equipo multidisciplinario?",
+          "options": [
+            "Solo Producción y Logística",
+            "Producción, Logística, Marketing y Recursos Humanos",
+            "Solo IT y OT",
+            "Finanzas y Ventas únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El equipo multidisciplinario de Innovatech S.A. incluyó representantes de los Departamentos de Producción, Logística, Marketing y Recursos Humanos."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnología implementó Innovatech S.A. en el departamento de producción?",
+          "options": [
+            "Solo sistemas de gestión de almacenes",
+            "Un sistema de fabricación inteligente con sensores IoT y robótica colaborativa",
+            "Únicamente análisis de datos",
+            "Solo plataformas de aprendizaje en línea"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En producción, Innovatech implementó un sistema de fabricación inteligente que utiliza sensores y dispositivos IoT para monitorear máquinas, además de robótica colaborativa para optimizar el ensamblaje."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "En el caso de ABC Finanzas, ¿cuál fue el principal motivo para iniciar la transformación digital?",
+          "options": [
+            "Expansión internacional",
+            "Disminución en su cuota de mercado debido a competencia fintech",
+            "Cambio de regulaciones gubernamentales",
+            "Reducción de costos de personal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ABC Finanzas experimentó una disminución en su cuota de mercado debido a la creciente competencia de empresas fintech y las demandas cambiantes de los clientes."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál NO es una etapa del proceso de transformación digital?",
+          "options": [
+            "Evaluación y planificación",
+            "Cambio organizativo y cultural",
+            "Reducción de personal",
+            "Iteración y mejora continua"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La reducción de personal no es mencionada como una etapa del proceso de transformación digital. Las etapas incluyen evaluación, cambio cultural, adopción de tecnología, formación, etc."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué característica NO es típica de las redes industriales en el entorno OT?",
+          "options": [
+            "Proporcionan infraestructura de comunicación específica",
+            "Permiten interconexión de dispositivos en entornos industriales",
+            "Se enfocan principalmente en aplicaciones de oficina",
+            "Son utilizadas para sistemas de control industrial"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las redes industriales en OT no se enfocan en aplicaciones de oficina, sino que proporcionan infraestructura de comunicación específica para entornos industriales y control de procesos."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica distintiva de los sistemas SCADA modernos?",
+          "options": [
+            "No requieren medidas de seguridad",
+            "Utilizan tecnologías de ciberseguridad avanzadas",
+            "Solo funcionan en redes locales",
+            "No pueden procesar datos en tiempo real"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los sistemas SCADA modernos utilizan tecnologías de ciberseguridad avanzadas como firewalls industriales, segmentación de redes, autenticación de usuarios y cifrado de datos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la integración de sensores en la convergencia IT/OT?",
+          "options": [
+            "Solo el almacenamiento de datos históricos",
+            "La recopilación de datos en tiempo real para optimizar procesos de producción",
+            "Únicamente el control manual de procesos",
+            "Solo la reducción de costos de personal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La integración de sensores permite la recopilación de datos en tiempo real, que luego se pueden analizar para optimizar procesos de producción, requiriendo colaboración entre equipos de IT y OT."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un beneficio de la digitalización en el departamento de marketing?",
+          "options": [
+            "Eliminación completa de la interacción humana",
+            "Segmentación más precisa del mercado y comunicación más efectiva",
+            "Reducción total de los costos publicitarios",
+            "Automatización completa sin supervisión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En marketing, la digitalización permite el uso de análisis de datos, inteligencia artificial y personalización en tiempo real para una segmentación más precisa del mercado y comunicación más efectiva."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué incluye la adaptación digital en el departamento de recursos humanos?",
+          "options": [
+            "Solo la eliminación de puestos de trabajo",
+            "Sistemas de gestión del talento basados en la nube y análisis predictivo",
+            "Únicamente la reducción de beneficios laborales",
+            "Solo el trabajo remoto obligatorio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En recursos humanos, la digitalización incluye sistemas de gestión del talento basados en la nube, análisis predictivo para selección y retención de empleados, y formación continua a través de plataformas digitales."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un aspecto clave del cambio organizativo y cultural en la transformación digital?",
+          "options": [
+            "Mantener las jerarquías rígidas tradicionales",
+            "Fomentar una cultura de innovación, colaboración y adaptabilidad",
+            "Reducir la comunicación entre departamentos",
+            "Eliminar toda forma de capacitación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El cambio organizativo y cultural implica fomentar una cultura de innovación, colaboración y adaptabilidad que apoye la adopción de tecnologías digitales y la implementación de nuevos procesos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a los Sistemas de Control Industrial (ICS) en el entorno OT?",
+          "options": [
+            "Se enfocan únicamente en la gestión de documentos",
+            "Proporcionan control y supervisión de procesos físicos y operativos",
+            "Solo administran bases de datos",
+            "Únicamente manejan comunicaciones de oficina"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los Sistemas de Control Industrial (ICS) proporcionan el control y la supervisión de procesos físicos y operativos en entornos industriales, como plantas de fabricación y sistemas de energía."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "En la resolución del caso práctico de la unidad, ¿qué comprenden los directivos sobre la convergencia IT/OT?",
+          "options": [
+            "Que IT y OT deben mantenerse completamente separados",
+            "Que pueden implementar soluciones que aprovechen la convergencia de IT y OT",
+            "Que solo necesitan tecnologías IT",
+            "Que solo requieren sistemas OT tradicionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los directivos comprenden que pueden implementar soluciones que aprovechen la convergencia de IT y OT, como sistemas de IoT para recopilar datos en tiempo real y sistemas de análisis avanzados para optimizar procesos."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Tecnologías Habilitadoras Digitales - 5G, Cloud, Big Data, IoT, Ciberseguridad y Blockchain",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué significa 5G en el contexto de las telecomunicaciones?",
+          "options": [
+            "Quinto Gigabyte",
+            "Quinta Generación",
+            "Cinco Gigahertz",
+            "Grupo de 5 tecnologías"
+          ],
+          "correctAnswer": 1,
+          "explanation": "5G es la abreviatura de quinta generación, siendo la última evolución de las redes móviles y de comunicaciones inalámbricas, sucediendo al estándar 4G/LTE."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica distintiva de la latencia en redes 5G?",
+          "options": [
+            "Se mantiene igual que en 4G",
+            "Se reduce a milisegundos",
+            "Aumenta considerablemente",
+            "Solo mejora en áreas urbanas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Con el 5G, la latencia se reduce a milisegundos, lo que es crucial para aplicaciones que requieren respuestas instantáneas, como la realidad virtual, la conducción autónoma y la telemedicina."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas IaaS en cloud computing?",
+          "options": [
+            "Internet as a Service",
+            "Infrastructure as a Service",
+            "Information as a Service",
+            "Integration as a Service"
+          ],
+          "correctAnswer": 1,
+          "explanation": "IaaS significa Infrastructure as a Service (Infraestructura como Servicio), que provee acceso a recursos de infraestructura como servidores virtuales, almacenamiento y redes a través de Internet."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las 3 V que caracterizan el big data?",
+          "options": [
+            "Velocidad, Valor, Visibilidad",
+            "Volumen, Variedad, Velocidad",
+            "Virtual, Verificable, Viable",
+            "Versátil, Valioso, Variable"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las 3 V del big data son Volumen (enormes cantidades de datos), Variedad (datos estructurados, semiestructurados y no estructurados) y Velocidad (generación y procesamiento de datos en tiempo real)."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué significa IoT?",
+          "options": [
+            "Internet of Technology",
+            "Integration of Things",
+            "Internet of Things",
+            "Innovation of Technology"
+          ],
+          "correctAnswer": 2,
+          "explanation": "IoT significa Internet of Things (Internet de las Cosas), que se refiere a la interconexión de dispositivos físicos, objetos y sistemas a través de Internet para recopilar, intercambiar y procesar datos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los principales modelos de servicio en cloud computing?",
+          "options": [
+            "IaaS, PaaS, SaaS",
+            "IT, OT, IoT",
+            "TCP, UDP, HTTP",
+            "HTML, CSS, JavaScript"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Los tres modelos principales de servicio en cloud computing son IaaS (Infrastructure as a Service), PaaS (Platform as a Service) y SaaS (Software as a Service)."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de amenaza NO es específica del entorno OT?",
+          "options": [
+            "Ataques a Sistemas de Control Industrial (ICS)",
+            "Manipulación de datos y procesos industriales",
+            "Ataques de phishing por correo electrónico",
+            "Ataques de ransomware industrial"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ataques de phishing por correo electrónico son una amenaza típica del entorno IT, no específica de OT. Las otras opciones son amenazas específicas de entornos OT."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué significa DLT en el contexto de blockchain?",
+          "options": [
+            "Digital Learning Technology",
+            "Distributed Ledger Technology",
+            "Data Link Technology",
+            "Dynamic Logic Technology"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DLT significa Distributed Ledger Technology (Tecnología de Libro Mayor Distribuido), que permite diseñar sistemas informáticos que funcionan como bases de datos descentralizadas."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué porcentaje de ataques en redes empresariales son resultado de spear phishing exitoso?",
+          "options": [
+            "75%",
+            "85%",
+            "95%",
+            "100%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El 95% de los ataques en redes empresariales son el resultado de spear phishing exitoso, donde los atacantes se dirigen específicamente a individuos o grupos dentro de una organización."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja del 5G respecto a las ondas milimétricas?",
+          "options": [
+            "Mayor alcance que las frecuencias bajas",
+            "Velocidades ultrarrápidas",
+            "Menor consumo energético",
+            "Mayor penetración en edificios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las ondas milimétricas en 5G ofrecen velocidades ultrarrápidas, aunque tienen un alcance limitado en comparación con las bandas de frecuencia más bajas."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál NO es una capa de la arquitectura típica del IoT?",
+          "options": [
+            "Dispositivos y sensores",
+            "Conectividad",
+            "Plataforma de gestión",
+            "Interfaz de usuario final"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Las capas de la arquitectura IoT incluyen: dispositivos y sensores, conectividad, capa de red, plataforma de gestión, y aplicaciones y servicios. 'Interfaz de usuario final' no es una capa específica mencionada."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué desafío del big data se relaciona con la necesidad de tecnologías como Hadoop y Apache Spark?",
+          "options": [
+            "Almacenamiento",
+            "Procesamiento",
+            "Análisis",
+            "Privacidad y seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El procesamiento eficiente de grandes conjuntos de datos requiere tecnologías de procesamiento distribuido como Hadoop y Apache Spark, que pueden dividir y distribuir tareas en clústeres de computadoras."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de monitoreo de cultivos, ¿qué beneficio NO se menciona que logró María?",
+          "options": [
+            "Ahorro de agua del riego de forma eficiente",
+            "Optimización de la producción de tomates",
+            "Reducción del desperdicio y aumento de la calidad",
+            "Eliminación completa de plagas"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Los beneficios mencionados son el ahorro eficiente de agua, optimización de producción y reducción de desperdicio con aumento de calidad."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una similitud entre Blockchain y DLT?",
+          "options": [
+            "Ambos utilizan exclusivamente bloques encadenados",
+            "Ambos ofrecen descentralización y alta seguridad",
+            "Solo funcionan en redes públicas",
+            "Requieren la misma infraestructura técnica"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tanto Blockchain como DLT ofrecen descentralización, alta seguridad a través de criptografía avanzada y transparencia en el registro de transacciones."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnología de nube se describe como 'aplicaciones de software listas para usar a través de Internet'?",
+          "options": [
+            "IaaS",
+            "PaaS",
+            "SaaS",
+            "DaaS"
+          ],
+          "correctAnswer": 2,
+          "explanation": "SaaS (Software as a Service) proporciona aplicaciones de software listas para usar a través de Internet, generalmente mediante un modelo de suscripción, accesibles por navegador web."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica clave de las THD mencionada en la resolución del caso práctico?",
+          "options": [
+            "Requieren poca inversión inicial",
+            "Tienen ciclos de innovación lentos",
+            "Son intensivas en conocimiento",
+            "Solo afectan al sector tecnológico"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las THD son intensivas en conocimiento, requiriendo un alto grado de investigación y desarrollo en ciencia, tecnología o ingeniería."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de registro de certificados universitarios, ¿cuál es el principal beneficio de usar blockchain?",
+          "options": [
+            "Reducir costos de impresión",
+            "Eliminar la necesidad de verificación manual y reducir el riesgo de fraude",
+            "Acelerar el proceso de graduación",
+            "Permitir certificados digitales coloridos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El principal beneficio es eliminar la necesidad de solicitar y verificar manualmente certificados en papel, lo que ahorra tiempo y reduce el riesgo de fraude mediante un registro inmutable y verificable."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué fecha está relacionada con la primera transacción de Bitcoin por pizza?",
+          "options": [
+            "22/05/2009",
+            "22/05/2010",
+            "22/05/2011",
+            "22/05/2012"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El 22 de mayo de 2010, Laszlo Hanyecz pagó 10,000 bitcoins por dos pizzas entregadas en su casa, siendo la primera transacción registrada de Bitcoin."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un desafío específico de la implementación de 5G?",
+          "options": [
+            "Menor velocidad que 4G",
+            "Requiere mayor cantidad de transmisores para cobertura equivalente",
+            "No es compatible con dispositivos IoT",
+            "Solo funciona en interiores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La instalación de 5G requiere una mayor cantidad de transmisores para lograr una cobertura equivalente a las redes 4G existentes, y los proveedores enfrentan obstáculos para ubicar estas nuevas 'celdas'."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué protocolos utiliza la tecnología Blockchain?",
+          "options": [
+            "TCP/IP",
+            "HTTP/HTTPS",
+            "Peer-to-peer (P2P)",
+            "FTP/SFTP"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La tecnología Blockchain se basa en protocolos peer-to-peer (P2P) y busca ofrecer alta seguridad e inmutabilidad."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo del análisis predictivo en el caso práctico de monitoreo de cultivos?",
+          "options": [
+            "Predecir el precio de los tomates",
+            "Optimizar las condiciones de crecimiento mediante alertas automatizadas",
+            "Calcular los costos de producción",
+            "Determinar la fecha de plantación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el caso práctico, María recibe alertas si los niveles de humedad son demasiado bajos o si la temperatura es extrema, permitiendo ajustar el riego automáticamente y optimizar las condiciones de crecimiento."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de datos NO se menciona como ejemplo de datos no estructurados en big data?",
+          "options": [
+            "Texto",
+            "Audio",
+            "Vídeo",
+            "Bases de datos relacionales"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Las bases de datos relacionales son un ejemplo de datos estructurados (organizados en tablas con filas y columnas), no de datos no estructurados. Los datos no estructurados incluyen texto, audio y vídeo."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una diferencia clave entre Blockchain y DLT?",
+          "options": [
+            "Blockchain es más seguro que DLT",
+            "DLT es un término más amplio que abarca varias tecnologías, incluyendo Blockchain",
+            "Solo Blockchain puede ser descentralizado",
+            "DLT no puede ser transparente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DLT es un término más amplio que abarca una variedad de tecnologías de registro distribuido, mientras que Blockchain es una forma específica de DLT que utiliza bloques encadenados."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnología de comunicación NO se menciona para la conectividad en IoT?",
+          "options": [
+            "WiFi",
+            "Bluetooth",
+            "Zigbee",
+            "Ethernet"
+          ],
+          "correctAnswer": 3,
+          "explanation": "WiFi, Bluetooth, Zigbee, 3G, 4G y 5G como tecnologías de comunicación para IoT, pero no menciona específicamente Ethernet."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica distintiva de las THD en cuanto a su impacto temporal?",
+          "options": [
+            "Tienen efectos solo a corto plazo",
+            "Su impacto se limita a 5 años",
+            "Pueden causar transformaciones importantes en 10-15 años",
+            "Solo afectan tecnologías existentes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las THD tienen el potencial de causar importantes transformaciones en la economía y la sociedad en los próximos 10-15 años, según diversos estudios internacionales de prospectiva tecnológica."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Otras Tecnologías Habilitadoras Digitales",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las Tecnologías Habilitadoras Digitales?",
+          "options": [
+            "Reemplazar completamente las actividades humanas",
+            "Mejorar las actividades de cualquier disciplina con la convergencia de lo físico y digital",
+            "Crear nuevas formas de entretenimiento digital",
+            "Reducir costos de producción únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las Tecnologías Habilitadoras Digitales son disciplinas disruptivas que permitirán mejorar las actividades de cualquier disciplina, mejorando estas con la convergencia de lo físico y digital."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un pilar fundamental de la Inteligencia Artificial?",
+          "options": [
+            "Lógica y razonamiento",
+            "Aprendizaje",
+            "Representación del conocimiento",
+            "Programación tradicional"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Los pilares fundamentales de la IA incluyen lógica y razonamiento, aprendizaje, representación del conocimiento, percepción, y planificación y toma de decisiones. La programación tradicional no se menciona como un pilar fundamental."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de aprendizaje de IA utiliza datos sin etiquetar para encontrar patrones?",
+          "options": [
+            "Aprendizaje supervisado",
+            "Aprendizaje no supervisado",
+            "Aprendizaje por refuerzo",
+            "Aprendizaje automático"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El aprendizaje no supervisado utiliza datos sin etiquetar para encontrar patrones, mientras que el supervisado usa ejemplos etiquetados y el por refuerzo emplea retroalimentación del entorno."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre Realidad Virtual (VR) y Realidad Aumentada (AR)?",
+          "options": [
+            "VR es más barata que AR",
+            "VR sumerge completamente en entornos digitales, AR superpone elementos virtuales en el mundo real",
+            "AR requiere gafas especiales, VR no",
+            "VR solo funciona en interiores, AR en exteriores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La VR permite sumergirse completamente en entornos digitales generados por computadora, mientras que la AR combina elementos del mundo real con elementos virtuales, superponiendo información digital en el entorno físico."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué dispositivo se menciona específicamente como ejemplo de Realidad Mixta (MR)?",
+          "options": [
+            "Oculus Rift",
+            "Microsoft HoloLens",
+            "Google Glass",
+            "iPhone con ARKit"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Microsoft HoloLens como dispositivos que superponen objetos digitales en el mundo real mientras permiten ver y manipular el entorno real."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica clave que diferencia a los cobots de los robots industriales tradicionales?",
+          "options": [
+            "Son más rápidos",
+            "Son más baratos",
+            "Pueden operar de manera segura en colaboración directa con humanos",
+            "Consumen menos energía"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los cobots están diseñados para interactuar de forma segura con humanos en el mismo espacio de trabajo, a diferencia de los robots industriales tradicionales que suelen estar confinados a jaulas de seguridad."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿En qué porcentaje han demostrado los cobots aumentar la productividad empresarial?",
+          "options": [
+            "65%",
+            "75%",
+            "85%",
+            "95%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los cobots han demostrado ser altamente efectivos al trabajar en conjunto con los operarios, aumentando la productividad empresarial en un 85% en comparación con actividades independientes."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una característica de la cobótica?",
+          "options": [
+            "Seguridad",
+            "Colaboración",
+            "Programación intuitiva",
+            "Velocidad máxima"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Las características de la cobótica son: seguridad, colaboración, programación intuitiva, flexibilidad y eficiencia. La velocidad máxima no se menciona como una característica clave."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué son los gemelos digitales?",
+          "options": [
+            "Copias exactas de software",
+            "Representaciones digitales precisas de objetos físicos, procesos o sistemas",
+            "Algoritmos de inteligencia artificial duplicados",
+            "Bases de datos espejo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los gemelos digitales son representaciones digitales precisas de objetos físicos, procesos o sistemas, conectadas en tiempo real con sus contrapartes físicas."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué organización fue pionera en adoptar los gemelos digitales?",
+          "options": [
+            "Google",
+            "Microsoft",
+            "La NASA",
+            "Tesla"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La NASA fue una de las primeras organizaciones en adoptar los gemelos digitales, utilizándolos desde 2010 para crear simulaciones digitales de cápsulas espaciales y naves."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una funcionalidad clave de los gemelos digitales?",
+          "options": [
+            "Simulación y análisis",
+            "Mantenimiento predictivo",
+            "Diseño y desarrollo",
+            "Reemplazo físico directo"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Las funcionalidades clave incluyen simulación y análisis, mantenimiento predictivo, diseño y desarrollo, y trazabilidad y seguimiento. Los gemelos digitales no reemplazan físicamente los objetos."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es otro nombre para la impresión 3D?",
+          "options": [
+            "Fabricación sustractiva",
+            "Fabricación aditiva",
+            "Fabricación digital",
+            "Fabricación automática"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La impresión 3D también se conoce como fabricación aditiva, ya que crea objetos mediante la adición sucesiva de capas de material."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el método de impresión 3D más común?",
+          "options": [
+            "Estereolitografía (SLA)",
+            "Fusión y deposición de material (FDM)",
+            "Sinterización selectiva por láser (SLS)",
+            "Impresión 3D a chorro de tinta"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La Fusión y deposición de material (FDM) es el método más común, utilizando un filamento de plástico que se derrite y se extruye capa por capa."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué técnica de impresión 3D emplea un láser ultravioleta para solidificar resina líquida?",
+          "options": [
+            "FDM",
+            "SLA",
+            "SLS",
+            "Inkjet 3D"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La Estereolitografía (SLA) emplea un láser ultravioleta para solidificar resina líquida capa por capa, creando piezas de alta precisión y detalle."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué significa BIM?",
+          "options": [
+            "Basic Information Management",
+            "Building Information Modeling",
+            "Business Intelligence Model",
+            "Binary Information Matrix"
+          ],
+          "correctAnswer": 1,
+          "explanation": "BIM significa Building Information Modeling, un enfoque colaborativo basado en la creación y gestión de información digital de un producto o infraestructura durante todo su ciclo de vida."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un concepto básico de BIM?",
+          "options": [
+            "Modelado 3D",
+            "Información interoperable",
+            "Base de datos centralizada",
+            "Programación de robots"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Los conceptos básicos de BIM incluyen modelado 3D, información interoperable, base de datos centralizada, análisis y simulación, y gestión del ciclo de vida. La programación de robots no es parte de BIM."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de prótesis médicas, ¿qué material se utilizó para la impresión 3D?",
+          "options": [
+            "Plástico convencional",
+            "Metal",
+            "Material biocompatible y duradero",
+            "Resina básica"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Se empleó material biocompatible y duradero para fabricar la prótesis impresa en 3D para Carlos."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué beneficio específico de BIM se menciona en el caso práctico de fabricación de componentes?",
+          "options": [
+            "Reducción del tiempo de diseño únicamente",
+            "Evaluación de opciones de diseño y su impacto en la eficiencia energética",
+            "Aumento de la velocidad de construcción solamente",
+            "Reducción del número de trabajadores necesarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo BIM permitió evaluar diferentes opciones de diseño y su impacto en la eficiencia energética, entre otros beneficios como simulaciones de luz natural y cálculo preciso de materiales."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de la impresión 3D mencionada en la resolución del caso práctico?",
+          "options": [
+            "Mayor velocidad que métodos tradicionales",
+            "Menor costo siempre",
+            "Personalización",
+            "Mayor resistencia de materiales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Entre las ventajas de la impresión 3D se menciona la personalización, junto con el rápido desarrollo de prototipos, reducción de desperdicio de material y flexibilidad en el diseño."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un inconveniente de la impresión 3D?",
+          "options": [
+            "Imposibilidad de crear formas complejas",
+            "Costos iniciales elevados",
+            "Solo funciona con un tipo de material",
+            "Requiere siempre supervisión humana constante"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los inconvenientes mencionados incluyen costos iniciales elevados, capacidad limitada de producción y necesidad de habilidades específicas."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de sensores utilizan los cobots para detectar la presencia de humanos?",
+          "options": [
+            "Solo sensores de temperatura",
+            "Únicamente cámaras",
+            "Sensores de proximidad, cámaras y sistemas de control de fuerza",
+            "Solo sensores de movimiento"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los cobots están equipados con sensores avanzados y sistemas de seguridad que incluyen sensores de proximidad, cámaras y sistemas de control de fuerza para detectar la presencia de humanos."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué permite hacer el mantenimiento predictivo con gemelos digitales?",
+          "options": [
+            "Reparar automáticamente los equipos",
+            "Detectar anomalías y prever fallos antes de que ocurran",
+            "Eliminar la necesidad de mantenimiento",
+            "Acelerar el proceso de fabricación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Al monitorear constantemente los datos del gemelo digital, se pueden detectar anomalías y prever fallos antes de que ocurran, facilitando el mantenimiento preventivo y reduciendo el tiempo de inactividad."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué técnica de impresión 3D utiliza un láser para fusionar polvos de material?",
+          "options": [
+            "FDM",
+            "SLA",
+            "SLS",
+            "Fotopolimerización"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La Sinterización selectiva por láser (SLS) utiliza un láser para fusionar polvos de material, como poliamida o metal, capa por capa, creando objetos sólidos y duraderos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué aspecto de BIM permite la colaboración entre diferentes disciplinas?",
+          "options": [
+            "Solo el modelado 3D",
+            "La información interoperable",
+            "Únicamente la base de datos",
+            "Solo el análisis estructural"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La información interoperable permite la integración y el intercambio de datos entre diferentes disciplinas y fases del proyecto, facilitando la colaboración entre arquitectos, ingenieros, contratistas y propietarios."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué innovación ambiental se menciona respecto a la impresión 3D?",
+          "options": [
+            "Consume menos energía que otros métodos",
+            "No genera residuos",
+            "Se pueden reciclar residuos electrónicos para convertirlos en filamentos",
+            "Utiliza solo materiales naturales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La impresión 3D se pueden reciclar residuos electrónicos para convertirlos en filamentos de impresión 3D, reduciendo el impacto ambiental."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Tecnologías Habilitadoras Digitales (THD) en las Empresas",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las Tecnologías Habilitadoras Digitales?",
+          "options": [
+            "Reemplazar completamente a los trabajadores humanos",
+            "Mejorar la eficiencia y aumentar el rendimiento de las empresas",
+            "Reducir únicamente los costos operativos",
+            "Eliminar la necesidad de capacitación del personal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las THD son tecnologías disruptivas que presentan grandes mejoras y permiten a las empresas sacarle partido para aumentar su eficiencia y rendimiento."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "En el sector deportivo, ¿qué tipo de datos se recopilan para el análisis del rendimiento de los atletas?",
+          "options": [
+            "Solo datos de frecuencia cardíaca",
+            "Únicamente información de GPS",
+            "GPS, acelerómetros, monitores de frecuencia cardíaca y cámaras de seguimiento",
+            "Solo datos de tiempo de ejercicio"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Se utilizan una variedad de dispositivos y sensores, incluyendo GPS, acelerómetros, monitores de frecuencia cardíaca y cámaras de seguimiento para recopilar datos durante la práctica y competición."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué herramientas se mencionan específicamente para medir aspectos como distancia recorrida y velocidad en el deporte?",
+          "options": [
+            "Oliver y FieldWiz",
+            "GPS y Bluetooth",
+            "Fitbit y Garmin",
+            "Samsung y Apple Watch"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Herramientas como Oliver y FieldWiz permiten medir aspectos como distancia recorrida, aceleración, velocidad máxima y media, estadísticas de sprint, mapa de calor, etc."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "En el sector de la construcción, ¿para qué se utilizan principalmente los drones?",
+          "options": [
+            "Solo para entretenimiento",
+            "Inspecciones de obras y mapeo de terrenos",
+            "Únicamente para transporte de materiales",
+            "Solo para vigilancia de seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los drones se utilizan para inspecciones de obras (verificar progreso y detectar problemas) y mapeo de terrenos (crear modelos digitales del terreno y de elevación)."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas MDT y MDE en el contexto de la construcción?",
+          "options": [
+            "Mapas Digitales de Texto y Mapas Digitales de Estructura",
+            "Modelos Digitales del Terreno y Modelos Digitales de Elevación",
+            "Medición Digital de Terreno y Medición Digital de Elevación",
+            "Mapas de Diseño Técnico y Mapas de Desarrollo Estructural"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Especifica que 'estas imágenes se utilizan para crear modelos digitales del terreno (MDT) y modelos digitales de elevación (MDE)'."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "En el sector del marketing y comercio, ¿qué tecnología habilitadora digital se destaca como muy útil?",
+          "options": [
+            "Realidad virtual",
+            "Big data",
+            "Blockchain",
+            "Internet de las cosas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Establece claramente que 'una tecnología habilitadora digital muy útil en este sector es el big data'."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué permite hacer el big data en marketing?",
+          "options": [
+            "Solo reducir costos",
+            "Únicamente automatizar procesos",
+            "Segmentación de mercado y personalización de mensajes publicitarios",
+            "Solo mejorar la velocidad de internet"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El big data permite 'segmentación de mercado' y 'personalización de mensajes publicitarios' mediante el análisis de datos demográficos, geográficos, psicográficos y de comportamiento del consumidor."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué empresas se mencionan como ejemplos de adopción de tecnologías digitales?",
+          "options": [
+            "Microsoft, Google, Facebook y Twitter",
+            "Amazon, Walmart, Alibaba y Zara",
+            "Apple, Samsung, Sony y LG",
+            "Tesla, Ford, BMW y Toyota"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Empresas como Amazon, Walmart, Alibaba y Zara han adoptado tecnologías como IoT, big data, inteligencia artificial y ciberseguridad."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "En ciberseguridad, ¿qué significa MFA?",
+          "options": [
+            "Multi-Factor Authentication (Autenticación multifactor)",
+            "Multiple File Access",
+            "Managed Firewall Application",
+            "Multi-Frequency Analysis"
+          ],
+          "correctAnswer": 0,
+          "explanation": "MFA significa 'Autenticación multifactor' y 'asegura que solo usuarios autorizados puedan acceder a sistemas y aplicaciones'."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué es UBA en el contexto de ciberseguridad?",
+          "options": [
+            "Universal Backup Application",
+            "User Behavior Analytics (Análisis de comportamiento de usuarios)",
+            "Unified Business Architecture",
+            "Universal Browser Access"
+          ],
+          "correctAnswer": 1,
+          "explanation": "UBA es 'Análisis de comportamiento de usuarios' que 'detecta patrones anómalos en el uso de sistemas'."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "En el sector de la sanidad, ¿qué permite la telemedicina?",
+          "options": [
+            "Solo consultas presenciales",
+            "Consultas virtuales, diagnóstico remoto y monitoreo de pacientes",
+            "Únicamente venta de medicamentos",
+            "Solo programación de citas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La telemedicina permite 'consultas virtuales', 'diagnóstico remoto' y 'monitoreo de pacientes' a través de tecnologías de comunicación digital."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué significan las siglas HCE en el contexto sanitario?",
+          "options": [
+            "Hospital Central Electrónico",
+            "Historias Clínicas Electrónicas",
+            "Health Care Electronic",
+            "Hospital Clinical Equipment"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las HCE (historias clínicas electrónicas) son sistemas digitales que almacenan y gestionan la información médica de los pacientes de manera electrónica."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "En el sector social, ¿qué beneficios proporcionan las aplicaciones móviles educativas?",
+          "options": [
+            "Solo entretenimiento",
+            "Acceso a recursos educativos, personalización del aprendizaje y capacitación para el empleo",
+            "Únicamente comunicación social",
+            "Solo juegos educativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Múltiples beneficios: 'acceso a recursos educativos', 'personalización del aprendizaje', 'capacitación para el empleo' e 'inclusión digital'."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué es LIMS?",
+          "options": [
+            "Laboratory Information Management System",
+            "Local Internet Management System",
+            "Laboratory Internal Monitoring System",
+            "Laboratory Internet Management Software"
+          ],
+          "correctAnswer": 0,
+          "explanation": "LIMS es un 'Sistema de Gestión de Información de Laboratorio' (Laboratory Information Management System) usado para automatizar procesos del laboratorio."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de realidad virtual, ¿qué materia se estaba enseñando?",
+          "options": [
+            "Matemáticas",
+            "Historia",
+            "Anatomía y Fisiología",
+            "Literatura"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los estudiantes del curso de Anatomía y Fisiología necesitan comprender en detalle la estructura y el funcionamiento del cuerpo humano."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué beneficios se obtuvieron con la implementación de realidad virtual en educación?",
+          "options": [
+            "Solo reducción de costos",
+            "Mayor motivación, mejor visualización, mejor retención y simulaciones prácticas",
+            "Únicamente ahorro de tiempo",
+            "Solo modernización del aula"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los estudiantes que están más motivados, 'pueden visualizar estructuras anatómicas en detalle', 'la interacción mejora la retención de conocimientos' y 'los profesores pueden guiar simulaciones prácticas'."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica importante de las THD?",
+          "options": [
+            "Son tecnologías obsoletas",
+            "Son tecnologías disruptivas que presentan grandes mejoras",
+            "Solo funcionan en empresas grandes",
+            "No requieren capacitación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El texto establece claramente que 'las Tecnologías Habilitadoras Digitales son tecnologías disruptivas que presentan grandes mejoras'."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "En la automatización de la gestión de proyectos de construcción, ¿qué aspectos se automatizan?",
+          "options": [
+            "Solo el diseño arquitectónico",
+            "Programación de tareas, seguimiento de progreso y gestión de documentos",
+            "Únicamente la compra de materiales",
+            "Solo la contratación de personal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Tres áreas específicas: 'programación de tareas', 'seguimiento de progreso' mediante sensores IoT, y 'gestión de documentos' automatizados."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnologías de la nube se mencionan en el sector informático?",
+          "options": [
+            "Solo almacenamiento básico",
+            "Cloud computing, big data, machine learning y almacenamiento escalable",
+            "Únicamente correo electrónico",
+            "Solo navegación web"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las tecnologías clave de la nube incluyen específicamente: 'cloud computing', 'big data', 'machine learning (ML)' y 'almacenamiento escalable'."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué estudio se menciona sobre el uso de tecnología en educación?",
+          "options": [
+            "Un estudio de la UNESCO",
+            "Un estudio de la OCDE",
+            "Un estudio de la OMS",
+            "Un estudio del MIT"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según un estudio de la OCDE, los estudiantes que utilizan la tecnología de manera regular en sus actividades escolares tienden a obtener mejores resultados."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los aspectos clave mencionados en la resolución del caso práctico de la unidad?",
+          "options": [
+            "Solo prototipado rápido",
+            "Prototipado rápido, productos inteligentes, personalización, realidad inmersiva y tecnologías de nube",
+            "Únicamente diseño iterativo",
+            "Solo flexibilidad tecnológica"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los cinco aspectos clave son: 'prototipado rápido y diseño iterativo', 'productos inteligentes y conectados', 'personalización basada en big data', 'experiencias enriquecidas con realidad inmersiva' y 'flexibilidad y escalabilidad con tecnologías de la nube'."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "En el contexto de marketing digital, ¿qué estrategias se mencionan?",
+          "options": [
+            "Solo redes sociales",
+            "Marketing de contenido, SEO, publicidad en redes sociales, email marketing y comunidades online",
+            "Únicamente publicidad tradicional",
+            "Solo optimización web"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las estrategias de marketing digital incluyen 'marketing de contenido', 'optimización de motores de búsqueda (SEO)', 'publicidad en redes sociales', 'marketing por correo electrónico' y 'creación de comunidades en línea'."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué ventajas proporcionan los sistemas IDS/IPS en ciberseguridad?",
+          "options": [
+            "Solo almacenamiento de datos",
+            "Monitorean y bloquean actividades sospechosas en la red",
+            "Únicamente backup de información",
+            "Solo gestión de usuarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los sistemas de detección y prevención de intrusiones (IDS/IPS) monitorean y bloquean actividades sospechosas en la red."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "En el laboratorio clínico del caso práctico, ¿cuál era uno de los principales desafíos?",
+          "options": [
+            "Falta de personal médico",
+            "Volumen abrumador de datos generados diariamente",
+            "Problemas de espacio físico",
+            "Falta de equipamiento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el laboratorio clínico, cada día se procesan cientos de muestras de sangre, orina, tejidos y otros fluidos biológicos. La cantidad de datos generados es abrumadora."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué funciones ofrecen las plataformas de comercio electrónico?",
+          "options": [
+            "Solo catálogos de productos",
+            "Catálogos de productos, carritos de compra, opciones de pago seguras y gestión de inventario",
+            "Únicamente procesamiento de pagos",
+            "Solo diseño de páginas web"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Estas plataformas de comercio electrónico ofrecen una variedad de funciones, como catálogos de productos, carritos de compra, opciones de pago seguras y herramientas de gestión de inventario."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es uno de los principales objetivos de las Tecnologías Habilitadoras Digitales (THD)?",
+          "options": [
+            "Reducir costos únicamente",
+            "Mejorar la eficiencia empresarial y reducir errores",
+            "Eliminar empleos",
+            "Complicar los procesos empresariales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las THD tienen como objetivo mejorar la eficiencia de las empresas y reducir la posibilidad de errores, teniendo todo controlado en todo momento."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "En el sector deportivo, ¿qué tecnología permite medir aspectos como distancia recorrida, aceleración y velocidad?",
+          "options": [
+            "Blockchain",
+            "Herramientas como Oliver y FieldWiz",
+            "Impresión 3D",
+            "Realidad aumentada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Herramientas como Oliver y FieldWiz permiten medir aspectos como distancia recorrida, aceleración, velocidad máxima y media, estadísticas de sprint, mapa de calor, etc."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres fases del análisis de datos en el deporte?",
+          "options": [
+            "Comprar, vender, analizar",
+            "Recopilación, procesamiento y análisis e insights",
+            "Planificar, ejecutar, evaluar",
+            "Diseñar, implementar, mantener"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El funcionamiento del análisis de datos en el deporte se basa en tres fases: recopilación de datos, procesamiento de datos, y análisis e insights."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "En el sector de la construcción, ¿para qué se utilizan principalmente los drones?",
+          "options": [
+            "Solo para transportar materiales",
+            "Inspecciones de obras y mapeo de terrenos",
+            "Únicamente para marketing",
+            "Para reemplazar a los trabajadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los drones se utilizan para inspecciones de obras (verificar progreso y detectar problemas) y mapeo de terrenos (crear modelos digitales del terreno y de elevación)."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué son los MDT y MDE mencionados en el sector de la construcción?",
+          "options": [
+            "Métodos de Trabajo y Métodos de Evaluación",
+            "Modelos Digitales del Terreno y Modelos Digitales de Elevación",
+            "Máquinas de Trabajo y Máquinas de Elevación",
+            "Materiales de Trabajo y Materiales de Elevación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "MDT son Modelos Digitales del Terreno y MDE son Modelos Digitales de Elevación, creados a partir de imágenes aéreas capturadas por drones para ayudar en la planificación de proyectos."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "En el sector del marketing y comercio, ¿cuál es una de las principales aplicaciones del big data?",
+          "options": [
+            "Aumentar el precio de los productos",
+            "Segmentación de mercado y personalización de mensajes publicitarios",
+            "Reducir la calidad del servicio",
+            "Eliminar la competencia"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El big data permite segmentar el mercado dividiendo a los clientes en grupos específicos y personalizar mensajes publicitarios según sus intereses y comportamientos."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué función tienen los firewalls avanzados en el sector de la informática?",
+          "options": [
+            "Detectar patrones anómalos en el uso del sistema",
+            "Proteger la confidencialidad de los datos mediante algoritmos matemáticos",
+            "Controlar quién tiene acceso a los recursos",
+            "Filtrar el tráfico de red y proteger contra amenazas externas"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Los firewalls avanzados filtran el tráfico de red y protegen contra amenazas externas, bloqueando posibles amenazas que intentan acceder al sistema."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué significa MFA en el contexto de ciberseguridad?",
+          "options": [
+            "Método de Filtrado Avanzado",
+            "Autenticación Multifactor",
+            "Monitoreo de Fallos Automático",
+            "Máquina de Función Avanzada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "MFA significa Autenticación Multifactor, que asegura que solo usuarios autorizados puedan acceder a sistemas y aplicaciones mediante varias formas de verificación."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "En el sector de la sanidad, ¿qué permite la telemedicina?",
+          "options": [
+            "Solo realizar cirugías a distancia",
+            "Consultas virtuales, diagnóstico remoto y monitoreo de pacientes",
+            "Únicamente vender medicamentos online",
+            "Reemplazar completamente las consultas presenciales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La telemedicina permite consultas virtuales por videoconferencia, diagnóstico remoto mediante revisión de imágenes médicas, y monitoreo continuo de pacientes con dispositivos portátiles."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Qué son las HCE en el sector sanitario?",
+          "options": [
+            "Hospitales de Cuidados Especiales",
+            "Historias Clínicas Electrónicas",
+            "Herramientas de Cirugía Especializada",
+            "Hospitales de Cuidados Externos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "HCE son Historias Clínicas Electrónicas, sistemas digitales que almacenan y gestionan la información médica de los pacientes de manera electrónica."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "En el sector social, ¿qué beneficio principal aportan las aplicaciones móviles en educación?",
+          "options": [
+            "Solo entretenimiento",
+            "Acceso a recursos educativos y personalización del aprendizaje",
+            "Únicamente juegos educativos",
+            "Reemplazar completamente a los profesores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las aplicaciones móviles proporcionan acceso a recursos educativos (lecciones, tutoriales, libros electrónicos) y permiten personalización del aprendizaje adaptándose al nivel y ritmo de cada usuario."
+        },
+        {
+          "id": 36,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal desafío que enfrentaba el laboratorio clínico SaludTotal en el caso práctico?",
+          "options": [
+            "Falta de personal médico",
+            "Volumen de muestras, precisión y rapidez, y confidencialidad de datos",
+            "Problemas de ubicación",
+            "Falta de equipos médicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El laboratorio enfrentaba desafíos en la gestión de grandes volúmenes de muestras diarias, la necesidad de resultados precisos y rápidos, y el manejo confidencial de información de pacientes."
+        },
+        {
+          "id": 37,
+          "type": "multiple_choice",
+          "question": "¿Qué es un LIMS según el caso práctico del laboratorio clínico?",
+          "options": [
+            "Laboratorio de Investigación Médica Superior",
+            "Sistema de Gestión de Información de Laboratorio",
+            "Laboratorio de Imágenes Médicas Especializadas",
+            "Servicio de Logística Médica Integrada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "LIMS es un Sistema de Gestión de Información de Laboratorio que automatiza procesos, centraliza datos y mejora la gestión de muestras y resultados."
+        },
+        {
+          "id": 38,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de realidad virtual, ¿qué materia se estaba enseñando?",
+          "options": [
+            "Matemáticas avanzadas",
+            "Anatomía y Fisiología",
+            "Historia del arte",
+            "Programación informática"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El caso práctico de realidad virtual se aplicó en el curso de 'Anatomía y Fisiología' para ayudar a los estudiantes a comprender la estructura y funcionamiento del cuerpo humano."
+        },
+        {
+          "id": 39,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue el principal beneficio de usar realidad virtual en el aula según el caso práctico?",
+          "options": [
+            "Reducir costos de material",
+            "Mayor motivación estudiantil y mejor comprensión de estructuras anatómicas",
+            "Eliminar la necesidad de libros",
+            "Acelerar el tiempo de clase"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La realidad virtual resultó en estudiantes más motivados y comprometidos, mejor visualización de estructuras anatómicas, y mejor retención de conocimientos."
+        },
+        {
+          "id": 40,
+          "type": "multiple_choice",
+          "question": "¿Qué dispositivos se mencionan para la recopilación de datos en el sector deportivo?",
+          "options": [
+            "Solo cámaras de video",
+            "GPS, acelerómetros, monitores de frecuencia cardíaca y cámaras de seguimiento",
+            "Únicamente cronómetros",
+            "Solo aplicaciones móviles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se utilizan GPS, acelerómetros, monitores de frecuencia cardíaca y cámaras de seguimiento para recopilar datos durante la práctica y competición deportiva."
+        },
+        {
+          "id": 41,
+          "type": "multiple_choice",
+          "question": "En la automatización de la gestión de proyectos de construcción, ¿qué permite el seguimiento de progreso?",
+          "options": [
+            "Solo tomar fotografías",
+            "Monitorear actividades en tiempo real mediante sensores e IoT",
+            "Únicamente programar reuniones",
+            "Solo controlar el presupuesto"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mediante sensores y dispositivos IoT, los sistemas pueden monitorear el progreso de las actividades de construcción en tiempo real, permitiendo identificar desviaciones del plan."
+        },
+        {
+          "id": 42,
+          "type": "multiple_choice",
+          "question": "¿Qué estrategias de marketing digital se conocen?",
+          "options": [
+            "Solo publicidad tradicional",
+            "Marketing de contenido, SEO, publicidad en redes sociales y email marketing",
+            "Únicamente venta directa",
+            "Solo telemarketing"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El marketing digital incluye marketing de contenido, optimización de motores de búsqueda (SEO), publicidad en redes sociales, marketing por correo electrónico y creación de comunidades en línea."
+        },
+        {
+          "id": 43,
+          "type": "multiple_choice",
+          "question": "¿Qué sistemas se mencionan para la detección y prevención de intrusiones?",
+          "options": [
+            "Solo antivirus básicos",
+            "Sistemas IDS/IPS",
+            "Únicamente contraseñas",
+            "Solo copias de seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los sistemas de detección y prevención de intrusiones (IDS/IPS) monitorean y bloquean actividades sospechosas en la red."
+        },
+        {
+          "id": 44,
+          "type": "multiple_choice",
+          "question": "¿Qué permite el UBA (Análisis de Comportamiento de Usuarios)?",
+          "options": [
+            "Solo crear usuarios nuevos",
+            "Detectar patrones anómalos en el uso de sistemas",
+            "Únicamente cambiar contraseñas",
+            "Solo bloquear accesos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El UBA (Análisis de Comportamiento de Usuarios) detecta patrones anómalos en el uso de sistemas que pueden indicar problemas de seguridad o fraudes."
+        },
+        {
+          "id": 45,
+          "type": "multiple_choice",
+          "question": "En el contexto de cloud computing, ¿qué significa 'almacenamiento escalable'?",
+          "options": [
+            "Almacenamiento que solo crece",
+            "Almacenamiento flexible que se ajusta según las necesidades",
+            "Almacenamiento que nunca cambia",
+            "Almacenamiento solo para grandes empresas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El almacenamiento escalable es flexible y se ajusta según las necesidades de la empresa, permitiendo pagar solo por el espacio utilizado."
+        },
+        {
+          "id": 46,
+          "type": "multiple_choice",
+          "question": "¿Qué beneficio principal ofrece la interoperabilidad en las historias clínicas electrónicas?",
+          "options": [
+            "Solo reducir costos",
+            "Integración con otros sistemas de salud para una visión completa del paciente",
+            "Únicamente almacenar más datos",
+            "Solo acelerar consultas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La interoperabilidad permite que las HCE se integren con otros sistemas (laboratorio, imágenes médicas, recetas electrónicas) proporcionando una visión completa del historial médico."
+        },
+        {
+          "id": 47,
+          "type": "multiple_choice",
+          "question": "En el sector social, ¿qué permiten las plataformas de crowdfunding?",
+          "options": [
+            "Solo crear redes sociales",
+            "Recaudar fondos para proyectos sociales",
+            "Únicamente vender productos",
+            "Solo organizar eventos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las plataformas de crowdfunding permiten a las organizaciones sociales recaudar fondos de manera efectiva para sus proyectos sociales."
+        },
+        {
+          "id": 48,
+          "type": "multiple_choice",
+          "question": "¿Qué aspectos claves se mencionan en la resolución del caso práctico de la unidad?",
+          "options": [
+            "Solo reducción de costos",
+            "Prototipado rápido, productos conectados, personalización con big data, realidad inmersiva y tecnologías de nube",
+            "Únicamente automatización",
+            "Solo mejora de velocidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los aspectos claves incluyen prototipado rápido y diseño iterativo, productos inteligentes y conectados, personalización basada en big data, experiencias enriquecidas con realidad inmersiva, y flexibilidad con tecnologías de la nube."
+        },
+        {
+          "id": 49,
+          "type": "multiple_choice",
+          "question": "¿Qué empresas se mencionan como ejemplos de adopción de THD en el sector del marketing y comercio?",
+          "options": [
+            "Solo empresas locales",
+            "Amazon, Walmart, Alibaba y Zara",
+            "Únicamente startups",
+            "Solo empresas europeas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Empresas como Amazon, Walmart, Alibaba y Zara han adoptado tecnologías como IoT, big data, inteligencia artificial y ciberseguridad para mejorar sus operaciones."
+        },
+        {
+          "id": 50,
+          "type": "multiple_choice",
+          "question": "Según el estudio de la OCDE mencionado, ¿qué ocurre con los estudiantes que utilizan tecnología regularmente?",
+          "options": [
+            "Obtienen peores resultados",
+            "Tienden a obtener mejores resultados en pruebas estandarizadas",
+            "No hay diferencia en los resultados",
+            "Solo mejoran en matemáticas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el estudio de la OCDE mencionado, los estudiantes que utilizan la tecnología de manera regular en sus actividades escolares tienden a obtener mejores resultados en pruebas estandarizadas."
+        },
+        {
+          "id": 51,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja de la gestión de documentos automatizada en construcción?",
+          "options": [
+            "Solo reducir papel",
+            "Garantizar acceso a información actualizada y reducir errores por versiones incorrectas",
+            "Únicamente acelerar procesos",
+            "Solo ahorrar espacio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La gestión automatizada garantiza que todos los miembros del equipo tengan acceso a la información más actualizada y reduce el riesgo de errores causados por versiones incorrectas de documentos."
+        },
+        {
+          "id": 52,
+          "type": "multiple_choice",
+          "question": "¿Qué aplicaciones de la IA se mencionan específicamente en el sector informático?",
+          "options": [
+            "Solo chatbots",
+            "Automatización de procesos, detección de anomalías, asistentes virtuales y recomendaciones personalizadas",
+            "Únicamente seguridad",
+            "Solo análisis de datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las aplicaciones incluyen automatización de procesos mediante algoritmos de aprendizaje automático, detección de anomalías, asistentes virtuales (chatbots), y recomendaciones personalizadas."
+        },
+        {
+          "id": 53,
+          "type": "multiple_choice",
+          "question": "En el contexto de la telemedicina, ¿qué dispositivos médicos portátiles se mencionan?",
+          "options": [
+            "Solo termómetros",
+            "Monitores de presión arterial, glucómetros y dispositivos de electrocardiograma",
+            "Únicamente básculas",
+            "Solo pulsómetros"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se mencionan monitores de presión arterial, glucómetros y dispositivos de electrocardiograma como ejemplos de dispositivos médicos portátiles que envían datos continuamente."
+        },
+        {
+          "id": 54,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la inclusión digital en el sector social?",
+          "options": [
+            "Solo acceso a internet",
+            "Cerrar la brecha digital y promover la inclusión de comunidades marginadas",
+            "Únicamente reducir costos",
+            "Solo crear empleo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La inclusión digital facilita el acceso a recursos educativos y formativos, ayudando a cerrar la brecha digital y promover la inclusión de comunidades marginadas en la sociedad digital."
+        },
+        {
+          "id": 55,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre las funciones de planificación y seguimiento en las aplicaciones deportivas?",
+          "options": [
+            "No hay diferencia",
+            "Planificación crea entrenamientos personalizados, seguimiento monitorea progreso y evolución",
+            "Solo cambia la interfaz",
+            "Una es para entrenadores, otra para atletas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La planificación permite crear entrenamientos personalizados según objetivos y condición física, mientras que el seguimiento permite monitorear la evolución del progreso, distancia recorrida, tiempo y frecuencia cardíaca."
+        }
+      ]
+    }
+  ]
+}

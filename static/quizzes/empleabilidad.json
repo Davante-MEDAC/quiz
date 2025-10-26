@@ -1,0 +1,2209 @@
+{
+  "id": "empleabilidad",
+  "title": "Itinerario Personal para la Empleabilidad",
+  "description": "Fundamentos de bases de datos, incluyendo conceptos clave, estructuras y operaciones básicas.",
+  "icon": "💼",
+  "items": [
+    {
+      "kind": "lesson",
+      "name": "Prevención de Riesgos Laborales",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué se entiende por prevención de riesgos laborales?",
+          "options": [
+            "Solo las actividades de seguridad en el trabajo",
+            "El conjunto de actividades que buscan promover la seguridad y salud de los trabajadores mediante la identificación, evaluación y control de peligros y riesgos",
+            "Únicamente la formación en prevención",
+            "Las medidas de emergencia ante accidentes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La prevención de riesgos laborales es el conjunto de actividades que buscan promover la seguridad y salud de los trabajadores en el desarrollo de sus labores, actuando mediante la identificación, evaluación y control de los peligros y riesgos asociados al entorno laboral."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "Según la Organización Mundial de la Salud (OMS), ¿cómo se define la salud?",
+          "options": [
+            "La ausencia de enfermedad",
+            "El estado completo de bienestar físico, psíquico y social, no meramente la ausencia de enfermedad",
+            "Solo el bienestar físico",
+            "La capacidad de trabajar sin limitaciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La OMS define la salud como el estado completo de bienestar físico, psíquico y social, no meramente la ausencia de enfermedad."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los cuatro tipos de condiciones de trabajo inadecuadas que pueden generar factores de riesgo laboral?",
+          "options": [
+            "Físicas, químicas, biológicas y mecánicas",
+            "Ergonómicas, de seguridad, psicosociales y ambientales",
+            "Personales, organizacionales, técnicas y sociales",
+            "Individuales, colectivas, materiales y humanas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los cuatro tipos de condiciones de trabajo inadecuadas son: ergonómicas (adaptabilidad a las condiciones fisiológicas), de seguridad (salvaguarda del trabajador), psicosociales (bienestar mental) y ambientales (calidad ambiental del entorno)."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal objetivo de la salud laboral?",
+          "options": [
+            "Reducir los costos de la empresa",
+            "Promover y mantener el más alto grado de bienestar físico, mental y social de los trabajadores",
+            "Aumentar la productividad",
+            "Cumplir con la legislación únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La salud laboral se ocupa de promover y mantener el más alto grado de bienestar físico, mental y social de los trabajadores en todas las ocupaciones."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué disciplina se encarga de minimizar los accidentes en el trabajo?",
+          "options": [
+            "Higiene industrial",
+            "Medicina del trabajo",
+            "Seguridad laboral",
+            "Ergonomía"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La seguridad laboral es la disciplina que se encarga de minimizar los accidentes en el trabajo."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función de la ergonomía en el ámbito laboral?",
+          "options": [
+            "Tratar enfermedades profesionales",
+            "La adaptación del puesto de trabajo y de las tareas a desarrollar por el trabajador",
+            "Minimizar accidentes laborales",
+            "Evitar que los trabajadores enfermen por su actividad laboral"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ergonomía tiene como función la adaptación del puesto de trabajo y de las tareas a desarrollar por el trabajador."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "Según las estadísticas mencionadas en el documento, ¿cuántas personas pierden la vida cada día por accidentes laborales en España?",
+          "options": [
+            "Una persona",
+            "Dos personas",
+            "Tres personas",
+            "Cinco personas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, actualmente en España dos personas pierden la vida cada día por accidentes laborales, y este porcentaje ha aumentado desde el año 2021."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué artículos de la Constitución Española establecen la obligación de los poderes públicos de velar por la seguridad e higiene en el trabajo?",
+          "options": [
+            "Artículos 14 y 29",
+            "Artículos 40.2 y 43",
+            "Artículos 4 y 19",
+            "Artículos 18 al 22"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los artículos 40.2 y 43 de la Constitución Española establecen la obligación de los poderes públicos de velar por la seguridad e higiene en el trabajo."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el derecho de los trabajadores que les permite interrumpir su actividad y abandonar el puesto en caso de riesgo grave e inminente?",
+          "options": [
+            "Derecho de información",
+            "Derecho de formación",
+            "Derecho de resistencia",
+            "Derecho de vigilancia de la salud"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El derecho de resistencia es el que permite al trabajador interrumpir su actividad y abandonar el puesto de trabajo en caso de riesgo grave e inminente."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "Según la LPRL, ¿qué derecho tiene el empresario respecto a los trabajadores?",
+          "options": [
+            "Derecho a la vigilancia de la salud",
+            "Exigir que el trabajador cumpla las obligaciones derivadas de su puesto de trabajo y las medidas de seguridad e higiene",
+            "Derecho de formación gratuita",
+            "Derecho de información y consulta"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según los artículos 14 y 29 de la LPRL, el empresario tiene derecho a exigir que el trabajador cumpla las obligaciones derivadas de su puesto de trabajo y las medidas de seguridad e higiene que se adopten."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las obligaciones específicas del empresario en situaciones de riesgo grave e inminente según el artículo 21 LPRL?",
+          "options": [
+            "Solo informar a los trabajadores",
+            "Informar a los trabajadores, adoptar medidas para que puedan interrumpir su actividad y disponer lo necesario para que adopten medidas autónomas",
+            "Únicamente evacuar el lugar de trabajo",
+            "Solo adoptar medidas preventivas generales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En situaciones de riesgo grave e inminente, el empresario debe: informar lo antes posible a todos los trabajadores afectados, adoptar medidas para que puedan interrumpir su actividad y abandonar el lugar si es necesario, y disponer lo necesario para que cualquier trabajador pueda adoptar medidas autónomas para evitar el peligro."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una de las principales obligaciones de los trabajadores en materia de prevención?",
+          "options": [
+            "Proporcionar equipos de protección",
+            "Utilizar adecuadamente las máquinas, herramientas y equipos de trabajo",
+            "Realizar evaluaciones de riesgo",
+            "Contratar servicios de prevención"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las principales obligaciones de los trabajadores es utilizar adecuadamente las máquinas, las herramientas, las sustancias peligrosas, los equipos de transporte y cualquier otro medio necesario para llevar a cabo su actividad laboral."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué modalidad de servicio de prevención es obligatoria para empresas con actividades peligrosas y más de 250 trabajadores?",
+          "options": [
+            "Modalidad personal",
+            "Modalidad delegada",
+            "Servicio de prevención propio",
+            "Servicio de prevención externo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El servicio de prevención propio es obligatorio cuando la actividad es peligrosa y la empresa tiene más de 250 trabajadores."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los requisitos para aplicar la modalidad personal de servicio de prevención?",
+          "options": [
+            "Menos de 25 trabajadores en cualquier caso",
+            "Empresa de menos de 10 trabajadores (o menos de 25 con un único centro), actividades no peligrosas, empresario presente habitualmente y con formación de nivel básico",
+            "Solo que el empresario tenga formación",
+            "Únicamente empresas familiares"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para la modalidad personal se requiere: empresa de menos de 10 trabajadores (o menos de 25 con un único centro de trabajo), que las actividades no sean peligrosas, que el empresario desarrolle habitualmente su actividad en el centro y que tenga formación de nivel básico (30-50 horas)."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué factores pueden derivar en riesgos laborales relacionados con los equipos de trabajo?",
+          "options": [
+            "Solo las herramientas manuales",
+            "Elementos de transporte, mobiliario, herramientas y equipos informáticos",
+            "Únicamente la maquinaria pesada",
+            "Solo los equipos eléctricos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los riesgos relacionados con equipos de trabajo incluyen elementos de transporte, mobiliario, herramientas y equipos informáticos."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué incluye la carga psicológica como factor de riesgo laboral?",
+          "options": [
+            "Solo el peso físico del trabajo",
+            "Elevado nivel de responsabilidad, rapidez para la toma de decisiones y volumen grande de información",
+            "Únicamente el estrés por ruido",
+            "Solo la fatiga física"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La carga psicológica incluye elevado nivel de responsabilidad, rapidez para la toma de decisiones y volumen grande de información."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cómo se clasifican los daños laborales?",
+          "options": [
+            "Solo en accidentes y enfermedades",
+            "En patologías específicas (causadas directamente por el trabajo) y patologías inespecíficas (pueden ser causadas por el trabajo u otras circunstancias)",
+            "Únicamente en físicos y psicológicos",
+            "Solo en graves y leves"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los daños laborales se clasifican en patologías específicas (causadas directamente por el trabajo) y patologías inespecíficas (pueden ser causadas por el trabajo desarrollado, pero también por otras circunstancias ajenas a él)."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "En el caso práctico del restaurante La Herradura, ¿cuáles son algunos de los factores de riesgo identificados en la cocina?",
+          "options": [
+            "Solo los cuchillos",
+            "Cocina, cuchillos y objetos punzantes o cortantes, cafeteras y máquinas que desprendan calor",
+            "Únicamente la temperatura",
+            "Solo los productos de limpieza"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el restaurante se identificaron como factores de riesgo en la cocina: la cocina misma, cuchillos y objetos punzantes o cortantes, cafeteras y otro tipo de máquina eléctrica o que desprenda calor."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué debe hacer una empresaria ante la sospecha de incendio según el caso práctico 2?",
+          "options": [
+            "Continuar la producción hasta confirmar el incendio",
+            "Solo llamar a los bomberos",
+            "Informar a los trabajadores del riesgo, detener la actividad inmediatamente y proceder a la evacuación",
+            "Esperar a que llegue personalmente para tomar decisiones"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Ante riesgo grave e inminente como sospecha de incendio, debe: informar a los trabajadores del riesgo y medidas adoptadas, detener la actividad inmediatamente y proceder a la evacuación según el protocolo antiincendios."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres disciplinas principales que involucra la práctica de la salud laboral?",
+          "options": [
+            "Seguridad laboral, higiene industrial y medicina del trabajo",
+            "Solo medicina y seguridad",
+            "Ergonomía, psicología y medicina",
+            "Prevención, protección y reparación"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las tres disciplinas principales mencionadas son: seguridad laboral (minimizar accidentes), higiene industrial (evitar enfermedades por actividad laboral) y medicina del trabajo (reparación cuando ya se ha producido el daño)."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué incluyen los agentes físicos como factores de riesgo?",
+          "options": [
+            "Solo la temperatura",
+            "Temperatura, iluminación, ruido, vibraciones y ventilación",
+            "Únicamente el ruido",
+            "Solo la ventilación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los agentes físicos incluyen temperatura, iluminación, ruido, vibraciones y ventilación."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué es la cultura preventiva en el ámbito laboral?",
+          "options": [
+            "Solo la formación en prevención",
+            "Inculcar a todos los niveles empresariales la importancia de la prevención de riesgos, con compromiso de la empresa y participación de los trabajadores",
+            "Únicamente las normas de seguridad",
+            "Solo las responsabilidades legales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La cultura preventiva se trata de inculcar a todos los niveles empresariales la importancia de la prevención de riesgos, destacando el compromiso de la empresa y la participación de los trabajadores."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principio fundamental de la prevención de riesgos laborales?",
+          "options": [
+            "La responsabilidad individual",
+            "La integración de la prevención en todos los niveles de la empresa",
+            "Solo el cumplimiento normativo",
+            "La formación continua únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El principio fundamental de la prevención es la integración de la prevención en todos los niveles de la empresa."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de responsabilidades acarrea el incumplimiento de las obligaciones por parte del empresario?",
+          "options": [
+            "Solo administrativas",
+            "Únicamente penales",
+            "En materia de seguridad social, administrativas, civiles y penales",
+            "Solo civiles"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El incumplimiento de las obligaciones por el empresario acarrea responsabilidades en materia de seguridad social, administrativas, civiles y penales."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se puede aplicar un servicio de prevención externo?",
+          "options": [
+            "Siempre que la empresa lo desee",
+            "Solo en empresas pequeñas",
+            "Cuando las modalidades personal o delegada sean insuficientes para algunas actividades, o por decisión propia si no es obligatorio un servicio propio",
+            "Únicamente cuando es obligatorio"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El servicio de prevención externo se puede aplicar cuando las modalidades personal o delegada sean insuficientes para algunas actividades, o por decisión propia, siempre y cuando no sea obligatorio un servicio propio."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué consecuencias puede tener el incumplimiento de las obligaciones por parte de los trabajadores?",
+          "options": [
+            "Solo amonestaciones verbales",
+            "Únicamente despido",
+            "Responsabilidad disciplinaria, civil y penal",
+            "Solo responsabilidad económica"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El incumplimiento de las obligaciones por parte de los trabajadores puede conllevar responsabilidad disciplinaria (sanciones por la dirección), civil (indemnización si se origina accidente) y penal (penas de prisión si se causan lesiones)."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica del derecho de formación de los trabajadores en prevención?",
+          "options": [
+            "Debe ser pagada por el trabajador",
+            "Solo puede ser teórica",
+            "Debe ser teórica, práctica, suficiente, gratuita y adecuada al puesto de trabajo y dentro de la jornada laboral",
+            "Solo se imparte fuera del horario laboral"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El derecho de formación debe ser teórica, práctica, suficiente, gratuita y adecuada al puesto de trabajo y dentro de la jornada laboral."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué función ejerce la medicina del trabajo en la salud laboral?",
+          "options": [
+            "Prevenir accidentes",
+            "Una función de reparación cuando ya se ha producido el daño",
+            "Adaptar el puesto de trabajo",
+            "Evaluar riesgos ambientales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La medicina del trabajo ejerce una función de reparación cuando ya se ha producido el daño."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué debe incluir la vigilancia periódica de la salud de los trabajadores?",
+          "options": [
+            "Debe ser obligatoria para todos",
+            "Solo exámenes físicos",
+            "Siempre con el consentimiento del trabajador y respetando el derecho a la intimidad, dignidad y confidencialidad",
+            "Solo cuando hay accidentes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La vigilancia periódica de la salud debe realizarse siempre con el consentimiento del trabajador y respetando el derecho a la intimidad, dignidad y confidencialidad."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de la zapatería, ¿qué riesgos se identificaron en el taller?",
+          "options": [
+            "Solo herramientas cortantes",
+            "Maquinaria cortadora, punzones y material punzante, iluminación, ventilación, sustancias químicas como tintes y barnices, taburetes adecuados y horarios",
+            "Únicamente problemas de ventilación",
+            "Solo riesgos químicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el taller de la zapatería se identificaron múltiples riesgos: maquinaria cortadora, punzones y otro material punzante, iluminación, ventilación, sustancias químicas como tintes y barnices, taburetes adecuados y horarios."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué incluyen las condiciones psicosociales como factor de riesgo?",
+          "options": [
+            "Solo el ambiente físico",
+            "Aspectos relacionados con el bienestar mental",
+            "Únicamente la carga de trabajo",
+            "Solo las relaciones interpersonales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las condiciones psicosociales se relacionan con el bienestar mental del trabajador e incluyen aspectos como el nivel de responsabilidad, la toma de decisiones y el volumen de información a manejar."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo de minimizar los factores de riesgo en el centro de trabajo según la salud laboral?",
+          "options": [
+            "Solo cumplir con la ley",
+            "Lograr una gestión eficaz de recursos humanos, espíritu de participación, formación y coordinación relacionadas con la calidad de la seguridad laboral",
+            "Únicamente reducir costos",
+            "Solo evitar sanciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El objetivo de minimizar los factores de riesgo es lograr una gestión eficaz de recursos humanos, un espíritu de participación, formación y coordinación relacionadas con la calidad de la seguridad laboral."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Qué programa tienen a disposición los trabajadores autónomos para asesoramiento en PRL?",
+          "options": [
+            "Programa Autónomos Seguros",
+            "Prevención 10 (con evalua-T, Autopreven-T, Instruye-T y Stop riesgos laborales)",
+            "Sistema Nacional de Prevención",
+            "Programa Empresario Individual"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los trabajadores autónomos tienen a su disposición el programa 'Prevención 10' que actúa como servicio público de asesoramiento en PRL, formado por cuatro funcionalidades: evalua-T, Autopreven-T, Instruye-T y Stop riesgos laborales."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre patologías específicas e inespecíficas en daños laborales?",
+          "options": [
+            "No hay diferencia",
+            "Las específicas son más graves",
+            "Las específicas son causadas directamente por el trabajo, las inespecíficas pueden ser causadas por el trabajo o por otras circunstancias",
+            "Solo se diferencian en el tratamiento"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las patologías específicas son causadas directamente por el trabajo que se realiza, mientras que las patologías inespecíficas pueden ser causadas por el trabajo desarrollado, pero también por otras circunstancias ajenas a él que afectan al trabajador."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "¿Qué requisitos debe cumplir una empresa para aplicar la modalidad delegada de servicio de prevención?",
+          "options": [
+            "Solo tener menos de 100 trabajadores",
+            "Si es peligrosa máximo 250 trabajadores, si no es peligrosa máximo 500, el trabajador designado debe tener tiempo y medios suficientes y formación de nivel básico",
+            "Únicamente que el trabajador tenga formación",
+            "Solo empresas del sector servicios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para la modalidad delegada se requiere: si la actividad es peligrosa máximo 250 trabajadores (500 si no es peligrosa), el trabajador designado no debe tener dedicación exclusiva pero sí tiempo y medios suficientes, las actividades no cubiertas necesitarán servicio de prevención, y la persona delegada debe tener formación de nivel básico."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Evaluación de Riesgos en la Empresa",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las cinco etapas principales de la gestión de la prevención en una empresa?",
+          "options": [
+            "Planificar, ejecutar, controlar, evaluar y mejorar",
+            "Elaborar el plan de prevención, evaluar los riesgos laborales, planificar las actividades preventivas, ejecutar las actividades preventivas y realizar un seguimiento",
+            "Identificar, estimar, valorar, controlar y revisar",
+            "Analizar, clasificar, implementar, monitorear y actualizar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, las cinco etapas de la gestión de la prevención son: 1) Elaborar el plan de prevención, 2) Evaluar los riesgos laborales, 3) Planificar las actividades preventivas, 4) Ejecutar las actividades preventivas, 5) Realizar un seguimiento de las actividades preventivas."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué elementos debe incluir un plan de prevención de riesgos laborales?",
+          "options": [
+            "Solo los datos de la empresa y la política de prevención",
+            "Los datos de la empresa, la política de prevención, la estructura organizativa y la manera de organizar la prevención",
+            "Únicamente la evaluación de riesgos y las medidas preventivas",
+            "Solo la estructura organizativa y los recursos económicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El plan de prevención debe incluir cuatro elementos fundamentales: A) Los datos de la empresa, B) La política de prevención, C) La estructura organizativa, y D) La manera de organizar la prevención."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuándo debe realizarse una evaluación de riesgos inicial?",
+          "options": [
+            "Solo cuando ocurra un accidente laboral",
+            "En todos y cada uno de los puestos de trabajo, teniendo en cuenta la actividad de la empresa",
+            "Únicamente en los puestos de trabajo considerados peligrosos",
+            "Solo cuando lo solicite la inspección de trabajo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la ley, debe efectuarse una evaluación de riesgos inicial en todos y cada uno de los puestos de trabajo, considerando la actividad que desarrolla la empresa, las características de los puestos y de los trabajadores que los ocupan."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las dos etapas principales del proceso de evaluación de riesgos?",
+          "options": [
+            "Planificación y ejecución",
+            "Identificación y prevención",
+            "Clasificación de las actividades de trabajo y análisis de los riesgos laborales",
+            "Evaluación inicial y seguimiento"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El proceso de evaluación de riesgos se compone de dos etapas: 1) Clasificación de las actividades de trabajo (preparar un listado con las actividades y observar los posibles riesgos), y 2) Análisis de los riesgos laborales (que incluye identificar, estimar y valorar el riesgo)."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres fases del análisis de riesgos laborales?",
+          "options": [
+            "Planificar, implementar y evaluar",
+            "Identificar el riesgo, estimar el riesgo y valorar el riesgo",
+            "Detectar, analizar y controlar",
+            "Observar, medir y actuar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las tres fases del análisis de riesgos son: Fase 1 - Identificar el riesgo, Fase 2 - Estimar el riesgo (probabilidad y severidad), y Fase 3 - Valorar el riesgo (clasificación según prioridades y requerimientos de actuación)."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cómo se clasifican los niveles de probabilidad de que ocurra un daño?",
+          "options": [
+            "Muy alta, alta, media, baja",
+            "Probabilidad alta, probabilidad media, probabilidad baja",
+            "Siempre, frecuentemente, ocasionalmente, nunca",
+            "Inmediata, próxima, lejana"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La probabilidad se clasifica en tres categorías: 1) Probabilidad alta (el daño ocurrirá siempre o casi siempre), 2) Probabilidad media (sucederá a veces), 3) Probabilidad baja (puede ocurrir en raras ocasiones)."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres niveles de severidad del daño?",
+          "options": [
+            "Grave, moderado, leve",
+            "Extremadamente dañino, dañino, ligeramente dañino",
+            "Crítico, importante, menor",
+            "Alto impacto, medio impacto, bajo impacto"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres niveles de severidad son: Extremadamente dañino (intoxicaciones, procesos cancerígenos, amputaciones), Dañino (pequeñas fracturas, asma, hipoacusia), y Ligeramente dañino (irritaciones, cortes, dolores de cabeza)."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la clasificación de un riesgo con probabilidad alta y severidad extremadamente dañina?",
+          "options": [
+            "Riesgo moderado",
+            "Riesgo importante",
+            "Riesgo intolerable",
+            "Riesgo tolerable"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la tabla de clasificación, un riesgo con probabilidad alta y severidad extremadamente dañina se clasifica como 'Riesgo intolerable', que requiere prioridad inmediata y no se debe comenzar ni continuar el trabajo hasta que se reduzca el riesgo."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres grandes grupos de riesgos laborales?",
+          "options": [
+            "Físicos, químicos y biológicos",
+            "Riesgos de seguridad en el trabajo, riesgos de higiene industrial y riesgos ergonómicos y psicosociales",
+            "Mecánicos, eléctricos y térmicos",
+            "Individuales, colectivos y ambientales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los riesgos laborales se clasifican en tres grandes grupos: riesgos relacionados con la seguridad en el trabajo, riesgos de higiene industrial, y riesgos ergonómicos y psicosociales."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los principales factores de riesgo en los lugares de trabajo?",
+          "options": [
+            "Solo la falta de iluminación",
+            "Dimensiones insuficientes, mala distribución de máquinas, condiciones ambientales inadecuadas, falta de orden, limpieza o mantenimiento",
+            "Únicamente problemas eléctricos",
+            "Solo la temperatura inadecuada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los principales factores de riesgo en lugares de trabajo incluyen dimensiones insuficientes, mala distribución de las máquinas, condiciones ambientales inadecuadas, y falta de orden, limpieza o mantenimiento."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué cuatro elementos se combinan para que aparezca un incendio?",
+          "options": [
+            "Oxígeno, combustible, calor y tiempo",
+            "Calor, comburente, combustible y reacción en cadena",
+            "Fuego, humo, gases y temperatura",
+            "Chispa, material, aire y espacio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un incendio aparece por la combinación de cuatro elementos: el calor, el comburente (oxígeno), el combustible y una reacción en cadena."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres sistemas de extinción de incendios mencionados?",
+          "options": [
+            "Agua, espuma y polvo",
+            "Sofocación (extintor), enfriamiento (agua) y dilución (productos químicos)",
+            "Manual, automático y por rociadores",
+            "Prevención, detección y supresión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres sistemas de extinción son: por sofocación (con extintor), por enfriamiento (con agua) y por dilución (con productos químicos)."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los principales daños relacionados con el riesgo eléctrico?",
+          "options": [
+            "Solo quemaduras superficiales",
+            "Únicamente contracciones musculares",
+            "Quemaduras, asfixia, contracciones musculares, paro cardíaco y tetanización muscular",
+            "Solo problemas respiratorios"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los daños relacionados con el riesgo eléctrico incluyen quemaduras, asfixia, contracciones musculares, paro cardíaco y tetanización muscular."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué estudia la higiene industrial?",
+          "options": [
+            "Solo la limpieza en el lugar de trabajo",
+            "Únicamente los accidentes laborales",
+            "Todos aquellos riesgos relacionados con las condiciones ambientales de los trabajadores",
+            "Solo los equipos de protección individual"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La higiene industrial se encarga de estudiar todos aquellos riesgos relacionados con las condiciones ambientales de los trabajadores, distinguiendo agentes físicos, químicos y biológicos."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tipos de riesgos físicos mencionados?",
+          "options": [
+            "Solo ruido y vibraciones",
+            "Ruido, vibraciones, iluminación, temperatura y radiaciones",
+            "Únicamente temperatura y humedad",
+            "Solo radiaciones y campos magnéticos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tipos de riesgos físicos son los derivados del ruido, las vibraciones, la iluminación, la temperatura y las radiaciones."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los daños asociados al ruido?",
+          "options": [
+            "Solo problemas de audición",
+            "Sordera, insomnio, dolores de cabeza, aislamiento social, irritabilidad, depresión, estrés y falta de concentración",
+            "Únicamente fatiga física",
+            "Solo problemas de equilibrio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los daños asociados al ruido incluyen sordera, insomnio, dolores de cabeza, aislamiento social, irritabilidad, depresión, estrés y falta de concentración."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cómo pueden transmitirse los agentes químicos al organismo?",
+          "options": [
+            "Solo por inhalación",
+            "Por vía digestiva, respiratoria, dérmica o a través de una herida",
+            "Únicamente por contacto con la piel",
+            "Solo por ingestión accidental"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los agentes químicos pueden transmitirse por vía digestiva, respiratoria, dérmica (a través de la piel) o a través de una herida."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿En cuántas categorías se clasifican los riesgos biológicos?",
+          "options": [
+            "Dos categorías",
+            "Tres categorías",
+            "Cuatro categorías",
+            "Cinco categorías"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los contaminantes biológicos se clasifican en cuatro categorías de riesgo, según el riesgo de infección, propagación y disponibilidad de tratamiento eficaz."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué estudia la ergonomía?",
+          "options": [
+            "Solo la postura corporal",
+            "El diseño de los lugares de trabajo, las herramientas y el ambiente que rodea al trabajador para adaptarse a sus capacidades y necesidades",
+            "Únicamente los movimientos repetitivos",
+            "Solo el peso de las cargas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ergonomía es la ciencia que estudia el diseño de los lugares de trabajo, las herramientas y el ambiente que rodea al trabajador para que se adapte adecuadamente a las capacidades y necesidades del mismo."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos tipos de carga ergonómica?",
+          "options": [
+            "Carga mental y carga emocional",
+            "Carga física y carga psicológica",
+            "Carga estática y carga dinámica",
+            "Carga individual y carga grupal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tipos de riesgos ergonómicos pueden estar asociados a una carga física (que causa trastornos músculo-esqueléticos y fatiga física) o psicológica (que causa fatiga mental, jaquecas, depresión, ansiedad, irritabilidad o insomnio)."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres factores de riesgo organizativo en condiciones psicosociales?",
+          "options": [
+            "Temperatura, iluminación y ruido",
+            "Organización o jornada laboral, tarea o contenido del trabajo, y relaciones personales y sociales en el trabajo",
+            "Horarios, descansos y vacaciones",
+            "Supervisión, comunicación y liderazgo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres factores de riesgo organizativo son: 1) Organización o jornada laboral, 2) Tarea o contenido del trabajo, 3) Relaciones personales y sociales en el trabajo."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "En el caso práctico del aserradero, ¿cuál fue la valoración del riesgo de ruido fuerte?",
+          "options": [
+            "Riesgo tolerable",
+            "Riesgo moderado",
+            "Riesgo importante",
+            "Riesgo intolerable"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En el caso del aserradero, el riesgo de ruido fuerte tenía probabilidad muy alta y severidad dañina, lo que según la tabla de clasificación corresponde a un riesgo importante."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué intensidad de corriente eléctrica puede causar muerte por asfixia según la tabla del documento?",
+          "options": [
+            "Menos de 30 mA",
+            "De 30 a 80 mA",
+            "De 80 a 4A",
+            "Más de 4A"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la tabla de efectos de la electricidad, la intensidad de 80 a 4A puede causar muerte por asfixia, además de fibrilación ventricular, tetanización muscular y parálisis temporal del corazón."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuándo deben volver a evaluarse los puestos de trabajo?",
+          "options": [
+            "Solo cada año",
+            "Cuando se introduzcan nuevas tecnologías, cambien las condiciones de trabajo o se incorpore una persona sensible para dicho puesto",
+            "Solo cuando ocurra un accidente",
+            "Únicamente cuando lo solicite la inspección"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los puestos deben reevaluarse cuando: se introduzcan nuevas tecnologías, equipos o preparados químicos; cambien las condiciones de trabajo o acondicionamiento; o se incorpore una persona sensible por sus condiciones para dicho puesto."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué debe hacer el empresario si la evaluación concluye que deben adoptarse medidas?",
+          "options": [
+            "Solo informar a los trabajadores",
+            "Eliminar o reducir el riesgo aplicando medidas preventivas, y controlar periódicamente las condiciones de trabajo y la salud de los trabajadores",
+            "Únicamente cambiar de puesto a los trabajadores",
+            "Solo proporcionar equipos de protección"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El empresario debe: A) Eliminar o reducir el riesgo aplicando medidas de prevención, organizativas, de protección colectiva o individual, y B) Controlar periódicamente las condiciones de trabajo, los métodos y la salud de los trabajadores."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre contaminantes químicos y biológicos?",
+          "options": [
+            "Los químicos son más peligrosos",
+            "Los biológicos no son seres inertes y pueden reproducirse o transferir material genético",
+            "Los químicos solo afectan por inhalación",
+            "Los biológicos solo causan alergias"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los contaminantes biológicos, a diferencia de los químicos, no son seres inertes y pueden reproducirse o transferir material genético. Incluyen virus, bacilos, hongos, parásitos, bacterias y protozoos."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la medida más importante para prevenir el riesgo de incendio según el documento?",
+          "options": [
+            "Tener muchos extintores",
+            "Garantizar la limpieza y el orden",
+            "Solo instalar detectores de humo",
+            "Únicamente formar al personal"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Entre las medidas de prevención de incendios, la primera mencionada es garantizar la limpieza y el orden, seguida de mantener alejados los combustibles del calor y otras medidas complementarias."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de la empresa transitaria, ¿cuál de estas medidas NO era necesaria?",
+          "options": [
+            "Supervisar cables al descubierto",
+            "Comprobar enchufes e interruptores",
+            "Apagar correctamente los equipos",
+            "Colocar señales de riesgo eléctrico"
+          ],
+          "correctAnswer": 3,
+          "explanation": "En el caso práctico de la empresa transitaria se concluye que 'En este caso no parece necesario colocar señales de riesgo eléctrico', ya que se trataba de una oficina estándar."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué factores tiene en cuenta la ergonomía según el documento?",
+          "options": [
+            "Solo factores físicos",
+            "Factores físicos, cognitivos, sociales, organizacionales y ambientales, así como su interacción",
+            "Únicamente factores ambientales",
+            "Solo factores sociales y organizacionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ergonomía tiene en cuenta factores físicos, cognitivos, sociales, organizacionales y ambientales, así como su interacción entre todos estos factores."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el nivel de riesgo que requiere prioridad inmediata y no permite comenzar ni continuar el trabajo?",
+          "options": [
+            "Riesgo importante",
+            "Riesgo moderado",
+            "Riesgo intolerable",
+            "Riesgo tolerable"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El riesgo intolerable requiere prioridad inmediata y no se debe comenzar ni continuar el trabajo hasta que se reduzca el riesgo. Es el nivel más alto de peligrosidad en la clasificación."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué debe incluir la política de prevención en una empresa?",
+          "options": [
+            "Solo los objetivos económicos",
+            "Una declaración formal, por escrito, de los principios y compromisos adquiridos por la empresa en materia de prevención de riesgos",
+            "Únicamente las sanciones por incumplimiento",
+            "Solo la lista de equipos de protección"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La política de prevención debe ser una declaración formal, por escrito, de los principios y compromisos adquiridos por la empresa en materia de prevención de riesgos, que debe ser comunicada a todos los miembros de la organización."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los principales daños que pueden producirse en lugares de trabajo mal diseñados?",
+          "options": [
+            "Solo problemas respiratorios",
+            "Caídas al mismo o distinto nivel, cortes, choques, aplastamientos, atropellos",
+            "Únicamente problemas de audición",
+            "Solo problemas de visión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los daños que pueden producirse en lugares de trabajo inadecuados son caídas al mismo o distinto nivel, cortes, choques, aplastamientos, atropellos, entre otros."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "En la resolución del caso práctico de la fábrica de rejas artesanales, ¿qué tipo de riesgos se consideraron de carácter moderado o importante?",
+          "options": [
+            "Solo los relacionados con manipulación de cargas",
+            "Los relacionados con inhalación de gases, quemaduras y cortes",
+            "Únicamente los riesgos químicos",
+            "Solo los riesgos ergonómicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los riesgos asociados a la inhalación de gases, las quemaduras y los cortes fueron considerados de carácter moderado o importante debido a su probabilidad media/alta y carácter dañino."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Qué establece el documento sobre el plan de prevención de riesgos en relación con la dirección de la empresa?",
+          "options": [
+            "Puede ser aprobado por cualquier empleado",
+            "Debe ser aprobado por la dirección de la empresa",
+            "No requiere aprobación formal",
+            "Solo necesita la firma de los representantes de los trabajadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El plan de prevención de riesgos debe ser aprobado por la dirección de la empresa, que debe conservarlo para ponerlo a disposición de la autoridad laboral, sanitaria y de los representantes de los trabajadores."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la característica principal de los contaminantes de categoría 4 en riesgos biológicos?",
+          "options": [
+            "Enfermedad no probable",
+            "Enfermedad probable y peligro con poco riesgo de propagación",
+            "Enfermedad grave probable y peligro serio con muy probable propagación y generalmente no existe tratamiento eficaz",
+            "Enfermedad grave con riesgo probable de propagación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los contaminantes biológicos de categoría 4 se caracterizan por causar enfermedad grave probable y peligro serio, con muy probable propagación y generalmente no existe tratamiento eficaz, lo que los convierte en los más peligrosos."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Accidentes y Enfermedades en el Trabajo",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "Según la Ley General de la Seguridad Social, ¿qué elementos debe tener un accidente de trabajo?",
+          "options": [
+            "Solo lesión corporal",
+            "Lesión corporal, relación laboral y causalidad entre la lesión y el trabajo",
+            "Solo relación laboral",
+            "Lesión corporal e intencionalidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para que sea considerado accidente de trabajo deben existir tres elementos: una lesión corporal, una relación laboral y una causalidad entre la lesión y el trabajo."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes situaciones SÍ se considera accidente laboral?",
+          "options": [
+            "Accidente por imprudencia temeraria del trabajador",
+            "Accidente por fuerza mayor extraña al trabajo",
+            "Accidente al ir o volver del centro de trabajo",
+            "Accidente por mala fe del trabajador"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los accidentes in itinere (al ir y volver del trabajo) están expresamente contemplados por la ley como accidentes laborales."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "En España, en 2022, ¿qué porcentaje de accidentes laborales ocurrieron durante la jornada laboral?",
+          "options": [
+            "75,4%",
+            "87,4%",
+            "92,1%",
+            "80,3%"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según los datos del documento, el 87,4% de los accidentes laborales (571.274 de 653.510) ocurrieron durante la jornada laboral."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "Las causas técnicas de los accidentes laborales incluyen:",
+          "options": [
+            "Falta de formación del trabajador",
+            "Desconocimiento de riesgos por parte del trabajador",
+            "Características de instalaciones y equipos de trabajo",
+            "Negativa del trabajador a actuar ante el riesgo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las causas técnicas se refieren a las características de instalaciones, equipos de trabajo, organización del sistema de trabajo y medioambiente."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué diferencia fundamental existe entre accidente laboral y enfermedad profesional en cuanto a su aparición?",
+          "options": [
+            "Ambos aparecen de forma súbita",
+            "El accidente aparece de forma súbita y la enfermedad de forma lenta",
+            "La enfermedad aparece de forma súbita y el accidente de forma lenta",
+            "No hay diferencias en su aparición"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El accidente laboral se produce de forma súbita y repentina, mientras que la enfermedad profesional aparece de manera lenta y solapada."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "Las enfermedades profesionales en España están recogidas en:",
+          "options": [
+            "Anexo I del RD 1299/2006",
+            "Ley 31/1995",
+            "Real Decreto 773/97",
+            "Código Civil"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las enfermedades profesionales tipificadas se encuentran en el Anexo I del RD 1299/2006."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un tipo de enfermedad profesional según su clasificación?",
+          "options": [
+            "Enfermedades de origen químico",
+            "Enfermedades de origen físico",
+            "Enfermedades de origen psicológico",
+            "Enfermedades de origen biológico"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las enfermedades profesionales se clasifican en: químicas, físicas, biológicas, de la piel, por cancerígenos y por inhalación. Las psicológicas no están en esta clasificación."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "En la relación causa-efecto, ¿cuál es más fácil de establecer?",
+          "options": [
+            "En las enfermedades profesionales",
+            "En los accidentes laborales",
+            "Ambas son igual de fáciles",
+            "Ninguna es fácil de establecer"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La relación causa-efecto es más fácil de establecer en los accidentes laborales que en las enfermedades profesionales, donde es más difícil."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de tratamiento es más común para los accidentes laborales?",
+          "options": [
+            "Médico",
+            "Quirúrgico",
+            "Psicológico",
+            "Fisioterapéutico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los accidentes laborales suelen requerir tratamiento quirúrgico, mientras que las enfermedades profesionales requieren tratamiento médico."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de investigar los accidentes laborales?",
+          "options": [
+            "Sancionar a los responsables",
+            "Cumplir con la normativa",
+            "Analizar causas y consecuencias para evitar que vuelvan a ocurrir",
+            "Calcular indemnizaciones"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La investigación de accidentes se hace como medida preventiva para analizar causas y consecuencias, con el objetivo de evitar que vuelvan a ocurrir."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "Según el Instituto Nacional de Seguridad y Salud en el Trabajo, ¿qué accidentes se deben investigar obligatoriamente?",
+          "options": [
+            "Solo los mortales",
+            "Todos los accidentes sin excepción",
+            "Los mortales y los que ocasionen consecuencias graves",
+            "Solo los que conlleven baja médica"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Se deben investigar obligatoriamente todos los accidentes mortales y los que hayan ocasionado consecuencias graves para el trabajador."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera etapa en la investigación de un accidente de trabajo?",
+          "options": [
+            "Elaboración del informe",
+            "Identificación del origen del accidente",
+            "Trabajo de campo",
+            "Identificación de relaciones de causalidad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La primera etapa es el trabajo de campo, donde el investigador acude al centro de trabajo y recoge información mediante entrevistas y observación directa."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "Los costes de los accidentes laborales para la empresa incluyen:",
+          "options": [
+            "Solo las indemnizaciones",
+            "Solo los salarios durante la baja",
+            "Pérdida de productividad, indemnizaciones, tiempo de otros trabajadores y daños materiales",
+            "Solo las multas administrativas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los costes para la empresa son múltiples: pérdida de productividad, indemnizaciones, salarios, tiempo de otros trabajadores, investigación, conflictividad laboral, daños materiales y sanciones."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las medidas de prevención de riesgos?",
+          "options": [
+            "Proteger a los trabajadores una vez que ocurre el riesgo",
+            "Eliminar, controlar o reducir los riesgos desde su origen",
+            "Proporcionar equipos de protección",
+            "Formar a los trabajadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las medidas de prevención pretenden reducir o eliminar las causas desde el origen, eliminando, controlando o reduciendo los riesgos."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "Las técnicas de seguridad en el trabajo se basan inicialmente en:",
+          "options": [
+            "El diseño de equipos ergonómicos",
+            "La motivación de los trabajadores",
+            "La recogida de datos sobre accidentes laborales ya acontecidos",
+            "La medicina del trabajo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las técnicas de seguridad se basan en primer lugar en la recogida de datos sobre accidentes laborales ya acontecidos, su análisis y elaboración de estadísticas."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo de las técnicas de higiene industrial?",
+          "options": [
+            "Reducir la fatiga en el puesto de trabajo",
+            "Prevenir las enfermedades profesionales generadas por contaminantes",
+            "Curar enfermedades laborales",
+            "Motivar a los trabajadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las técnicas de higiene industrial tienen como objetivo prevenir las enfermedades profesionales generadas por contaminantes de diferente naturaleza."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "Las técnicas basadas en ergonomía persiguen:",
+          "options": [
+            "Identificar contaminantes",
+            "Adaptar el trabajo al trabajador para evitar la fatiga",
+            "Curar enfermedades profesionales",
+            "Investigar accidentes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La ergonomía busca adaptar el trabajo al trabajador mediante el diseño de máquinas, utensilios y espacios de trabajo que reduzcan la fatiga."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "Según la normativa europea, ¿qué se prioriza en el marco de la seguridad laboral?",
+          "options": [
+            "La protección frente a la prevención",
+            "La prevención frente a la protección",
+            "Ambas por igual",
+            "Los equipos de protección individual"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El espíritu de la normativa europea se fundamenta en la prevención en primer lugar, siendo prioritaria la prevención frente a la protección."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre medidas de prevención y protección?",
+          "options": [
+            "No hay diferencias",
+            "Las de prevención evitan riesgos, las de protección no los evitan",
+            "Las de protección son más efectivas",
+            "Las de prevención son más costosas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las medidas de prevención evitan los riesgos desde su origen, mientras que las de protección no evitan riesgos, sino que buscan eliminar o mitigar los daños."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de protección se prioriza según la normativa europea?",
+          "options": [
+            "Protección individual",
+            "Protección colectiva",
+            "Ambas por igual",
+            "Depende del tipo de riesgo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La normativa europea prioriza las medidas de protección colectiva frente a las medidas de protección individual."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "Un ejemplo de medida de protección colectiva es:",
+          "options": [
+            "Casco de seguridad",
+            "Guantes de protección",
+            "Barandillas de seguridad",
+            "Mascarillas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las barandillas son medidas de protección colectiva porque protegen a varios trabajadores simultáneamente, actuando sobre el medio de transmisión del riesgo."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es una medida de protección colectiva?",
+          "options": [
+            "Ventilación",
+            "Pantallas protectoras",
+            "Orejeras",
+            "Señalizaciones"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las orejeras son un equipo de protección individual (EPI), mientras que ventilación, pantallas y señalizaciones son medidas de protección colectiva."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "Los EPI están en ¿qué escala de prioridades?",
+          "options": [
+            "Primera prioridad",
+            "Segunda prioridad",
+            "Última escala de prioridades",
+            "No hay escalas de prioridad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La protección individual (EPI) está en la última escala de prioridades, después de las medidas de prevención y de las medidas de protección colectiva."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un requisito de los EPI según el Real Decreto 773/97?",
+          "options": [
+            "Pueden ser compartidos entre trabajadores",
+            "Deben estar homologados y marcados como CE",
+            "Solo los debe proporcionar el trabajador",
+            "No necesitan mantenimiento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los EPI deben estar homologados y marcados como CE, además de ser adecuados al tipo de riesgo y de uso individual."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Quién debe proporcionar los EPI a los trabajadores?",
+          "options": [
+            "Los propios trabajadores",
+            "El servicio de prevención",
+            "Los empresarios de manera gratuita",
+            "La mutua de trabajo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los empresarios deben identificar los puestos que requieren EPI y proporcionarlos de manera gratuita a los trabajadores."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué protegen las mascarillas y equipos aislantes?",
+          "options": [
+            "Cabeza",
+            "Vías respiratorias",
+            "Ojos y cara",
+            "Piel"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las mascarillas y equipos aislantes con suministro de oxígeno protegen las vías respiratorias."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal objetivo de la vigilancia de la salud?",
+          "options": [
+            "Curar enfermedades laborales",
+            "Comprender el impacto del trabajo sobre la salud de los trabajadores",
+            "Sancionar a las empresas",
+            "Reducir costes sanitarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El objetivo principal es comprender el impacto del trabajo sobre la salud de los trabajadores y obtener información para la toma de decisiones sobre condiciones de trabajo."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "La vigilancia de la salud debe ser:",
+          "options": [
+            "Voluntaria en todos los casos",
+            "Obligatoria en todos los casos",
+            "Voluntaria, salvo disposición legal o peligro para el trabajador y terceros",
+            "Solo para trabajadores mayores de 45 años"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La vigilancia de la salud debe ser voluntaria para el trabajador, salvo que exista disposición legal o que pueda ser un peligro para el propio trabajador y terceros."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Quién debe realizar la vigilancia de la salud?",
+          "options": [
+            "Cualquier médico",
+            "Personal sanitario con competencia técnica y formación acreditadas",
+            "Los propios trabajadores",
+            "Los empresarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Debe ser llevada a cabo por personal sanitario con competencia técnica, formación y capacidades acreditadas."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "La vigilancia de la salud debe mantenerse:",
+          "options": [
+            "Solo durante la relación laboral",
+            "Un año después del fin de la relación laboral",
+            "Más allá incluso de la finalización de la relación laboral",
+            "Solo cuando hay síntomas de enfermedad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La vigilancia debe ser prolongada y protocolizada, manteniéndose más allá incluso de la finalización de la relación laboral."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de la fábrica de compost, ¿qué tipo de daño profesional representa la lumbalgia de Fernando por estar demasiadas horas de pie?",
+          "options": [
+            "Accidente laboral",
+            "Enfermedad profesional",
+            "Accidente in itinere",
+            "No es daño profesional"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La lumbalgia por estar demasiadas horas de pie es una enfermedad profesional porque se genera de manera lenta, está relacionada con condiciones físicas del puesto y tiene efectos individuales."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de Lorenzo en la fábrica de galletas, ¿cuál NO es un coste para la empresa?",
+          "options": [
+            "Indemnización al trabajador",
+            "Tiempo del capataz dedicado al incidente",
+            "Dolor físico del trabajador",
+            "Multa por incumplimiento de seguridad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El dolor físico del trabajador es un coste para el propio trabajador, no para la empresa. Los costes empresariales incluyen indemnizaciones, tiempo de personal, multas y pérdidas de productividad."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Emergencias y Primeros Auxilios en el Trabajo",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Desde qué año es obligatorio por ley que las empresas cuenten con un plan de autoprotección y un plan de emergencia?",
+          "options": [
+            "2005",
+            "2007",
+            "2009",
+            "2010"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Desde el año 2007 se exige por ley que las empresas cuenten con un plan de autoprotección y un plan de emergencia."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué es un plan de autoprotección?",
+          "options": [
+            "Un documento específico para emergencias médicas",
+            "Un documento de carácter general que elabora la empresa para controlar y prevenir riesgos",
+            "Un manual de primeros auxilios",
+            "Un protocolo de evacuación únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El plan de autoprotección es un documento de carácter general que elabora la empresa y que sirve para controlar y prevenir los riesgos sobre trabajadores y sobre los bienes materiales."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres elementos que se pueden identificar en un plan de emergencias?",
+          "options": [
+            "Emergencias potenciales, criterios de actuación y equipos de emergencia",
+            "Detección, alarma y evacuación",
+            "Primeros auxilios, evacuación y ayuda externa",
+            "Personal, materiales y procedimientos"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En el plan de emergencias se pueden identificar tres elementos: emergencias potenciales en la empresa, criterios de actuación en caso de emergencias, y equipos de emergencia."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de emergencia intervienen equipos de primera intervención y se localizan en zonas muy concretas?",
+          "options": [
+            "Emergencias totales",
+            "Emergencias parciales",
+            "Conatos de emergencia",
+            "Emergencias críticas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los conatos de emergencia son aquellas en las que intervienen equipos de primera intervención y se localizan en zonas muy concretas de la empresa."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera etapa del procedimiento de actuación ante una emergencia?",
+          "options": [
+            "Emisión de la señal de alarma",
+            "Detección de la emergencia",
+            "Declaración del tipo de emergencia",
+            "Solicitud de ayuda externa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El procedimiento de actuación sigue etapas secuenciales, comenzando con la detección de la emergencia."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué significa la 'P' en el método PAS de primeros auxilios?",
+          "options": [
+            "Prevenir",
+            "Proteger",
+            "Proceder",
+            "Planificar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el método PAS, la 'P' significa Proteger: a la persona accidentada, a uno mismo y a otros posibles heridos."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué significa la 'A' en el método PAS de primeros auxilios?",
+          "options": [
+            "Actuar",
+            "Avisar",
+            "Auxiliar",
+            "Analizar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el método PAS, la 'A' significa Avisar: a los servicios sanitarios, proporcionando información exacta del lugar del accidente y de la situación actual."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué significa la 'S' en el método PAS de primeros auxilios?",
+          "options": [
+            "Socorrer",
+            "Salvar",
+            "Supervisar",
+            "Señalizar"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En el método PAS, la 'S' significa Socorrer: a la persona accidentada realizando una primera y segunda evaluación."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se utiliza la posición PLS (posición lateral de seguridad)?",
+          "options": [
+            "Cuando el accidentado está consciente",
+            "Cuando el accidentado está inconsciente, respira y tiene pulso",
+            "Cuando el accidentado no respira",
+            "Cuando el accidentado no tiene pulso"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La posición PLS se realiza cuando el accidentado está inconsciente, respira y tiene pulso."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se realiza la reanimación cardiopulmonar?",
+          "options": [
+            "Cuando el accidentado está consciente",
+            "Cuando el accidentado respira con normalidad",
+            "Cuando el accidentado está inconsciente, no respira o respira con dificultad, y no tiene pulso",
+            "Solo cuando hay heridas visibles"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La reanimación cardiopulmonar se realiza cuando el accidentado está inconsciente, no respira o respira con dificultad, y no tiene pulso."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuántas compresiones por minuto se recomiendan durante el masaje cardiaco?",
+          "options": [
+            "50 a 80",
+            "80 a 100",
+            "100 a 120",
+            "120 a 150"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Se recomienda que el número de compresiones esté comprendido entre 100 y 120 por minuto durante el masaje cardiaco."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuántos centímetros debe descender el esternón durante las compresiones del masaje cardiaco?",
+          "options": [
+            "3 a 4 centímetros",
+            "5 a 6 centímetros",
+            "7 a 8 centímetros",
+            "2 a 3 centímetros"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se recomienda descender el esternón entre 5 y 6 centímetros durante las compresiones del masaje cardiaco."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera acción en caso de atragantamiento si el accidentado está consciente?",
+          "options": [
+            "Realizar la maniobra de Heimlich inmediatamente",
+            "Intentar que tosa",
+            "Dar golpes en la espalda",
+            "Llamar a emergencias"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En caso de atragantamiento, si el accidentado está consciente, se debe intentar primero que tosa para expulsar el cuerpo extraño."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cómo se debe tratar una fractura o esguince?",
+          "options": [
+            "Mover la zona para verificar el daño",
+            "Aplicar calor inmediatamente",
+            "Inmovilizar la zona usando una férula",
+            "Dar medicamentos para el dolor"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En caso de fractura o esguince se debe inmovilizar la zona usando una férula que envuelva las articulaciones más próximas a la fractura."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera acción ante una hemorragia?",
+          "options": [
+            "Aplicar un torniquete",
+            "Tumbar al accidentado con las piernas levantadas",
+            "Dar agua al accidentado",
+            "Mover al accidentado a un lugar más cómodo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Ante una hemorragia, se debe tumbar al accidentado con las piernas levantadas, mantenerlo caliente, no moverlo y avisar a los servicios sanitarios."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Durante cuántos minutos se debe presionar sobre el punto de sangrado en una hemorragia?",
+          "options": [
+            "1 a 3 minutos",
+            "5 a 10 minutos",
+            "15 a 20 minutos",
+            "Hasta que llegue la ayuda"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se debe presionar sobre el punto de sangrado durante 5 o 10 minutos para controlar la hemorragia."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera acción ante una quemadura?",
+          "options": [
+            "Aplicar hielo directamente",
+            "Quitar la ropa de las zonas quemadas",
+            "Apagar el fuego, retirar el producto químico o desconectar la corriente",
+            "Aplicar pomadas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Primero hay que apagar el fuego, retirar el producto químico o desconectar la corriente eléctrica, dependiendo de la causa de la quemadura."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Durante cuántos minutos se debe enfriar una quemadura con agua fría?",
+          "options": [
+            "5 minutos",
+            "10 a 15 minutos",
+            "20 a 25 minutos",
+            "30 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se debe enfriar la quemadura con abundante agua fría durante 10 o 15 minutos."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "Según el Real Decreto 486/1997, ¿qué empresas deben disponer de un local de primeros auxilios?",
+          "options": [
+            "Todas las empresas",
+            "Empresas de más de 25 trabajadores",
+            "Empresas de más de 50 trabajadores o de más de 25 si la actividad es peligrosa",
+            "Solo empresas industriales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las empresas de más de 50 trabajadores, o de más de 25 trabajadores cuya actividad se considere peligrosa, deberán disponer de un local de primeros auxilios."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuántos triángulos de vendaje provisional debe contener como mínimo el botiquín portátil?",
+          "options": [
+            "3 unidades",
+            "6 unidades",
+            "10 unidades",
+            "12 unidades"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El botiquín portátil debe contener triángulos de vendaje provisional (al menos 6 unidades)."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuántos esparadrapos y apósitos debe contener como mínimo el botiquín portátil?",
+          "options": [
+            "10 unidades",
+            "15 unidades",
+            "20 unidades",
+            "25 unidades"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El botiquín portátil debe contener esparadrapos y apósitos (al menos 20 unidades)."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué técnica se usa para chequear la respiración en el soporte vital básico?",
+          "options": [
+            "Solo observar el pecho",
+            "Solo escuchar la respiración",
+            "La técnica 'ver-oír-sentir'",
+            "Tomar el pulso"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para chequear la respiración se usa la técnica 'ver-oír-sentir': ver que el pecho se mueve, oír la respiración y sentir el aliento."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿En cuántos segundos como máximo se debe realizar la técnica 'ver-oír-sentir'?",
+          "options": [
+            "5 segundos",
+            "10 segundos",
+            "15 segundos",
+            "20 segundos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La técnica 'ver-oír-sentir' debe realizarse siempre en menos de diez segundos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos NO es un principio general de actuación ante una emergencia?",
+          "options": [
+            "Mantener la calma",
+            "No mover al accidentado salvo en caso de peligro",
+            "Dar medicación inmediatamente si está disponible",
+            "No emplear técnicas que no se dominen"
+          ],
+          "correctAnswer": 2,
+          "explanation": "No se debe dar medicación al accidentado, especialmente si está inconsciente. Este no es un principio correcto de actuación."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué porcentaje de supervivencia puede lograr el uso del desfibrilador en los primeros cinco minutos?",
+          "options": [
+            "30 al 40%",
+            "40 al 60%",
+            "50 al 70%",
+            "70 al 90%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El uso del desfibrilador en los primeros cinco minutos produce tasas de supervivencia del 50 al 70%."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se fundó la Cruz Roja en Ginebra?",
+          "options": [
+            "1859",
+            "1863",
+            "1865",
+            "1870"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La Cruz Roja nació en 1859 en Ginebra de la mano de Henry Dunant para auxiliar a heridos de guerra sin ninguna discriminación."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿En qué año apareció la Cruz Roja en España?",
+          "options": [
+            "1859",
+            "1863",
+            "1865",
+            "1870"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En España, la Cruz Roja apareció en el año 1863."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres mecanismos básicos que deben incluir los criterios de actuación en emergencias?",
+          "options": [
+            "Detección, alarma y respuesta",
+            "Prevención, intervención y evacuación",
+            "Protección, aviso y socorro",
+            "Planificación, ejecución y seguimiento"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Los criterios básicos de actuación deben incluir mecanismos de detección y alerta, mecanismos de alarma, y mecanismos de respuesta."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué debe contener obligatoriamente un local de primeros auxilios además del botiquín?",
+          "options": [
+            "Solo una camilla",
+            "Una camilla y una fuente de agua potable",
+            "Una camilla, agua potable y desfibrilador",
+            "Solo agua potable"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los locales de primeros auxilios deben tener su propio botiquín, una camilla y una fuente de agua potable."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Con qué frecuencia se debe actualizar el plan de autoprotección?",
+          "options": [
+            "Anualmente",
+            "Cada dos años",
+            "Trianuales (cada tres años)",
+            "Cada cinco años"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El plan de autoprotección debe incluir seguimiento regular de su eficacia y actualizaciones trianuales."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Cómo se debe colocar al accidentado para realizar un masaje cardiaco?",
+          "options": [
+            "De lado sobre una superficie blanda",
+            "Boca arriba sobre una superficie dura",
+            "Boca abajo sobre cualquier superficie",
+            "Sentado en una silla"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para realizar un masaje cardiaco se debe poner al accidentado boca arriba sobre una superficie dura."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Dónde se debe colocar la base de la mano durante el masaje cardiaco?",
+          "options": [
+            "En el centro del pecho",
+            "En la parte superior del esternón",
+            "En la parte inferior del esternón",
+            "En las costillas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Durante el masaje cardiaco se debe colocar la base de una mano en la parte inferior del esternón, la otra mano encima y entrelazar los dedos."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de emergencia afecta a todo el centro de trabajo y puede requerir evacuación?",
+          "options": [
+            "Conatos de emergencia",
+            "Emergencias parciales",
+            "Emergencias totales",
+            "Emergencias menores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las emergencias totales intervienen todos los medios disponibles, afectan a todo el centro de trabajo y en ocasiones pueden requerir una evacuación."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Oportunidades de Empleo e Inserción Laboral - Tema 5",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué es el mercado laboral?",
+          "options": [
+            "Solo las empresas que ofrecen trabajo",
+            "El conjunto de relaciones entre empresas, personas que buscan empleo e intermediarios",
+            "Únicamente los demandantes de empleo",
+            "Solo los servicios públicos de empleo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El mercado laboral está formado por el conjunto de relaciones entre las empresas o instituciones que ofrecen puestos de trabajo, las personas que buscan un empleo y los intermediarios."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es aproximadamente la tasa de paro juvenil en España en 2024 según el documento?",
+          "options": [
+            "15%",
+            "20%",
+            "30%",
+            "40%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según el documento, el paro juvenil alcanza tasas cercanas al 30% en 2024, siendo esta la segunda peor tasa de Europa."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que el mercado laboral esté en equilibrio?",
+          "options": [
+            "Hay más oferta que demanda",
+            "Hay más demanda que oferta",
+            "Coinciden la oferta y la demanda laboral",
+            "No hay desempleo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El mercado laboral está en equilibrio cuando coinciden la oferta y la demanda laboral, es decir, cuando las necesidades laborales de todas las personas que buscan trabajo coinciden con las ofertas de trabajo existentes."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es considerada una actividad del sector primario?",
+          "options": [
+            "Agricultura",
+            "Ganadería",
+            "Construcción",
+            "Minería"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La construcción pertenece al sector secundario. El sector primario incluye agricultura, ganadería, pesca y minería."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué reforma laboral consiguió reducir la temporalidad en los contratos españoles?",
+          "options": [
+            "La reforma de 2010",
+            "La reforma de 2012",
+            "La reforma de 2021",
+            "La reforma de 2020"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según el documento, la reforma laboral de 2021 ha conseguido reducir la temporalidad en los contratos españoles, algo que ninguna reforma anterior había logrado desde 1980."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos sectores profesionales tiene mejor perspectiva de empleo según el documento?",
+          "options": [
+            "Minería",
+            "Textil tradicional",
+            "Tecnologías de la información y comunicación (TIC)",
+            "Agricultura tradicional"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las TIC son mencionadas como uno de los sectores con gran potencial para la generación de empleos, junto con energías renovables y servicios relacionados con la tercera edad."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué significa EPA?",
+          "options": [
+            "Encuesta de Población Activa",
+            "Estudio de Personas Activas",
+            "Evaluación de Población Activa",
+            "Encuesta de Personas en el Ámbito laboral"
+          ],
+          "correctAnswer": 0,
+          "explanation": "EPA significa Encuesta de Población Activa, que es un estudio estadístico trimestral que proporciona información sobre la situación del mercado laboral en España."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Quiénes son considerados 'inactivos' según la EPA?",
+          "options": [
+            "Solo los desempleados",
+            "Personas de 16 o más años que no están ocupadas ni paradas",
+            "Solo los jubilados",
+            "Solo los estudiantes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la EPA, una persona inactiva es aquella que tiene 16 o más años y no está clasificada como ocupada ni parada, incluyendo estudiantes, jubilados, personas que realizan labores del hogar, etc."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes actividades tiene mejores perspectivas para el empleo?",
+          "options": [
+            "Servicios de comidas y bebidas",
+            "Minería del carbón",
+            "Industria textil tradicional",
+            "Agricultura extensiva"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Los servicios de comidas y bebidas son mencionados como una de las actividades con mejores perspectivas para el empleo según el peso de contratación."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué es EURES?",
+          "options": [
+            "Un programa de formación europeo",
+            "Una red europea para la búsqueda de empleo",
+            "Un tipo de contrato laboral",
+            "Una agencia de colocación española"
+          ],
+          "correctAnswer": 1,
+          "explanation": "EURES es la red europea para la búsqueda de empleo que ofrece información sobre vacantes de empleo en países de la Unión Europea."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál es uno de los métodos activos de búsqueda de empleo según la EPA?",
+          "options": [
+            "Esperar en casa a que lleguen ofertas",
+            "Estar en contacto con una oficina de empleo",
+            "Solo hablar con familiares",
+            "No hacer nada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Estar en contacto con una oficina pública o privada de empleo con el fin de encontrar trabajo es considerado uno de los métodos activos de búsqueda de empleo."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de desempleo se debe a la falta de correspondencia entre habilidades ofrecidas y exigidas?",
+          "options": [
+            "Desempleo estacional",
+            "Desempleo estructural",
+            "Desempleo cíclico",
+            "Desempleo friccional"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El desempleo estructural se debe a la falta de correspondencia entre habilidades y competencias ofrecidas por la población activa y las exigidas por el mercado laboral."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuántos puntos clave se deben examinar para conocer nuestro sector profesional?",
+          "options": [
+            "4",
+            "5",
+            "6",
+            "7"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los seis puntos clave para conocer el sector profesional son: requisitos de formación y habilidades, oportunidades de crecimiento, descripción de actividades, uso de tecnología, principales empresas, y normativas específicas."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué incluye el sector cuaternario?",
+          "options": [
+            "Agricultura y ganadería",
+            "Manufactura y construcción",
+            "Investigación y desarrollo",
+            "Comercio y turismo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El sector cuaternario está constituido por actividades de investigación y desarrollo, la innovación, la generación de conocimiento y la tecnología de la información."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué comprende el sector quinario?",
+          "options": [
+            "Actividades industriales",
+            "Toma de decisiones de alto nivel en organizaciones y gobiernos",
+            "Servicios básicos",
+            "Agricultura especializada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El sector quinario comprende actividades relacionadas con la toma de decisiones de alto nivel en organizaciones y Gobiernos sobre educación, salud, policía, bomberos, etc."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de conocer el sector profesional?",
+          "options": [
+            "Garantiza encontrar empleo inmediatamente",
+            "Permite identificar oportunidades de empleo en el sector",
+            "Elimina la competencia",
+            "Asegura un salario alto"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Conocer el sector profesional permite identificar oportunidades de empleo, detectar habilidades necesarias, adaptarse mejor a cambios y mejorar la planificación profesional."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué es la precariedad laboral?",
+          "options": [
+            "Trabajar en el sector primario",
+            "Tener un contrato temporal",
+            "Inseguridad e incertidumbre que impide tener una vida digna",
+            "Trabajar por cuenta propia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La precariedad laboral es una situación que afecta a los trabajadores con inseguridad, incertidumbre y falta de garantía en las condiciones de trabajo que les dificulta o impide tener una vida digna."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Con qué frecuencia se realiza la EPA?",
+          "options": [
+            "Mensualmente",
+            "Trimestralmente",
+            "Semestralmente",
+            "Anualmente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La Encuesta de Población Activa (EPA) es un estudio estadístico que se realiza en España de manera trimestral."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué es EURAXESS?",
+          "options": [
+            "Una red para investigadores profesionales",
+            "Un programa de formación",
+            "Una agencia de empleo",
+            "Un tipo de contrato europeo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "EURAXESS es una red paneuropea que ofrece información sobre vacantes de empleo y servicios de apoyo para investigadores profesionales."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estas NO es una fuente para encontrar información sobre nuestro sector?",
+          "options": [
+            "Centros de Formación Profesional",
+            "Cámaras de comercio",
+            "Redes sociales personales",
+            "Asociaciones profesionales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las redes sociales personales no son una fuente específica para encontrar información sobre el sector. Las fuentes adecuadas incluyen centros de FP, cámaras de comercio, organismos oficiales, asociaciones profesionales, eventos y prensa especializada."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué creó la reforma laboral de 2021 para otorgar flexibilidad a las empresas?",
+          "options": [
+            "Los contratos de obra",
+            "Los ERTE",
+            "Los contratos indefinidos",
+            "Los contratos de formación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La reforma laboral de 2021 creó los ERTE (Expedientes de Regulación Temporal de Empleo) para otorgar flexibilidad a las empresas del sector privado."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué programa europeo agrega PROGRESS y EURES?",
+          "options": [
+            "EASI",
+            "EURAXESS",
+            "FSE",
+            "ERASMUS"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El Programa Europeo de Empleo e Innovación Social (EASI) agrega los anteriores programas PROGRESS y EURES en un único programa."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos sectores ha experimentado crecimiento según las tendencias de empleo?",
+          "options": [
+            "Industria manufacturera",
+            "Sector servicios",
+            "Minería",
+            "Agricultura tradicional"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Existe un incremento del sector servicios y la construcción, mientras que ha habido una disminución de empleos en la industria."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué información proporciona la prospectiva del título por sector?",
+          "options": [
+            "Solo los salarios actuales",
+            "Tendencias del mercado laboral y cambios tecnológicos previstos",
+            "Únicamente las empresas existentes",
+            "Solo los requisitos de acceso"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La prospectiva del título por sector analiza las perspectivas de futuro, señalando tendencias del mercado laboral, cambios tecnológicos previstos, falta de profesionales y regulaciones."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de los intermediarios en el mercado laboral?",
+          "options": [
+            "Crear empleos",
+            "Facilitar la conexión entre oferentes y demandantes de empleo",
+            "Fijar salarios",
+            "Formar trabajadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los intermediarios son organismos cuyo objetivo es facilitar la conexión entre los oferentes y demandantes de empleo, como las agencias de colocación."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Desde cuándo la temporalidad ha sido protagonista en España según el documento?",
+          "options": [
+            "1970",
+            "1980",
+            "1990",
+            "2000"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Desde 1980, la temporalidad en los contratos de trabajo españoles ha sido protagonista y ninguna de las reformas emprendidas había conseguido reducirla hasta la reforma laboral de 2021."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de contratos proporcionó flexibilidad según la reforma de 2021?",
+          "options": [
+            "Contratos indefinidos a través de los fijos discontinuos",
+            "Solo contratos temporales",
+            "Contratos de obra",
+            "Contratos de formación"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La reforma de 2021 proporcionó flexibilidad a los contratos indefinidos a través de los contratos fijos discontinuos e incorporando causas extintivas propias."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estas actividades tiene gran potencial para el empleo?",
+          "options": [
+            "Minería del carbón",
+            "Energías renovables",
+            "Industria pesada tradicional",
+            "Agricultura extensiva"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las energías renovables son mencionadas como una de las áreas de actividad con gran potencial para la generación de empleos, junto con las TIC y servicios relacionados con la tercera edad."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué incluye el entorno profesional en la normativa de FP?",
+          "options": [
+            "Solo los salarios",
+            "El tipo de empresas, sectores productivos y ocupaciones",
+            "Únicamente las horas de trabajo",
+            "Solo los requisitos de acceso"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El entorno profesional describe el ámbito de la actividad especificando el tipo de empresas u organizaciones, los sectores productivos, las áreas o servicios, y las ocupaciones y puestos de trabajo."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a un mercado laboral dinámico?",
+          "options": [
+            "No cambia nunca",
+            "Está sometido a continuos cambios",
+            "Solo tiene oferentes",
+            "No tiene intermediarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El mercado laboral está influido por el entorno económico, sociológico y tecnológico, y por lo tanto está sometido a continuos cambios, siendo un mercado dinámico."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos NO es un sector profesional más demandado actualmente?",
+          "options": [
+            "Sector salud",
+            "Sector informático y TIC",
+            "Sector minería tradicional",
+            "Sector deporte"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El sector minería tradicional no está entre los más demandados. Los sectores más demandados incluyen salud, deporte, administración, informático/TIC y ciencia e investigación."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una de las contribuciones principales de la reforma laboral de 2021?",
+          "options": [
+            "Eliminó todos los contratos temporales",
+            "Mejoró las tasas de ocupación del sector privado",
+            "Aumentó la precariedad",
+            "Redujo los salarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las contribuciones de la reforma laboral de 2021 fue mejorar las tasas de ocupación del sector privado mediante medidas que proporcionan flexibilidad a las empresas en términos de contratación."
+        }
+      ]
+    }
+  ]
+}

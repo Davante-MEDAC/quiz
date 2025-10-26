@@ -1,0 +1,2014 @@
+{
+  "id": "bases-de-datos",
+  "title": "Bases de Datos",
+  "description": "Fundamentos de bases de datos, incluyendo conceptos clave, estructuras y operaciones básicas.",
+  "icon": "📀",
+  "items": [
+    {
+      "kind": "lesson",
+      "name": "Sistemas de Representación de la Información y Ficheros",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la unidad mínima de información que puede gestionar un dispositivo digital?",
+          "options": [
+            "Byte",
+            "Bit",
+            "Kilobyte",
+            "Carácter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bit representa la información de menor tamaño que cualquier dispositivo digital puede gestionar, estableciendo el pilar fundamental sobre el que se desarrolla el sistema. Un bit puede tener el valor 0 o 1."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuántos bits contiene un byte?",
+          "options": [
+            "4 bits",
+            "8 bits",
+            "16 bits",
+            "1024 bits"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un byte (B) equivale a 8 bits."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué es un fichero?",
+          "options": [
+            "Un conjunto de programas ejecutables",
+            "Una colección de información almacenada en un dispositivo electrónico",
+            "Un sistema operativo completo",
+            "Una base de datos relacional"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un fichero es una colección de información almacenada en un dispositivo electrónico, siendo la forma más simple de almacenamiento de datos."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "En los ficheros secuenciales, ¿cómo se accede a datos específicos?",
+          "options": [
+            "Directamente mediante un índice",
+            "Aleatoriamente",
+            "Recorriendo todos los datos previos",
+            "Mediante búsqueda binaria"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En los ficheros secuenciales, la información se organiza de forma continua y ordenada, por lo que para acceder a datos específicos es necesario recorrer todos los datos previos."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen los ficheros de acceso directo?",
+          "options": [
+            "No tienen estructura definida",
+            "Tienen una longitud fija definida previamente",
+            "Solo pueden almacenar texto",
+            "No se puede acceder a ellos directamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los ficheros de acceso directo tienen los datos estructurados con una longitud fija definida de manera previa, lo que permite acceder directamente a la información."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué utilizan los ficheros indexados para acceder a los datos?",
+          "options": [
+            "Una marca de fin de fichero",
+            "Un índice",
+            "Una tabla hash",
+            "Un puntero secuencial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los ficheros indexados organizan sus datos utilizando un índice que se usa para poder acceder a los mismos, permitiendo un acceso más rápido y eficiente."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de ficheros están construidos utilizando código ASCII?",
+          "options": [
+            "Ficheros binarios",
+            "Ficheros ejecutables",
+            "Ficheros planos o de texto",
+            "Ficheros indexados"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros planos o de texto generalmente están construidos utilizando el código ASCII, que es una norma de codificación que asigna un valor numérico a cada carácter."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un ejemplo de fichero binario?",
+          "options": [
+            ".exe",
+            ".jpg",
+            ".txt",
+            ".pdf"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros .txt son ficheros de texto plano, mientras que .exe, .jpg y .pdf son ejemplos de ficheros binarios que requieren un formato específico para ser interpretados."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de fichero permanente contiene información sobre el estado actual de ciertos elementos que pueden sufrir cambios?",
+          "options": [
+            "Ficheros históricos",
+            "Ficheros de constantes",
+            "Ficheros maestros",
+            "Ficheros de movimientos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros maestros contienen información sobre el estado actual de ciertos elementos que pueden sufrir cambios, reflejando la situación de una organización en un momento concreto."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de fichero temporal almacena información de actividades y transacciones recientes de una organización?",
+          "options": [
+            "Ficheros de trabajo",
+            "Ficheros maestros",
+            "Ficheros de movimientos",
+            "Ficheros históricos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros de movimientos almacenan información de actividades y transacciones recientes o en curso, reflejando las modificaciones a aplicar sobre el fichero maestro."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuántos kilobytes hay en un megabyte?",
+          "options": [
+            "100 KB",
+            "1000 KB",
+            "1024 KB",
+            "1048 KB"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la tabla de múltiplos de bit, un megabyte (MB) equivale a 1024 kilobytes (KB)."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué significa RAID en sistemas de almacenamiento?",
+          "options": [
+            "Random Access of Independent Disks",
+            "Redundant Array of Independent Disks",
+            "Rapid Access and Integrated Data",
+            "Remote Array of Internal Devices"
+          ],
+          "correctAnswer": 1,
+          "explanation": "RAID significa Redundant Array of Independent Disks, una configuración que utiliza múltiples discos independientes que operan conjuntamente como si fueran un solo dispositivo."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué es un NAS?",
+          "options": [
+            "Network Assigned Storage",
+            "Network Attached Storage",
+            "New Advanced System",
+            "Network Access Server"
+          ],
+          "correctAnswer": 1,
+          "explanation": "NAS significa Network Attached Storage y actúa como un dispositivo de almacenamiento centralizado único conectado a una red LAN."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un aspecto esencial en la gestión de sistemas de almacenamiento?",
+          "options": [
+            "Capacidad",
+            "Fiabilidad",
+            "Color del dispositivo",
+            "Recuperabilidad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los cuatro aspectos esenciales en la gestión de sistemas de almacenamiento son: capacidad, recuperabilidad, rendimiento y fiabilidad. El color del dispositivo no es relevante."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué nivel RAID protege la información en caso de falla mediante el uso de código Hamming?",
+          "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 2",
+            "RAID 3"
+          ],
+          "correctAnswer": 2,
+          "explanation": "RAID 2 utiliza el código Hamming para detectar y corregir errores, protegiendo la información en caso de falla."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "En cuanto a organización de datos, ¿cuál es una diferencia principal entre ficheros y bases de datos?",
+          "options": [
+            "Los ficheros son más rápidos",
+            "Los ficheros se almacenan en carpetas sin estructura interna que relacione fácilmente los datos, mientras que las bases de datos organizan datos en tablas con relaciones",
+            "Las bases de datos ocupan menos espacio",
+            "Los ficheros son más seguros"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los ficheros se almacenan en carpetas sin estructura interna que relacione fácilmente los datos, mientras que las bases de datos organizan datos en tablas, filas y columnas, facilitando la relación y el acceso."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de almacenamiento comprende uno o más dispositivos físicos desde el punto de vista lógico?",
+          "options": [
+            "Almacenamiento físico",
+            "Almacenamiento en la nube",
+            "Sistema de almacenamiento lógico",
+            "Almacenamiento temporal"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un sistema de almacenamiento lógico comprende uno o más dispositivos físicos y utiliza las particiones de estos, aunque físicamente se encuentra dividido, se trata de un solo sistema desde el punto de vista lógico."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue la capacidad del primer disco duro comercial IBM 305 RAMAC lanzado en 1956?",
+          "options": [
+            "5 kilobytes",
+            "5 megabytes",
+            "5 gigabytes",
+            "5 terabytes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El primer disco duro comercial IBM 305 RAMAC lanzado en 1956 tenía una capacidad de 5 megabytes."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja tienen los discos SSD sobre los discos duros magnéticos?",
+          "options": [
+            "Son más baratos",
+            "Tienen mayor capacidad",
+            "Ofrecen mayor velocidad y fiabilidad",
+            "Son más compatibles"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los discos de estado sólido (SSD) ofrecen mayor velocidad y fiabilidad en comparación con los discos magnéticos, aunque tienen un coste mayor."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué es una SAN (Storage Area Network)?",
+          "options": [
+            "Un disco duro externo",
+            "Un sistema operativo de almacenamiento",
+            "Una red de almacenamiento dedicada que posibilita el intercambio de datos mediante software especializado",
+            "Un tipo de RAID"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Una SAN es una red de almacenamiento dedicada que posibilita el intercambio de datos mediante el uso de software especializado, a diferencia de un NAS que es un dispositivo único."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué fichero permite conservar datos en sistemas con capacidad de memoria limitada?",
+          "options": [
+            "Fichero maestro",
+            "Fichero histórico",
+            "Fichero de trabajo o maniobra",
+            "Fichero de constantes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros de trabajo o de maniobra actúan como ficheros temporales para conservar datos en sistemas o aplicaciones que tienen una capacidad de memoria limitada."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "En términos de seguridad, ¿qué ofrecen las bases de datos comparadas con los ficheros?",
+          "options": [
+            "Seguridad básica del sistema operativo",
+            "Sin seguridad",
+            "Seguridad robusta con control de acceso y encriptación",
+            "La misma seguridad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las bases de datos ofrecen seguridad robusta con control de acceso y encriptación, mientras que los ficheros otorgan seguridad básica proporcionada por el sistema operativo."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes es una extensión de archivo de código?",
+          "options": [
+            ".pdf",
+            ".jpg",
+            ".java",
+            ".mp4"
+          ],
+          "correctAnswer": 2,
+          "explanation": ".java es como un ejemplo de archivo de código, junto con .c, .js y .sql. Los demás son archivos de aplicaciones, imágenes y video respectivamente."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué nivel RAID distribuye los datos de paridad entre todas las unidades de disco?",
+          "options": [
+            "RAID 3",
+            "RAID 4",
+            "RAID 5",
+            "RAID 6"
+          ],
+          "correctAnswer": 2,
+          "explanation": "RAID 5 distribuye los datos de paridad entre todas las unidades de disco, lo que proporciona alta velocidad de transferencia."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el recurso más valioso para cualquier organización actualmente?",
+          "options": [
+            "El hardware",
+            "El personal",
+            "La información (datos)",
+            "El software"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La información (datos) es, posiblemente, el recurso más valioso para cualquier organización actualmente, ya que todo gira en torno a ella."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Fundamentos de las Bases de Datos",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la definición correcta de una base de datos?",
+          "options": [
+            "Un conjunto de archivos independientes almacenados en carpetas",
+            "Herramientas que permiten estructurar el almacenamiento de datos, relacionarlos y ayudar a su gestión, consulta y manipulación, garantizando su integridad",
+            "Un sistema operativo para gestionar información",
+            "Un programa de hojas de cálculo avanzado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos son herramientas que permiten estructurar el almacenamiento de datos, relacionarlos y ayudar a su gestión, consulta y manipulación, garantizando siempre su integridad."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué son las entidades en una base de datos?",
+          "options": [
+            "Las columnas de una tabla",
+            "Los objetos sobre los que se guarda información",
+            "Los registros individuales",
+            "Las relaciones entre tablas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las entidades son los objetos sobre los que se guarda información, los cuales tienen características distintas entre sí. Por ejemplo, en una tienda, las entidades pueden ser los clientes."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué es un registro en una base de datos?",
+          "options": [
+            "Una columna en la tabla",
+            "Una fila en la tabla",
+            "El nombre de una tabla",
+            "Una relación entre tablas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un registro es una fila en la tabla. Por ejemplo, en la tabla de clientes, cada registro representa un cliente."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una clasificación de bases de datos según su uso?",
+          "options": [
+            "Individual",
+            "Compartida",
+            "Pública",
+            "Secuencial"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Secuencial no es una clasificación según el uso. Las clasificaciones según el uso incluyen: Individual, Compartida, Bancos de datos y Pública."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a las bases de datos relacionales?",
+          "options": [
+            "Almacenan datos como objetos definidos por clases",
+            "Almacenan datos en tablas con filas y columnas que se relacionan entre sí",
+            "Organizan información en forma de árbol",
+            "Utilizan únicamente archivos de texto plano"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos relacionales almacenan datos en tablas con filas y columnas que se relacionan entre sí. Su estructura asegura la integridad de los datos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuándo surgieron las bases de datos orientadas a objetos?",
+          "options": [
+            "En los años 60",
+            "En los años 70",
+            "En los años 90",
+            "En el año 2000"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las bases de datos orientadas a objetos surgieron en los años 90 con la programación orientada a objetos."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de bases de datos almacenan información como objetos definidos por clases?",
+          "options": [
+            "Bases de datos relacionales",
+            "Bases de datos jerárquicas",
+            "Bases de datos orientadas a objetos",
+            "Bases de datos en red"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las bases de datos orientadas a objetos almacenan información como objetos definidos por clases, que incluyen atributos y métodos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a las bases de datos jerárquicas?",
+          "options": [
+            "Las relaciones pueden ser circulares",
+            "La información se almacena en forma de árbol manteniendo una relación padre-hijo",
+            "Utilizan tablas relacionadas",
+            "No tienen estructura definida"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En las bases de datos jerárquicas, la información se almacena en forma de listas o árbol y ramas, manteniendo una relación padre-hijo. Cada nodo tiene un único padre."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre bases de datos jerárquicas y en red?",
+          "options": [
+            "Las jerárquicas son más rápidas",
+            "En las bases de datos en red, las relaciones pueden ser circulares y un nodo puede tener varios padres",
+            "Las en red son más antiguas",
+            "Las jerárquicas no tienen relaciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La principal diferencia es que en las bases de datos en red las relaciones pueden ser circulares, es decir, un nodo puede tener varios padres y ser a la vez padre de alguno de ellos."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Dónde se localiza la información en una base de datos centralizada?",
+          "options": [
+            "En múltiples nodos distribuidos",
+            "En un solo dispositivo o máquina",
+            "En la nube exclusivamente",
+            "En diferentes países"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos centralizadas se distinguen principalmente por estar localizadas en un solo dispositivo o máquina, que puede ser de diferentes tipos."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuándo aparecieron las bases de datos distribuidas?",
+          "options": [
+            "En los años 60",
+            "En los años 70",
+            "En los años 80",
+            "En los años 90"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos distribuidas aparecieron en los años 70 para gestionar datos a gran escala en múltiples ubicaciones."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja técnica de las bases de datos distribuidas?",
+          "options": [
+            "Son más baratas de mantener",
+            "Aumentan la confiabilidad, disponibilidad y eficiencia en el acceso a la información",
+            "Requieren menos personal",
+            "Consumen menos energía"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A nivel técnico, las bases de datos distribuidas aumentan la confiabilidad, disponibilidad y eficiencia en el acceso a la información, entre otras ventajas."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres aspectos básicos del diseño de una base de datos distribuida?",
+          "options": [
+            "Crear, modificar y eliminar",
+            "Fragmentar, replicar y distribuir",
+            "Leer, escribir y actualizar",
+            "Insertar, borrar y consultar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres aspectos fundamentales del diseño de una base de datos distribuida son: la fragmentación, la replicación y la distribución de los datos."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué define el esquema global en la arquitectura de una base de datos distribuida?",
+          "options": [
+            "Cómo se distribuyen los fragmentos",
+            "Todos los datos de la base igual que si fuese distribuida",
+            "La ubicación física de los servidores",
+            "Las políticas de seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el esquema global se definen todos los datos de la base igual que si fuese distribuida, siendo el nivel más alto de la arquitectura."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de fragmentación se aplica directamente sobre los registros o filas de las tablas?",
+          "options": [
+            "Fragmentación vertical",
+            "Fragmentación horizontal",
+            "Fragmentación mixta",
+            "Fragmentación indexada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La fragmentación horizontal se aplica directamente sobre los registros o filas de las tablas, dividiendo la información en fragmentos que incluyen varias de estas filas."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a la fragmentación vertical?",
+          "options": [
+            "Divide los registros horizontalmente",
+            "Cada fragmento contiene una serie de atributos del origen que se repiten en todos ellos",
+            "No permite replicación",
+            "Solo funciona con bases de datos centralizadas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La fragmentación vertical se distingue porque cada fragmento resultante de dividir la información contiene una serie de atributos del origen, los cuales se repiten en todos ellos."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres formas en que pueden configurarse las bases de datos distribuidas según la distribución de información?",
+          "options": [
+            "Local, regional y global",
+            "Nodo réplica, nodo particionado y nodo híbrido",
+            "Primario, secundario y terciario",
+            "Simple, doble y triple"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos distribuidas pueden configurarse de tres formas: Nodo réplica (información duplicada), Nodo particionado (información distribuida sin duplicación) y Nodo híbrido (combinación de las anteriores)."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué significa DDBMS en el contexto de bases de datos distribuidas?",
+          "options": [
+            "Distributed Database Management System",
+            "Digital Data Base Management Software",
+            "Dynamic Database Mapping System",
+            "Direct Database Memory Storage"
+          ],
+          "correctAnswer": 0,
+          "explanation": "DDBMS significa Sistema de administración de bases de datos distribuidas (Distributed Database Management System)."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué estrategia de recuperación replica los datos en varios lugares para asegurar la disponibilidad?",
+          "options": [
+            "Copias de seguridad incrementales",
+            "Replicación geográfica",
+            "Conmutación por error",
+            "Fragmentación mixta"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La replicación geográfica es una estrategia donde se replican los datos en varios lugares para asegurar la disponibilidad y la tolerancia a fallos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de implementación de base de datos distribuida mantiene cada nodo su propia base de datos autónoma?",
+          "options": [
+            "Implementaciones múltiples",
+            "Implementaciones centralizadas",
+            "Implementaciones federadas",
+            "Implementaciones relacionales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En las implementaciones federadas, cada nodo tiene su propia base de datos autónoma y se conecta con otros nodos mediante una federación, manteniendo autonomía local."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resolvieron las bases de datos que antes tenían los archivos independientes?",
+          "options": [
+            "La falta de color en las interfaces",
+            "Errores y falta de coherencia entre aplicaciones que no interactuaban",
+            "La velocidad de procesamiento",
+            "El tamaño de los archivos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos resolvieron el problema de que los programas usaban aplicaciones muy específicas que rara vez interactuaban entre sí, lo que provocaba errores y falta de coherencia."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué es el modelo de base de datos?",
+          "options": [
+            "El tamaño físico de la base de datos",
+            "Describe cómo se almacena la información y cómo se interrelaciona, definiendo la arquitectura",
+            "El precio de implementación",
+            "El número de usuarios permitidos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo de base de datos describe cómo se almacena la información y cómo se interrelaciona, definiendo así la arquitectura de la base de datos."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de base de datos permite el acceso a cualquier usuario que cuente con los medios técnicos para hacerlo?",
+          "options": [
+            "Base de datos individual",
+            "Base de datos compartida",
+            "Base de datos pública",
+            "Banco de datos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las bases de datos públicas permiten el acceso a cualquier usuario que cuente con los medios técnicos para hacerlo, como por ejemplo la base de datos del catastro."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué combinan las bases de datos objeto-relacionales?",
+          "options": [
+            "Características de las bases de datos jerárquicas y en red",
+            "Características de las orientadas a objetos y las relacionales",
+            "SQL y NoSQL",
+            "Fragmentación horizontal y vertical"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos objeto-relacionales combinan características de las bases de datos orientadas a objetos y las relacionales, mejorando las relacionales con ventajas de las orientadas a objetos."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es uno de los objetivos de la distribución de datos en bases de datos distribuidas?",
+          "options": [
+            "Aumentar el consumo de energía",
+            "Acercar la información a las aplicaciones que la consumirán para reducir latencias",
+            "Complicar el acceso a los datos",
+            "Reducir la seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Uno de los objetivos principales de la distribución de datos es la localidad: acercar la información a las aplicaciones que la consumirán para reducir latencias."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Sistemas Gestores de Bases de Datos (SGBD)",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿En qué década nacieron los sistemas gestores de bases de datos (SGBD)?",
+          "options": [
+            "Años 50",
+            "Años 60",
+            "Años 70",
+            "Años 80"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los SGBD nacieron en los años 60 del siglo pasado, principalmente para manejar grandes volúmenes de datos en industrias como la aeroespacial y la automovilística."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguaje revolucionó el sector de bases de datos en 1986?",
+          "options": [
+            "Python",
+            "Java",
+            "SQL",
+            "C++"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El lenguaje SQL fue creado en 1986 y revolucionó el sector con la aparición de los SGBD relacionales."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuántos niveles define la arquitectura ANSI/X3/SPARC para los SGBD?",
+          "options": [
+            "Dos niveles",
+            "Tres niveles",
+            "Cuatro niveles",
+            "Cinco niveles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La arquitectura ANSI/X3/SPARC define tres niveles: externo (usuario), conceptual (lógico) e interno (físico), proporcionando una separación que abstrae al usuario de los detalles técnicos del sistema."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el nivel más cercano al usuario en la arquitectura ANSI/X3/SPARC?",
+          "options": [
+            "Nivel interno o físico",
+            "Nivel conceptual o lógico",
+            "Nivel externo o usuario",
+            "Nivel de aplicación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El nivel externo o usuario representa la visión que el usuario tiene del sistema y es el nivel más cercano al usuario."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué función NO es característica de un SGBD?",
+          "options": [
+            "Control del sistema y su seguridad",
+            "Garantizar la integridad de los datos",
+            "Compilación de código fuente",
+            "Realización y recuperación de copias de seguridad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La compilación de código fuente no es una función de un SGBD. Los SGBD se encargan de la gestión, manipulación, seguridad e integridad de datos, no de compilar código."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué componente de un SGBD contiene metadatos sobre la estructura de la base de datos?",
+          "options": [
+            "Lenguaje de programación",
+            "Diccionario de datos",
+            "Entorno gráfico",
+            "Datos almacenados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El diccionario de datos contiene metadatos (información sobre los datos y su estructura), como nombres de campos, tipos de datos y restricciones."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el perfil de usuario con permisos completos sobre el SGBD?",
+          "options": [
+            "Programadores",
+            "Operadores de mantenimiento",
+            "Administradores (DBA)",
+            "Usuarios finales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los administradores (DBA) gestionan, mantienen y optimizan el SGBD, garantizando su seguridad, rendimiento y disponibilidad, con permisos completos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "En un SGBD bicapa, ¿dónde se encuentran el cliente y el servidor?",
+          "options": [
+            "En el mismo equipo",
+            "El cliente en una máquina y el SGBD y la base de datos en otra",
+            "Distribuidos en múltiples servidores",
+            "En la nube"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En un SGBD bicapa, el SGBD y la base de datos están en la misma máquina, pero el cliente se halla en otra, comunicándose entre sí a través de la red."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de SGBD es SQLite según su tamaño?",
+          "options": [
+            "Alto rendimiento",
+            "Ligero",
+            "Empresarial",
+            "Distribuido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SQLite es un SGBD ligero, con tamaño reducido, utilizado en equipos con escasa potencia o que requieren un bajo consumo energético."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una ventaja de los SGBD frente a los ficheros clásicos?",
+          "options": [
+            "Optimización del espacio de almacenamiento",
+            "Acceso concurrente",
+            "Menor costo de implementación",
+            "Integridad de los datos asegurada"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El menor costo de implementación no se menciona como ventaja. Las ventajas incluyen optimización del espacio, acceso concurrente, integridad de datos y seguridad mejorada."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué significa DDL en el contexto de lenguajes de bases de datos?",
+          "options": [
+            "Data Download Language",
+            "Data Definition Language",
+            "Data Distribution Language",
+            "Database Development Language"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DDL significa Data Definition Language (Lenguaje de Definición de Datos) y permite definir y editar la estructura de la base de datos con comandos como Create, Alter y Drop."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos comandos pertenece al lenguaje DML?",
+          "options": [
+            "Create",
+            "Drop",
+            "Select",
+            "Grant"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Select pertenece al DML (Data Manipulation Language), que permite insertar, consultar, actualizar y eliminar datos. Los comandos más comunes son Select, Insert, Update y Delete."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué transparencia en SGBDD indica que el usuario no necesita saber si la información está replicada?",
+          "options": [
+            "Transparencia a nivel de red",
+            "Transparencia de fragmentación",
+            "Transparencia de replicación",
+            "Transparencia de concurrencia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La transparencia de replicación asegura que el usuario no necesita saber si la información está replicada en varios nodos del sistema distribuido."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos es un ejemplo de SGBDD?",
+          "options": [
+            "Oracle",
+            "MySQL",
+            "Apache Cassandra",
+            "SQLite"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Apache Cassandra es mencionado específicamente como un ejemplo de Sistema Gestor de Bases de Datos Distribuidas (SGBDD)."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué empresa es propietaria de MySQL?",
+          "options": [
+            "Microsoft",
+            "IBM",
+            "Oracle",
+            "SAP"
+          ],
+          "correctAnswer": 2,
+          "explanation": "MySQL pertenece a Oracle. Aunque comenzó como un sistema de código libre, ahora tiene una licencia libre y una comercial bajo Oracle."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el lenguaje procedural específico de Oracle?",
+          "options": [
+            "T-SQL",
+            "PL-SQL",
+            "SQL++",
+            "Oracle Script"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Oracle dispone de su propio lenguaje procedural llamado PL-SQL (Procedural Language/SQL)."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de base de datos es MongoDB?",
+          "options": [
+            "Relacional",
+            "NoSQL",
+            "Jerárquica",
+            "De red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "MongoDB es una base de datos no relacional (NoSQL) distribuida, diseñada específicamente para aplicaciones en la nube."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué comandos pertenecen al lenguaje TCL?",
+          "options": [
+            "Select e Insert",
+            "Create y Drop",
+            "Commit y Rollback",
+            "Grant y Revoke"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El lenguaje TCL (Transaction Control Language) tiene como finalidad gestionar las transacciones, y sus comandos más comunes son Commit y Rollback."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica distintiva de PostgreSQL?",
+          "options": [
+            "Es un SGBD propietario de Microsoft",
+            "Es relacional orientado a objetos",
+            "Solo funciona en Windows",
+            "No soporta transacciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "PostgreSQL es un sistema relacional orientado a objetos y multiplataforma, desarrollado por una comunidad de programadores de forma voluntaria."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué nivel de la arquitectura ANSI/X3/SPARC depende del hardware y software utilizado?",
+          "options": [
+            "Nivel externo o usuario",
+            "Nivel conceptual o lógico",
+            "Nivel interno o físico",
+            "Nivel de aplicación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El nivel interno o físico muestra cómo se almacenan los datos y es el más cercano a la organización real de los datos. Este nivel depende del hardware y software utilizado."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿En qué año se creó Oracle como SGBD?",
+          "options": [
+            "1970",
+            "1980",
+            "1986",
+            "1990"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Oracle nació en 1980, en el contexto de la proliferación de equipos informáticos en empresas y organizaciones."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una desventaja de Microsoft SQL Server?",
+          "options": [
+            "No es escalable",
+            "Utiliza mucha RAM",
+            "No tiene integración con Microsoft Server",
+            "Solo funciona en Linux"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la tabla comparativa, se menciona que SQL Server utiliza mucha RAM y tiene un tamaño de página fijo y pequeño como inconvenientes."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué problema deben solucionar los SGBDD relacionado con el acceso simultáneo?",
+          "options": [
+            "Fragmentación de datos",
+            "Replicación de datos",
+            "Concurrencia en transacciones distribuidas",
+            "Balanceo de carga"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los SGBDD deben gestionar la concurrencia en las transacciones distribuidas, que se vuelve más complejo por la existencia de varios nodos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de Firebird?",
+          "options": [
+            "Alto consumo de recursos",
+            "Buena gestión de la concurrencia",
+            "Solo funciona en Windows",
+            "Requiere licencia comercial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Firebird es conocido por su buena gestión de la concurrencia y bajo consumo de recursos, aunque sigue siendo potente y multiplataforma."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué arquitectura de SGBD es la más habitual en la web?",
+          "options": [
+            "Monocapa",
+            "Bicapa",
+            "Multicapa",
+            "Cliente-servidor simple"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La arquitectura multicapa es la más habitual en la web, destacando por la existencia de varios servidores que hacen de intermediarios entre los clientes y las bases de datos."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "Entre los perfiles de los usuarios de un SGBD se encuentran",
+          "options": [
+            "DBA, Analistas, programadores y usuarios finales",
+            "Administradores, programadores y usuarios expertos",
+            "Un SGBD no debe tener usuarios",
+            "Analista, programador y diseñador gráfico"
+          ],
+          "correctAnswer": 0,
+          "explanation": "DBA, Analistas, programadores y usuarios finales."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "En un SGBD, el nivel físico se caracteriza por",
+          "options": [
+            "Mostrar cómo se almacenan los datos",
+            "Definir la estructura de los datos",
+            "Describir las relaciones que hay entre los datos",
+            "Representar la visión que el usuario tiene de los datos"
+          ],
+          "correctAnswer": 0,
+          "explanation": "En un SGBD, el nivel físico se caracteriza por mostrar cómo se almacenan los datos."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "Con la independencia físico-lógica se consigue",
+          "options": [
+            "Cambiar la lógica de la base de datos",
+            "Modificar los usuarios independientemente de su situación",
+            "Representar los datos según lo que necesite cada usuario",
+            "Ninguna de las anteriores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Con la independencia físico-lógica se consigue"
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "Entre las funciones y objetivos de un SGBD se encuentra la de",
+          "options": [
+            "Consultar, almacenar y manipular datos",
+            "Garantizar la integridad de los datos",
+            "Posibilitar la migración del sistema a otras máquinas",
+            "Todas son correctas"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Entre las funciones y objetivos de un SGBD se encuentra la de consultar, almacenar y manipular datos, garantizar la integridad de los datos y posibilitar la migración del sistema a otras máquinas."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "Algunas ventajas de utilizar SGBD frente a los ficheros clásicos son",
+          "options": [
+            "Seguridad mejorada y baja concurrencia",
+            "Baja concurrencia y acceso más sencillo a los datos",
+            "Seguridad mejorada y acceso más sencillo a los datos",
+            "Ninguna de las anteriores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Algunas ventajas de utilizar SGBD frente a los ficheros clásicos son seguridad mejorada y acceso más sencillo a los datos."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "En un SGBD, los diccionarios de datos contienen",
+          "options": [
+            "Información sobre las herramientas que facilitan la administración de las bases de datos",
+            "El significado de las instrucciones que se le pueden dar al sistema",
+            "Metadatos, es decir, información sobre los datos y su estructura",
+            "Definiciones sobre los lenguajes de programación a utilizar"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En un SGBD, los diccionarios de datos contienen metadatos, es decir, información sobre los datos y su estructura."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "Según su tamaño, los SGBD se pueden clasificar en",
+          "options": [
+            "Jerárquicos, relacionales, en red",
+            "Ligeros y de alto rendimiento",
+            "SGBD monocapa, bicapa y multicapa",
+            "Centralizados o distribuidos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según su tamaño, los SGBD se pueden clasificar en ligeros y de alto rendimiento."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "Entre los componentes de un SGBD está",
+          "options": [
+            "Diccionario de datos",
+            "Herramientas de la base de datos",
+            "Entorno gráficon",
+            "Todas las anteriores"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Entre los componentes de un SGBD está el diccionario de datos, las herramientas de la base de datos y el entorno gráfico."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "El lenguaje DCL permite",
+          "options": [
+            "Definir la estructura de la base de datos",
+            "Controlar los permisos de acceso a los datos almacenados",
+            "Gestionar las transacciones para asegurar que las operaciones se lleven a cabo de forma segura",
+            "Todas son correctas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El lenguaje DCL permite controlar los permisos de acceso a los datos almacenados."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "Una correcta gestión de las bases de datos distribuidas debe garantizar",
+          "options": [
+            "Transparencia a nivel de red",
+            "Transparencia de fragmentación",
+            "Transparencia de replicación",
+            "Todas son correctas"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Una correcta gestión de las bases de datos distribuidas debe garantizar transparencia a nivel de red, de fragmentación y de replicación."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Modelo de Datos y Modelo Entidad-Relación",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué es un modelo de datos según Dittrich (1994)?",
+          "options": [
+            "Una base de datos específica implementada en un SGBD",
+            "Un conjunto de herramientas conceptuales para describir la representación de información en términos de datos",
+            "Un lenguaje de programación para bases de datos",
+            "Un tipo específico de sistema gestor de bases de datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según Dittrich, un modelo de datos es un conjunto de herramientas conceptuales utilizadas para describir la representación de la información en términos de datos, incluyendo estructura, operaciones y restricciones."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre modelo de datos y esquema?",
+          "options": [
+            "No hay diferencia, son términos sinónimos",
+            "El modelo proporciona herramientas generales, el esquema es la aplicación específica de estas herramientas",
+            "El modelo es físico, el esquema es conceptual",
+            "El modelo es para bases relacionales, el esquema para no relacionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo de datos proporciona las herramientas conceptuales generales, mientras que el esquema es la aplicación específica de estas herramientas a un conjunto particular de datos."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué aspectos comprende un modelo de datos?",
+          "options": [
+            "Solo la estructura de datos",
+            "Estructura, operaciones y restricciones",
+            "Solo las operaciones sobre los datos",
+            "Solo las restricciones de integridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un modelo de datos comprende tres aspectos fundamentales: estructura (tipos de datos y relaciones), operaciones (que se pueden realizar sobre los datos) y restricciones (condiciones que deben cumplir los datos)."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos sublenguajes principales mencionados para trabajar con modelos de datos?",
+          "options": [
+            "SQL y NoSQL",
+            "DDL y DML",
+            "HTML y CSS",
+            "TCP y IP"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los dos sublenguajes principales son DDL (Lenguaje de Definición de Datos) que describe estructuras y restricciones, y DML (Lenguaje de Manipulación de Datos) que describe operaciones de manipulación."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cómo se clasifican los modelos de datos según su nivel de abstracción?",
+          "options": [
+            "Simples y complejos",
+            "Externos, globales e internos",
+            "Relacionales y no relacionales",
+            "Conceptuales y físicos únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los modelos de datos se clasifican en tres niveles: externos (punto de vista de cada usuario), globales (punto de vista de todos los usuarios) e internos (punto de vista de la máquina)."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de modelos lógicos existen?",
+          "options": [
+            "Solo conceptuales",
+            "Conceptuales y convencionales",
+            "Solo convencionales",
+            "Físicos y lógicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los modelos lógicos se dividen en conceptuales (describen el mundo real sin considerar tecnología) y convencionales (orientados a la implementación en un SGBD)."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuántas fases principales tiene el diseño de una base de datos?",
+          "options": [
+            "Dos fases",
+            "Tres fases",
+            "Cuatro fases",
+            "Cinco fases"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El diseño de una base de datos tiene cuatro fases principales: análisis de requisitos, diseño conceptual, diseño lógico y diseño físico."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿En qué década fue desarrollado el modelo entidad-relación y por quién?",
+          "options": [
+            "Década de los 60 por Edgar Codd",
+            "Década de los 70 por Peter P. Chen",
+            "Década de los 80 por Michael Stonebraker",
+            "Década de los 90 por Tim Berners-Lee"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo entidad-relación fue desarrollado por Peter P. Chen en la década de los 70 con la finalidad de establecer un modelo que permitiese unificar y representar los datos del mundo real."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los elementos básicos originales del modelo entidad-relación?",
+          "options": [
+            "Tablas, campos y registros",
+            "Entidades, relaciones y atributos",
+            "Clases, objetos y métodos",
+            "Documentos, colecciones y campos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los elementos básicos originales del modelo entidad-relación son entidades, relaciones y atributos para representar los datos y el significado de una casuística del mundo real."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué símbolo se utiliza para representar las entidades en el modelo E/R?",
+          "options": [
+            "Círculos",
+            "Rectángulos",
+            "Rombos",
+            "Triángulos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las entidades se representan con rectángulos que contienen el nombre del tipo de entidad."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué símbolo se utiliza para representar los atributos en el modelo E/R?",
+          "options": [
+            "Rectángulos",
+            "Rombos",
+            "Elipses",
+            "Hexágonos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los atributos se representan mediante elipses conectadas a su entidad o relación correspondiente con una línea."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué símbolo se utiliza para representar las relaciones en el modelo E/R?",
+          "options": [
+            "Círculos",
+            "Rectángulos",
+            "Rombos",
+            "Elipses"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las relaciones se representan con rombos que conectan las entidades y muestran las asociaciones entre ellas."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos tipos principales de entidades?",
+          "options": [
+            "Simples y complejas",
+            "Fuertes y débiles",
+            "Primarias y secundarias",
+            "Internas y externas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los dos tipos principales de entidades son fuertes (o regulares) que existen por sí solas, y débiles que necesitan otra entidad para existir."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representan gráficamente las entidades débiles?",
+          "options": [
+            "Con un rectángulo simple",
+            "Con dos rectángulos concéntricos",
+            "Con un círculo",
+            "Con un rombo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las entidades débiles se representan con dos rectángulos concéntricos que contienen su nombre en el interior."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de dependencia presentan las entidades débiles?",
+          "options": [
+            "Solo dependencia de existencia",
+            "Solo dependencia de identificación",
+            "Dependencia de existencia y dependencia de identificación",
+            "No presentan dependencia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las entidades débiles presentan dos tipos de dependencia: dependencia de existencia (se eliminan si se elimina la entidad fuerte) y dependencia de identificación (requieren la clave de la entidad fuerte para identificarse)."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué son los atributos en el modelo entidad-relación?",
+          "options": [
+            "Las conexiones entre entidades",
+            "Las propiedades o características de entidades o relaciones",
+            "Los tipos de datos permitidos",
+            "Las restricciones de integridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos representan las propiedades o características de cada entidad o relación, y sus valores permiten distinguir una entidad de otra similar."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué es el dominio de un atributo?",
+          "options": [
+            "Su nombre único en la base de datos",
+            "El rango de valores que puede tomar el atributo",
+            "Su tipo de dato específico",
+            "Su posición en la entidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El dominio de un atributo es el rango de valores que puede tomar, el cual debe definirse durante el diseño de la base de datos."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos tipos básicos de atributos según su importancia?",
+          "options": [
+            "Primarios y secundarios",
+            "Obligatorios y opcionales",
+            "Simples y complejos",
+            "Estáticos y dinámicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos se clasifican en obligatorios (siempre deben estar presentes y tener un valor definido) y opcionales (pueden no tener un valor establecido)."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué son las claves en el contexto de los atributos?",
+          "options": [
+            "Atributos que se pueden modificar",
+            "Atributos que identifican a cada entidad de forma única",
+            "Atributos opcionales",
+            "Atributos derivados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las claves son uno o varios atributos que pueden identificar a cada entidad de forma única."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué son los atributos multivaluados?",
+          "options": [
+            "Atributos que no tienen valor",
+            "Atributos que pueden tener varios valores para cada entidad",
+            "Atributos que se calculan a partir de otros",
+            "Atributos que identifican únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos multivaluados pueden tener varios valores para cada entidad, como por ejemplo el email de una persona que puede tener varias cuentas."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué son los atributos compuestos?",
+          "options": [
+            "Atributos que no se pueden separar",
+            "Atributos que se pueden descomponer en atributos más específicos",
+            "Atributos que tienen múltiples valores",
+            "Atributos que se derivan de otros"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos compuestos se pueden descomponer en atributos más específicos, por ejemplo, una dirección puede separarse en calle, número y ciudad."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué son los atributos derivados?",
+          "options": [
+            "Atributos principales de una entidad",
+            "Atributos que se obtienen calculándolos a partir de otros",
+            "Atributos que se pueden modificar",
+            "Atributos que tienen múltiples valores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los atributos derivados se caracterizan por tener un valor que se obtiene calculándolo a partir de otros, lo que aumenta la complejidad del modelo de datos."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué representan las relaciones en el modelo E/R?",
+          "options": [
+            "Los datos almacenados en las entidades",
+            "Las asociaciones que pueden existir entre las entidades",
+            "Los tipos de datos permitidos",
+            "Las restricciones de integridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las relaciones representan las asociaciones que pueden existir entre las entidades del modelo, conectando los datos de diferentes entidades y definiendo cómo interactúan entre sí."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué es el grado de una relación?",
+          "options": [
+            "Su importancia en el modelo",
+            "El número de entidades participantes en la relación",
+            "El tipo de cardinalidad que tiene",
+            "Su nivel de complejidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El grado de una relación se refiere al número de entidades participantes en dicha relación."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cómo se llaman las relaciones que conectan dos entidades?",
+          "options": [
+            "Relaciones simples",
+            "Relaciones binarias",
+            "Relaciones duales",
+            "Relaciones dobles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las relaciones binarias son asociaciones entre dos entidades y son las más comunes en el modelo entidad-relación."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué son las relaciones reflexivas?",
+          "options": [
+            "Relaciones entre diferentes tipos de entidades",
+            "Relaciones que conectan dos ocurrencias de la misma entidad",
+            "Relaciones que se eliminan automáticamente",
+            "Relaciones sin atributos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las relaciones reflexivas relacionan dos ocurrencias de la misma entidad, por ejemplo, una persona con otra persona."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué es la cardinalidad de una relación?",
+          "options": [
+            "El número de atributos que tiene",
+            "Cuántas veces puede participar una entidad en una relación",
+            "Su grado de complejidad",
+            "El tipo de entidades que conecta"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La cardinalidad de una relación se refiere a cuántas veces puede participar una entidad en una relación, es decir, el número de ocurrencias de una entidad que están relacionadas con las ocurrencias de otra."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué significa una relación de cardinalidad (1:1)?",
+          "options": [
+            "Una entidad se relaciona con muchas de la otra",
+            "Una ocurrencia de la primera entidad se relaciona con una única ocurrencia de la segunda",
+            "Muchas entidades se relacionan entre sí",
+            "No hay restricciones en la relación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En una relación (1:1), una ocurrencia de la primera entidad se relaciona con una única ocurrencia de la segunda y viceversa."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué significa una relación de cardinalidad (M:N)?",
+          "options": [
+            "Solo una entidad participa",
+            "Varias ocurrencias de ambas entidades se relacionan entre sí",
+            "Una entidad domina sobre la otra",
+            "Es una relación opcional"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En una relación (M:N), varias ocurrencias de la primera entidad se relacionan con varias ocurrencias de la segunda y viceversa."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Dónde se coloca la cardinalidad en los diagramas entidad-relación?",
+          "options": [
+            "Dentro de las entidades",
+            "Entre paréntesis sobre el rombo que representa la relación",
+            "Al lado de los atributos",
+            "En una tabla separada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En los diagramas entidad-relación, la cardinalidad se coloca entre paréntesis sobre el rombo que representa la relación."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué es la cardinalidad mínima de una entidad?",
+          "options": [
+            "El número máximo de relaciones",
+            "El número mínimo de relaciones en las que participa una ocurrencia de la entidad",
+            "El tipo de entidad más simple",
+            "El grado de la relación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La cardinalidad mínima hace referencia al número mínimo de relaciones en las que participa una ocurrencia de la entidad, pudiendo ser cero (participación opcional) o uno (participación obligatoria)."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué es un rol en el modelo entidad-relación?",
+          "options": [
+            "Un tipo especial de atributo",
+            "La función que desempeña una entidad con respecto a una determinada relación",
+            "Una relación entre dos entidades",
+            "Un tipo de cardinalidad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un rol es la función que desempeña una entidad con respecto a una determinada relación, especialmente importante en relaciones reflexivas."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿En qué se inspiró Peter P. Chen para crear el modelo entidad-relación?",
+          "options": [
+            "En la física cuántica",
+            "En la biología, observando cómo las células se relacionaban",
+            "En la matemática",
+            "En la informática"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Chen se inspiró en la biología para crear el modelo entidad-relación, observando cómo las células se relacionaban y funcionaban eficientemente."
+        },
+        {
+          "id": 34,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una fase del diseño de una base de datos?",
+          "options": [
+            "Diseño conceptual",
+            "Diseño lógico",
+            "Diseño físico",
+            "Diseño algorítmico"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Las fases del diseño de una base de datos son: análisis de requisitos, diseño conceptual, diseño lógico y diseño físico. No existe una fase llamada 'diseño algorítmico'."
+        },
+        {
+          "id": 35,
+          "type": "multiple_choice",
+          "question": "¿Qué se determina en la fase de diseño físico?",
+          "options": [
+            "Las entidades del modelo",
+            "Las relaciones entre entidades",
+            "La implementación en el SGBD y la arquitectura hardware",
+            "Los tipos de usuarios"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En la fase de diseño físico se implementa la base de datos en el SGBD, considerando el sistema de almacenamiento necesario y la arquitectura hardware que se usará."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Modelo Entidad-Relación Extendido",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre el modelo E/R original y el modelo E/R extendido?",
+          "options": [
+            "El modelo extendido solo incluye entidades",
+            "El modelo extendido añade conceptos como especialización, generalización y jerarquía",
+            "El modelo extendido elimina las relaciones",
+            "El modelo extendido solo funciona con bases de datos pequeñas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo entidad-relación extendido incluye todos los elementos del modelo original y añade conceptos como especialización, generalización y jerarquía para resolver problemas que requieren representación más compleja."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa gráficamente la restricción de exclusividad?",
+          "options": [
+            "Mediante un círculo",
+            "Mediante un arco que abarca las relaciones y la entidad",
+            "Mediante una línea discontinua",
+            "Mediante un triángulo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La restricción de exclusividad se representa gráficamente mediante un arco que abarca las relaciones y la entidad, indicando que cada ocurrencia solo puede vincularse a una de las relaciones."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "En una restricción de inclusividad, ¿qué significa que un profesor que IMPARTE debe haber RECIBIDO?",
+          "options": [
+            "Debe impartir y recibir el mismo curso",
+            "La participación en una relación obliga automáticamente a la participación en otra",
+            "No puede participar en ninguna relación",
+            "Debe ser el mismo profesor en ambas relaciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la restricción de inclusividad, la participación en una relación (IMPARTE) obliga automáticamente a la participación en otra relación (RECIBE), aunque no necesariamente con las mismas ocurrencias."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre restricción de inclusividad y restricción de inclusión?",
+          "options": [
+            "No hay diferencia",
+            "En inclusión, las ocurrencias concretas deben ser las mismas en ambas relaciones",
+            "En inclusividad se usan círculos, en inclusión triángulos",
+            "La inclusión es menos estricta que la inclusividad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La restricción de inclusión es más estricta: las ocurrencias concretas de las entidades participantes en una relación deben ser necesariamente las mismas que en la otra relación."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa gráficamente la restricción de exclusión?",
+          "options": [
+            "Con un arco continuo",
+            "Con una línea discontinua que une ambas relaciones",
+            "Con un triángulo",
+            "Con un círculo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La restricción de exclusión se representa uniendo ambas relaciones mediante una línea discontinua, indicando que no pueden ocurrir simultáneamente con las mismas entidades."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "En el contexto de jerarquías, ¿qué es una superclase?",
+          "options": [
+            "Una entidad de nivel inferior",
+            "Una entidad de nivel superior que incluye conjuntos de entidades de nivel inferior",
+            "Una relación entre dos entidades",
+            "Un atributo especial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La superclase es el conjunto de entidades de nivel superior, mientras que las subclases son los conjuntos de entidades de nivel inferior en una jerarquía."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa gráficamente una relación de generalización?",
+          "options": [
+            "Mediante un círculo",
+            "Mediante un triángulo",
+            "Mediante un rombo",
+            "Mediante una línea recta"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La relación de generalización se representa gráficamente a través de un triángulo que conecta la superclase con sus subclases."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a la especialización exclusiva?",
+          "options": [
+            "Permite múltiples categorizaciones simultáneas",
+            "Cada ocurrencia de la superclase solo puede pertenecer a una de las especializaciones",
+            "No tiene representación gráfica",
+            "Solo funciona con dos subclases"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización exclusiva asegura que cada entidad pertenezca a una sola categoría, evitando errores en los datos. Se representa con un arco junto al triángulo."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa la especialización exclusiva gráficamente?",
+          "options": [
+            "Solo con el triángulo",
+            "Con un arco junto al triángulo",
+            "Con un círculo encima del triángulo",
+            "Con una línea discontinua"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización exclusiva se representa gráficamente con un arco junto al triángulo, indicando que cada ocurrencia solo puede pertenecer a una especialización."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "En la especialización inclusiva, ¿qué es posible?",
+          "options": [
+            "Solo una categorización por entidad",
+            "Las instancias de la superclase pueden pertenecer simultáneamente a varias subclases",
+            "No se permiten subclases",
+            "Solo funciona con atributos numéricos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización inclusiva permite que las entidades tengan varios roles o características a la vez, haciendo el modelo más flexible."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué distingue a la especialización total?",
+          "options": [
+            "Es opcional para todas las entidades",
+            "Es obligatorio que cada ocurrencia de la superclase pertenezca a una de las especializaciones",
+            "No requiere subclases",
+            "Solo funciona con dos niveles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización total requiere que cada entidad de la superclase pertenezca obligatoriamente a alguna subclase, manteniendo la completitud de los datos."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa la especialización total?",
+          "options": [
+            "Con un arco",
+            "Con un círculo encima del triángulo",
+            "Solo con el triángulo",
+            "Con una línea discontinua"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización total se representa con un círculo encima del triángulo, indicando que es obligatorio categorizar todas las entidades."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la especialización parcial?",
+          "options": [
+            "Que todas las entidades deban categorizarse",
+            "Flexibilidad para manejar entidades que no encajan en categorías específicas",
+            "Solo una subclase por superclase",
+            "Eliminar la herencia"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización parcial permite que algunas entidades de la superclase no pertenezcan a ninguna subclase, proporcionando flexibilidad."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "En el concepto de herencia, ¿qué puede heredar una subentidad?",
+          "options": [
+            "Solo las relaciones",
+            "Los atributos de una superentidad",
+            "Solo los identificadores",
+            "Nada, cada entidad es independiente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mediante la herencia, una subentidad puede heredar los atributos de una superentidad, y si una superentidad participa en una relación, las subclases también lo harán."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué es la agregación en el modelo E/R extendido?",
+          "options": [
+            "Una forma de eliminar entidades",
+            "Una abstracción que facilita la modelación de relaciones entre relaciones",
+            "Un tipo especial de atributo",
+            "Una restricción sobre cardinalidades"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La agregación es una técnica basada en una abstracción que permite modelar relaciones entre relaciones, algo que el modelo E/R tradicional no permite."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa la agregación gráficamente?",
+          "options": [
+            "Mediante un triángulo",
+            "Mediante un rectángulo que encapsula las entidades y relaciones involucradas",
+            "Mediante un círculo",
+            "Mediante una línea discontinua"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La agregación se representa mediante un rectángulo que encapsula las entidades y relaciones involucradas, facilitando la visualización de relaciones complejas."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a las agregaciones compuesto/componente?",
+          "options": [
+            "Todos los componentes son del mismo tipo",
+            "Permiten representar un todo a través de diversas partes que pueden ser diferentes tipos de entidad",
+            "No permiten diferentes roles",
+            "Solo funcionan con dos entidades"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las agregaciones compuesto/componente permiten que cada componente sea un tipo diferente de entidad y desempeñe roles distintos en la agregación."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a las agregaciones miembro/colección?",
+          "options": [
+            "Cada miembro es de diferente tipo",
+            "Se forma mediante la unión de varias partes iguales del mismo tipo de entidad",
+            "No requiere entidades",
+            "Solo funciona con atributos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En las agregaciones miembro/colección, el agregado se forma mediante la unión de varias partes que son del mismo tipo de entidad y desempeñan el mismo rol."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se creó originalmente el modelo entidad-relación?",
+          "options": [
+            "En los años 60",
+            "En los años 70",
+            "En los años 80",
+            "En los años 90"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo entidad-relación fue creado originalmente en los años 70, pero tenía un alcance limitado debido a las restricciones tecnológicas de la época."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos NO es un tipo de restricción sobre relaciones en el modelo E/R extendido?",
+          "options": [
+            "Restricción de exclusividad",
+            "Restricción de inclusividad",
+            "Restricción de multiplicidad",
+            "Restricción de exclusión"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los tipos de restricciones sobre relaciones son: exclusividad, inclusividad, exclusión e inclusión. La restricción de multiplicidad no es mencionada como tal en el modelo extendido."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "En el ejemplo de ESTUDIANTE-CLASE PRESENCIAL-CLASE ONLINE, ¿qué tipo de restricción se aplica?",
+          "options": [
+            "Restricción de inclusión",
+            "Restricción de exclusividad",
+            "Restricción de inclusividad",
+            "Restricción de exclusión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se aplica restricción de exclusividad porque un estudiante puede asistir a una clase presencial o participar en una clase online, pero no puede estar en ambas al mismo tiempo."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa gráficamente la restricción de inclusividad?",
+          "options": [
+            "Mediante una línea discontinua",
+            "Mediante un arco terminado en flecha que apunta a la relación obligatoria",
+            "Mediante un círculo",
+            "Mediante un triángulo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La restricción de inclusividad se representa mediante un arco terminado en flecha que apunta a la relación que debe cumplirse obligatoriamente."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "En el ejemplo de HOMBRE-MUJER con SE CASA y SE DIVORCIA, ¿qué restricción se aplica?",
+          "options": [
+            "Restricción de exclusividad",
+            "Restricción de inclusión",
+            "Restricción de inclusividad",
+            "Restricción de exclusión"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se aplica restricción de inclusión porque para divorciarse deben haberse casado antes, y las ocurrencias concretas deben ser las mismas en ambas relaciones."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cómo se representa la restricción de inclusión?",
+          "options": [
+            "Con una flecha continua",
+            "Con una flecha discontinua que apunta a la relación más general",
+            "Con un arco",
+            "Con un círculo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La restricción de inclusión se representa con una flecha discontinua que apunta a la relación más general que se debe cumplir obligatoriamente."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres conceptos básicos de las jerarquías?",
+          "options": [
+            "Entidad, atributo, relación",
+            "Generalización, especialización, herencia",
+            "Exclusividad, inclusividad, exclusión",
+            "Superclase, subclase, instancia"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las jerarquías se fundamentan en tres conceptos básicos interrelacionados: generalización, especialización y herencia."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que una entidad es una generalización de un grupo?",
+          "options": [
+            "Que es más específica que el grupo",
+            "Que cada ocurrencia de las entidades del grupo es también una ocurrencia de la entidad general",
+            "Que no tiene relación con el grupo",
+            "Que reemplaza al grupo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una entidad es una generalización de un grupo si cada ocurrencia de las entidades del grupo es también una ocurrencia de la entidad general."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "En el ejemplo de PERSONAL con PROFESOR y CONSERJE, ¿qué heredan las subentidades?",
+          "options": [
+            "Solo sus propios atributos",
+            "El atributo clave NUM_PERSONAL y el atributo NOMBRE",
+            "Solo las relaciones",
+            "Nada, son independientes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En este ejemplo, los conserjes y profesores heredan el atributo clave NUM_PERSONAL y el atributo NOMBRE de la superentidad PERSONAL."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resuelve la agregación en el ejemplo de EMPLEADO-OFICINA-DIRECTOR?",
+          "options": [
+            "Falta de entidades",
+            "Relaciones redundantes",
+            "Atributos duplicados",
+            "Cardinalidades incorrectas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La agregación resuelve el problema de relaciones redundantes al permitir crear una entidad de mayor nivel que encapsula las relaciones complejas."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja del modelo E/R extendido sobre el original?",
+          "options": [
+            "Es más simple de usar",
+            "Permite representar la realidad de manera más precisa y organizar entidades de forma más flexible",
+            "Requiere menos conceptos",
+            "Solo funciona con bases de datos pequeñas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo E/R extendido permite representar la realidad de manera más precisa y organizar y gestionar las entidades de una manera más flexible y lógica."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿En qué tipo de aplicaciones es especialmente útil el modelo E/R extendido?",
+          "options": [
+            "Solo en aplicaciones simples",
+            "En casos que requieren alto nivel de detalle como club deportivo, red social o gran empresa",
+            "Únicamente en bases de datos académicas",
+            "Solo en sistemas de archivos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo E/R extendido es especialmente útil para describir casos que requieren un alto nivel de detalle, como el modelado de un club deportivo, una red social, una gran empresa o un centro formativo."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de especialización permite que un empleado sea directivo, técnico y comercial a la vez?",
+          "options": [
+            "Especialización exclusiva",
+            "Especialización inclusiva",
+            "Especialización total",
+            "Especialización parcial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La especialización inclusiva permite que las instancias de la superclase pertenezcan simultáneamente a varias subclases, haciendo el modelo más flexible."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se produce una restricción de exclusión en el ejemplo de PROFESOR-CURSO?",
+          "options": [
+            "Cuando el profesor no conoce el curso",
+            "Cuando un profesor está impartiendo un curso, no puede estar recibiéndolo simultáneamente",
+            "Cuando hay muchos estudiantes",
+            "Cuando el curso es muy difícil"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La restricción de exclusión se produce porque si un profesor está impartiendo un curso específico, se le prohíbe estar recibiendo ese mismo curso simultáneamente."
+        }
+      ]
+    }
+  ]
+}

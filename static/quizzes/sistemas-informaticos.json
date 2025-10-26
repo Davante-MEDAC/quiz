@@ -1,0 +1,1955 @@
+{
+  "id": "sistemas-informaticos",
+  "title": "Sistemas Informáticos",
+  "description": "Componentes y funcionamiento de los sistemas informáticos.",
+  "icon": "💾",
+  "items": [
+    {
+      "kind": "lesson",
+      "name": "Caracterización de los sistemas informáticos",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Quién propuso la máquina de Turing y en qué año?",
+          "options": [
+            "John von Neumann en 1945",
+            "Alan Turing en 1936",
+            "Charles Babbage en 1834",
+            "Ada Lovelace en 1843"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Alan Turing propuso la máquina de Turing en 1936 como un modelo teórico de computación que formaliza el concepto de algoritmo y cálculo."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal característica de la arquitectura de Von Neumann?",
+          "options": [
+            "Usa memorias separadas para instrucciones y datos",
+            "Usa una sola memoria para almacenar tanto instrucciones como datos",
+            "No tiene unidad aritmético-lógica",
+            "Solo puede procesar datos, no instrucciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La arquitectura de Von Neumann se caracteriza por el uso de una sola memoria para almacenar tanto las instrucciones del programa como los datos que se están procesando."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las cuatro etapas del ciclo de instrucción en la arquitectura de Von Neumann?",
+          "options": [
+            "Start, Process, End, Store",
+            "Fetch, Decode, Execute, Store",
+            "Input, Process, Output, Feedback",
+            "Load, Calculate, Save, Display"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El ciclo de instrucción consta de: Fetch (captura), Decode (decodificación), Execute (ejecución) y Store (almacenamiento)."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja de la arquitectura Harvard sobre la de Von Neumann?",
+          "options": [
+            "Es más barata de implementar",
+            "Permite acceso simultáneo a instrucciones y datos",
+            "Usa menos memoria",
+            "Es más fácil de programar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La arquitectura Harvard permite acceso simultáneo a instrucciones y datos gracias a sus memorias separadas y buses independientes, mejorando el rendimiento."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué significa ALU en el contexto de la CPU?",
+          "options": [
+            "Automatic Logic Unit",
+            "Arithmetic Logic Unit",
+            "Advanced Logic Unit",
+            "Algorithmic Logic Unit"
+          ],
+          "correctAnswer": 1,
+          "explanation": "ALU significa Arithmetic Logic Unit (Unidad Aritmético-Lógica), que realiza operaciones matemáticas y lógicas básicas."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la dimensión estándar de una placa base ATX?",
+          "options": [
+            "244 x 244 mm",
+            "305 x 330 mm",
+            "150 x 150 mm",
+            "400 x 300 mm"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La placa base ATX tiene una dimensión estándar de 305 x 330 mm y es la más habitual en ordenadores de escritorio."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función principal de la fuente de alimentación?",
+          "options": [
+            "Procesar datos",
+            "Almacenar información",
+            "Transformar corriente alterna en corriente continua",
+            "Conectar periféricos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La fuente de alimentación transforma la corriente alterna (240V) en corriente continua y facilita la corriente eléctrica para todos los elementos electrónicos del sistema."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué significa SSD?",
+          "options": [
+            "System Storage Device",
+            "Solid State Drive",
+            "Super Speed Disk",
+            "Sequential Storage Drive"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SSD significa Solid State Drive, un dispositivo de almacenamiento electrónico que emplea componentes semiconductores para almacenar información en chips de memorias flash."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la velocidad de transmisión típica de un SSD a través de conexión SATA?",
+          "options": [
+            "300 MB/s",
+            "600 MB/s",
+            "900 MB/s",
+            "1200 MB/s"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los dispositivos SSD son capaces de transmitir a 600 MB/s a través de la conexión SATA, lo que los hace mucho más rápidos que los discos duros tradicionales."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué ocurre con la información almacenada en la memoria RAM al apagar el ordenador?",
+          "options": [
+            "Se mantiene permanentemente",
+            "Se pierde toda la información",
+            "Se transfiere al disco duro",
+            "Se comprime automáticamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La memoria RAM pierde toda la información si se reinicia o apaga el ordenador, ya que es un tipo de memoria volátil."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la tecnología de memoria RAM más actual mencionada en el documento?",
+          "options": [
+            "DDR3",
+            "DDR4",
+            "DDR5",
+            "SDRAM"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las memorias RAM más utilizadas actualmente son las DDR4, capaces de trabajar a 4.600 MHz y con un almacenamiento de hasta 16 GB."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de ranura se utiliza en equipos de sobremesa para conectar memorias DDR?",
+          "options": [
+            "SO-DIMM",
+            "DIMM",
+            "SIMM",
+            "RIMM"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DIMM se utiliza en placas de equipos de sobremesa y permite conectar memorias DDR 1, 2, 3 y 4."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "Según el caso práctico 1, ¿qué significan dos tonos agudos en una placa base Dell?",
+          "options": [
+            "Falla de la CPU",
+            "No se detecta memoria RAM",
+            "Error en la tarjeta gráfica",
+            "Problema con la fuente de alimentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el caso de Dell, dos tonos significan que no se detecta la memoria RAM, según la tabla de códigos de sonido proporcionada."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cómo se clasifican los periféricos que permiten tanto entrada como salida de información?",
+          "options": [
+            "Periféricos de entrada",
+            "Periféricos de salida",
+            "Periféricos de E/S",
+            "Periféricos especializados"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los periféricos de E/S (Entrada/Salida) son aquellos que permiten tanto la entrada de información al ordenador como la salida al exterior, como una pantalla táctil."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un ejemplo de periférico de comunicación?",
+          "options": [
+            "Monitor",
+            "Teclado",
+            "Tarjeta de red",
+            "Impresora"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La tarjeta de red es un periférico de comunicación que permite la comunicación entre ordenadores o con redes."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta de Windows se utiliza para gestionar dispositivos conectados?",
+          "options": [
+            "Panel de Control",
+            "Administrador de dispositivos",
+            "Explorador de archivos",
+            "Monitor de sistema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En Windows, la herramienta encargada para gestionar dispositivos es conocida como Administrador de dispositivos."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la ley que regula la prevención de riesgos laborales en España?",
+          "options": [
+            "Ley 30/1995",
+            "Ley 31/1995",
+            "Ley 32/1995",
+            "Ley 29/1995"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La normativa sobre prevención de riesgos está recogida en la Ley 31/1995 de 8 de noviembre, de Prevención de Riesgos Laborales (LPRL)."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué significa el sistema de emergencia PAS?",
+          "options": [
+            "Prevenir, Asegurar, Socorrer",
+            "Proteger, Avisar, Socorrer",
+            "Planificar, Actuar, Supervisar",
+            "Parar, Avisar, Salvar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cuando se produce un accidente, hay que actuar siempre con el sistema de emergencia PAS: proteger, avisar y socorrer."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la distancia mínima recomendada entre el monitor y los ojos?",
+          "options": [
+            "30 cm",
+            "40 cm",
+            "50 cm",
+            "60 cm"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El monitor debe colocarse como mínimo a 40 cm de los ojos para prevenir problemas de fatiga visual."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué establece la regla 20-20-20 para la prevención de fatiga visual?",
+          "options": [
+            "Cada 20 minutos, mirar 20 metros durante 20 segundos",
+            "Cada 20 minutos, mirar 6 metros durante 20 segundos",
+            "Cada 20 segundos, mirar 20 metros durante 20 minutos",
+            "Trabajar 20 minutos, descansar 20 minutos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La regla 20-20-20 establece que cada 20 minutos, se debe mirar algo a 6 metros de distancia durante al menos 20 segundos para descansar la vista."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un componente principal de la arquitectura Harvard?",
+          "options": [
+            "Memoria de instrucciones",
+            "Memoria de datos",
+            "Memoria compartida",
+            "Buses independientes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La arquitectura Harvard se caracteriza por tener memorias físicas separadas (no compartidas) para instrucciones y datos, con buses independientes."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de placa base se utiliza típicamente en equipos gaming de altas prestaciones?",
+          "options": [
+            "ATX",
+            "MicroATX",
+            "ITX",
+            "MiniATX"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las placas ITX son utilizadas en equipos que requieren altas prestaciones técnicas, como equipos de gaming o determinados servidores."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal desventaja de la arquitectura de Von Neumann?",
+          "options": [
+            "Es muy compleja",
+            "Cuello de botella de Von Neumann",
+            "No puede almacenar programas",
+            "No tiene ALU"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El cuello de botella de Von Neumann limita la velocidad del sistema por la velocidad de transferencia entre la CPU y la memoria, ya que ambos tipos de datos comparten el mismo bus."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnología utilizan los dispositivos de almacenamiento óptico?",
+          "options": [
+            "Magnetismo",
+            "Semiconductores",
+            "Sistema óptico o láser",
+            "Memoria flash"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los dispositivos de almacenamiento óptico utilizan un sistema óptico o láser para transmitir datos digitales a otro soporte como CD o DVD."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el formato de fuente de alimentación más compacto mencionado?",
+          "options": [
+            "ATX",
+            "SFX",
+            "Formato servidor",
+            "MicroATX"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SFX es el formato más compacto para miniPC, midiendo 125 x 63,5 x 100 mm, con menos conectores que ATX pero similar funcionalidad."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué significa CU en el contexto de la CPU?",
+          "options": [
+            "Control Unit",
+            "Computing Unit",
+            "Central Unit",
+            "Communication Unit"
+          ],
+          "correctAnswer": 0,
+          "explanation": "CU significa Control Unit (Unidad de Control), que interpreta las instrucciones del programa y genera señales de control para coordinar las operaciones del ordenador."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "En el caso práctico 2, ¿cuál era el problema de Míriam con su nueva impresora?",
+          "options": [
+            "La impresora estaba dañada",
+            "Faltaba el controlador del dispositivo",
+            "No había conexión eléctrica",
+            "El cable estaba defectuoso"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Al tratarse de un nuevo dispositivo, el ordenador no tenía instalado el controlador necesario para establecer comunicación con la impresora."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes es un riesgo laboral específico de los informáticos?",
+          "options": [
+            "Exposición a radiación",
+            "Sedentarismo",
+            "Trabajo en alturas",
+            "Manipulación de químicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El sedentarismo es un riesgo específico de los informáticos, ya que permanecen sentados durante largos períodos, lo que aumenta el riesgo de enfermedades cardiovasculares y obesidad."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de ranura se utiliza en portátiles para la memoria RAM?",
+          "options": [
+            "DIMM",
+            "SO-DIMM",
+            "SIMM",
+            "RIMM"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SO-DIMM es semejante a DIMM pero con un tamaño reducido, utilizado normalmente en portátiles o servidores."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres tipos de buses que forman el bus del sistema?",
+          "options": [
+            "Bus de entrada, bus de proceso, bus de salida",
+            "Bus de datos, bus de direcciones, bus de control",
+            "Bus principal, bus secundario, bus auxiliar",
+            "Bus rápido, bus lento, bus medio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bus del sistema incluye el bus de datos (transfiere datos), el bus de direcciones (especifica direcciones de memoria) y el bus de control (coordina y gestiona el uso de los otros buses)."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "Según el documento, ¿qué aplicaciones típicas utiliza la arquitectura Harvard?",
+          "options": [
+            "Ordenadores personales y servidores",
+            "Microcontroladores y procesadores DSP",
+            "Smartphones y tablets",
+            "Sistemas operativos y bases de datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La arquitectura Harvard es comúnmente utilizada en microcontroladores (sistemas embebidos) y procesadores digitales de señales (DSP) donde la eficiencia y el rendimiento son críticos."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué característica define a los periféricos según el documento?",
+          "options": [
+            "Son componentes indispensables para el funcionamiento",
+            "Son componentes no indispensables pero útiles",
+            "Solo incluyen dispositivos de entrada",
+            "Solo funcionan con energía externa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los periféricos se definen como aquellos componentes informáticos no indispensables para el funcionamiento del ordenador, pero que son útiles para poder utilizarlo."
+        },
+        {
+          "id": 33,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la importancia de la máquina de Turing en la teoría de la computación?",
+          "options": [
+            "Fue la primera computadora física",
+            "Establece los límites de lo que es posible calcular",
+            "Inventó el sistema binario",
+            "Creó el primer lenguaje de programación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La importancia de la máquina de Turing radica en su capacidad para representar cualquier cálculo que pueda realizarse mediante un algoritmo, estableciendo los límites de lo que es posible calcular."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Explotación de Aplicaciones",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres principales categorías de software según su propósito y funcionalidad?",
+          "options": [
+            "Software de aplicación, software de programación y software de sistema",
+            "Software libre, software propietario y software comercial",
+            "Software básico, software avanzado y software especializado",
+            "Software local, software en la nube y software híbrido"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Las tres principales categorías de software son: software de aplicación (diseñado para usuarios finales), software de programación (herramientas para desarrolladores) y software de sistema (facilita el funcionamiento del hardware)."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de software incluye procesadores de texto, hojas de cálculo y navegadores web?",
+          "options": [
+            "Software de programación",
+            "Software de sistema",
+            "Software de aplicación",
+            "Software de utilidades"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El software de aplicación está diseñado para que los usuarios realicen tareas específicas e incluye procesadores de texto, hojas de cálculo, navegadores web, clientes de correo y administradores de bases de datos."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre requisitos mínimos y recomendados de software?",
+          "options": [
+            "Los mínimos son opcionales, los recomendados son obligatorios",
+            "Los mínimos aseguran funcionamiento básico, los recomendados garantizan rendimiento óptimo",
+            "Los mínimos son para usuarios novatos, los recomendados para expertos",
+            "No hay diferencia real entre ambos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los requisitos mínimos aseguran que el software funcione correctamente, mientras que los recomendados garantizan un rendimiento óptimo del sistema."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué establece una licencia de software?",
+          "options": [
+            "Solo el precio del software",
+            "Los términos bajo los cuales se puede utilizar y distribuir un programa",
+            "La velocidad de ejecución del programa",
+            "El tamaño del archivo de instalación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una licencia de software es un acuerdo legal que establece los términos bajo los cuales se puede utilizar y distribuir un programa informático, determinando cómo se puede usar, modificar y distribuir el software."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica del software con licencia propietaria?",
+          "options": [
+            "Se puede modificar libremente el código fuente",
+            "Es siempre gratuito",
+            "La propiedad intelectual pertenece a una empresa o individuo",
+            "Permite distribución ilimitada sin restricciones"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El software con licencia propietaria es aquel cuya propiedad intelectual pertenece a una empresa o individuo. El usuario debe adquirir una licencia para usarlo y no tiene acceso al código fuente."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué permite el software libre a los usuarios?",
+          "options": [
+            "Solo ejecutar el programa",
+            "Ejecutar, copiar, distribuir, estudiar, cambiar y/o mejorar el software",
+            "Únicamente ver el código fuente",
+            "Solo instalarlo en un dispositivo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El software libre permite a los usuarios ejecutar, copiar, distribuir, estudiar, cambiar y/o mejorar el software. Además, proporciona acceso al código fuente."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un ejemplo de software libre mencionado en el documento?",
+          "options": [
+            "Microsoft Office",
+            "Adobe Photoshop",
+            "LibreOffice",
+            "Windows 10"
+          ],
+          "correctAnswer": 2,
+          "explanation": "LibreOffice es mencionado como ejemplo de software libre, junto con Linux. Microsoft Office y Adobe Photoshop son ejemplos de software propietario."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de licencia se aplica al software instalado en dispositivos individuales?",
+          "options": [
+            "Licencias de servidor",
+            "Licencias de cliente",
+            "Licencias corporativas",
+            "Licencias de red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las licencias de cliente se aplican al software que se instala en dispositivos individuales, como ordenadores de sobremesa y portátiles, limitando su uso a un número específico de dispositivos."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Para qué se usan las licencias de servidor?",
+          "options": [
+            "Para un solo usuario en un dispositivo personal",
+            "Para software que se ejecuta en servidores permitiendo múltiples conexiones",
+            "Solo para software de seguridad",
+            "Únicamente para sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las licencias de servidor se usan para software que se ejecuta en servidores, permitiendo múltiples conexiones y usuarios en paralelo, como la licencia de Windows Server."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué extensión tienen típicamente los archivos de instalación en Windows?",
+          "options": [
+            ".dmg o .pkg",
+            ".deb o .rpm",
+            ".exe o .msi",
+            ".bin o .sh"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En Windows, los archivos de instalación suelen tener la extensión .exe o .msi. La instalación implica descargar el archivo, ejecutarlo y seguir las instrucciones del asistente."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cómo se desinstala típicamente una aplicación en macOS?",
+          "options": [
+            "Usando el Panel de Control",
+            "Arrastrando la aplicación a la papelera",
+            "Ejecutando un comando en terminal",
+            "Usando un programa desinstalador específico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En macOS, para desinstalar una aplicación simplemente se debe abrir la carpeta de aplicaciones y arrastrar la aplicación a la papelera."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué son las instalaciones desatendidas?",
+          "options": [
+            "Instalaciones que fallan automáticamente",
+            "Instalaciones que requieren supervisión constante",
+            "Instalaciones iniciadas por el usuario sin requerir intervención durante su desarrollo",
+            "Instalaciones que solo funcionan de noche"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las instalaciones desatendidas son aquellas en las que el usuario inicia el proceso de instalación sin que se requiera su intervención durante su desarrollo."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de las instalaciones desatendidas?",
+          "options": [
+            "Son más lentas pero más seguras",
+            "Permiten realizar múltiples instalaciones simultáneamente sin supervisión continua",
+            "Solo funcionan en un tipo de sistema operativo",
+            "Requieren más recursos del sistema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las instalaciones desatendidas permiten realizar múltiples instalaciones simultáneamente sin la necesidad de supervisión continua, ahorrando tiempo y garantizando consistencia."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué contiene un fichero de respuestas en instalaciones desatendidas?",
+          "options": [
+            "Solo la clave de producto",
+            "Únicamente la ruta de instalación",
+            "Todas las configuraciones necesarias para completar la instalación automáticamente",
+            "Solo información de usuario"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un fichero de respuestas contiene todas las configuraciones necesarias para completar la instalación automáticamente, incluyendo clave de producto, ruta de instalación y configuraciones de usuario."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta de Microsoft permite la administración centralizada de aplicaciones en una red?",
+          "options": [
+            "Windows Update",
+            "SCCM (System Center Configuration Manager)",
+            "Control Panel",
+            "Task Manager"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SCCM (System Center Configuration Manager) es una herramienta de Microsoft que permite la administración centralizada de aplicaciones en una red para gestionar instalaciones desatendidas a gran escala."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Por qué es importante mantener actualizados los sistemas operativos y aplicaciones?",
+          "options": [
+            "Solo para tener la versión más reciente",
+            "Para corregir vulnerabilidades, mejorar estabilidad y añadir nuevas funcionalidades",
+            "Únicamente por razones estéticas",
+            "Solo para consumir más espacio en disco"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Mantener actualizados los sistemas es importante para: 1) Seguridad (corregir vulnerabilidades), 2) Estabilidad y rendimiento (corregir errores), y 3) Nuevas funcionalidades y mejoras."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta se utiliza en Windows para gestionar actualizaciones?",
+          "options": [
+            "App Store",
+            "Windows Update",
+            "Control Panel únicamente",
+            "Command Prompt"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En Windows se utiliza Windows Update para descargar e instalar actualizaciones automáticamente del sistema operativo y aplicaciones."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el primer paso en los protocolos de resolución de incidencias?",
+          "options": [
+            "Implementar la solución inmediatamente",
+            "Documentar la incidencia",
+            "Identificación del problema recopilando información detallada",
+            "Verificar que el problema se haya resuelto"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El primer paso en la resolución de incidencias es la identificación del problema, recopilando información detallada sobre la incidencia y utilizando herramientas de diagnóstico para determinar la causa."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué protocolo se utiliza principalmente para administración remota en entornos Windows?",
+          "options": [
+            "SSH (Secure Shell)",
+            "FTP",
+            "RDP (Remote Desktop Protocol)",
+            "HTTP"
+          ],
+          "correctAnswer": 2,
+          "explanation": "RDP (Remote Desktop Protocol) se utiliza principalmente en entornos Windows para administración remota, mientras que SSH se emplea comúnmente en entornos Linux y Unix."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué debe incluirse al elaborar un manual de instalación?",
+          "options": [
+            "Solo texto descriptivo",
+            "Únicamente capturas de pantalla",
+            "Capturas de pantalla, descripciones detalladas y pasos numerados",
+            "Solo los requisitos del sistema"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un manual de instalación debe documentar cada paso con capturas de pantalla y descripciones detalladas, incluyendo pasos numerados para facilitar la comprensión y seguimiento."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos es un procesador de texto mencionado en las herramientas ofimáticas?",
+          "options": [
+            "Microsoft Excel",
+            "Google Chrome",
+            "Microsoft Word",
+            "MySQL Workbench"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Microsoft Word es mencionado como ejemplo de procesador de texto en las herramientas ofimáticas, junto con LibreOffice Writer, CanvaDocs y Google Docs."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta se menciona como ejemplo de hoja de cálculo?",
+          "options": [
+            "Microsoft PowerPoint",
+            "Microsoft Excel",
+            "Mozilla Firefox",
+            "Thunderbird"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Microsoft Excel es mencionado como ejemplo de hoja de cálculo, junto con LibreOffice Calc y Google Sheets, herramientas útiles para organizar, analizar y manipular datos."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una herramienta de productividad basada en tableros y tarjetas?",
+          "options": [
+            "Slack",
+            "Trello",
+            "Evernote",
+            "Microsoft Teams"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Trello es una aplicación de gestión de proyectos basada en tableros y tarjetas que permite organizar tareas, asignar responsabilidades y seguir el progreso de manera visual y colaborativa."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta combina chat, videollamadas y almacenamiento de archivos?",
+          "options": [
+            "Evernote",
+            "Trello",
+            "Microsoft Teams",
+            "Asana únicamente"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Microsoft Teams es una herramienta de colaboración que combina chat, videollamadas y almacenamiento de archivos en un único espacio, facilitando el trabajo en equipo especialmente en entornos remotos."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una herramienta gratuita para recuperar archivos borrados en Windows?",
+          "options": [
+            "Clonezilla",
+            "Recuva",
+            "Malwarebytes",
+            "Windows Defender"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Recuva es mencionado como un programa gratuito para recuperar archivos borrados en Windows, siendo una herramienta útil de seguridad y recuperación de datos."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta se especializa en la eliminación de malware y spyware?",
+          "options": [
+            "Windows Backup",
+            "Clonezilla",
+            "Malwarebytes",
+            "Recuva"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Malwarebytes se trata de una herramienta especializada en la eliminación de malware y spyware, proporcionando protección avanzada contra amenazas específicas."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Cuál es un cliente FTP gratuito y de código abierto?",
+          "options": [
+            "WinSCP únicamente",
+            "FileZilla",
+            "7-Zip",
+            "Notepad++"
+          ],
+          "correctAnswer": 1,
+          "explanation": "FileZilla se trata de un cliente FTP gratuito y de código abierto que facilita la transferencia de archivos entre un cliente y un servidor a través de Internet o LAN."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué utilidad de propósito general se menciona para compresión de archivos?",
+          "options": [
+            "CCleaner",
+            "Notepad++",
+            "7-Zip",
+            "FileZilla"
+          ],
+          "correctAnswer": 2,
+          "explanation": "7-Zip es mencionado como un programa de compresión de archivos gratuito y de código abierto, siendo una utilidad de propósito general muy útil para gestionar archivos comprimidos."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta se usa para optimización del sistema eliminando archivos temporales?",
+          "options": [
+            "7-Zip",
+            "FileZilla",
+            "CCleaner",
+            "Notepad++"
+          ],
+          "correctAnswer": 2,
+          "explanation": "CCleaner es una herramienta de optimización del sistema que elimina archivos temporales y limpia el registro de Windows, mejorando el rendimiento del sistema."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Cuál NO es una ventaja de las instalaciones desatendidas mencionada en el documento?",
+          "options": [
+            "Ahorro de tiempo",
+            "Consistencia en las instalaciones",
+            "Mayor consumo de recursos",
+            "Reducción de errores humanos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El mayor consumo de recursos NO es una ventaja de las instalaciones desatendidas. Las ventajas mencionadas son: ahorro de tiempo, consistencia y reducción de errores humanos."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Qué formato tienen típicamente los ficheros de respuestas en Windows?",
+          "options": [
+            ".txt o .doc",
+            ".xml o .ini",
+            ".exe o .msi",
+            ".jpg o .png"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los ficheros de respuestas en Windows suelen tener la extensión .xml o .ini e incluyen información como la clave de producto, la ruta de instalación y las configuraciones de usuario."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el último paso en los protocolos de resolución de incidencias?",
+          "options": [
+            "Identificación del problema",
+            "Análisis y priorización",
+            "Implementación de la solución",
+            "Documentación de la incidencia"
+          ],
+          "correctAnswer": 3,
+          "explanation": "El último paso en la resolución de incidencias es la documentación, donde se registran todos los detalles del problema y su resolución, actualizando la base de conocimientos para futuras referencias."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Sistemas Operativos",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el componente del sistema operativo que tiene contacto directo con el hardware?",
+          "options": [
+            "Los servicios",
+            "Las interfaces",
+            "El núcleo (kernel)",
+            "Los controladores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El núcleo (kernel) es el componente que tiene contacto directo con el hardware y es el encargado de gestionar todas las peticiones de recursos que demandan los servicios."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "En la estructura monolítica de un sistema operativo:",
+          "options": [
+            "Existe un núcleo principal que controla todos los servicios",
+            "Todo el SO se ejecuta como un único programa en modo kernel",
+            "Los módulos están organizados en niveles jerárquicos",
+            "Se utiliza una arquitectura cliente-servidor"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la estructura monolítica, todo el SO se ejecuta como un único programa en modo kernel, y las distintas tareas de gestión son llevadas a cabo mediante rutinas entrelazadas entre diferentes módulos."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué característica define la estructura jerárquica de sistemas operativos?",
+          "options": [
+            "Todos los módulos pueden interactuar entre sí libremente",
+            "Cada nivel solo puede interactuar con su nivel superior o inferior correspondiente",
+            "Se ejecuta como un único programa",
+            "Utiliza anillos concéntricos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la estructura jerárquica, cada nivel es un módulo que realiza una función y solo puede interactuar con su correspondiente nivel superior o inferior, consiguiendo mayor protección y facilidad de acceso."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal característica de la estructura virtualizada?",
+          "options": [
+            "Conecta varios ordenadores en red",
+            "Organiza el sistema en anillos concéntricos",
+            "Virtualiza hardware a través de software",
+            "Divide el sistema en niveles jerárquicos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La estructura virtualizada consigue virtualizar hardware a través de software, emulando la existencia de un ordenador completo 'dentro' de otro ordenador."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué arquitectura de sistema operativo utiliza un programa llamado monitor?",
+          "options": [
+            "Sistema distribuido",
+            "Sistema de tiempo compartido",
+            "Sistema operativo por lotes",
+            "Sistema cliente-servidor"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El sistema operativo por lotes se fundamenta en el uso de un programa llamado monitor, encargado de controlar la secuencia de procesos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una función de control del sistema operativo?",
+          "options": [
+            "Planificación de CPU",
+            "Gestión de memoria",
+            "Actualización del SO",
+            "Control de acceso"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La actualización del SO es una función de explotación, no de control. Las funciones de control incluyen planificación de CPU, gestión de memoria, y control de acceso."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué función gestiona la coordinación entre procesos para evitar conflictos?",
+          "options": [
+            "Planificación de CPU",
+            "Sincronización de procesos",
+            "Gestión de interrupciones",
+            "Control de entrada/salida"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sincronización de procesos maneja la coordinación entre procesos para evitar conflictos y asegurar la integridad de los datos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una función de explotación del sistema operativo?",
+          "options": [
+            "Control de procesos",
+            "Seguridad y protección",
+            "Monitoreo del sistema",
+            "Gestión de interrupciones"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El monitoreo del sistema es una función de explotación que supervisa el rendimiento del sistema, incluyendo el uso de CPU, memoria, E/S y red."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de sistema operativo está diseñado para ser utilizado por una sola persona a la vez?",
+          "options": [
+            "Sistema multiusuario",
+            "Sistema distribuido",
+            "Sistema monousuario",
+            "Sistema centralizado"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los sistemas operativos monousuario están diseñados para ser utilizados por una sola persona a la vez, ideales para computadoras personales."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre sistemas monotarea y multitarea?",
+          "options": [
+            "El número de usuarios que pueden acceder",
+            "El número de procesos que pueden ejecutarse simultáneamente",
+            "El tipo de hardware utilizado",
+            "El método de comunicación con el usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los sistemas monotarea ejecutan un solo proceso a la vez, mientras que los multitarea permiten que múltiples procesos se ejecuten simultáneamente."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué significa CLI en el contexto de interfaces de usuario?",
+          "options": [
+            "Command Line Interface",
+            "Computer Language Integration",
+            "Central Logic Interface",
+            "Control Line Instruction"
+          ],
+          "correctAnswer": 0,
+          "explanation": "CLI significa Command Line Interface (Interfaz de Línea de Comandos), que permite al usuario interactuar con el sistema a través de comandos de texto."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el comando de CMD para mostrar el contenido de un directorio?",
+          "options": [
+            "cd",
+            "dir",
+            "ls",
+            "show"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El comando 'dir' en CMD muestra el contenido de un directorio en sistemas Windows."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué comando de CMD permite moverse entre carpetas?",
+          "options": [
+            "dir",
+            "cd",
+            "move",
+            "goto"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El comando 'cd' (change directory) permite movernos entre carpetas en la línea de comandos."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué es una máquina virtual?",
+          "options": [
+            "Un hardware especializado para servidores",
+            "Un software que emula que el sistema operativo está instalado en otro ordenador",
+            "Una red de computadoras conectadas",
+            "Un tipo de procesador virtual"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una máquina virtual es un software instalado en un sistema que emula que el sistema operativo está instalado en otro ordenador, como un ordenador dentro de otro ordenador."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un hipervisor mencionado en el documento?",
+          "options": [
+            "VMware",
+            "Hyper-V",
+            "VirtualBox",
+            "Docker"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Docker no se menciona en el documento como hipervisor. Los mencionados son VMware, Hyper-V y VirtualBox."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de licencia se distribuye asociada a un equipo específico?",
+          "options": [
+            "Retail",
+            "OEM",
+            "Por volumen",
+            "Libre"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La licencia OEM se distribuye asociada a un equipo específico y está prohibida tanto su venta como cederla a terceros."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen los sistemas operativos libres?",
+          "options": [
+            "Requieren licencia de pago",
+            "No se puede modificar su código",
+            "Su código fuente está disponible para uso, modificación y distribución",
+            "Solo pueden usarse en entornos educativos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los sistemas operativos libres tienen su código fuente disponible para que cualquier persona lo use, modifique y distribuya, promoviendo la transparencia y colaboración."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la combinación de teclas para acceder al administrador de tareas en Windows?",
+          "options": [
+            "Ctrl + Alt + Del",
+            "Ctrl + Shift + Esc",
+            "Ctrl + Alt + Sup",
+            "Alt + Tab"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Se puede acceder al administrador de tareas pulsando simultáneamente Ctrl + Alt + Sup, o haciendo clic derecho en la barra de inicio."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué permite hacer el administrador de tareas de Windows?",
+          "options": [
+            "Solo ver los programas en ejecución",
+            "Visualizar tareas, procesos y el consumo de recursos de cada uno",
+            "Únicamente cerrar programas",
+            "Solo monitorear el uso de CPU"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El administrador de tareas permite visualizar todas las tareas, procesos y archivos en ejecución, junto con los recursos que está consumiendo cada uno de ellos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja principal tiene la interfaz CLI sobre la GUI?",
+          "options": [
+            "Es más fácil de usar",
+            "Tiene mejores gráficos",
+            "Reduce el consumo de recursos del sistema",
+            "Permite más colores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La interfaz CLI es muy eficiente ya que reduce elevadamente el consumo de recurso del sistema al no requerir rendimiento gráfico."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué comando de CMD permite ver la configuración de red del equipo?",
+          "options": [
+            "netconfig",
+            "ipconfig",
+            "network",
+            "netstat"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El comando 'ipconfig' muestra la configuración de red del equipo en sistemas Windows."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué comando se utiliza para formatear una unidad en CMD?",
+          "options": [
+            "format",
+            "fdisk",
+            "disk",
+            "clean"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El comando 'format' se utiliza para formatear una unidad en la línea de comandos de Windows."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre sistemas uniprocesador y multiprocesador?",
+          "options": [
+            "El número de usuarios simultáneos",
+            "El tipo de tareas que pueden ejecutar",
+            "El número de CPUs o núcleos disponibles",
+            "El sistema operativo utilizado"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los sistemas uniprocesador funcionan con una sola CPU, mientras que los multiprocesador están diseñados para funcionar con múltiples procesadores o núcleos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de sistemas operativos pueden ejecutarse directamente desde un medio extraíble sin instalación?",
+          "options": [
+            "Instalables",
+            "Ejecutables o 'live'",
+            "Distribuidos",
+            "Virtualizados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los sistemas operativos ejecutables, también conocidos como 'live' o en vivo, pueden ejecutarse directamente desde un medio extraíble sin necesidad de instalación."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Para qué tipo de dispositivos están optimizados los sistemas operativos móviles?",
+          "options": [
+            "Servidores de alto rendimiento",
+            "Computadoras de escritorio",
+            "Teléfonos inteligentes y tabletas",
+            "Supercomputadoras"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los sistemas operativos para dispositivos móviles están diseñados específicamente para teléfonos inteligentes y tabletas, optimizados para eficiencia energética, conectividad móvil e interfaces táctiles."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Qué permite el sistema de tiempo compartido?",
+          "options": [
+            "Ejecutar solo una tarea por vez",
+            "Administrar y ejecutar varias tareas por lotes al mismo tiempo",
+            "Conectar múltiples ordenadores",
+            "Virtualizar hardware"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El sistema de tiempo compartido permite al procesador la administración y ejecución de varias tareas por lotes al mismo tiempo, dividiendo el tiempo de CPU entre múltiples usuarios."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué son las licencias por volumen?",
+          "options": [
+            "Licencias gratuitas para uso personal",
+            "Licencias que se venden individualmente",
+            "Acuerdos que permiten instalar software en múltiples dispositivos con una sola licencia",
+            "Licencias solo para servidores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las licencias por volumen son acuerdos que permiten a una organización instalar software en múltiples dispositivos con una sola licencia, comunes en entornos empresariales y educativos."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función principal de los drivers de dispositivos?",
+          "options": [
+            "Gestionar la memoria del sistema",
+            "Proporcionar controladores para la interacción con el hardware de E/S",
+            "Controlar el acceso de usuarios",
+            "Administrar la red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los drivers de dispositivos proporcionan controladores para la interacción con el hardware de entrada/salida (E/S)."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué diferencia principal existe entre la arquitectura y la estructura de un sistema informático?",
+          "options": [
+            "No hay diferencia, son sinónimos",
+            "La arquitectura define la visión global, la estructura detalla la implementación específica",
+            "La estructura es más importante que la arquitectura",
+            "La arquitectura solo se aplica al hardware"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La arquitectura define la visión global del sistema y sus principales componentes e interacciones, mientras que la estructura detalla la disposición específica e implementación de estos componentes."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el propósito principal de aplicar permisos en carpetas del sistema operativo?",
+          "options": [
+            "Mejorar el rendimiento del sistema",
+            "Controlar y limitar accesos no autorizados",
+            "Organizar mejor los archivos",
+            "Acelerar las operaciones de lectura"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los permisos en carpetas permiten controlar y limitar accesos a carpetas no autorizadas, asegurando que solo usuarios autorizados puedan acceder a determinados recursos."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "En un sistema distribuido, ¿cómo se denomina cada componente del clúster?",
+          "options": [
+            "Módulo",
+            "Nodo",
+            "Proceso",
+            "Servicio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En un sistema distribuido o clúster, cada componente se denomina nodo. Varios ordenadores independientes se conectan formando un solo sistema funcional."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué característica define la estructura en anillos de un sistema operativo?",
+          "options": [
+            "Módulos independientes sin jerarquía",
+            "Sistema ordenado en anillos concéntricos situados jerárquicamente",
+            "Estructura completamente lineal",
+            "Organización en forma de árbol"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La estructura en anillos es una sucesión de la estructura jerárquica donde el sistema está ordenado en anillos concéntricos situados de forma jerárquica, brindando mayor protección a la parte más interior."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Máquinas Virtuales",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja económica de la virtualización?",
+          "options": [
+            "Aumentar la velocidad de procesamiento",
+            "Reducir costes económicos y mejorar el TCO y ROI",
+            "Incrementar el uso de electricidad",
+            "Simplificar la instalación de software"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización permite reducir costes económicos mejorando el costo total de propiedad (TCO), el retorno de la inversión (ROI) y la continuidad del negocio."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué es un hipervisor (hypervisor)?",
+          "options": [
+            "Un tipo de procesador especializado",
+            "Software específico denominado VMM que gestiona máquinas virtuales",
+            "Un sistema operativo optimizado",
+            "Una herramienta de monitorización de red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un hipervisor o VMM (Virtual Machine Monitor) es software específico que maneja, gestiona y arbitra los recursos de la computadora entre las máquinas virtuales."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos tipos principales de virtualización según el documento?",
+          "options": [
+            "Virtualización de red y de almacenamiento",
+            "Virtualización por hardware de servidor y por sistema operativo",
+            "Virtualización gráfica y de memoria",
+            "Virtualización de aplicaciones y de escritorio"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los dos tipos principales son virtualización por hardware de servidor (común en empresas) y virtualización por sistema operativo o software (desde un ordenador principal)."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estas herramientas de virtualización es gratuita y de código abierto?",
+          "options": [
+            "VMware Workstation Pro",
+            "Microsoft Hyper-V Server",
+            "VirtualBox",
+            "Citrix XenServer"
+          ],
+          "correctAnswer": 2,
+          "explanation": "VirtualBox es una herramienta con licencia GNU/GPL de Oracle, gratuita y de código abierto para profesionales y uso doméstico."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué comando de PowerShell muestra un listado de máquinas virtuales en Hyper-V?",
+          "options": [
+            "Start-VM",
+            "Get-VM",
+            "Stop-VM",
+            "Remove-VM"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El comando Get-VM muestra un listado de todas las máquinas virtuales disponibles en Hyper-V."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una desventaja de la virtualización mencionada en el documento?",
+          "options": [
+            "Aumento de la seguridad",
+            "Necesidad de un ordenador con elevados recursos de hardware",
+            "Mayor facilidad de administración",
+            "Reducción del consumo eléctrico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización requiere un ordenador con elevados recursos de hardware ya que estos son compartidos (RAM, espacio en disco, red, etc.), lo que puede ralentizar el sistema principal."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué significa VDI en el contexto de virtualización?",
+          "options": [
+            "Virtual Data Interface",
+            "Virtualización de escritorio",
+            "Virtual Disk Image",
+            "Virtual Device Integration"
+          ],
+          "correctAnswer": 1,
+          "explanation": "VDI significa Virtualización de escritorio, que permite que otros usuarios se conecten de forma remota al escritorio corporativo."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la empresa líder del mercado de virtualización según el documento?",
+          "options": [
+            "Microsoft",
+            "Oracle",
+            "VMware",
+            "Citrix"
+          ],
+          "correctAnswer": 2,
+          "explanation": "VMware es descrita como la empresa líder del mercado de virtualización, con gran cantidad de productos destinados a ofrecer soluciones específicas."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué utiliza KVM como hipervisor?",
+          "options": [
+            "El kernel de Windows",
+            "El núcleo de Linux",
+            "Un procesador dedicado",
+            "Una máquina virtual específica"
+          ],
+          "correctAnswer": 1,
+          "explanation": "KVM (Kernel Virtual Machine) utiliza el núcleo de Linux como hipervisor."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el primer paso antes de implementar una máquina virtual según el documento?",
+          "options": [
+            "Instalar el software de virtualización",
+            "Tener claros los objetivos",
+            "Comprar hardware nuevo",
+            "Configurar la red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El primer paso es tener claros los objetivos, ya que no es lo mismo virtualizar un servidor que virtualizar un escritorio."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué función tienen los 'Puntos de control' en Hyper-V?",
+          "options": [
+            "Controlar el acceso a la red",
+            "Guardar el estado de la máquina virtual en un momento concreto",
+            "Verificar la integridad del hardware",
+            "Monitorizar el rendimiento del sistema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los Puntos de control permiten guardar el estado de la máquina virtual en un momento concreto, permitiendo volver a ese estado si se producen errores."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el requisito mínimo de memoria RAM para VMware según el documento?",
+          "options": [
+            "2 GB",
+            "4 GB",
+            "6 GB",
+            "8 GB"
+          ],
+          "correctAnswer": 1,
+          "explanation": "VMware requiere como mínimo 4 GB de memoria RAM, aunque recomienda más para un mejor rendimiento."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué significa QEMU en el contexto de virtualización?",
+          "options": [
+            "Es un emulador basado en arquitectura x86",
+            "Es un sistema operativo virtualizado",
+            "Es una herramienta de monitorización",
+            "Es un protocolo de red"
+          ],
+          "correctAnswer": 0,
+          "explanation": "QEMU es un emulador basado en arquitectura x86 que funciona en dos modos: completo para sistemas operativos y usuario para aplicaciones."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de la virtualización en términos de medio ambiente?",
+          "options": [
+            "Aumenta el consumo eléctrico",
+            "Disminución del consumo eléctrico y contribución al Green IT",
+            "Incrementa las emisiones de CO2",
+            "Requiere más hardware físico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización contribuye al medio ambiente mediante la disminución del consumo eléctrico y la contribución al Green IT."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la virtualización de red?",
+          "options": [
+            "Acelerar el procesamiento gráfico",
+            "Combinar recursos físicos y lógicos para que se vean como una única unidad",
+            "Aumentar la memoria RAM",
+            "Mejorar la resolución de pantalla"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización de red combina los recursos físicos y lógicos de la red para que se vean como una única unidad, evitando el cableado físico dedicado."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el propósito de las pruebas de carga?",
+          "options": [
+            "Verificar la seguridad del sistema",
+            "Medir el tráfico real y tiempos de respuesta del servidor",
+            "Optimizar el consumo de memoria",
+            "Configurar la red virtual"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las pruebas de carga tienen como objetivo medir el tráfico real de las peticiones de los usuarios al servidor para medir tiempos de respuesta y mejorar el rendimiento."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de virtualización se usa comúnmente en entornos de servidores empresariales?",
+          "options": [
+            "Virtualización de aplicaciones",
+            "Virtualización por hardware de servidor",
+            "Virtualización de memoria",
+            "Virtualización gráfica"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización por hardware de servidor es el método común usado en entornos de servidores de empresas, creando pequeños servidores con menos recursos."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuántos tipos diferentes de virtualización menciona el documento?",
+          "options": [
+            "Seis",
+            "Ocho",
+            "Diez",
+            "Cinco"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Existen ocho tipos diferentes de virtualización dependiendo de los recursos que se vayan a utilizar."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta recomienda el documento para realizar pruebas de carga?",
+          "options": [
+            "Apache JMeter",
+            "LoadRunner",
+            "k6",
+            "WebLoad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "k6 es una herramienta de carga de código libre para testear el rendimiento de aplicaciones web."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre frontend y backend en pruebas de rendimiento?",
+          "options": [
+            "Frontend es hardware, backend es software",
+            "Frontend es la experiencia del usuario, backend es el procesamiento en servidores",
+            "Frontend es la red, backend es el almacenamiento",
+            "No hay diferencia significativa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Frontend mide la experiencia del usuario y tiempos de aparición de elementos, mientras que backend se refiere al procesamiento en servidores de aplicaciones."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué significa TCO en el contexto de virtualización?",
+          "options": [
+            "Total Cost Operation",
+            "Costo total de propiedad",
+            "Technology Cost Optimization",
+            "Total Computing Operations"
+          ],
+          "correctAnswer": 1,
+          "explanation": "TCO significa 'costo total de propiedad', que es uno de los aspectos económicos que mejora la virtualización."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica de VMware Workstation Player?",
+          "options": [
+            "Es completamente de pago",
+            "Solo funciona en Linux",
+            "Es gratuita para uso personal o doméstico",
+            "Requiere 16 GB de RAM mínimo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "VMware Workstation Player es gratuita si es para uso personal o doméstico, mientras que la versión Pro requiere licencia comercial."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja ofrece la virtualización en términos de administración?",
+          "options": [
+            "Administración descentralizada y compleja",
+            "Administración centralizada y más simplificada",
+            "Eliminación completa de la administración",
+            "Administración manual únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las ventajas de la virtualización es la administración centralizada y más simplificada de los recursos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resuelve la virtualización de almacenamiento?",
+          "options": [
+            "Acelerar el procesamiento",
+            "Permitir acceso simultáneo o separado a los datos como un único disco",
+            "Mejorar la calidad gráfica",
+            "Reducir el uso de memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización de almacenamiento permite acceder a los datos de forma simultánea o separada, como si tuviéramos un único disco duro de gran tamaño."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el propósito de la simulación de servicios con virtualización?",
+          "options": [
+            "Acelerar el procesamiento de datos",
+            "Imitar un servicio real en un entorno virtualizado para crear redes simuladas",
+            "Reducir el consumo de energía",
+            "Simplificar la instalación de software"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La simulación de servicios consiste en imitar un servicio real en un entorno virtualizado para crear redes y servicios simulados, incluso para seguridad informática."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Cuándo entró Microsoft en el terreno de la virtualización según el documento?",
+          "options": [
+            "Desde el principio junto con VMware",
+            "Más tarde que VMware, orientándose a pequeñas y medianas empresas",
+            "Nunca ha entrado realmente",
+            "Fue el pionero en virtualización"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Microsoft entró más tarde en el terreno de la virtualización, orientando sus productos a pequeñas y medianas empresas, incluyendo Hyper-V a partir de Windows 8."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Qué arquitectura de procesador requiere VMware como mínimo?",
+          "options": [
+            "32 bits",
+            "64 bits",
+            "128 bits",
+            "Cualquier arquitectura"
+          ],
+          "correctAnswer": 1,
+          "explanation": "VMware requiere como mínimo un procesador de 64 bits, aunque puede trabajar con máquinas virtuales con sistemas de 32 bits."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de la alta disponibilidad con virtualización?",
+          "options": [
+            "Aumenta los fallos en cascada",
+            "Independencia y aislamiento de servicios, reduciendo riesgos de fallo en cascada",
+            "Incrementa la dependencia entre servicios",
+            "Elimina completamente los fallos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización proporciona independencia y aislamiento de servicios, reduciendo el riesgo de fallo en cascada y favoreciendo procesos más eficientes."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Qué permite hacer la flexibilidad y escalabilidad en virtualización?",
+          "options": [
+            "Solo aumentar la memoria",
+            "Adaptar las máquinas a las necesidades en tiempo real",
+            "Únicamente modificar el disco duro",
+            "Solo cambiar la configuración de red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La flexibilidad permite que las máquinas se adapten a las necesidades de demanda del servicio en tiempo real, modificando memoria, procesadores, disco y conexiones de red."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta gratuita se menciona para migrar sistemas antiguos de 32 bits?",
+          "options": [
+            "VMware vSphere",
+            "Proxmox VE",
+            "Microsoft Hyper-V",
+            "Citrix XenServer"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el caso práctico 2, se menciona Proxmox VE como herramienta gratuita capaz de simular ambientes de 32 bits para migrar sistemas antiguos."
+        },
+        {
+          "id": 31,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los componentes de un sistema LAMP mencionado en la resolución del caso práctico?",
+          "options": [
+            "Linux, Apache, MongoDB, Python",
+            "Linux, Apache, MySQL, PHP",
+            "Linux, Angular, MySQL, Perl",
+            "Linux, Apache, MariaDB, Python"
+          ],
+          "correctAnswer": 1,
+          "explanation": "LAMP se refiere a Linux, Apache, MySQL y PHP, mencionado como una alternativa gratuita para crear servidores web virtuales."
+        },
+        {
+          "id": 32,
+          "type": "multiple_choice",
+          "question": "¿Qué permite realizar la virtualización en términos de recuperación ante desastres?",
+          "options": [
+            "Elimina completamente la posibilidad de desastres",
+            "Automatiza y simplifica el proceso de prevención, actuación y recuperación",
+            "Solo permite hacer copias de seguridad",
+            "Únicamente restaura el hardware"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La virtualización automatiza y simplifica el proceso de prevención, actuación y recuperación en caso de desastre, mejorando la continuidad del negocio."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Sistemas Operativos Propietarios - Windows 10: Instalación, Administración y Configuración",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los requisitos mínimos de memoria RAM para Windows 10 en sistemas de 64 bits?",
+          "options": ["1 GB", "2 GB", "4 GB", "8 GB"],
+          "correctAnswer": 1,
+          "explanation": "Windows 10 requiere como mínimo 2 GB de RAM para sistemas de 64 bits y 1 GB para sistemas de 32 bits."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta facilita Microsoft para descargar la imagen ISO de Windows 10?",
+          "options": ["Windows Creator", "Media Creation Tool", "ISO Downloader", "System Installer"],
+          "correctAnswer": 1,
+          "explanation": "Microsoft facilita la herramienta Media Creation Tool para descargar la imagen ISO de Windows 10 y preparar dispositivos USB para instalación."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la velocidad mínima requerida del procesador para Windows 10?",
+          "options": ["500 MHz", "800 MHz", "1 GHz", "1.5 GHz"],
+          "correctAnswer": 2,
+          "explanation": "Windows 10 requiere como mínimo un procesador a 1 GHz o superior para funcionar correctamente."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué versión de Windows 10 está dirigida a grandes empresas y solo está disponible a través de licencias por volumen?",
+          "options": ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Enterprise", "Windows 10 LTSC"],
+          "correctAnswer": 2,
+          "explanation": "Windows 10 Enterprise está dirigida a grandes empresas y solo está disponible a través de licencias por volumen, incluyendo herramientas para VPN y gestión de restricciones de aplicaciones."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué opción de BIOS/UEFI se debe desactivar para permitir la instalación del sistema operativo?",
+          "options": ["Fast Boot", "Secure Boot", "AHCI Mode", "Legacy Support"],
+          "correctAnswer": 1,
+          "explanation": "Las BIOS actuales UEFI incorporan la opción Secure Boot como medida de protección, la cual se tiene que desactivar para permitir la instalación del sistema operativo."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la capacidad mínima requerida para un dispositivo USB usado para la instalación de Windows 10?",
+          "options": ["4 GB", "8 GB", "16 GB", "32 GB"],
+          "correctAnswer": 1,
+          "explanation": "Para crear un dispositivo USB de instalación de Windows 10, se necesita un dispositivo USB con al menos 8 GB de capacidad."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta de Windows se usa para preparar una imagen del sistema para despliegue automático?",
+          "options": ["Windows PE", "Sysprep", "DISM", "WDS"],
+          "correctAnswer": 1,
+          "explanation": "Sysprep es la herramienta incluida por defecto en Windows 10 que elimina datos específicos del sistema como la licencia e ID de seguridad, manteniendo las aplicaciones instaladas."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿En qué ruta se encuentra la herramienta Sysprep en Windows 10?",
+          "options": ["C:\\Windows\\System", "C:\\Windows\\System32\\Sysprep", "C:\\Program Files\\Sysprep", "C:\\Tools\\Sysprep"],
+          "correctAnswer": 1,
+          "explanation": "Sysprep se encuentra por defecto en la ruta C:\\Windows\\System32\\Sysprep en Windows 10."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué comando se usa en Windows para acceder a la información del sistema?",
+          "options": ["sysinfo", "msinfo32", "systeminfo", "wininfo"],
+          "correctAnswer": 1,
+          "explanation": "El comando msinfo32 se utiliza para ver información sobre una computadora, crear archivos de información del sistema y acceder a categorías específicas."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la ruta donde se almacenan las carpetas de los usuarios en Windows?",
+          "options": ["C:\\Documents", "C:\\Users", "C:\\Profiles", "C:\\Home"],
+          "correctAnswer": 1,
+          "explanation": "Las carpetas de los usuarios se encuentran en la ruta C:\\Users\\Nombre_Usuario en Windows."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué variable de entorno apunta a la ruta de la carpeta del sistema operativo Windows?",
+          "options": ["%SYSTEMROOT%", "%WINDIR%", "%WINDOWS%", "%OSDIR%"],
+          "correctAnswer": 1,
+          "explanation": "La variable de entorno %WINDIR% apunta a la ruta de la carpeta del sistema operativo Windows."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta ha reemplazado a WMIC en las versiones modernas de Windows?",
+          "options": ["CMD", "PowerShell", "Command Prompt", "Windows Terminal"],
+          "correctAnswer": 1,
+          "explanation": "PowerShell ha reemplazado a WMIC (Windows Management Instrumentation Command-line) que está obsoleto desde Windows 10 versión 21H1."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la resolución mínima de monitor requerida para Windows 10?",
+          "options": ["640 x 480", "800 x 600", "1024 x 768", "1280 x 720"],
+          "correctAnswer": 1,
+          "explanation": "Windows 10 requiere como mínimo una resolución de monitor de 800 x 600 para funcionar correctamente."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué versión de DirectX es mínima requerida para la tarjeta gráfica en Windows 10?",
+          "options": ["DirectX 8", "DirectX 9", "DirectX 10", "DirectX 11"],
+          "correctAnswer": 1,
+          "explanation": "Windows 10 requiere una tarjeta gráfica con controlador DirectX 9 o posterior para funcionar correctamente."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué versión de Windows 10 elimina características como Cortana y Edge para obtener mayor rendimiento?",
+          "options": ["Windows 10 Home", "Windows 10 Pro", "Windows 10 Enterprise", "Windows 10 LTSC"],
+          "correctAnswer": 3,
+          "explanation": "Windows 10 LTSC es similar a Enterprise pero elimina características como herramientas multimedia, Cortana y Edge para obtener mayor rendimiento."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿En qué ruta se encuentran los programas que arrancan automáticamente con Windows?",
+          "options": ["C:\\Windows\\Startup", "C:\\ProgramData\\Microsoft\\Windows\\Start Menu\\Programs\\Startup", "C:\\Program Files\\Startup", "C:\\Users\\Startup"],
+          "correctAnswer": 1,
+          "explanation": "Los programas que arrancan con el inicio de Windows se encuentran en C:\\ProgramData\\Microsoft\\Windows\\StartMenu\\Programs\\Startup."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cómo se accede a la reinstalación de macOS en ordenadores Apple?",
+          "options": ["Alt + R", "Comando + R", "Ctrl + R", "Shift + R"],
+          "correctAnswer": 1,
+          "explanation": "Para acceder a la reinstalación del sistema macOS hay que pulsar Comando + R al arranque del ordenador."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué cmdlet de PowerShell se utiliza para enumerar y monitorear contadores de rendimiento?",
+          "options": ["Get-Performance", "Get-Counter", "Get-Monitor", "Get-Stats"],
+          "correctAnswer": 1,
+          "explanation": "Get-Counter es el cmdlet de PowerShell que se usa para enumerar contadores de rendimiento disponibles y monitorear datos del sistema."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función principal de un controlador o driver?",
+          "options": ["Acelerar el sistema", "Habilitar la interacción con componentes de hardware", "Proteger contra virus", "Gestionar la memoria"],
+          "correctAnswer": 1,
+          "explanation": "Un controlador o driver es un pequeño programa que habilita y permite a otros programas la interacción con componentes de hardware como impresoras, tarjetas de red o cámaras web."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿En qué sección del Panel de Control se puede ver el software instalado?",
+          "options": ["Sistema", "Programas", "Hardware", "Seguridad"],
+          "correctAnswer": 1,
+          "explanation": "En el Panel de Control, seleccionando 'Programas' y posteriormente 'Desinstalar un programa', se puede acceder a la lista de todo el software instalado."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta de Windows permite configurar el horario de las actualizaciones automáticas?",
+          "options": ["Panel de Control", "Windows Update en Configuración", "Administrador de Tareas", "Editor del Registro"],
+          "correctAnswer": 1,
+          "explanation": "A través de Configuración > Actualización y seguridad > Windows Update se puede configurar el horario de las actualizaciones automáticas usando 'Cambiar horas activas'."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Dónde se almacenan los datos de programas compartidos en Windows?",
+          "options": ["C:\\Program Files", "C:\\ProgramData", "C:\\Windows\\System32", "C:\\Users\\Public"],
+          "correctAnswer": 1,
+          "explanation": "Los datos de programas compartidos se almacenan en C:\\ProgramData en Windows."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué opción de Sysprep hace que el sistema arranque como si fuera la primera vez?",
+          "options": ["Modo auditoría", "OOBE (Out of Box Experience)", "Generalizar", "Reiniciar"],
+          "correctAnswer": 1,
+          "explanation": "La opción 'Iniciar la configuración rápida (OOBE) del sistema' hace que Windows arranque como si iniciara por primera vez."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la variable de entorno que apunta a la carpeta temporal?",
+          "options": ["%TEMP%", "%TEMPDIR%", "%TMP%", "Tanto %TEMP% como %TMP%"],
+          "correctAnswer": 3,
+          "explanation": "Tanto %TEMP% como %TMP% son variables de entorno que apuntan a la ruta de la carpeta de almacenamiento temporal."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de actualizaciones se encuentran en la sección 'Quality Updates' del historial de actualizaciones?",
+          "options": ["Nuevas características", "Parches de seguridad", "Controladores", "Aplicaciones"],
+          "correctAnswer": 1,
+          "explanation": "En la sección 'Quality Updates' se encuentran los parches que corrigen vulnerabilidades de seguridad."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Cómo se puede identificar un componente de hardware cuando Windows instala un controlador genérico?",
+          "options": ["Por el nombre del dispositivo", "Por el ID de hardware en Propiedades", "Por el fabricante", "Por la fecha de instalación"],
+          "correctAnswer": 1,
+          "explanation": "En Propiedades del dispositivo, pestaña Detalles, seleccionando 'Id. de hardware' se obtiene el código que identifica al componente."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "¿Dónde se encuentran las fuentes del sistema en Windows?",
+          "options": ["C:\\Fonts", "C:\\Windows\\Fonts", "C:\\System\\Fonts", "C:\\Program Files\\Fonts"],
+          "correctAnswer": 1,
+          "explanation": "Las fuentes del sistema se encuentran en la ruta C:\\Windows\\Fonts en Windows."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué pequeña versión de Windows se utiliza para reparar o crear imágenes del sistema?",
+          "options": ["Windows Recovery", "Windows PE", "Windows Lite", "Windows Mini"],
+          "correctAnswer": 1,
+          "explanation": "Windows PE (Preinstallation Environment) es una pequeña versión de Windows utilizada para reparar o crear imágenes del sistema."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la ruta donde se almacenan los archivos de programa en sistemas Windows?",
+          "options": ["C:\\Programs", "C:\\Program Files", "C:\\Applications", "C:\\Software"],
+          "correctAnswer": 1,
+          "explanation": "Los archivos de programa se almacenan en C:\\Program Files en sistemas Windows."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "¿Qué comando de PowerShell reemplaza al comando WMIC para obtener información de memoria?",
+          "options": ["Get-Memory", "Get-CimInstance -ClassName Win32_PhysicalMemory", "Get-SystemInfo", "Get-Hardware"],
+          "correctAnswer": 1,
+          "explanation": "El comando 'Get-CimInstance -ClassName Win32_PhysicalMemory | Select-Object capacity' reemplaza al comando WMIC para obtener información de la memoria física del sistema."
+        }
+      ]
+    }
+  ]
+}

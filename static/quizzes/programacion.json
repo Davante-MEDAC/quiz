@@ -1,0 +1,1598 @@
+{
+  "id": "programacion",
+  "title": "Programación",
+  "description": "Cuestionario sobre los fundamentos de la programación, elementos de un programa informático y programación estructurada.",
+  "icon": "👩🏻‍💻",
+  "items": [
+    {
+      "kind": "lesson",
+      "name": "Fundamentos de Programación",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre datos e información?",
+          "options": [
+            "Los datos son digitales y la información es analógica",
+            "Los datos tienen significado puntual, la información resulta del procesamiento e interrelación de datos",
+            "Los datos son números y la información son palabras",
+            "No hay diferencia, son sinónimos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los datos tienen un significado puntual mientras que la información resulta del procesamiento, interpretación e interrelación de los datos."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres elementos principales de una máquina de proceso?",
+          "options": [
+            "Hardware, software y usuario",
+            "Entrada, unidad de proceso y salida",
+            "Datos, algoritmos y resultados",
+            "Compilador, intérprete y ejecutor"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una máquina de proceso tiene tres elementos: entrada (elementos que se introducen), unidad de proceso (donde se realiza el procesamiento) y salida (resultado del procesamiento)."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué característica diferencia al lenguaje máquina de los lenguajes de alto nivel?",
+          "options": [
+            "El lenguaje máquina es más rápido",
+            "El lenguaje máquina está compuesto por 0s y 1s y es directamente entendible por el procesador",
+            "El lenguaje máquina es más fácil de programar",
+            "El lenguaje máquina no necesita compilación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El lenguaje máquina está compuesto por instrucciones basadas en 0s y 1s que son directamente entendibles por el procesador."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre compiladores e intérpretes?",
+          "options": [
+            "Los compiladores son más lentos que los intérpretes",
+            "Los compiladores traducen completamente el programa antes de ejecutarlo, los intérpretes ejecutan cada instrucción según la van traduciendo",
+            "Los intérpretes son para lenguajes de alto nivel",
+            "No hay diferencia significativa entre ambos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los compiladores traducen el programa fuente completamente antes de ejecutarlo, mientras que los intérpretes ejecutan cada instrucción según las van traduciendo."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las dos características fundamentales que debe tener un algoritmo válido?",
+          "options": [
+            "Rapidez y eficiencia",
+            "Finitud y determinismo",
+            "Simplicidad y claridad",
+            "Portabilidad y reutilización"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las dos características fundamentales de un algoritmo son la finitud (debe tener un número finito de pasos) y el determinismo (debe producir el mismo resultado para las mismas entradas)."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué representa la complejidad O(n) en los algoritmos?",
+          "options": [
+            "El número de líneas de código",
+            "La dificultad de programación",
+            "La eficiencia del algoritmo representada como una función que depende del tamaño 'n'",
+            "El tiempo de desarrollo del algoritmo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La eficiencia se representa como una función que depende de un parámetro llamado tamaño 'n', y la complejidad de un algoritmo se llama orden O(n)."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué es un programa informático?",
+          "options": [
+            "Solo el código fuente escrito por el programador",
+            "Tanto los datos como la secuencia de acciones para realizar el procesamiento deseado",
+            "Únicamente las instrucciones que ejecuta el procesador",
+            "El resultado final que obtiene el usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un programa informático como tanto los datos como la secuencia de acciones que hay que llevar a cabo para realizar el procesamiento deseado."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿En qué se diferencia un lenguaje ensamblador del lenguaje máquina?",
+          "options": [
+            "El ensamblador usa comandos de tres letras como SUB en lugar de 0s y 1s",
+            "El ensamblador es un lenguaje de alto nivel",
+            "El ensamblador no necesita traducción",
+            "No hay diferencia, son lo mismo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El lenguaje ensamblador utiliza comandos, normalmente de longitud tres como SUB para hacer restas, simplificando la complejidad del lenguaje máquina que usa 0s y 1s."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre eficacia y eficiencia en programación?",
+          "options": [
+            "Eficacia es velocidad, eficiencia es precisión",
+            "Eficacia es que el programa funcione, eficiencia es que funcione bien usando menos recursos",
+            "Son sinónimos en programación",
+            "Eficacia es para algoritmos, eficiencia para programas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Eficacia implica que el programa funcione y cumpla los requisitos, mientras que eficiencia se refiere a realizar el trabajo rápidamente y utilizando la menor cantidad posible de recursos."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las fases del ciclo de vida del software?",
+          "options": [
+            "Análisis, especificación, diseño, implementación, pruebas y mantenimiento",
+            "Planificación, desarrollo, testing y deployment",
+            "Diseño, codificación, compilación y ejecución",
+            "Requisitos, arquitectura, desarrollo y mantenimiento"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Análisis (¿qué?), especificación, diseño (¿cómo?), implementación, pruebas y mantenimiento."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja principal ofrecen los lenguajes de programación de alto nivel?",
+          "options": [
+            "Son más rápidos de ejecutar",
+            "Su similitud con el lenguaje natural humano, normalmente el inglés",
+            "No necesitan ser traducidos",
+            "Ocupan menos memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las ventajas de los lenguajes de programación de alto nivel es su similitud con el lenguaje natural humano, normalmente con el inglés."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué son los lenguajes imperativos o procedimentales?",
+          "options": [
+            "Lenguajes que describen el resultado deseado sin especificar los pasos",
+            "Lenguajes que se centran en cómo se debe realizar una tarea, detallando los pasos exactos",
+            "Lenguajes que solo usan funciones matemáticas",
+            "Lenguajes de bajo nivel únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes imperativos se centran en cómo se debe realizar una tarea, detallando los pasos exactos que el programa debe seguir para alcanzar un resultado."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué diferencia hay entre sintaxis y semántica en programación?",
+          "options": [
+            "Sintaxis es el significado, semántica son las reglas",
+            "Sintaxis son las reglas de escritura, semántica es el significado del código",
+            "Son conceptos idénticos",
+            "Sintaxis es para compiladores, semántica para intérpretes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis se refiere a las reglas y estructuras gramaticales para escribir instrucciones, mientras la semántica alude al significado o interpretación del código escrito."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la estructura básica de un programa?",
+          "options": [
+            "Inicio, desarrollo y fin",
+            "Entrada, procesamiento y salida de información",
+            "Variables, funciones y clases",
+            "Compilación, enlazado y ejecución"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Todo programa sigue típicamente un modelo básico de entrada, procesamiento y salida de información, donde acepta datos de entrada y los procesa mediante algoritmos."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica NO es propia de un algoritmo válido?",
+          "options": [
+            "Debe ser preciso e indicar el orden de realización",
+            "Ha de estar definido",
+            "Debe ser infinito para cubrir todos los casos",
+            "Es independiente del lenguaje de programación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un algoritmo debe ser finito, es decir, debe tener un número finito de pasos. La opción de ser infinito contradice una característica fundamental de los algoritmos."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué ventajas tiene el pseudocódigo frente a los diagramas de flujo?",
+          "options": [
+            "Es más rápido de ejecutar",
+            "Ocupa menos espacio, permite representar operaciones complejas fácilmente y es fácil convertir a código",
+            "Solo funciona con lenguajes específicos",
+            "No tiene ventajas significativas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El pseudocódigo ocupa menos espacio en papel, permite representar operaciones repetitivas complejas fácilmente y es muy fácil pasar de pseudocódigo a un programa."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué porcentaje del ciclo de vida del software corresponde al mantenimiento?",
+          "options": [
+            "20%",
+            "50%",
+            "80%",
+            "100%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La etapa de mantenimiento corresponde al 80% del ciclo de vida del software y va desde la obtención de una herramienta operativa hasta la retirada del programa."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las herramientas básicas necesarias para desarrollar software?",
+          "options": [
+            "Solo un IDE moderno",
+            "Editor de texto plano, compilador y línea de comandos",
+            "Únicamente un navegador web",
+            "Solo el sistema operativo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las herramientas necesarias para desarrollar software son básicamente tres: editor de texto plano, compilador y línea de comandos."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué es un semialgoritmo?",
+          "options": [
+            "Un algoritmo que funciona solo la mitad del tiempo",
+            "Un algoritmo incompleto en desarrollo",
+            "Soluciones parciales que pueden no satisfacer finitud y determinismo",
+            "Un algoritmo que solo resuelve la mitad del problema"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los semialgoritmos son soluciones parciales que pueden no satisfacer las dos características fundamentales de finitud y determinismo."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué funcionalidades importantes incorporan los IDE modernos para mejorar el desarrollo?",
+          "options": [
+            "Solo compilación automática",
+            "Autocompletado del código fuente y resaltado de errores mediante precompilación en tiempo real",
+            "Únicamente depuración de código",
+            "Solo gestión de archivos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los IDE actuales permiten el autocompletado del código fuente y el resaltado de posibles errores mediante una precompilación en tiempo real mientras se escribe el código."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Elementos de un programa informático",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos grandes bloques dentro de un programa informático?",
+          "options": [
+            "Bloque de entrada y bloque de salida",
+            "Bloque de declaración y bloque de instrucciones",
+            "Bloque de variables y bloque de constantes",
+            "Bloque de datos y bloque de operadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se pueden definir dos grandes bloques: el bloque de declaración (donde se definen todos los objetos que se utilizan) y el bloque de instrucciones (que define las operaciones a realizar)."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué diferencia principal existe entre variables y constantes?",
+          "options": [
+            "Las variables ocupan más memoria que las constantes",
+            "Las variables pueden cambiar su valor durante la ejecución, las constantes no",
+            "Las variables son de tipo numérico, las constantes de tipo texto",
+            "No hay diferencia, son sinónimos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las variables representan un espacio de memoria cuyo valor puede cambiar durante la ejecución, mientras que las constantes son datos cuyo valor no cambiará a lo largo del programa."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuántos bytes ocupa el tipo de dato 'int' en Java?",
+          "options": [
+            "1 byte",
+            "2 bytes",
+            "4 bytes",
+            "8 bytes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El tipo 'int' ocupa 4 bytes en memoria y tiene un rango de [-2³¹, 2³¹ - 1]."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre 'char' y 'String' en Java?",
+          "options": [
+            "Char almacena números, String almacena letras",
+            "Char representa un único carácter, String representa varios caracteres",
+            "No hay diferencia, son equivalentes",
+            "Char es para mayúsculas, String para minúsculas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "char representa un único carácter (entre comillas simples), mientras que String representa varios caracteres juntos, es decir, una cadena de caracteres (entre comillas dobles)."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué valores puede tomar una variable de tipo boolean?",
+          "options": [
+            "0 y 1 únicamente",
+            "true y false únicamente",
+            "Cualquier número entero",
+            "Cualquier carácter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los datos de tipo booleano pueden representar únicamente dos tipos de valores: verdadero (true) y falso (false), heredados del álgebra de Boole."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué operador se utiliza para obtener el resto de una división en Java?",
+          "options": [
+            "/",
+            "*",
+            "%",
+            "++"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El operador '%' se utiliza para obtener el resto de una división."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el resultado de la operación lógica 'true && false'?",
+          "options": [
+            "true",
+            "false",
+            "0",
+            "1"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la tabla de verdad del operador AND (&&), cuando uno de los operandos es false, el resultado siempre es false."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué significa el operador '==' en Java?",
+          "options": [
+            "Asignación de valor",
+            "Comparación de igualdad",
+            "Suma y asignación",
+            "Incremento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El operador '==' es el operador de comparación para verificar si dos valores son iguales, diferente del operador de asignación '='."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué es un casting implícito (Upper-casting)?",
+          "options": [
+            "Conversión que requiere ayuda del programador",
+            "Conversión automática de un tipo menor a uno mayor sin pérdida de información",
+            "Conversión que siempre produce errores",
+            "Conversión entre tipos incompatibles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El casting implícito es una conversión automática que se realiza sin ayuda del programador, convirtiendo un tipo menor a uno mayor sin pérdida de información, como convertir un entero a real."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre '++x' y 'x++' en Java?",
+          "options": [
+            "No hay diferencia, ambos incrementan x",
+            "++x incrementa antes de evaluar la expresión, x++ incrementa después",
+            "++x incrementa de 2 en 2, x++ de 1 en 1",
+            "++x solo funciona con enteros, x++ con cualquier tipo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "++x (preincremento) incrementa la variable antes de evaluar la expresión, mientras que x++ (postincremento) incrementa después de evaluar la expresión."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué método se utiliza para leer un número entero desde teclado usando Scanner?",
+          "options": [
+            "nextDouble()",
+            "nextLine()",
+            "nextInt()",
+            "next()"
+          ],
+          "correctAnswer": 2,
+          "explanation": "'nextInt()' se utiliza para leer un número entero desde el teclado cuando se usa la clase Scanner."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los elementos comunes que tienen la mayoría de los lenguajes de programación?",
+          "options": [
+            "Solo variables y operadores",
+            "Caracteres, datos, identificadores, expresiones, operadores, instrucciones y comentarios",
+            "Únicamente tipos de datos primitivos",
+            "Solo bloques de código"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Caracteres, datos, identificadores, expresiones y operadores, instrucciones, y comentarios."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué palabra reservada se utiliza en Java para declarar una constante?",
+          "options": [
+            "const",
+            "final",
+            "static",
+            "constant"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se emplea la palabra reservada 'final' para declarar constante cualquier tipo de dato en Java."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué operador lógico devuelve el valor contrario a la variable a la que se aplica?",
+          "options": [
+            "&&",
+            "||",
+            "!",
+            "=="
+          ],
+          "correctAnswer": 2,
+          "explanation": "El operador NOT (!) es monario y devuelve el valor contrario a la variable a la que se aplica."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el rango de valores para el tipo 'byte' en Java?",
+          "options": [
+            "[-256, 255]",
+            "[-128, 127]",
+            "[0, 255]",
+            "[-32768, 32767]"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El tipo 'byte' que ocupa 1 byte en memoria tiene un rango de [-128, 127]."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué método de System.out imprime un mensaje con salto de línea?",
+          "options": [
+            "print()",
+            "println()",
+            "printf()",
+            "write()"
+          ],
+          "correctAnswer": 1,
+          "explanation": "'System.out.println()' imprime mensaje con salto de línea, mientras que 'System.out.print()' lo hace sin salto de línea."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué significa API en el contexto de Java?",
+          "options": [
+            "Advanced Programming Interface",
+            "Application Programming Interface",
+            "Automated Program Integration",
+            "Abstract Programming Implementation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La API de Java como la biblioteca que proporciona funciones y herramientas para el desarrollo de aplicaciones, siendo API el acrónimo de Application Programming Interface."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la sintaxis correcta para el operador ternario en Java?",
+          "options": [
+            "if ? valor1 : valor2",
+            "ExpresiónLógica ? valor1 : valor2",
+            "condición -> valor1 : valor2",
+            "expresión == valor1 ? valor2"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis del operador ternario es 'ExpresiónLógica/Relacional ? valor1: valor2;' donde se selecciona uno de los dos valores dependiendo del resultado de la expresión."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Con qué delimitadores se definen los bloques de código en Java?",
+          "options": [
+            "Paréntesis ( )",
+            "Corchetes [ ]",
+            "Llaves { }",
+            "Comillas \" \""
+          ],
+          "correctAnswer": 2,
+          "explanation": "En Java los limitadores de bloques de código son las llaves ({ })."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Para qué se utilizan principalmente los tipos de datos booleanos?",
+          "options": [
+            "Para realizar operaciones aritméticas",
+            "Para almacenar cadenas de texto",
+            "Para evaluación de expresiones lógicas y tratamiento de condiciones",
+            "Para representar números decimales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los tipos booleanos no se utilizan para realizar operaciones, sino que su utilidad está en la evaluación de expresiones lógicas para el tratamiento de condiciones y comparaciones."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Programación Estructurada",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres estructuras básicas de la programación estructurada?",
+          "options": [
+            "Secuencial, alternativa e iterativa",
+            "Entrada, proceso y salida",
+            "Variables, funciones y objetos",
+            "If, while y for"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Según el teorema de estructura, un programa estructurado se expresa únicamente mediante combinaciones de las tres estructuras básicas: secuencial, alternativa e iterativa."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja de la programación estructurada?",
+          "options": [
+            "Mayor velocidad de ejecución",
+            "Menor uso de memoria",
+            "Mayor legibilidad y facilidad de mantenimiento",
+            "Compatibilidad con todos los lenguajes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La programación estructurada hace que los programas sean más legibles, fáciles de entender, depurar y modificar, reduciendo los costes de mantenimiento."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué estructura de selección permite evaluar múltiples casos de manera más legible?",
+          "options": [
+            "if simple",
+            "if-else",
+            "switch",
+            "while"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La estructura switch permite evaluar múltiples casos de manera más legible que múltiples if-else anidados, mejorando la comprensión del código."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre while y do-while?",
+          "options": [
+            "while es más rápido que do-while",
+            "do-while evalúa la condición al final, garantizando al menos una ejecución",
+            "while permite más iteraciones que do-while",
+            "No hay diferencia significativa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La estructura do-while evalúa la condición al final del bloque, garantizando que el código se ejecute al menos una vez, mientras que while evalúa la condición al inicio."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de datos son más ampliamente aceptados en las estructuras switch?",
+          "options": [
+            "Flotantes y doubles",
+            "Strings y arrays",
+            "Carácter y entero",
+            "Booleanos únicamente"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En las estructuras switch, los tipos de datos más ampliamente aceptados son carácter o entero, aunque los lenguajes modernos permiten otros tipos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal riesgo de las estructuras iterativas mal diseñadas?",
+          "options": [
+            "Pérdida de datos",
+            "Bucle infinito",
+            "Error de sintaxis",
+            "Incompatibilidad de tipos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El error más frecuente en estructuras iterativas es olvidar establecer correctamente la condición de finalización, lo que puede resultar en un bucle infinito."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué operador permite crear una versión más compacta del if-else?",
+          "options": [
+            "Operador lógico AND",
+            "Operador ternario",
+            "Operador de asignación",
+            "Operador de comparación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El operador ternario (? :) permite sustituir una estructura if-else simple por una expresión más compacta: variable = condición ? valor1 : valor2"
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuándo es más apropiado usar un bucle for?",
+          "options": [
+            "Cuando no sabemos cuántas iteraciones necesitamos",
+            "Cuando tenemos un número conocido de iteraciones",
+            "Cuando queremos ejecutar código al menos una vez",
+            "Cuando trabajamos con condiciones complejas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bucle for es más apropiado cuando tenemos un número conocido o determinado de iteraciones, como sumar los 100 primeros números enteros."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué sentencia de salto se recomienda usar únicamente en estructuras switch?",
+          "options": [
+            "continue",
+            "return",
+            "break",
+            "goto"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La sentencia break se recomienda usar únicamente en estructuras switch para terminar cada caso, ya que así lo requiere la sintaxis del lenguaje."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal desventaja de la programación estructurada?",
+          "options": [
+            "Mayor complejidad de código",
+            "Menor rendimiento",
+            "Se obtiene un único bloque de programa que puede ser difícil de mantener si crece",
+            "Incompatibilidad con lenguajes modernos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La principal desventaja de la programación estructurada es que se obtiene un único bloque de programa, el cual puede ser difícil de mantener si crece."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué elementos son necesarios para definir una estructura iterativa?",
+          "options": [
+            "Solo el cuerpo de la iteración",
+            "Cuerpo de iteración, número de repeticiones y condición de finalización",
+            "Variables de entrada y salida",
+            "Únicamente la condición de finalización"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para definir una estructura iterativa se necesitan tres elementos: el cuerpo de la iteración, el número de repeticiones y la condición de finalización."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuándo es más apropiado usar un bucle while?",
+          "options": [
+            "Cuando conocemos exactamente el número de iteraciones",
+            "Cuando el número de iteraciones es desconocido y depende de una condición",
+            "Cuando queremos ejecutar código al menos una vez",
+            "Nunca, es mejor usar for"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bucle while es apropiado cuando el número de iteraciones es desconocido porque depende de una condición, como solicitar números hasta que sumen un valor determinado."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la anidación de estructuras de selección?",
+          "options": [
+            "Ejecutar código más rápido",
+            "Tratar múltiples condiciones de manera lineal",
+            "Reducir el uso de memoria",
+            "Eliminar la necesidad de variables"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La anidación de estructuras de selección permite tratar múltiples condiciones de manera lineal, estableciendo diferentes flujos según se cumplan o no las condiciones."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función de la sentencia continue en un bucle?",
+          "options": [
+            "Terminar el bucle completamente",
+            "Hacer que el bucle pase a la siguiente vuelta directamente",
+            "Pausar la ejecución",
+            "Reiniciar el contador del bucle"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sentencia continue hace que el bucle pase a la siguiente vuelta directamente, aumentando su contador y saltando el resto del código en la iteración actual."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen todos los bucles (while, do-while, for)?",
+          "options": [
+            "Tienen la misma sintaxis",
+            "Son equivalentes entre ellos",
+            "Ejecutan a la misma velocidad",
+            "Usan la misma cantidad de memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los bucles son equivalentes entre ellos, lo que significa que cualquier ejercicio que contenga bucles puede realizarse con while, do-while o for, aunque con algunos cambios."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuándo es más apropiado usar do-while?",
+          "options": [
+            "Cuando conocemos el número exacto de iteraciones",
+            "Cuando la condición es muy compleja",
+            "Cuando se tiene que ejecutar el código al menos una vez",
+            "Cuando queremos la máxima eficiencia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Do-while es apropiado cuando se tiene que ejecutar el código al menos una vez, como solicitar números al usuario hasta que introduzca el 0."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué desarrollaron Dijkstra y otros autores a finales de los años sesenta?",
+          "options": [
+            "Los primeros compiladores",
+            "Los principios de la programación estructurada",
+            "Los lenguajes de alto nivel",
+            "Las bases de datos relacionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A finales de los años sesenta, Dijkstra junto con otros autores desarrollaron los principios de la programación estructurada para solucionar los problemas de mantenimiento del código."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué expresión debe devolver la condición en una estructura if?",
+          "options": [
+            "Un número entero",
+            "Una cadena de texto",
+            "Un valor lógico (verdadero o falso)",
+            "Un valor decimal"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La expresión utilizada en la condición de una estructura if tiene que devolver un valor lógico, es decir, verdadero o falso."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué componentes tiene la sintaxis del bucle for?",
+          "options": [
+            "Solo la condición del bucle",
+            "Inicialización, condición del bucle y paso",
+            "Variables de entrada y salida",
+            "Únicamente el incremento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis del bucle for tiene tres componentes: inicialización (valor inicial), condición del bucle (cuándo parar) y paso (cómo modificar la variable de control)."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Por qué no se recomienda el uso de sentencias de salto como goto?",
+          "options": [
+            "Son muy lentas",
+            "Provocan una mala estructuración del código y dificultan su depuración",
+            "No están disponibles en lenguajes modernos",
+            "Consumen mucha memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las sentencias de salto como goto provocan una mala estructuración del código fuente, incrementando su complejidad y dificultando el seguimiento del flujo del programa y su depuración."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué permite hacer las instrucciones de selección en el flujo de ejecución?",
+          "options": [
+            "Acelerar la ejecución del programa",
+            "Romper el orden secuencial de ejecución",
+            "Reducir el uso de variables",
+            "Eliminar errores de sintaxis"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las instrucciones de selección permiten romper el orden secuencial de ejecución, haciendo posible que algunos fragmentos de código no se ejecuten según las condiciones."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las estructuras de selección complejas como switch?",
+          "options": [
+            "Aumentar la velocidad de ejecución",
+            "Mejorar la comprensión y estructura general del código fuente",
+            "Reducir el número de variables necesarias",
+            "Eliminar la necesidad de comentarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El objetivo de las estructuras de selección complejas como switch es mejorar la comprensión y estructura general del código fuente, garantizando su legibilidad."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resolvía la programación estructurada antes de los años 60?",
+          "options": [
+            "La falta de velocidad en los programas",
+            "La ausencia de interfaces gráficas",
+            "Los programas sin estructura que dificultaban el mantenimiento",
+            "La incompatibilidad entre diferentes computadoras"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Antes de los años 60, los programas consistían en un conjunto de instrucciones sin estructura, lo que dificultaba enormemente su mantenimiento."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué característica debe tener un programa bien estructurado según los principios establecidos?",
+          "options": [
+            "Debe ser lo más corto posible",
+            "Debe usar solo variables globales",
+            "El código debe ser entendible sin necesidad de información adicional",
+            "Debe ejecutarse en cualquier sistema operativo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Uno de los principios fundamentales es que el código debe ser entendible sin necesidad de información adicional, facilitando su comprensión y mantenimiento."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la ventaja de poder desarrollar un programa por partes según la programación estructurada?",
+          "options": [
+            "Reduce el tiempo total de ejecución",
+            "Las diferentes partes pueden ser modificadas sin afectar al resto del programa",
+            "Elimina la necesidad de pruebas",
+            "Garantiza que no habrá errores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La programación estructurada permite que las diferentes partes del programa puedan ser modificadas o cambiadas sin que esto afecte al resto del programa, facilitando el mantenimiento."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Programación Modular",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿En qué metodología se basa la programación modular?",
+          "options": [
+            "Divide y vencerás",
+            "Cascada",
+            "Espiral",
+            "Prototipado"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La programación modular está basada en la metodología denominada 'divide y vencerás', es decir, en la división del programa en subprogramas."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja de la programación modular?",
+          "options": [
+            "Mayor velocidad de ejecución",
+            "Cada módulo puede ser desarrollado de forma independiente",
+            "Menor uso de memoria",
+            "Compatibilidad con todos los sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una ventaja de la programación modular es que cada módulo puede ser desarrollado de forma independiente, mediante equipos independientes y probado de manera independiente."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de diseño consiste en descomposiciones sucesivas del algoritmo inicial?",
+          "options": [
+            "Diseño ascendente (bottom-up)",
+            "Diseño modular descendente (top-down)",
+            "Diseño lateral",
+            "Diseño circular"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un diseño modular descendente (top-down) consiste en una serie de descomposiciones sucesivas del algoritmo inicial denominadas módulos."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre procedimientos y funciones?",
+          "options": [
+            "Los procedimientos son más rápidos",
+            "Los procedimientos no devuelven valor, las funciones sí",
+            "Las funciones usan más memoria",
+            "No hay diferencia significativa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el caso de los procedimientos, no se devuelve ningún valor; mientras que en el caso de las funciones, podemos devolver un valor determinado."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de variables solo existen en un ámbito determinado del programa?",
+          "options": [
+            "Variables globales",
+            "Variables locales",
+            "Variables estáticas",
+            "Variables dinámicas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las variables locales solo existen en un ámbito determinado del programa, por ejemplo, en un subprograma o en un bloque de sentencias."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Por qué se recomienda evitar el uso de variables globales?",
+          "options": [
+            "Ocupan más memoria",
+            "Son más lentas",
+            "Pueden causar efectos secundarios difíciles de rastrear",
+            "No son compatibles con todos los lenguajes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las variables globales pueden causar problemas porque cualquier parte del programa puede cambiar su valor sin control, causando efectos secundarios difíciles de rastrear y localizar."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué sucede en el paso de parámetros por valor?",
+          "options": [
+            "Se pasa la dirección de memoria de la variable",
+            "Se pasa una copia del valor de la variable",
+            "Se pasa una referencia al objeto",
+            "Se modifica directamente la variable original"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el paso de parámetros por valor, la función va a recibir una copia de los valores reales, por lo que las modificaciones no afectan a la variable original."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la sobrecarga de métodos?",
+          "options": [
+            "Usar el mismo nombre de función con diferentes tipos de datos",
+            "Ejecutar múltiples funciones simultáneamente",
+            "Optimizar el uso de memoria",
+            "Acelerar la ejecución del programa"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La sobrecarga de funciones nos permite definir funciones con el mismo nombre que puedan trabajar con diferentes tipos de datos."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cómo se denominan los subprogramas en los lenguajes orientados a objetos?",
+          "options": [
+            "Procedimientos",
+            "Funciones",
+            "Métodos",
+            "Módulos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En el caso de los lenguajes orientados a objetos, los subprogramas se denominan métodos."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué son los parámetros formales?",
+          "options": [
+            "Los valores que se pasan durante la ejecución",
+            "Los parámetros especificados en el prototipo de la función",
+            "Los parámetros que se modifican dentro de la función",
+            "Los parámetros de tipo primitivo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los parámetros formales hacen referencia a aquellos parámetros que están especificados en el prototipo de la función, donde se especifica el tipo de cada uno de los parámetros."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una de las principales ventajas del diseño modular?",
+          "options": [
+            "Menor tiempo de compilación",
+            "Facilita el desarrollo de programas en equipo",
+            "Requiere menos documentación",
+            "Elimina todos los errores del programa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las ventajas del diseño modular es que facilita el desarrollo de programas en equipo, permitiendo que diferentes equipos trabajen en módulos independientes."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué se denomina librería en programación?",
+          "options": [
+            "Un tipo especial de variable",
+            "El conjunto de funciones que nos ofrece un lenguaje de programación",
+            "Un método de compilación",
+            "Una estructura de datos compleja"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El conjunto de funciones que nos ofrece un lenguaje de programación se denomina librería."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resuelve principalmente la programación modular?",
+          "options": [
+            "La lentitud de ejecución",
+            "La duplicación de código y escasa reutilización",
+            "La incompatibilidad entre sistemas",
+            "El exceso de documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La programación modular resuelve problemas como la duplicación de código y la escasa reutilización de código que se presentan en proyectos complejos."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se dice que un subprograma es interno?",
+          "options": [
+            "Cuando está escrito en el mismo lenguaje que el programa principal",
+            "Cuando figura en el mismo archivo fuente que el principal",
+            "Cuando no tiene parámetros de entrada",
+            "Cuando no devuelve ningún valor"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si el subprograma figura en el mismo archivo fuente que el principal, se le denomina interno."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen las variables declaradas en un subprograma?",
+          "options": [
+            "Son siempre globales",
+            "Son locales, no conociéndose fuera de él",
+            "Se comparten automáticamente con otros subprogramas",
+            "Ocupan más memoria que las variables globales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las variables declaradas en un subprograma son locales, no conociéndose fuera de él, correspondiendo cada una a áreas de memoria diferentes."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué ocurre en el paso de parámetros por referencia?",
+          "options": [
+            "Se crea una copia del valor",
+            "Los cambios sobre la variable receptora afectan a la variable original",
+            "Se ejecuta más lentamente",
+            "No se pueden pasar objetos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el paso de parámetros por referencia, los cambios que realicemos sobre la variable receptora van a afectar al valor de la variable que se utilice en la llamada formal de la función."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de evitar dividir el software en demasiados módulos?",
+          "options": [
+            "Reducir el tiempo de compilación",
+            "Buscar un equilibrio entre el esfuerzo de desarrollo y mantenimiento de interfaces",
+            "Ahorrar memoria",
+            "Simplificar la documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Es necesario buscar un equilibrio entre ambos esfuerzos, ya que dividir en muchos módulos incrementa el esfuerzo necesario para desarrollar y mantener las interfaces de comunicación."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué permite establecer la sobrecarga de operadores?",
+          "options": [
+            "Crear nuevos tipos de datos",
+            "Definir operadores con un nombre similar a los del lenguaje",
+            "Acelerar las operaciones matemáticas",
+            "Eliminar la necesidad de funciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sobrecarga de operadores permite al programador definir operadores con un nombre similar a los propuestos por el lenguaje de programación."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja ofrece la reutilización de módulos?",
+          "options": [
+            "Mayor velocidad de ejecución",
+            "Reducción del tiempo de desarrollo",
+            "Menor uso de memoria",
+            "Mejor interfaz de usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La reutilización de módulos permite reducir el tiempo de desarrollo, ya que componentes ya desarrollados y probados pueden ser utilizados en nuevos proyectos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica importante de un programa principal en programación modular?",
+          "options": [
+            "Contiene todo el código del programa",
+            "Describe la solución completa y consta principalmente de llamadas a subprogramas",
+            "No puede llamar a otros subprogramas",
+            "Siempre es el más largo del programa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un programa principal describe la solución completa del problema y consta, principalmente, de llamadas a subprogramas, conteniendo pocas líneas donde se ven claramente los diferentes pasos del proceso."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de funciones se incluyen típicamente en las librerías de los lenguajes de programación?",
+          "options": [
+            "Solo funciones matemáticas",
+            "Funciones carácter, numéricas y aleatorias",
+            "Solo funciones de entrada y salida",
+            "Únicamente funciones definidas por el usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las librerías incluyen funciones carácter (para trabajar con caracteres), funciones numéricas (para operaciones matemáticas) y funciones aleatorias (para números pseudoaleatorios)."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que un programa tenga una estructura de 'caja negra'?",
+          "options": [
+            "Que está compilado",
+            "Que al facilitarle valores de entrada, devuelve valores de salida en función de estos",
+            "Que no se puede modificar",
+            "Que está encriptado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cada subprograma tendrá una estructura de caja negra, de forma que al facilitarle unos valores de entrada, devolverá unos valores de salida en función de los valores de entrada."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la relación entre las funciones en programación y las matemáticas?",
+          "options": [
+            "No tienen relación",
+            "Las funciones en programación son exactamente iguales a las matemáticas",
+            "Ambas permiten generar un resultado a partir de valores de entrada",
+            "Solo se usan para operaciones numéricas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Una función permite, a partir de los valores de entrada, generar un resultado, siendo equivalente a una función matemática, pero la función en programación debe ser especificada paso a paso mediante un algoritmo."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué se debe considerar al definir parámetros reales en una función?",
+          "options": [
+            "Solo el nombre de los parámetros",
+            "Que coincidan en tipo y orden con los parámetros formales",
+            "Solo el número de parámetros",
+            "Únicamente el tipo de retorno"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los parámetros reales deben coincidir en tipo y orden con los parámetros especificados en el prototipo de la función (parámetros formales)."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja clave de utilizar buenas prácticas como la programación modular?",
+          "options": [
+            "Elimina completamente los errores",
+            "Garantiza un cierto nivel de reutilización del código y facilita el mantenimiento",
+            "Reduce el tamaño del código fuente",
+            "Acelera la velocidad de ejecución"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Utilizando buenas prácticas como la programación modular, podemos garantizar un cierto nivel de reutilización del código que permite centralizar la lógica y facilita el mantenimiento y la ampliación del sistema."
+        }
+      ]
+    },
+    {
+      "kind": "lesson",
+      "name": "Recursión en Programación",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la definición formal de recursividad en programación?",
+          "options": [
+            "La utilización de bucles for anidados para resolver problemas complejos",
+            "La utilización de un concepto o proceso para la resolución de problemas sobre sí mismo mediante una versión más sencilla",
+            "El uso de múltiples funciones que se llaman secuencialmente",
+            "La implementación de algoritmos usando únicamente estructuras condicionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La recursividad se define formalmente como la utilización de un concepto o proceso para la resolución de problemas sobre sí mismo mediante una versión más sencilla, siendo un término heredado de la matemática."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los elementos fundamentales que debe tener toda solución recursiva?",
+          "options": [
+            "Caso base y proceso de recursión",
+            "Bucle principal y contador",
+            "Variable global y función local",
+            "Array dinámico y puntero"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Toda solución recursiva debe tener un caso base (situación de finalización) y un proceso de recursión (llamadas de la función sobre sí misma hasta llegar al caso base)."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué es el caso base en recursividad?",
+          "options": [
+            "El primer valor que se pasa a la función",
+            "La situación de finalización de la recursividad donde se puede identificar un valor por defecto",
+            "El número máximo de llamadas recursivas permitidas",
+            "La condición inicial del problema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El caso base es la situación de finalización de la recursividad, donde se puede identificar un valor por defecto de una función, evitando así llamadas infinitas."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué estructura de datos se utiliza internamente para manejar las llamadas recursivas?",
+          "options": [
+            "Cola (Queue)",
+            "Lista enlazada",
+            "Pila de llamadas (Stack)",
+            "Árbol binario"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las llamadas recursivas se manejan mediante una pila de llamadas (stack), que almacena las estructuras intermedias necesarias para atender cada llamada."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué error se produce cuando se realizan demasiadas llamadas recursivas?",
+          "options": [
+            "Null pointer exception",
+            "Desbordamiento de pila (stack overflow)",
+            "Memory leak",
+            "Array out of bounds"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cuando se realizan muchas llamadas recursivas se puede producir un desbordamiento de pila (stack overflow), relacionado con los recursos limitados de memoria de la máquina."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la fórmula matemática correcta para el factorial?",
+          "options": [
+            "F(n) = n + F(n-1)",
+            "F(n) = 1 si n = 0; n*F(n-1) si n > 0",
+            "F(n) = F(n-1) + F(n-2)",
+            "F(n) = n² * F(n-1)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El factorial se define como F(n) = 1 si n = 0 (caso base), y F(n) = n*F(n-1) si n > 0 (caso recursivo)."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la definición matemática correcta de la serie de Fibonacci?",
+          "options": [
+            "F(n) = n * F(n-1)",
+            "F(n) = 0 si n = 0; 1 si n = 1; F(n-1) + F(n-2) si n >= 2",
+            "F(n) = 2 * F(n-1)",
+            "F(n) = F(n-1) * F(n-2)"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Fibonacci se define con dos casos base: F(0) = 0, F(1) = 1, y el caso recursivo F(n) = F(n-1) + F(n-2) para n >= 2."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de recursividad utiliza la función de Fibonacci?",
+          "options": [
+            "Recursividad directa simple",
+            "Recursividad indirecta",
+            "Recursividad múltiple",
+            "Recursividad en aumento"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Fibonacci utiliza recursividad múltiple porque en el caso general se realizan dos llamadas recursivas: F(n-1) + F(n-2)."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja principal de usar recursividad?",
+          "options": [
+            "Siempre es más rápida que las soluciones iterativas",
+            "Usa menos memoria que otras técnicas",
+            "Es una opción más elegante de resolución y en muchas ocasiones más eficiente",
+            "Nunca produce errores de ejecución"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La recursividad es una opción más elegante de resolución y, en muchas ocasiones, más eficiente, especialmente cuando empleamos el mismo problema con diferentes valores de entrada."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Para qué tipo de estructuras de datos es especialmente útil la recursividad?",
+          "options": [
+            "Arrays lineales",
+            "Estructuras de tipo arbóreo",
+            "Tablas hash",
+            "Matrices bidimensionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La recursividad es especialmente útil para estructuras de tipo arbóreo, donde se realizan las mismas operaciones en cada nodo hasta llegar a los elementos hojas."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué es la recursividad directa?",
+          "options": [
+            "Cuando una función llama a otra función diferente",
+            "Cuando una función o procedimiento únicamente realiza una llamada recursiva a sí misma",
+            "Cuando se usan bucles en lugar de recursión",
+            "Cuando se realizan múltiples llamadas a diferentes métodos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La recursividad directa es cuando la función o procedimiento únicamente realiza una llamada recursiva a sí misma, como en el ejemplo del factorial."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a la recursividad indirecta?",
+          "options": [
+            "Una función se llama directamente a sí misma",
+            "Se realizan múltiples llamadas a diferentes métodos y en un punto se regresa a la llamada original",
+            "Se usan únicamente bucles for",
+            "No se permite el uso de funciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La recursividad indirecta se caracteriza porque se realizan múltiples llamadas a diferentes métodos y en un punto determinado se regresa de nuevo a la llamada original, estableciendo un proceso recursivo."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué es la recursividad en aumento?",
+          "options": [
+            "Recursividad que aumenta el tamaño del problema",
+            "Recursividad donde se crean operaciones que se realizan después de la última llamada recursiva",
+            "Recursividad que solo funciona con números positivos",
+            "Recursividad que usa más memoria progresivamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La recursividad en aumento es aquella donde se crean operaciones que tienen que realizarse después de que se efectúe la última llamada recursiva, con llamadas diferidas en el tiempo."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal problema de la recursividad múltiple?",
+          "options": [
+            "No puede resolver problemas complejos",
+            "Puede producir desbordamiento de la pila antes de lo esperado",
+            "Solo funciona con números enteros",
+            "Requiere hardware especial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La recursividad múltiple puede producir desbordamiento de la pila antes de lo esperado porque cada llamada recursiva significa más de una llamada en la realidad."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres aspectos principales del coste de una solución recursiva?",
+          "options": [
+            "Velocidad, memoria y elegancia",
+            "Esfuerzo de desarrollo, complejidad temporal y complejidad espacial",
+            "Tiempo, espacio y recursión",
+            "Hardware, software y programador"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres aspectos principales del coste son: esfuerzo de desarrollo (tiempo para implementar), complejidad temporal (tiempo de ejecución) y complejidad espacial (recursos de memoria)."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué problema específico tiene la implementación recursiva de Fibonacci?",
+          "options": [
+            "No puede calcular números grandes",
+            "Produce resultados incorrectos",
+            "Puede causar desbordamiento de pila debido a la doble recursividad",
+            "Solo funciona para números pares"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La implementación recursiva de Fibonacci puede causar desbordamiento de pila porque implica una doble recursividad en el caso general, realizando llamadas tanto para F(n-1) como F(n-2)."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué es un driver en el contexto de métodos recursivos?",
+          "options": [
+            "Un programa que maneja dispositivos de hardware",
+            "Un método encargado de comprobar condiciones antes de llamar al método recursivo",
+            "Una variable que cuenta las llamadas recursivas",
+            "Un tipo especial de función recursiva"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un driver es un método encargado de comprobar las condiciones necesarias antes de llamar al método recursivo, evitando que la comprobación se haga en todas las llamadas recursivas."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "En el problema de las Torres de Hanoi, ¿cuál es el caso base?",
+          "options": [
+            "Cuando hay más de 3 discos",
+            "Cuando numDiscos es 1, simplemente mover ese disco del origen al destino",
+            "Cuando todos los discos están en el poste auxiliar",
+            "Cuando no quedan discos por mover"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El caso base en Torres de Hanoi es cuando numDiscos es 1, donde simplemente se mueve ese disco del poste de origen al poste de destino."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres pasos del caso recursivo en Torres de Hanoi?",
+          "options": [
+            "Mover todos los discos al mismo tiempo",
+            "Mover n-1 discos al auxiliar, mover el disco mayor al destino, mover n-1 discos del auxiliar al destino",
+            "Mover un disco cada vez sin usar el poste auxiliar",
+            "Contar los discos, organizarlos y moverlos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres pasos son: mover numDiscos-1 discos del origen al auxiliar, mover el disco más grande al destino, y mover los numDiscos-1 discos del auxiliar al destino."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que el desbordamiento de pila equivale a un bucle infinito en soluciones iterativas?",
+          "options": [
+            "Ambos problemas son exactamente iguales",
+            "Ambos representan situaciones donde el algoritmo no puede terminar correctamente",
+            "Solo ocurre en lenguajes interpretados",
+            "Es un problema únicamente de memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El desbordamiento de pila en recursividad equivale a un bucle infinito en soluciones iterativas porque ambos representan situaciones donde el algoritmo no puede terminar correctamente debido a una condición de parada mal definida."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Por qué es importante el diseño descendente en recursividad?",
+          "options": [
+            "Porque permite usar menos memoria",
+            "Porque divide un problema mayor en subproblemas más pequeños, facilitando la implementación recursiva",
+            "Porque hace que el código sea más rápido",
+            "Porque elimina la necesidad de casos base"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El diseño descendente es importante porque divide un problema mayor en subproblemas de tamaño más pequeño, lo que está directamente relacionado con la recursividad al realizar llamadas con valores progresivamente menores."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una desventaja significativa de las soluciones recursivas?",
+          "options": [
+            "Son siempre más lentas que las iterativas",
+            "No pueden resolver problemas complejos",
+            "Pueden ser ineficientes generando gran número de llamadas y abuso de memoria",
+            "Solo funcionan en ciertos lenguajes de programación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Una desventaja significativa es que las implementaciones recursivas pueden ser ineficientes, generando gran número de llamadas y creando un abuso de uso de memoria con variables duplicadas en cada llamada."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué ocurre durante la resolución final en un proceso recursivo?",
+          "options": [
+            "Se reinicia todo el proceso",
+            "Se eliminan todas las variables",
+            "Cuando se llega al caso base, se comienzan a resolver todos los valores intermedios hasta proporcionar el resultado final",
+            "Se cambia de recursividad a iteración"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Durante la resolución final, cuando el proceso recursivo llega al caso base, se comienzan a resolver todos los valores intermedios acumulados en la pila hasta proporcionar el resultado final."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Por qué se menciona que algunos lenguajes únicamente permiten recursividad?",
+          "options": [
+            "Porque son lenguajes defectuosos",
+            "Para demostrar que la recursividad es una herramienta poderosa, ya que algunos lenguajes carecen de estructuras iterativas",
+            "Porque son más fáciles de programar",
+            "Porque usan menos memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se menciona para demostrar que la recursividad es una de las herramientas más potentes en programación, tanto que algunos lenguajes únicamente permiten recursividad y carecen completamente de estructuras iterativas."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué error típico puede causar problemas en recursividad?",
+          "options": [
+            "Usar variables locales",
+            "La selección incorrecta de la condición de parada del algoritmo",
+            "Llamar a funciones externas",
+            "Usar números negativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un error muy típico es la selección incorrecta de la condición de parada del algoritmo, lo que puede llevar a desbordamiento de pila, uso innecesario de memoria, bloqueo del algoritmo o situaciones inestables."
+        },
+        {
+          "id": 26,
+          "type": "multiple_choice",
+          "question": "¿Cómo se optimiza el uso de drivers en métodos recursivos?",
+          "options": [
+            "Colocando la comprobación dentro del método recursivo",
+            "Realizando la comprobación solo la primera vez que se invoca, antes de llamar al método recursivo",
+            "Eliminando todas las comprobaciones",
+            "Usando variables globales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se optimiza realizando la comprobación solo la primera vez que se invoca mediante un driver, evitando que se compruebe la condición en todas las llamadas sucesivas al método recursivo."
+        },
+        {
+          "id": 27,
+          "type": "multiple_choice",
+          "question": "En el ejemplo de suma recursiva, ¿cuál es el caso base?",
+          "options": [
+            "s(0) = 0",
+            "s(1) = 1",
+            "s(n) = n",
+            "s(n) = s(n-1) + n"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el algoritmo de suma recursiva presentado, el caso base es s(1) = 1, donde la función devuelve 1 cuando n es igual a 1."
+        },
+        {
+          "id": 28,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que la recursividad múltiple puede tener varios niveles de profundidad?",
+          "options": [
+            "Que puede usar más memoria RAM",
+            "Que m1 puede llamar a m2, m2 a m3, m3 a m4, y así sucesivamente hasta volver a m1",
+            "Que solo funciona con números grandes",
+            "Que requiere compiladores especiales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Significa que en la recursividad indirecta se pueden tener varios niveles de profundidad, donde m1 llama a m2, m2 a m3, m3 a m4, etc., hasta que eventualmente se vuelve a llamar a m1, creando un ciclo recursivo complejo."
+        },
+        {
+          "id": 29,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal recomendación para el diseño de soluciones recursivas?",
+          "options": [
+            "Usar siempre recursividad múltiple",
+            "Seguir la estrategia de la simplicidad y mantener las reglas del lenguaje de programación",
+            "Evitar los casos base",
+            "Usar únicamente variables globales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La principal recomendación es seguir la estrategia de la simplicidad, traduciendo el problema a un algoritmo manteniendo siempre las reglas del lenguaje de programación que se esté utilizando."
+        },
+        {
+          "id": 30,
+          "type": "multiple_choice",
+          "question": "Según el caso práctico del 'Coste desorbitado', ¿cuál es la conclusión sobre el balance entre elegancia y rendimiento?",
+          "options": [
+            "La elegancia es siempre más importante que el rendimiento",
+            "Se debe priorizar mejorar el rendimiento sobre la elegancia cuando el usuario experimenta problemas de funcionamiento",
+            "Nunca se debe usar recursividad en aplicaciones reales",
+            "El rendimiento no es importante en programación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La conclusión es que se debe priorizar mejorar el rendimiento sobre la elegancia de la solución cuando esto afecta la experiencia del usuario, ya que desde el punto de vista del usuario la implementación es transparente y solo busca que el programa funcione correctamente."
+        }
+      ]
+    }
+  ]
+}
