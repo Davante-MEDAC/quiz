@@ -1,0 +1,65 @@
+@import 'tailwindcss';
+
+/* nunito-200 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 200;
+	src: url('/fonts/nunito-v32-latin-200.woff2') format('woff2');
+}
+
+/* nunito-regular - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 400;
+	src: url('/fonts/nunito-v32-latin-regular.woff2') format('woff2');
+}
+
+/* nunito-600 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 600;
+	src: url('/fonts/nunito-v32-latin-600.woff2') format('woff2');
+}
+
+/* nunito-800 - latin */
+@font-face {
+	font-display: swap;
+	font-family: 'Nunito';
+	font-style: normal;
+	font-weight: 800;
+	src: url('/fonts/nunito-v32-latin-800.woff2') format('woff2');
+}
+
+@theme {
+	--color-primary: #58cc02;
+	--color-primary-dark: #4caf00;
+	--color-secondary: #ffc800;
+	--color-danger: #ff4b4b;
+	--color-background: #131f24;
+	--color-surface: #1e2f34;
+	--color-border: #37464f;
+
+	--font-family-sans: 'Nunito', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body,
+* {
+	font-family: var(--font-family-sans);
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+		transform: translateY(10px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}

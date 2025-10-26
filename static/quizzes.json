@@ -1,0 +1,16 @@
+{
+  "subjects": [
+    {
+      "id": "foo",
+      "title": "Foo",
+      "description": "Evaluación de Fundamentos de Programación",
+      "icon": "📦"
+    },
+    {
+      "id": "programacion",
+      "title": "Programación",
+      "description": "Evalúa tu comprensión de los conceptos de programación",
+      "icon": "👩🏻‍💻"
+    }
+  ]
+}

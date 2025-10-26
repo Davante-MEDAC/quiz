@@ -1,0 +1,273 @@
+{
+  "id": "programacion",
+  "title": "Programación",
+  "description": "Evalúa tu comprensión de los conceptos de programación",
+  "icon": "👩🏻‍💻",
+  "lessons": [
+    {
+      "name": "Fundamentos de Programación",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre datos e información según el documento?",
+          "options": [
+            "Los datos son digitales y la información es analógica",
+            "Los datos tienen significado puntual, la información resulta del procesamiento e interrelación de datos",
+            "Los datos son números y la información son palabras",
+            "No hay diferencia, son sinónimos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, los datos tienen un significado puntual mientras que la información resulta del procesamiento, interpretación e interrelación de los datos."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres elementos principales de una máquina de proceso?",
+          "options": [
+            "Hardware, software y usuario",
+            "Entrada, unidad de proceso y salida",
+            "Datos, algoritmos y resultados",
+            "Compilador, intérprete y ejecutor"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento establece que una máquina de proceso tiene tres elementos: entrada (elementos que se introducen), unidad de proceso (donde se realiza el procesamiento) y salida (resultado del procesamiento)."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué característica diferencia al lenguaje máquina de los lenguajes de alto nivel?",
+          "options": [
+            "El lenguaje máquina es más rápido",
+            "El lenguaje máquina está compuesto por 0s y 1s y es directamente entendible por el procesador",
+            "El lenguaje máquina es más fácil de programar",
+            "El lenguaje máquina no necesita compilación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento explica que el lenguaje máquina está compuesto por instrucciones basadas en 0s y 1s que son directamente entendibles por el procesador."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre compiladores e intérpretes?",
+          "options": [
+            "Los compiladores son más lentos que los intérpretes",
+            "Los compiladores traducen completamente el programa antes de ejecutarlo, los intérpretes ejecutan cada instrucción según la van traduciendo",
+            "Los intérpretes son para lenguajes de alto nivel",
+            "No hay diferencia significativa entre ambos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los compiladores traducen el programa fuente completamente antes de ejecutarlo, mientras que los intérpretes ejecutan cada instrucción según las van traduciendo."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las dos características fundamentales que debe tener un algoritmo válido?",
+          "options": [
+            "Rapidez y eficiencia",
+            "Finitud y determinismo",
+            "Simplicidad y claridad",
+            "Portabilidad y reutilización"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento destaca que las dos características fundamentales de un algoritmo son la finitud (debe tener un número finito de pasos) y el determinismo (debe producir el mismo resultado para las mismas entradas)."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué representa la complejidad O(n) en los algoritmos?",
+          "options": [
+            "El número de líneas de código",
+            "La dificultad de programación",
+            "La eficiencia del algoritmo representada como una función que depende del tamaño 'n'",
+            "El tiempo de desarrollo del algoritmo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La eficiencia se representa como una función que depende de un parámetro llamado tamaño 'n', y la complejidad de un algoritmo se llama orden O(n)."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué es un programa informático según el documento?",
+          "options": [
+            "Solo el código fuente escrito por el programador",
+            "Tanto los datos como la secuencia de acciones para realizar el procesamiento deseado",
+            "Únicamente las instrucciones que ejecuta el procesador",
+            "El resultado final que obtiene el usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento define programa informático como tanto los datos como la secuencia de acciones que hay que llevar a cabo para realizar el procesamiento deseado."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿En qué se diferencia un lenguaje ensamblador del lenguaje máquina?",
+          "options": [
+            "El ensamblador usa comandos de tres letras como SUB en lugar de 0s y 1s",
+            "El ensamblador es un lenguaje de alto nivel",
+            "El ensamblador no necesita traducción",
+            "No hay diferencia, son lo mismo"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El lenguaje ensamblador utiliza comandos, normalmente de longitud tres como SUB para hacer restas, simplificando la complejidad del lenguaje máquina que usa 0s y 1s."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre eficacia y eficiencia en programación?",
+          "options": [
+            "Eficacia es velocidad, eficiencia es precisión",
+            "Eficacia es que el programa funcione, eficiencia es que funcione bien usando menos recursos",
+            "Son sinónimos en programación",
+            "Eficacia es para algoritmos, eficiencia para programas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Eficacia implica que el programa funcione y cumpla los requisitos, mientras que eficiencia se refiere a realizar el trabajo rápidamente y utilizando la menor cantidad posible de recursos."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las fases del ciclo de vida del software mencionadas en el documento?",
+          "options": [
+            "Análisis, especificación, diseño, implementación, pruebas y mantenimiento",
+            "Planificación, desarrollo, testing y deployment",
+            "Diseño, codificación, compilación y ejecución",
+            "Requisitos, arquitectura, desarrollo y mantenimiento"
+          ],
+          "correctAnswer": 0,
+          "explanation": "El documento lista las fases como: análisis (¿qué?), especificación, diseño (¿cómo?), implementación, pruebas y mantenimiento."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja principal ofrecen los lenguajes de programación de alto nivel?",
+          "options": [
+            "Son más rápidos de ejecutar",
+            "Su similitud con el lenguaje natural humano, normalmente el inglés",
+            "No necesitan ser traducidos",
+            "Ocupan menos memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las ventajas de los lenguajes de programación de alto nivel es su similitud con el lenguaje natural humano, normalmente con el inglés."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué son los lenguajes imperativos o procedimentales?",
+          "options": [
+            "Lenguajes que describen el resultado deseado sin especificar los pasos",
+            "Lenguajes que se centran en cómo se debe realizar una tarea, detallando los pasos exactos",
+            "Lenguajes que solo usan funciones matemáticas",
+            "Lenguajes de bajo nivel únicamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes imperativos se centran en cómo se debe realizar una tarea, detallando los pasos exactos que el programa debe seguir para alcanzar un resultado."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué diferencia hay entre sintaxis y semántica en programación?",
+          "options": [
+            "Sintaxis es el significado, semántica son las reglas",
+            "Sintaxis son las reglas de escritura, semántica es el significado del código",
+            "Son conceptos idénticos",
+            "Sintaxis es para compiladores, semántica para intérpretes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis se refiere a las reglas y estructuras gramaticales para escribir instrucciones, mientras la semántica alude al significado o interpretación del código escrito."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la estructura básica de un programa según el documento?",
+          "options": [
+            "Inicio, desarrollo y fin",
+            "Entrada, procesamiento y salida de información",
+            "Variables, funciones y clases",
+            "Compilación, enlazado y ejecución"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Todo programa sigue típicamente un modelo básico de entrada, procesamiento y salida de información, donde acepta datos de entrada y los procesa mediante algoritmos."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica NO es propia de un algoritmo válido?",
+          "options": [
+            "Debe ser preciso e indicar el orden de realización",
+            "Ha de estar definido",
+            "Debe ser infinito para cubrir todos los casos",
+            "Es independiente del lenguaje de programación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un algoritmo debe ser finito, es decir, debe tener un número finito de pasos. La opción de ser infinito contradice una característica fundamental de los algoritmos."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué ventajas tiene el pseudocódigo frente a los diagramas de flujo?",
+          "options": [
+            "Es más rápido de ejecutar",
+            "Ocupa menos espacio, permite representar operaciones complejas fácilmente y es fácil convertir a código",
+            "Solo funciona con lenguajes específicos",
+            "No tiene ventajas significativas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento menciona que el pseudocódigo ocupa menos espacio en papel, permite representar operaciones repetitivas complejas fácilmente y es muy fácil pasar de pseudocódigo a un programa."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué porcentaje del ciclo de vida del software corresponde al mantenimiento?",
+          "options": [
+            "20%",
+            "50%",
+            "80%",
+            "100%"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento establece que la etapa de mantenimiento corresponde al 80% del ciclo de vida del software y va desde la obtención de una herramienta operativa hasta la retirada del programa."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las herramientas básicas necesarias para desarrollar software?",
+          "options": [
+            "Solo un IDE moderno",
+            "Editor de texto plano, compilador y línea de comandos",
+            "Únicamente un navegador web",
+            "Solo el sistema operativo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento menciona que las herramientas necesarias para desarrollar software son básicamente tres: editor de texto plano, compilador y línea de comandos."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué es un semialgoritmo según el documento?",
+          "options": [
+            "Un algoritmo que funciona solo la mitad del tiempo",
+            "Un algoritmo incompleto en desarrollo",
+            "Soluciones parciales que pueden no satisfacer finitud y determinismo",
+            "Un algoritmo que solo resuelve la mitad del problema"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los semialgoritmos son soluciones parciales que pueden no satisfacer las dos características fundamentales de finitud y determinismo."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué funcionalidades importantes incorporan los IDE modernos para mejorar el desarrollo?",
+          "options": [
+            "Solo compilación automática",
+            "Autocompletado del código fuente y resaltado de errores mediante precompilación en tiempo real",
+            "Únicamente depuración de código",
+            "Solo gestión de archivos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los IDE actuales permiten el autocompletado del código fuente y el resaltado de posibles errores mediante una precompilación en tiempo real mientras se escribe el código."
+        }
+      ]
+    }
+  ]
+}
