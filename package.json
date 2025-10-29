@@ -8,7 +8,7 @@
 		"preview": "vite preview",
 		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
-		"format": "prettier --write .",
+		"format": "prettier --write . && eslint --fix .",
 		"lint": "prettier --check . && eslint .",
 		"generate-quiz-index": "bun run scripts/generate-quiz-index.ts"
 	},
@@ -21,6 +21,7 @@
 		"@tailwindcss/forms": "^0.5.10",
 		"@tailwindcss/typography": "^0.5.19",
 		"@tailwindcss/vite": "^4.1.16",
+		"@types/canvas-confetti": "^1.9.0",
 		"autoprefixer": "^10.4.21",
 		"eslint": "^9.38.0",
 		"eslint-config-prettier": "^10.1.8",
@@ -38,6 +39,7 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@types/node": "^24.9.1"
+		"@types/node": "^24.9.1",
+		"canvas-confetti": "^1.9.4"
 	}
 }

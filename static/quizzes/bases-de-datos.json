@@ -1,0 +1,998 @@
+{
+  "id": "bases-de-datos",
+  "title": "Bases de Datos",
+  "description": "Cuestionario sobre los fundamentos de bases de datos, incluyendo conceptos clave, estructuras y operaciones básicas.",
+  "icon": "📀",
+  "lessons": [
+    {
+      "name": "Sistemas de Representación de la Información y Ficheros",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la unidad mínima de información que puede gestionar un dispositivo digital?",
+          "options": [
+            "Byte",
+            "Bit",
+            "Kilobyte",
+            "Carácter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bit representa la información de menor tamaño que cualquier dispositivo digital puede gestionar, estableciendo el pilar fundamental sobre el que se desarrolla el sistema. Un bit puede tener el valor 0 o 1."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuántos bits contiene un byte?",
+          "options": [
+            "4 bits",
+            "8 bits",
+            "16 bits",
+            "1024 bits"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la tabla de múltiplos de bit del documento, un byte (B) equivale a 8 bits."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué es un fichero según el documento?",
+          "options": [
+            "Un conjunto de programas ejecutables",
+            "Una colección de información almacenada en un dispositivo electrónico",
+            "Un sistema operativo completo",
+            "Una base de datos relacional"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento define un fichero como una colección de información almacenada en un dispositivo electrónico, siendo la forma más simple de almacenamiento de datos."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "En los ficheros secuenciales, ¿cómo se accede a datos específicos?",
+          "options": [
+            "Directamente mediante un índice",
+            "Aleatoriamente",
+            "Recorriendo todos los datos previos",
+            "Mediante búsqueda binaria"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En los ficheros secuenciales, la información se organiza de forma continua y ordenada, por lo que para acceder a datos específicos es necesario recorrer todos los datos previos."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen los ficheros de acceso directo?",
+          "options": [
+            "No tienen estructura definida",
+            "Tienen una longitud fija definida previamente",
+            "Solo pueden almacenar texto",
+            "No se puede acceder a ellos directamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los ficheros de acceso directo tienen los datos estructurados con una longitud fija definida de manera previa, lo que permite acceder directamente a la información."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué utilizan los ficheros indexados para acceder a los datos?",
+          "options": [
+            "Una marca de fin de fichero",
+            "Un índice",
+            "Una tabla hash",
+            "Un puntero secuencial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los ficheros indexados organizan sus datos utilizando un índice que se usa para poder acceder a los mismos, permitiendo un acceso más rápido y eficiente."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de ficheros están construidos utilizando código ASCII?",
+          "options": [
+            "Ficheros binarios",
+            "Ficheros ejecutables",
+            "Ficheros planos o de texto",
+            "Ficheros indexados"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros planos o de texto generalmente están construidos utilizando el código ASCII, que es una norma de codificación que asigna un valor numérico a cada carácter."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un ejemplo de fichero binario?",
+          "options": [
+            ".exe",
+            ".jpg",
+            ".txt",
+            ".pdf"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros .txt son ficheros de texto plano, mientras que .exe, .jpg y .pdf son ejemplos de ficheros binarios que requieren un formato específico para ser interpretados."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de fichero permanente contiene información sobre el estado actual de ciertos elementos que pueden sufrir cambios?",
+          "options": [
+            "Ficheros históricos",
+            "Ficheros de constantes",
+            "Ficheros maestros",
+            "Ficheros de movimientos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros maestros contienen información sobre el estado actual de ciertos elementos que pueden sufrir cambios, reflejando la situación de una organización en un momento concreto."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de fichero temporal almacena información de actividades y transacciones recientes de una organización?",
+          "options": [
+            "Ficheros de trabajo",
+            "Ficheros maestros",
+            "Ficheros de movimientos",
+            "Ficheros históricos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros de movimientos almacenan información de actividades y transacciones recientes o en curso, reflejando las modificaciones a aplicar sobre el fichero maestro."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuántos kilobytes hay en un megabyte?",
+          "options": [
+            "100 KB",
+            "1000 KB",
+            "1024 KB",
+            "1048 KB"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la tabla de múltiplos de bit, un megabyte (MB) equivale a 1024 kilobytes (KB)."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué significa RAID en sistemas de almacenamiento?",
+          "options": [
+            "Random Access of Independent Disks",
+            "Redundant Array of Independent Disks",
+            "Rapid Access and Integrated Data",
+            "Remote Array of Internal Devices"
+          ],
+          "correctAnswer": 1,
+          "explanation": "RAID significa Redundant Array of Independent Disks, una configuración que utiliza múltiples discos independientes que operan conjuntamente como si fueran un solo dispositivo."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué es un NAS?",
+          "options": [
+            "Network Assigned Storage",
+            "Network Attached Storage",
+            "New Advanced System",
+            "Network Access Server"
+          ],
+          "correctAnswer": 1,
+          "explanation": "NAS significa Network Attached Storage y actúa como un dispositivo de almacenamiento centralizado único conectado a una red LAN."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál de los siguientes NO es un aspecto esencial en la gestión de sistemas de almacenamiento?",
+          "options": [
+            "Capacidad",
+            "Fiabilidad",
+            "Color del dispositivo",
+            "Recuperabilidad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los cuatro aspectos esenciales en la gestión de sistemas de almacenamiento son: capacidad, recuperabilidad, rendimiento y fiabilidad. El color del dispositivo no es relevante."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué nivel RAID protege la información en caso de falla mediante el uso de código Hamming?",
+          "options": [
+            "RAID 0",
+            "RAID 1",
+            "RAID 2",
+            "RAID 3"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según el documento, RAID 2 utiliza el código Hamming para detectar y corregir errores, protegiendo la información en caso de falla."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "En cuanto a organización de datos, ¿cuál es una diferencia principal entre ficheros y bases de datos?",
+          "options": [
+            "Los ficheros son más rápidos",
+            "Los ficheros se almacenan en carpetas sin estructura interna que relacione fácilmente los datos, mientras que las bases de datos organizan datos en tablas con relaciones",
+            "Las bases de datos ocupan menos espacio",
+            "Los ficheros son más seguros"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento indica que los ficheros se almacenan en carpetas sin estructura interna que relacione fácilmente los datos, mientras que las bases de datos organizan datos en tablas, filas y columnas, facilitando la relación y el acceso."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de almacenamiento comprende uno o más dispositivos físicos desde el punto de vista lógico?",
+          "options": [
+            "Almacenamiento físico",
+            "Almacenamiento en la nube",
+            "Sistema de almacenamiento lógico",
+            "Almacenamiento temporal"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un sistema de almacenamiento lógico comprende uno o más dispositivos físicos y utiliza las particiones de estos, aunque físicamente se encuentra dividido, se trata de un solo sistema desde el punto de vista lógico."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue la capacidad del primer disco duro comercial IBM 305 RAMAC lanzado en 1956?",
+          "options": [
+            "5 kilobytes",
+            "5 megabytes",
+            "5 gigabytes",
+            "5 terabytes"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la sección 'Sabías que...', el primer disco duro comercial IBM 305 RAMAC lanzado en 1956 tenía una capacidad de 5 megabytes."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja tienen los discos SSD sobre los discos duros magnéticos?",
+          "options": [
+            "Son más baratos",
+            "Tienen mayor capacidad",
+            "Ofrecen mayor velocidad y fiabilidad",
+            "Son más compatibles"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento indica que los discos de estado sólido (SSD) ofrecen mayor velocidad y fiabilidad en comparación con los discos magnéticos, aunque tienen un coste mayor."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué es una SAN (Storage Area Network)?",
+          "options": [
+            "Un disco duro externo",
+            "Un sistema operativo de almacenamiento",
+            "Una red de almacenamiento dedicada que posibilita el intercambio de datos mediante software especializado",
+            "Un tipo de RAID"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Una SAN es una red de almacenamiento dedicada que posibilita el intercambio de datos mediante el uso de software especializado, a diferencia de un NAS que es un dispositivo único."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué fichero permite conservar datos en sistemas con capacidad de memoria limitada?",
+          "options": [
+            "Fichero maestro",
+            "Fichero histórico",
+            "Fichero de trabajo o maniobra",
+            "Fichero de constantes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los ficheros de trabajo o de maniobra actúan como ficheros temporales para conservar datos en sistemas o aplicaciones que tienen una capacidad de memoria limitada."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "En términos de seguridad, ¿qué ofrecen las bases de datos comparadas con los ficheros?",
+          "options": [
+            "Seguridad básica del sistema operativo",
+            "Sin seguridad",
+            "Seguridad robusta con control de acceso y encriptación",
+            "La misma seguridad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según el documento, las bases de datos ofrecen seguridad robusta con control de acceso y encriptación, mientras que los ficheros otorgan seguridad básica proporcionada por el sistema operativo."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes es una extensión de archivo de código?",
+          "options": [
+            ".pdf",
+            ".jpg",
+            ".java",
+            ".mp4"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento lista .java como un ejemplo de archivo de código, junto con .c, .js y .sql. Los demás son archivos de aplicaciones, imágenes y video respectivamente."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué nivel RAID distribuye los datos de paridad entre todas las unidades de disco?",
+          "options": [
+            "RAID 3",
+            "RAID 4",
+            "RAID 5",
+            "RAID 6"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la figura 12 del documento, RAID 5 distribuye los datos de paridad entre todas las unidades de disco, lo que proporciona alta velocidad de transferencia."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el recurso más valioso para cualquier organización actualmente según el documento?",
+          "options": [
+            "El hardware",
+            "El personal",
+            "La información (datos)",
+            "El software"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento establece claramente que la información (datos) es, posiblemente, el recurso más valioso para cualquier organización actualmente, ya que todo gira en torno a ella."
+        }
+      ]
+    },
+    {
+      "name": "Fundamentos de las Bases de Datos",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la definición correcta de una base de datos según el documento?",
+          "options": [
+            "Un conjunto de archivos independientes almacenados en carpetas",
+            "Herramientas que permiten estructurar el almacenamiento de datos, relacionarlos y ayudar a su gestión, consulta y manipulación, garantizando su integridad",
+            "Un sistema operativo para gestionar información",
+            "Un programa de hojas de cálculo avanzado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, las bases de datos son herramientas que permiten estructurar el almacenamiento de datos, relacionarlos y ayudar a su gestión, consulta y manipulación, garantizando siempre su integridad."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué son las entidades en una base de datos?",
+          "options": [
+            "Las columnas de una tabla",
+            "Los objetos sobre los que se guarda información",
+            "Los registros individuales",
+            "Las relaciones entre tablas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las entidades son los objetos sobre los que se guarda información, los cuales tienen características distintas entre sí. Por ejemplo, en una tienda, las entidades pueden ser los clientes."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué es un registro en una base de datos?",
+          "options": [
+            "Una columna en la tabla",
+            "Una fila en la tabla",
+            "El nombre de una tabla",
+            "Una relación entre tablas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un registro es una fila en la tabla. Por ejemplo, en la tabla de clientes, cada registro representa un cliente."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una clasificación de bases de datos según su uso?",
+          "options": [
+            "Individual",
+            "Compartida",
+            "Pública",
+            "Secuencial"
+          ],
+          "correctAnswer": 3,
+          "explanation": "Secuencial no es una clasificación según el uso. Las clasificaciones según el uso incluyen: Individual, Compartida, Bancos de datos y Pública."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a las bases de datos relacionales?",
+          "options": [
+            "Almacenan datos como objetos definidos por clases",
+            "Almacenan datos en tablas con filas y columnas que se relacionan entre sí",
+            "Organizan información en forma de árbol",
+            "Utilizan únicamente archivos de texto plano"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos relacionales almacenan datos en tablas con filas y columnas que se relacionan entre sí. Su estructura asegura la integridad de los datos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuándo surgieron las bases de datos orientadas a objetos?",
+          "options": [
+            "En los años 60",
+            "En los años 70",
+            "En los años 90",
+            "En el año 2000"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según el documento, las bases de datos orientadas a objetos surgieron en los años 90 con la programación orientada a objetos."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de bases de datos almacenan información como objetos definidos por clases?",
+          "options": [
+            "Bases de datos relacionales",
+            "Bases de datos jerárquicas",
+            "Bases de datos orientadas a objetos",
+            "Bases de datos en red"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las bases de datos orientadas a objetos almacenan información como objetos definidos por clases, que incluyen atributos y métodos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a las bases de datos jerárquicas?",
+          "options": [
+            "Las relaciones pueden ser circulares",
+            "La información se almacena en forma de árbol manteniendo una relación padre-hijo",
+            "Utilizan tablas relacionadas",
+            "No tienen estructura definida"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En las bases de datos jerárquicas, la información se almacena en forma de listas o árbol y ramas, manteniendo una relación padre-hijo. Cada nodo tiene un único padre."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre bases de datos jerárquicas y en red?",
+          "options": [
+            "Las jerárquicas son más rápidas",
+            "En las bases de datos en red, las relaciones pueden ser circulares y un nodo puede tener varios padres",
+            "Las en red son más antiguas",
+            "Las jerárquicas no tienen relaciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La principal diferencia es que en las bases de datos en red las relaciones pueden ser circulares, es decir, un nodo puede tener varios padres y ser a la vez padre de alguno de ellos."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Dónde se localiza la información en una base de datos centralizada?",
+          "options": [
+            "En múltiples nodos distribuidos",
+            "En un solo dispositivo o máquina",
+            "En la nube exclusivamente",
+            "En diferentes países"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos centralizadas se distinguen principalmente por estar localizadas en un solo dispositivo o máquina, que puede ser de diferentes tipos."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuándo aparecieron las bases de datos distribuidas?",
+          "options": [
+            "En los años 60",
+            "En los años 70",
+            "En los años 80",
+            "En los años 90"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, las bases de datos distribuidas aparecieron en los años 70 para gestionar datos a gran escala en múltiples ubicaciones."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja técnica de las bases de datos distribuidas?",
+          "options": [
+            "Son más baratas de mantener",
+            "Aumentan la confiabilidad, disponibilidad y eficiencia en el acceso a la información",
+            "Requieren menos personal",
+            "Consumen menos energía"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A nivel técnico, las bases de datos distribuidas aumentan la confiabilidad, disponibilidad y eficiencia en el acceso a la información, entre otras ventajas."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los tres aspectos básicos del diseño de una base de datos distribuida?",
+          "options": [
+            "Crear, modificar y eliminar",
+            "Fragmentar, replicar y distribuir",
+            "Leer, escribir y actualizar",
+            "Insertar, borrar y consultar"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los tres aspectos fundamentales del diseño de una base de datos distribuida son: la fragmentación, la replicación y la distribución de los datos."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué define el esquema global en la arquitectura de una base de datos distribuida?",
+          "options": [
+            "Cómo se distribuyen los fragmentos",
+            "Todos los datos de la base igual que si fuese distribuida",
+            "La ubicación física de los servidores",
+            "Las políticas de seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el esquema global se definen todos los datos de la base igual que si fuese distribuida, siendo el nivel más alto de la arquitectura."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de fragmentación se aplica directamente sobre los registros o filas de las tablas?",
+          "options": [
+            "Fragmentación vertical",
+            "Fragmentación horizontal",
+            "Fragmentación mixta",
+            "Fragmentación indexada"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La fragmentación horizontal se aplica directamente sobre los registros o filas de las tablas, dividiendo la información en fragmentos que incluyen varias de estas filas."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza a la fragmentación vertical?",
+          "options": [
+            "Divide los registros horizontalmente",
+            "Cada fragmento contiene una serie de atributos del origen que se repiten en todos ellos",
+            "No permite replicación",
+            "Solo funciona con bases de datos centralizadas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La fragmentación vertical se distingue porque cada fragmento resultante de dividir la información contiene una serie de atributos del origen, los cuales se repiten en todos ellos."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres formas en que pueden configurarse las bases de datos distribuidas según la distribución de información?",
+          "options": [
+            "Local, regional y global",
+            "Nodo réplica, nodo particionado y nodo híbrido",
+            "Primario, secundario y terciario",
+            "Simple, doble y triple"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos distribuidas pueden configurarse de tres formas: Nodo réplica (información duplicada), Nodo particionado (información distribuida sin duplicación) y Nodo híbrido (combinación de las anteriores)."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué significa DDBMS en el contexto de bases de datos distribuidas?",
+          "options": [
+            "Distributed Database Management System",
+            "Digital Data Base Management Software",
+            "Dynamic Database Mapping System",
+            "Direct Database Memory Storage"
+          ],
+          "correctAnswer": 0,
+          "explanation": "DDBMS significa Sistema de administración de bases de datos distribuidas (Distributed Database Management System)."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué estrategia de recuperación replica los datos en varios lugares para asegurar la disponibilidad?",
+          "options": [
+            "Copias de seguridad incrementales",
+            "Replicación geográfica",
+            "Conmutación por error",
+            "Fragmentación mixta"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La replicación geográfica es una estrategia donde se replican los datos en varios lugares para asegurar la disponibilidad y la tolerancia a fallos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de implementación de base de datos distribuida mantiene cada nodo su propia base de datos autónoma?",
+          "options": [
+            "Implementaciones múltiples",
+            "Implementaciones centralizadas",
+            "Implementaciones federadas",
+            "Implementaciones relacionales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En las implementaciones federadas, cada nodo tiene su propia base de datos autónoma y se conecta con otros nodos mediante una federación, manteniendo autonomía local."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resolvieron las bases de datos que antes tenían los archivos independientes?",
+          "options": [
+            "La falta de color en las interfaces",
+            "Errores y falta de coherencia entre aplicaciones que no interactuaban",
+            "La velocidad de procesamiento",
+            "El tamaño de los archivos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos resolvieron el problema de que los programas usaban aplicaciones muy específicas que rara vez interactuaban entre sí, lo que provocaba errores y falta de coherencia."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué es el modelo de base de datos?",
+          "options": [
+            "El tamaño físico de la base de datos",
+            "Describe cómo se almacena la información y cómo se interrelaciona, definiendo la arquitectura",
+            "El precio de implementación",
+            "El número de usuarios permitidos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo de base de datos describe cómo se almacena la información y cómo se interrelaciona, definiendo así la arquitectura de la base de datos."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de base de datos permite el acceso a cualquier usuario que cuente con los medios técnicos para hacerlo?",
+          "options": [
+            "Base de datos individual",
+            "Base de datos compartida",
+            "Base de datos pública",
+            "Banco de datos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las bases de datos públicas permiten el acceso a cualquier usuario que cuente con los medios técnicos para hacerlo, como por ejemplo la base de datos del catastro."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué combinan las bases de datos objeto-relacionales?",
+          "options": [
+            "Características de las bases de datos jerárquicas y en red",
+            "Características de las orientadas a objetos y las relacionales",
+            "SQL y NoSQL",
+            "Fragmentación horizontal y vertical"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las bases de datos objeto-relacionales combinan características de las bases de datos orientadas a objetos y las relacionales, mejorando las relacionales con ventajas de las orientadas a objetos."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es uno de los objetivos de la distribución de datos en bases de datos distribuidas?",
+          "options": [
+            "Aumentar el consumo de energía",
+            "Acercar la información a las aplicaciones que la consumirán para reducir latencias",
+            "Complicar el acceso a los datos",
+            "Reducir la seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Uno de los objetivos principales de la distribución de datos es la localidad: acercar la información a las aplicaciones que la consumirán para reducir latencias."
+        }
+      ]
+    },
+    {
+      "name": "Sistemas Gestores de Bases de Datos (SGBD)",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿En qué década nacieron los sistemas gestores de bases de datos (SGBD)?",
+          "options": [
+            "Años 50",
+            "Años 60",
+            "Años 70",
+            "Años 80"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, los SGBD nacieron en los años 60 del siglo pasado, principalmente para manejar grandes volúmenes de datos en industrias como la aeroespacial y la automovilística."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguaje revolucionó el sector de bases de datos en 1986?",
+          "options": [
+            "Python",
+            "Java",
+            "SQL",
+            "C++"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El lenguaje SQL fue creado en 1986 y revolucionó el sector con la aparición de los SGBD relacionales."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuántos niveles define la arquitectura ANSI/X3/SPARC para los SGBD?",
+          "options": [
+            "Dos niveles",
+            "Tres niveles",
+            "Cuatro niveles",
+            "Cinco niveles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La arquitectura ANSI/X3/SPARC define tres niveles: externo (usuario), conceptual (lógico) e interno (físico), proporcionando una separación que abstrae al usuario de los detalles técnicos del sistema."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el nivel más cercano al usuario en la arquitectura ANSI/X3/SPARC?",
+          "options": [
+            "Nivel interno o físico",
+            "Nivel conceptual o lógico",
+            "Nivel externo o usuario",
+            "Nivel de aplicación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El nivel externo o usuario representa la visión que el usuario tiene del sistema y es el nivel más cercano al usuario."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué función NO es característica de un SGBD?",
+          "options": [
+            "Control del sistema y su seguridad",
+            "Garantizar la integridad de los datos",
+            "Compilación de código fuente",
+            "Realización y recuperación de copias de seguridad"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La compilación de código fuente no es una función de un SGBD. Los SGBD se encargan de la gestión, manipulación, seguridad e integridad de datos, no de compilar código."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué componente de un SGBD contiene metadatos sobre la estructura de la base de datos?",
+          "options": [
+            "Lenguaje de programación",
+            "Diccionario de datos",
+            "Entorno gráfico",
+            "Datos almacenados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El diccionario de datos contiene metadatos (información sobre los datos y su estructura), como nombres de campos, tipos de datos y restricciones."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el perfil de usuario con permisos completos sobre el SGBD?",
+          "options": [
+            "Programadores",
+            "Operadores de mantenimiento",
+            "Administradores (DBA)",
+            "Usuarios finales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los administradores (DBA) gestionan, mantienen y optimizan el SGBD, garantizando su seguridad, rendimiento y disponibilidad, con permisos completos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "En un SGBD bicapa, ¿dónde se encuentran el cliente y el servidor?",
+          "options": [
+            "En el mismo equipo",
+            "El cliente en una máquina y el SGBD y la base de datos en otra",
+            "Distribuidos en múltiples servidores",
+            "En la nube"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En un SGBD bicapa, el SGBD y la base de datos están en la misma máquina, pero el cliente se halla en otra, comunicándose entre sí a través de la red."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de SGBD es SQLite según su tamaño?",
+          "options": [
+            "Alto rendimiento",
+            "Ligero",
+            "Empresarial",
+            "Distribuido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "SQLite es un SGBD ligero, con tamaño reducido, utilizado en equipos con escasa potencia o que requieren un bajo consumo energético."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál de las siguientes NO es una ventaja de los SGBD frente a los ficheros clásicos?",
+          "options": [
+            "Optimización del espacio de almacenamiento",
+            "Acceso concurrente",
+            "Menor costo de implementación",
+            "Integridad de los datos asegurada"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El menor costo de implementación no se menciona como ventaja. Las ventajas incluyen optimización del espacio, acceso concurrente, integridad de datos y seguridad mejorada."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué significa DDL en el contexto de lenguajes de bases de datos?",
+          "options": [
+            "Data Download Language",
+            "Data Definition Language",
+            "Data Distribution Language",
+            "Database Development Language"
+          ],
+          "correctAnswer": 1,
+          "explanation": "DDL significa Data Definition Language (Lenguaje de Definición de Datos) y permite definir y editar la estructura de la base de datos con comandos como Create, Alter y Drop."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos comandos pertenece al lenguaje DML?",
+          "options": [
+            "Create",
+            "Drop",
+            "Select",
+            "Grant"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Select pertenece al DML (Data Manipulation Language), que permite insertar, consultar, actualizar y eliminar datos. Los comandos más comunes son Select, Insert, Update y Delete."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué transparencia en SGBDD indica que el usuario no necesita saber si la información está replicada?",
+          "options": [
+            "Transparencia a nivel de red",
+            "Transparencia de fragmentación",
+            "Transparencia de replicación",
+            "Transparencia de concurrencia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La transparencia de replicación asegura que el usuario no necesita saber si la información está replicada en varios nodos del sistema distribuido."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál de estos es un ejemplo de SGBDD mencionado en el documento?",
+          "options": [
+            "Oracle",
+            "MySQL",
+            "Apache Cassandra",
+            "SQLite"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Apache Cassandra es mencionado específicamente como un ejemplo de Sistema Gestor de Bases de Datos Distribuidas (SGBDD)."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué empresa es propietaria de MySQL?",
+          "options": [
+            "Microsoft",
+            "IBM",
+            "Oracle",
+            "SAP"
+          ],
+          "correctAnswer": 2,
+          "explanation": "MySQL pertenece a Oracle. Aunque comenzó como un sistema de código libre, ahora tiene una licencia libre y una comercial bajo Oracle."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el lenguaje procedural específico de Oracle?",
+          "options": [
+            "T-SQL",
+            "PL-SQL",
+            "SQL++",
+            "Oracle Script"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Oracle dispone de su propio lenguaje procedural llamado PL-SQL (Procedural Language/SQL)."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de base de datos es MongoDB?",
+          "options": [
+            "Relacional",
+            "NoSQL",
+            "Jerárquica",
+            "De red"
+          ],
+          "correctAnswer": 1,
+          "explanation": "MongoDB es una base de datos no relacional (NoSQL) distribuida, diseñada específicamente para aplicaciones en la nube."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué comandos pertenecen al lenguaje TCL?",
+          "options": [
+            "Select e Insert",
+            "Create y Drop",
+            "Commit y Rollback",
+            "Grant y Revoke"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El lenguaje TCL (Transaction Control Language) tiene como finalidad gestionar las transacciones, y sus comandos más comunes son Commit y Rollback."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica distintiva de PostgreSQL?",
+          "options": [
+            "Es un SGBD propietario de Microsoft",
+            "Es relacional orientado a objetos",
+            "Solo funciona en Windows",
+            "No soporta transacciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "PostgreSQL es un sistema relacional orientado a objetos y multiplataforma, desarrollado por una comunidad de programadores de forma voluntaria."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué nivel de la arquitectura ANSI/X3/SPARC depende del hardware y software utilizado?",
+          "options": [
+            "Nivel externo o usuario",
+            "Nivel conceptual o lógico",
+            "Nivel interno o físico",
+            "Nivel de aplicación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El nivel interno o físico muestra cómo se almacenan los datos y es el más cercano a la organización real de los datos. Este nivel depende del hardware y software utilizado."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿En qué año se creó Oracle como SGBD?",
+          "options": [
+            "1970",
+            "1980",
+            "1986",
+            "1990"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, Oracle nació en 1980, en el contexto de la proliferación de equipos informáticos en empresas y organizaciones."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una desventaja de Microsoft SQL Server mencionada en el documento?",
+          "options": [
+            "No es escalable",
+            "Utiliza mucha RAM",
+            "No tiene integración con Microsoft Server",
+            "Solo funciona en Linux"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la tabla comparativa, se menciona que SQL Server utiliza mucha RAM y tiene un tamaño de página fijo y pequeño como inconvenientes."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué problema deben solucionar los SGBDD relacionado con el acceso simultáneo?",
+          "options": [
+            "Fragmentación de datos",
+            "Replicación de datos",
+            "Concurrencia en transacciones distribuidas",
+            "Balanceo de carga"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los SGBDD deben gestionar la concurrencia en las transacciones distribuidas, que se vuelve más complejo por la existencia de varios nodos."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja de Firebird mencionada en el documento?",
+          "options": [
+            "Alto consumo de recursos",
+            "Buena gestión de la concurrencia",
+            "Solo funciona en Windows",
+            "Requiere licencia comercial"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Firebird es conocido por su buena gestión de la concurrencia y bajo consumo de recursos, aunque sigue siendo potente y multiplataforma."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué arquitectura de SGBD es la más habitual en la web?",
+          "options": [
+            "Monocapa",
+            "Bicapa",
+            "Multicapa",
+            "Cliente-servidor simple"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La arquitectura multicapa es la más habitual en la web, destacando por la existencia de varios servidores que hacen de intermediarios entre los clientes y las bases de datos."
+        }
+      ]
+    }
+  ]
+}

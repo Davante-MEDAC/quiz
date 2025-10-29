@@ -1,7 +1,7 @@
 {
   "id": "programacion",
   "title": "Programación",
-  "description": "Evalúa tu comprensión de los conceptos de programación",
+  "description": "Cuestionario sobre los fundamentos de la programación, elementos de un programa informático y programación estructurada.",
   "icon": "👩🏻‍💻",
   "lessons": [
     {
@@ -266,6 +266,931 @@
           ],
           "correctAnswer": 1,
           "explanation": "Los IDE actuales permiten el autocompletado del código fuente y el resaltado de posibles errores mediante una precompilación en tiempo real mientras se escribe el código."
+        }
+      ]
+    },
+    {
+      "name": "Elementos de un programa informático",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos grandes bloques dentro de un programa informático?",
+          "options": [
+            "Bloque de entrada y bloque de salida",
+            "Bloque de declaración y bloque de instrucciones",
+            "Bloque de variables y bloque de constantes",
+            "Bloque de datos y bloque de operadores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento establece que se pueden definir dos grandes bloques: el bloque de declaración (donde se definen todos los objetos que se utilizan) y el bloque de instrucciones (que define las operaciones a realizar)."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Qué diferencia principal existe entre variables y constantes?",
+          "options": [
+            "Las variables ocupan más memoria que las constantes",
+            "Las variables pueden cambiar su valor durante la ejecución, las constantes no",
+            "Las variables son de tipo numérico, las constantes de tipo texto",
+            "No hay diferencia, son sinónimos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, las variables representan un espacio de memoria cuyo valor puede cambiar durante la ejecución, mientras que las constantes son datos cuyo valor no cambiará a lo largo del programa."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuántos bytes ocupa el tipo de dato 'int' en Java?",
+          "options": [
+            "1 byte",
+            "2 bytes",
+            "4 bytes",
+            "8 bytes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la tabla del documento, el tipo 'int' ocupa 4 bytes en memoria y tiene un rango de [-2³¹, 2³¹ - 1]."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre 'char' y 'String' en Java?",
+          "options": [
+            "Char almacena números, String almacena letras",
+            "Char representa un único carácter, String representa varios caracteres",
+            "No hay diferencia, son equivalentes",
+            "Char es para mayúsculas, String para minúsculas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento explica que char representa un único carácter (entre comillas simples), mientras que String representa varios caracteres juntos, es decir, una cadena de caracteres (entre comillas dobles)."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué valores puede tomar una variable de tipo boolean?",
+          "options": [
+            "0 y 1 únicamente",
+            "true y false únicamente",
+            "Cualquier número entero",
+            "Cualquier carácter"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los datos de tipo booleano pueden representar únicamente dos tipos de valores: verdadero (true) y falso (false), heredados del álgebra de Boole."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué operador se utiliza para obtener el resto de una división en Java?",
+          "options": [
+            "/",
+            "*",
+            "%",
+            "++"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Según la tabla de operaciones aritméticas del documento, el operador '%' se utiliza para obtener el resto de una división."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el resultado de la operación lógica 'true && false'?",
+          "options": [
+            "true",
+            "false",
+            "0",
+            "1"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la tabla de verdad del operador AND (&&), cuando uno de los operandos es false, el resultado siempre es false."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué significa el operador '==' en Java?",
+          "options": [
+            "Asignación de valor",
+            "Comparación de igualdad",
+            "Suma y asignación",
+            "Incremento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento establece que '==' es el operador de comparación para verificar si dos valores son iguales, diferente del operador de asignación '='."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué es un casting implícito (Upper-casting)?",
+          "options": [
+            "Conversión que requiere ayuda del programador",
+            "Conversión automática de un tipo menor a uno mayor sin pérdida de información",
+            "Conversión que siempre produce errores",
+            "Conversión entre tipos incompatibles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El casting implícito es una conversión automática que se realiza sin ayuda del programador, convirtiendo un tipo menor a uno mayor sin pérdida de información, como convertir un entero a real."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia entre '++x' y 'x++' en Java?",
+          "options": [
+            "No hay diferencia, ambos incrementan x",
+            "++x incrementa antes de evaluar la expresión, x++ incrementa después",
+            "++x incrementa de 2 en 2, x++ de 1 en 1",
+            "++x solo funciona con enteros, x++ con cualquier tipo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, ++x (preincremento) incrementa la variable antes de evaluar la expresión, mientras que x++ (postincremento) incrementa después de evaluar la expresión."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué método se utiliza para leer un número entero desde teclado usando Scanner?",
+          "options": [
+            "nextDouble()",
+            "nextLine()",
+            "nextInt()",
+            "next()"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento especifica que 'lectura.nextInt()' se utiliza para leer un número entero desde el teclado cuando se usa la clase Scanner."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los elementos comunes que tienen la mayoría de los lenguajes de programación?",
+          "options": [
+            "Solo variables y operadores",
+            "Caracteres, datos, identificadores, expresiones, operadores, instrucciones y comentarios",
+            "Únicamente tipos de datos primitivos",
+            "Solo bloques de código"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento enumera estos elementos comunes: caracteres, datos, identificadores, expresiones y operadores, instrucciones, y comentarios."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué palabra reservada se utiliza en Java para declarar una constante?",
+          "options": [
+            "const",
+            "final",
+            "static",
+            "constant"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, se emplea la palabra reservada 'final' para declarar constante cualquier tipo de dato en Java."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué operador lógico devuelve el valor contrario a la variable a la que se aplica?",
+          "options": [
+            "&&",
+            "||",
+            "!",
+            "=="
+          ],
+          "correctAnswer": 2,
+          "explanation": "El operador NOT (!) es monario y devuelve el valor contrario a la variable a la que se aplica, según se explica en el documento."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el rango de valores para el tipo 'byte' en Java?",
+          "options": [
+            "[-256, 255]",
+            "[-128, 127]",
+            "[0, 255]",
+            "[-32768, 32767]"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según la tabla del documento, el tipo 'byte' que ocupa 1 byte en memoria tiene un rango de [-128, 127]."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué método de System.out imprime un mensaje con salto de línea?",
+          "options": [
+            "print()",
+            "println()",
+            "printf()",
+            "write()"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento especifica que 'System.out.println()' imprime mensaje con salto de línea, mientras que 'System.out.print()' lo hace sin salto de línea."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué significa API en el contexto de Java?",
+          "options": [
+            "Advanced Programming Interface",
+            "Application Programming Interface",
+            "Automated Program Integration",
+            "Abstract Programming Implementation"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Aunque el documento no define explícitamente la sigla, se refiere a la API de Java como la biblioteca que proporciona funciones y herramientas para el desarrollo de aplicaciones, siendo API el acrónimo de Application Programming Interface."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la sintaxis correcta para el operador ternario en Java?",
+          "options": [
+            "if ? valor1 : valor2",
+            "ExpresiónLógica ? valor1 : valor2",
+            "condición -> valor1 : valor2",
+            "expresión == valor1 ? valor2"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento muestra que la sintaxis del operador ternario es 'ExpresiónLógica/Relacional ? valor1: valor2;' donde se selecciona uno de los dos valores dependiendo del resultado de la expresión."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Con qué delimitadores se definen los bloques de código en Java?",
+          "options": [
+            "Paréntesis ( )",
+            "Corchetes [ ]",
+            "Llaves { }",
+            "Comillas \" \""
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento especifica que en Java, los limitadores de bloques de código son las llaves ({ })."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Para qué se utilizan principalmente los tipos de datos booleanos?",
+          "options": [
+            "Para realizar operaciones aritméticas",
+            "Para almacenar cadenas de texto",
+            "Para evaluación de expresiones lógicas y tratamiento de condiciones",
+            "Para representar números decimales"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento establece que los tipos booleanos no se utilizan para realizar operaciones, sino que su utilidad está en la evaluación de expresiones lógicas para el tratamiento de condiciones y comparaciones."
+        }
+      ]
+    },
+    {
+      "name": "Programación Estructurada",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las tres estructuras básicas de la programación estructurada?",
+          "options": [
+            "Secuencial, alternativa e iterativa",
+            "Entrada, proceso y salida",
+            "Variables, funciones y objetos",
+            "If, while y for"
+          ],
+          "correctAnswer": 0,
+          "explanation": "Según el teorema de estructura, un programa estructurado se expresa únicamente mediante combinaciones de las tres estructuras básicas: secuencial, alternativa e iterativa."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja de la programación estructurada?",
+          "options": [
+            "Mayor velocidad de ejecución",
+            "Menor uso de memoria",
+            "Mayor legibilidad y facilidad de mantenimiento",
+            "Compatibilidad con todos los lenguajes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La programación estructurada hace que los programas sean más legibles, fáciles de entender, depurar y modificar, reduciendo los costes de mantenimiento."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué estructura de selección permite evaluar múltiples casos de manera más legible?",
+          "options": [
+            "if simple",
+            "if-else",
+            "switch",
+            "while"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La estructura switch permite evaluar múltiples casos de manera más legible que múltiples if-else anidados, mejorando la comprensión del código."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre while y do-while?",
+          "options": [
+            "while es más rápido que do-while",
+            "do-while evalúa la condición al final, garantizando al menos una ejecución",
+            "while permite más iteraciones que do-while",
+            "No hay diferencia significativa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La estructura do-while evalúa la condición al final del bloque, garantizando que el código se ejecute al menos una vez, mientras que while evalúa la condición al inicio."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de datos son más ampliamente aceptados en las estructuras switch?",
+          "options": [
+            "Flotantes y doubles",
+            "Strings y arrays",
+            "Carácter y entero",
+            "Booleanos únicamente"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En las estructuras switch, los tipos de datos más ampliamente aceptados son carácter o entero, aunque los lenguajes modernos permiten otros tipos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal riesgo de las estructuras iterativas mal diseñadas?",
+          "options": [
+            "Pérdida de datos",
+            "Bucle infinito",
+            "Error de sintaxis",
+            "Incompatibilidad de tipos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El error más frecuente en estructuras iterativas es olvidar establecer correctamente la condición de finalización, lo que puede resultar en un bucle infinito."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué operador permite crear una versión más compacta del if-else?",
+          "options": [
+            "Operador lógico AND",
+            "Operador ternario",
+            "Operador de asignación",
+            "Operador de comparación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El operador ternario (? :) permite sustituir una estructura if-else simple por una expresión más compacta: variable = condición ? valor1 : valor2"
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuándo es más apropiado usar un bucle for?",
+          "options": [
+            "Cuando no sabemos cuántas iteraciones necesitamos",
+            "Cuando tenemos un número conocido de iteraciones",
+            "Cuando queremos ejecutar código al menos una vez",
+            "Cuando trabajamos con condiciones complejas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bucle for es más apropiado cuando tenemos un número conocido o determinado de iteraciones, como sumar los 100 primeros números enteros."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué sentencia de salto se recomienda usar únicamente en estructuras switch?",
+          "options": [
+            "continue",
+            "return",
+            "break",
+            "goto"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La sentencia break se recomienda usar únicamente en estructuras switch para terminar cada caso, ya que así lo requiere la sintaxis del lenguaje."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal desventaja de la programación estructurada?",
+          "options": [
+            "Mayor complejidad de código",
+            "Menor rendimiento",
+            "Se obtiene un único bloque de programa que puede ser difícil de mantener si crece",
+            "Incompatibilidad con lenguajes modernos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La principal desventaja de la programación estructurada es que se obtiene un único bloque de programa, el cual puede ser difícil de mantener si crece."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué elementos son necesarios para definir una estructura iterativa?",
+          "options": [
+            "Solo el cuerpo de la iteración",
+            "Cuerpo de iteración, número de repeticiones y condición de finalización",
+            "Variables de entrada y salida",
+            "Únicamente la condición de finalización"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para definir una estructura iterativa se necesitan tres elementos: el cuerpo de la iteración, el número de repeticiones y la condición de finalización."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Cuándo es más apropiado usar un bucle while?",
+          "options": [
+            "Cuando conocemos exactamente el número de iteraciones",
+            "Cuando el número de iteraciones es desconocido y depende de una condición",
+            "Cuando queremos ejecutar código al menos una vez",
+            "Nunca, es mejor usar for"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El bucle while es apropiado cuando el número de iteraciones es desconocido porque depende de una condición, como solicitar números hasta que sumen un valor determinado."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la anidación de estructuras de selección?",
+          "options": [
+            "Ejecutar código más rápido",
+            "Tratar múltiples condiciones de manera lineal",
+            "Reducir el uso de memoria",
+            "Eliminar la necesidad de variables"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La anidación de estructuras de selección permite tratar múltiples condiciones de manera lineal, estableciendo diferentes flujos según se cumplan o no las condiciones."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función de la sentencia continue en un bucle?",
+          "options": [
+            "Terminar el bucle completamente",
+            "Hacer que el bucle pase a la siguiente vuelta directamente",
+            "Pausar la ejecución",
+            "Reiniciar el contador del bucle"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sentencia continue hace que el bucle pase a la siguiente vuelta directamente, aumentando su contador y saltando el resto del código en la iteración actual."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen todos los bucles (while, do-while, for)?",
+          "options": [
+            "Tienen la misma sintaxis",
+            "Son equivalentes entre ellos",
+            "Ejecutan a la misma velocidad",
+            "Usan la misma cantidad de memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los bucles son equivalentes entre ellos, lo que significa que cualquier ejercicio que contenga bucles puede realizarse con while, do-while o for, aunque con algunos cambios."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuándo es más apropiado usar do-while?",
+          "options": [
+            "Cuando conocemos el número exacto de iteraciones",
+            "Cuando la condición es muy compleja",
+            "Cuando se tiene que ejecutar el código al menos una vez",
+            "Cuando queremos la máxima eficiencia"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Do-while es apropiado cuando se tiene que ejecutar el código al menos una vez, como solicitar números al usuario hasta que introduzca el 0."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué desarrollaron Dijkstra y otros autores a finales de los años sesenta?",
+          "options": [
+            "Los primeros compiladores",
+            "Los principios de la programación estructurada",
+            "Los lenguajes de alto nivel",
+            "Las bases de datos relacionales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "A finales de los años sesenta, Dijkstra junto con otros autores desarrollaron los principios de la programación estructurada para solucionar los problemas de mantenimiento del código."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué expresión debe devolver la condición en una estructura if?",
+          "options": [
+            "Un número entero",
+            "Una cadena de texto",
+            "Un valor lógico (verdadero o falso)",
+            "Un valor decimal"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La expresión utilizada en la condición de una estructura if tiene que devolver un valor lógico, es decir, verdadero o falso."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué componentes tiene la sintaxis del bucle for?",
+          "options": [
+            "Solo la condición del bucle",
+            "Inicialización, condición del bucle y paso",
+            "Variables de entrada y salida",
+            "Únicamente el incremento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis del bucle for tiene tres componentes: inicialización (valor inicial), condición del bucle (cuándo parar) y paso (cómo modificar la variable de control)."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Por qué no se recomienda el uso de sentencias de salto como goto?",
+          "options": [
+            "Son muy lentas",
+            "Provocan una mala estructuración del código y dificultan su depuración",
+            "No están disponibles en lenguajes modernos",
+            "Consumen mucha memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las sentencias de salto como goto provocan una mala estructuración del código fuente, incrementando su complejidad y dificultando el seguimiento del flujo del programa y su depuración."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué permite hacer las instrucciones de selección en el flujo de ejecución?",
+          "options": [
+            "Acelerar la ejecución del programa",
+            "Romper el orden secuencial de ejecución",
+            "Reducir el uso de variables",
+            "Eliminar errores de sintaxis"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las instrucciones de selección permiten romper el orden secuencial de ejecución, haciendo posible que algunos fragmentos de código no se ejecuten según las condiciones."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de las estructuras de selección complejas como switch?",
+          "options": [
+            "Aumentar la velocidad de ejecución",
+            "Mejorar la comprensión y estructura general del código fuente",
+            "Reducir el número de variables necesarias",
+            "Eliminar la necesidad de comentarios"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El objetivo de las estructuras de selección complejas como switch es mejorar la comprensión y estructura general del código fuente, garantizando su legibilidad."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resolvía la programación estructurada antes de los años 60?",
+          "options": [
+            "La falta de velocidad en los programas",
+            "La ausencia de interfaces gráficas",
+            "Los programas sin estructura que dificultaban el mantenimiento",
+            "La incompatibilidad entre diferentes computadoras"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Antes de los años 60, los programas consistían en un conjunto de instrucciones sin estructura, lo que dificultaba enormemente su mantenimiento."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué característica debe tener un programa bien estructurado según los principios establecidos?",
+          "options": [
+            "Debe ser lo más corto posible",
+            "Debe usar solo variables globales",
+            "El código debe ser entendible sin necesidad de información adicional",
+            "Debe ejecutarse en cualquier sistema operativo"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Uno de los principios fundamentales es que el código debe ser entendible sin necesidad de información adicional, facilitando su comprensión y mantenimiento."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la ventaja de poder desarrollar un programa por partes según la programación estructurada?",
+          "options": [
+            "Reduce el tiempo total de ejecución",
+            "Las diferentes partes pueden ser modificadas sin afectar al resto del programa",
+            "Elimina la necesidad de pruebas",
+            "Garantiza que no habrá errores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La programación estructurada permite que las diferentes partes del programa puedan ser modificadas o cambiadas sin que esto afecte al resto del programa, facilitando el mantenimiento."
+        }
+      ]
+    },
+    {
+      "name": "Programación Modular",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿En qué metodología se basa la programación modular?",
+          "options": [
+            "Divide y vencerás",
+            "Cascada",
+            "Espiral",
+            "Prototipado"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La programación modular está basada en la metodología denominada 'divide y vencerás', es decir, en la división del programa en subprogramas."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal ventaja de la programación modular?",
+          "options": [
+            "Mayor velocidad de ejecución",
+            "Cada módulo puede ser desarrollado de forma independiente",
+            "Menor uso de memoria",
+            "Compatibilidad con todos los sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una ventaja de la programación modular es que cada módulo puede ser desarrollado de forma independiente, mediante equipos independientes y probado de manera independiente."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de diseño consiste en descomposiciones sucesivas del algoritmo inicial?",
+          "options": [
+            "Diseño ascendente (bottom-up)",
+            "Diseño modular descendente (top-down)",
+            "Diseño lateral",
+            "Diseño circular"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un diseño modular descendente (top-down) consiste en una serie de descomposiciones sucesivas del algoritmo inicial denominadas módulos."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre procedimientos y funciones?",
+          "options": [
+            "Los procedimientos son más rápidos",
+            "Los procedimientos no devuelven valor, las funciones sí",
+            "Las funciones usan más memoria",
+            "No hay diferencia significativa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el caso de los procedimientos, no se devuelve ningún valor; mientras que en el caso de las funciones, podemos devolver un valor determinado."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de variables solo existen en un ámbito determinado del programa?",
+          "options": [
+            "Variables globales",
+            "Variables locales",
+            "Variables estáticas",
+            "Variables dinámicas"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las variables locales solo existen en un ámbito determinado del programa, por ejemplo, en un subprograma o en un bloque de sentencias."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Por qué se recomienda evitar el uso de variables globales?",
+          "options": [
+            "Ocupan más memoria",
+            "Son más lentas",
+            "Pueden causar efectos secundarios difíciles de rastrear",
+            "No son compatibles con todos los lenguajes"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las variables globales pueden causar problemas porque cualquier parte del programa puede cambiar su valor sin control, causando efectos secundarios difíciles de rastrear y localizar."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué sucede en el paso de parámetros por valor?",
+          "options": [
+            "Se pasa la dirección de memoria de la variable",
+            "Se pasa una copia del valor de la variable",
+            "Se pasa una referencia al objeto",
+            "Se modifica directamente la variable original"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el paso de parámetros por valor, la función va a recibir una copia de los valores reales, por lo que las modificaciones no afectan a la variable original."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué permite la sobrecarga de métodos?",
+          "options": [
+            "Usar el mismo nombre de función con diferentes tipos de datos",
+            "Ejecutar múltiples funciones simultáneamente",
+            "Optimizar el uso de memoria",
+            "Acelerar la ejecución del programa"
+          ],
+          "correctAnswer": 0,
+          "explanation": "La sobrecarga de funciones nos permite definir funciones con el mismo nombre que puedan trabajar con diferentes tipos de datos."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Cómo se denominan los subprogramas en los lenguajes orientados a objetos?",
+          "options": [
+            "Procedimientos",
+            "Funciones",
+            "Métodos",
+            "Módulos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En el caso de los lenguajes orientados a objetos, los subprogramas se denominan métodos."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué son los parámetros formales?",
+          "options": [
+            "Los valores que se pasan durante la ejecución",
+            "Los parámetros especificados en el prototipo de la función",
+            "Los parámetros que se modifican dentro de la función",
+            "Los parámetros de tipo primitivo"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los parámetros formales hacen referencia a aquellos parámetros que están especificados en el prototipo de la función, donde se especifica el tipo de cada uno de los parámetros."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una de las principales ventajas del diseño modular?",
+          "options": [
+            "Menor tiempo de compilación",
+            "Facilita el desarrollo de programas en equipo",
+            "Requiere menos documentación",
+            "Elimina todos los errores del programa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las ventajas del diseño modular es que facilita el desarrollo de programas en equipo, permitiendo que diferentes equipos trabajen en módulos independientes."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué se denomina librería en programación?",
+          "options": [
+            "Un tipo especial de variable",
+            "El conjunto de funciones que nos ofrece un lenguaje de programación",
+            "Un método de compilación",
+            "Una estructura de datos compleja"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El conjunto de funciones que nos ofrece un lenguaje de programación se denomina librería."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué problema resuelve principalmente la programación modular?",
+          "options": [
+            "La lentitud de ejecución",
+            "La duplicación de código y escasa reutilización",
+            "La incompatibilidad entre sistemas",
+            "El exceso de documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La programación modular resuelve problemas como la duplicación de código y la escasa reutilización de código que se presentan en proyectos complejos."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se dice que un subprograma es interno?",
+          "options": [
+            "Cuando está escrito en el mismo lenguaje que el programa principal",
+            "Cuando figura en el mismo archivo fuente que el principal",
+            "Cuando no tiene parámetros de entrada",
+            "Cuando no devuelve ningún valor"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Si el subprograma figura en el mismo archivo fuente que el principal, se le denomina interno."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen las variables declaradas en un subprograma?",
+          "options": [
+            "Son siempre globales",
+            "Son locales, no conociéndose fuera de él",
+            "Se comparten automáticamente con otros subprogramas",
+            "Ocupan más memoria que las variables globales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las variables declaradas en un subprograma son locales, no conociéndose fuera de él, correspondiendo cada una a áreas de memoria diferentes."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué ocurre en el paso de parámetros por referencia?",
+          "options": [
+            "Se crea una copia del valor",
+            "Los cambios sobre la variable receptora afectan a la variable original",
+            "Se ejecuta más lentamente",
+            "No se pueden pasar objetos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el paso de parámetros por referencia, los cambios que realicemos sobre la variable receptora van a afectar al valor de la variable que se utilice en la llamada formal de la función."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de evitar dividir el software en demasiados módulos?",
+          "options": [
+            "Reducir el tiempo de compilación",
+            "Buscar un equilibrio entre el esfuerzo de desarrollo y mantenimiento de interfaces",
+            "Ahorrar memoria",
+            "Simplificar la documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Es necesario buscar un equilibrio entre ambos esfuerzos, ya que dividir en muchos módulos incrementa el esfuerzo necesario para desarrollar y mantener las interfaces de comunicación."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué permite establecer la sobrecarga de operadores?",
+          "options": [
+            "Crear nuevos tipos de datos",
+            "Definir operadores con un nombre similar a los del lenguaje",
+            "Acelerar las operaciones matemáticas",
+            "Eliminar la necesidad de funciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sobrecarga de operadores permite al programador definir operadores con un nombre similar a los propuestos por el lenguaje de programación."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja ofrece la reutilización de módulos?",
+          "options": [
+            "Mayor velocidad de ejecución",
+            "Reducción del tiempo de desarrollo",
+            "Menor uso de memoria",
+            "Mejor interfaz de usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La reutilización de módulos permite reducir el tiempo de desarrollo, ya que componentes ya desarrollados y probados pueden ser utilizados en nuevos proyectos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una característica importante de un programa principal en programación modular?",
+          "options": [
+            "Contiene todo el código del programa",
+            "Describe la solución completa y consta principalmente de llamadas a subprogramas",
+            "No puede llamar a otros subprogramas",
+            "Siempre es el más largo del programa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un programa principal describe la solución completa del problema y consta, principalmente, de llamadas a subprogramas, conteniendo pocas líneas donde se ven claramente los diferentes pasos del proceso."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de funciones se incluyen típicamente en las librerías de los lenguajes de programación?",
+          "options": [
+            "Solo funciones matemáticas",
+            "Funciones carácter, numéricas y aleatorias",
+            "Solo funciones de entrada y salida",
+            "Únicamente funciones definidas por el usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las librerías incluyen funciones carácter (para trabajar con caracteres), funciones numéricas (para operaciones matemáticas) y funciones aleatorias (para números pseudoaleatorios)."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que un programa tenga una estructura de 'caja negra'?",
+          "options": [
+            "Que está compilado",
+            "Que al facilitarle valores de entrada, devuelve valores de salida en función de estos",
+            "Que no se puede modificar",
+            "Que está encriptado"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cada subprograma tendrá una estructura de caja negra, de forma que al facilitarle unos valores de entrada, devolverá unos valores de salida en función de los valores de entrada."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la relación entre las funciones en programación y las matemáticas?",
+          "options": [
+            "No tienen relación",
+            "Las funciones en programación son exactamente iguales a las matemáticas",
+            "Ambas permiten generar un resultado a partir de valores de entrada",
+            "Solo se usan para operaciones numéricas"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Una función permite, a partir de los valores de entrada, generar un resultado, siendo equivalente a una función matemática, pero la función en programación debe ser especificada paso a paso mediante un algoritmo."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué se debe considerar al definir parámetros reales en una función?",
+          "options": [
+            "Solo el nombre de los parámetros",
+            "Que coincidan en tipo y orden con los parámetros formales",
+            "Solo el número de parámetros",
+            "Únicamente el tipo de retorno"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los parámetros reales deben coincidir en tipo y orden con los parámetros especificados en el prototipo de la función (parámetros formales)."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja clave de utilizar buenas prácticas como la programación modular?",
+          "options": [
+            "Elimina completamente los errores",
+            "Garantiza un cierto nivel de reutilización del código y facilita el mantenimiento",
+            "Reduce el tamaño del código fuente",
+            "Acelera la velocidad de ejecución"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Utilizando buenas prácticas como la programación modular, podemos garantizar un cierto nivel de reutilización del código que permite centralizar la lógica y facilita el mantenimiento y la ampliación del sistema."
         }
       ]
     }

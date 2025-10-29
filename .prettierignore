@@ -7,3 +7,6 @@ bun.lockb
 
 # Miscellaneous
 static/
+node_modules/
+.svelte-kit/
+.wrangler/

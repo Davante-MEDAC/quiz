@@ -1,0 +1,1328 @@
+{
+  "id": "entornos-de-desarrollo",
+  "title": "Entornos de Desarrollo",
+  "description": "Aprende sobre los entornos de desarrollo integrados (IDE) y su importancia en la programación.",
+  "icon": "☕️",
+  "lessons": [
+    {
+      "name": "El Software",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Cómo se define un programa informático según el documento?",
+          "options": [
+            "Un conjunto de algoritmos complejos",
+            "Una receta detallada de cómo resolver un problema determinado",
+            "Un software que emula sistemas operativos",
+            "Una máquina virtual para ejecutar aplicaciones"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, un programa informático se define como una receta detallada de cómo resolver un problema determinado, que no puede ser ambiguo y debe especificar la secuencia de instrucciones lógicas necesarias."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la diferencia principal entre software y programa informático?",
+          "options": [
+            "No hay diferencia, son términos sinónimos",
+            "El software es más complejo que un programa",
+            "Un software es un conjunto de programas informáticos que se combinan para un fin determinado",
+            "El programa informático solo funciona en Windows"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento establece que un software puede considerarse como un conjunto de programas informáticos que se combinan entre sí para un determinado fin, siendo un concepto más amplio que programa informático."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Qué arquitectura siguen los sistemas computacionales actuales según el documento?",
+          "options": [
+            "Arquitectura Harvard",
+            "Arquitectura Von Neumann",
+            "Arquitectura RISC",
+            "Arquitectura CISC"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento especifica que todo sistema computacional actual sigue la arquitectura Von Neumann, con posibles modificaciones, que requiere memoria principal, sistema de entrada/salida y CPU."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué componentes forman la CPU según la arquitectura Von Neumann mencionada?",
+          "options": [
+            "Memoria RAM, disco duro y procesador",
+            "Unidad aritmético-lógica (ALU), registros y unidad de control",
+            "Sistema operativo, aplicaciones y drivers",
+            "Entrada, procesamiento y salida"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el documento, la CPU está formada por una unidad aritmético-lógica (ALU), registros y unidad de control."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué se entiende por nivel de abstracción en los lenguajes de programación?",
+          "options": [
+            "La velocidad de ejecución del programa",
+            "La capacidad que tiene un individuo para obviar los detalles y realizar las tareas encomendadas",
+            "El número de líneas de código necesarias",
+            "La compatibilidad con diferentes sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento define el nivel de abstracción como la capacidad que tiene un individuo para poder obviar los detalles y aún así poder realizar las tareas encomendadas."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son ejemplos de lenguajes de alto nivel de abstracción mencionados?",
+          "options": [
+            "Ensamblador y C",
+            "Java, C++ y Kotlin",
+            "HTML y CSS",
+            "SQL y XML"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento menciona específicamente que ejemplos de lenguajes de alto nivel de abstracción pueden ser Java, C++, Kotlin, etc."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguaje tiene el nivel de abstracción más bajo según el documento?",
+          "options": [
+            "C",
+            "Fortran",
+            "Ensamblador",
+            "Java"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento establece que el lenguaje ensamblador posee el nivel de abstracción más bajo, pues depende de las características de cada máquina."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos grandes grupos de paradigmas de programación mencionados?",
+          "options": [
+            "Estructurado y orientado a objetos",
+            "Compilado e interpretado",
+            "Imperativo y declarativo",
+            "Funcional y procedimental"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El documento diferencia dos grandes grupos de paradigmas: lenguajes imperativos y lenguajes declarativos."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen los lenguajes imperativos?",
+          "options": [
+            "Solo especifican los valores esperados al final",
+            "Permiten crear algoritmos a través del conjunto de instrucciones y expresiones",
+            "Se basan únicamente en relaciones matemáticas",
+            "No pueden usar variables"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes imperativos permiten crear algoritmos a través del conjunto de instrucciones y expresiones del lenguaje, según el documento."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué hacen los lenguajes declarativos?",
+          "options": [
+            "Ejecutan instrucciones secuencialmente",
+            "Solo especifican los valores que se esperan al final de un flujo",
+            "Compilan directamente a código máquina",
+            "Requieren un sistema operativo específico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes declarativos solo especifican los valores que se esperan al final de un flujo, sin especificar qué realizar para llegar a este resultado."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la primera fase del proceso de compilación?",
+          "options": [
+            "Análisis sintáctico",
+            "Análisis léxico",
+            "Análisis semántico",
+            "Generación de código"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La primera fase del proceso de compilación es el análisis léxico, que se centra en comprobar que los elementos utilizados pertenecen al lenguaje de programación."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué verifica el análisis sintáctico?",
+          "options": [
+            "Que las sentencias tengan sentido",
+            "Que los elementos del lenguaje sean correctos",
+            "Que los elementos vengan en el orden correcto",
+            "Que no haya errores de compilación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El análisis sintáctico permite determinar si los elementos que provienen del analizador léxico vienen en el orden correcto."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo del análisis semántico?",
+          "options": [
+            "Optimizar el código",
+            "Verificar la sintaxis",
+            "Determinar si las sentencias tienen sentido",
+            "Generar código objeto"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El análisis semántico se centra en determinar si las sentencias escritas por el programador tienen sentido."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tiene la representación intermedia en el proceso de compilación?",
+          "options": [
+            "Depende del procesador específico",
+            "Es independiente del procesador en el que se va a ejecutar",
+            "Solo funciona en sistemas Windows",
+            "Requiere optimización obligatoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La representación intermedia es independiente del procesador en el que se va a ejecutar el programa, según el documento."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "En el caso práctico sobre canales de comunicación con clientes, ¿qué tipo de lenguajes se recomienda?",
+          "options": [
+            "Lenguajes de bajo nivel de abstracción",
+            "Lenguajes de alto nivel de abstracción",
+            "Solo lenguaje ensamblador",
+            "Únicamente lenguajes compilados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para el caso de crear un portal web y aplicaciones móviles, se recomienda utilizar lenguajes de alto nivel de abstracción que oculten los problemas de dependencia de plataforma."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué tecnologías se sugieren para el front-end del portal web en el caso práctico?",
+          "options": [
+            "PHP y Java",
+            "C++ y Python",
+            "HTML, CSS y JavaScript",
+            "Swift y Kotlin"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para el front-end del portal web se sugieren tecnologías como HTML, CSS y JavaScript, según el caso práctico del documento."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguajes se mencionan para el desarrollo del servidor en el caso práctico?",
+          "options": [
+            "HTML y CSS",
+            "Swift y Kotlin",
+            "PHP o Java",
+            "C y C++"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para el servidor se mencionan PHP o Java como opciones en el caso práctico del documento."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "En el caso práctico de videojuegos, ¿qué lenguaje se recomienda para el motor gráfico?",
+          "options": [
+            "Java",
+            "C++",
+            "Python",
+            "JavaScript"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para crear el motor gráfico y las estructuras de datos se recomienda utilizar lenguajes orientados a objetos como C++."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguaje se sugiere para elementos que requieran mejor rendimiento en videojuegos?",
+          "options": [
+            "Java",
+            "Python",
+            "C",
+            "JavaScript"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para elementos que requieran mejor rendimiento se sugiere utilizar el lenguaje C (con menor nivel de abstracción) pero que da mejor rendimiento."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguaje se menciona como típico para inteligencia artificial en videojuegos?",
+          "options": [
+            "C++",
+            "Java",
+            "Haskell",
+            "Python"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para el motor de inteligencia artificial se menciona que un lenguaje típico podría ser Haskell, como ejemplo de lenguaje declarativo."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué son las funciones lambda mencionadas en el documento?",
+          "options": [
+            "Funciones recursivas",
+            "Funciones de orden superior en programación funcional",
+            "Funciones de bajo nivel",
+            "Funciones específicas de Java"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Las funciones lambda se denominan funciones de orden superior en la programación funcional, según el documento."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué lenguajes modernos incorporan funciones lambda según el documento?",
+          "options": [
+            "C y Fortran",
+            "HTML y CSS",
+            "Kotlin y Swift",
+            "SQL y XML"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Kotlin y Swift, utilizados para desarrollo Android y iOS respectivamente, incorporan el concepto de funciones lambdas."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Cuándo se debe cargar un programa en memoria principal?",
+          "options": [
+            "Antes de ser compilado",
+            "Cuando va a ser ejecutado por el sistema operativo",
+            "Después de generar el código objeto",
+            "Durante el análisis léxico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cuando un programa informático va a ser ejecutado, el sistema operativo debe realizar la carga del programa en memoria principal (RAM)."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las fases opcionales en el proceso de compilación?",
+          "options": [
+            "Análisis léxico y sintáctico",
+            "Generación de código intermedio y optimización",
+            "Análisis semántico y generación final",
+            "Todas las fases son obligatorias"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La generación de código intermedio y la optimización de código intermedio son fases opcionales en el proceso de compilación."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué produce la fase de generación de código final?",
+          "options": [
+            "Código fuente optimizado",
+            "Código intermedio",
+            "Código objeto que depende del conjunto de instrucciones de la CPU",
+            "Código ejecutable listo para usar"
+          ],
+          "correctAnswer": 2,
+          "explanation": "En la generación de código final se produce código objeto que dependerá del conjunto de instrucciones de la CPU utilizada."
+        }
+      ]
+    },
+    {
+      "name": "Ingeniería del Software",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Por qué muchos proyectos software no llegan a ver la luz según el documento?",
+          "options": [
+            "Por falta de presupuesto",
+            "Porque fracasan durante el desarrollo debido a la falta de un modelo que guíe todo el ciclo de vida",
+            "Por problemas de hardware",
+            "Por falta de programadores cualificados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento establece que muchos proyectos software fracasan durante el desarrollo debido a la falta de un modelo que guíe todo el ciclo de vida, ya que el desarrollo se trata normalmente como únicamente la escritura de código."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuándo comienza el ciclo de vida de cualquier software?",
+          "options": [
+            "Cuando se empieza a escribir código",
+            "Cuando se compila por primera vez",
+            "Desde que se habla con el cliente hasta que el software deja de estar operativo",
+            "Cuando se instala en el servidor de producción"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El ciclo de vida de cualquier software comienza desde que se habla con el cliente hasta que el software deja de estar operativo, según se especifica en el documento."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la principal diferencia entre la arquitectura software y la arquitectura tradicional?",
+          "options": [
+            "El coste de los materiales",
+            "El tiempo de construcción",
+            "El coste que tiene la búsqueda de un error frente a su solución",
+            "La complejidad de los planos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "La principal diferencia con la arquitectura tradicional es el coste que tiene la búsqueda de un error frente a su solución, siendo la búsqueda normalmente más costosa en software."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué se debe hacer en la fase de requisitos?",
+          "options": [
+            "Escribir el código principal",
+            "Definir todas las funcionalidades que hay que desarrollar en la aplicación",
+            "Crear la base de datos",
+            "Diseñar la interfaz de usuario"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la fase de requisitos se definen todas las funcionalidades que hay que desarrollar en la aplicación, normalmente comenzando con una entrevista con el cliente."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Por qué es recomendable tener más de una reunión con el cliente en la fase de requisitos?",
+          "options": [
+            "Para cobrar más horas",
+            "Porque normalmente puede ir cambiando de opinión sobre lo que quiere implementar",
+            "Por protocolo de la empresa",
+            "Para conocer mejor al cliente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Es recomendable tener más de una reunión con el cliente porque normalmente puede ir cambiando de opinión sobre lo que él mismo quiere que implementemos."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Qué se genera al final de la fase de requisitos?",
+          "options": [
+            "Un diagrama de clases",
+            "Un diagrama de casos de uso",
+            "Un diagrama de secuencia",
+            "Un diagrama de arquitectura"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una vez que tengamos los requisitos, podremos generar un diagrama de casos de uso, según se especifica en el documento."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Qué se hace en la fase de análisis?",
+          "options": [
+            "Se codifica la aplicación",
+            "Se crea un diagrama sencillo especificando cada requisito del cliente",
+            "Se realizan las pruebas",
+            "Se documenta el sistema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la fase de análisis se crea un diagrama sencillo en el que especificamos cada uno de los requisitos que nos ha indicado el cliente, pudiendo también tener alguna relación, por ejemplo, a base de datos."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo de la fase de diseño?",
+          "options": [
+            "Crear la interfaz de usuario",
+            "Poder identificar todos los recursos del sistema necesarios para desarrollar la aplicación",
+            "Escribir la documentación",
+            "Realizar las pruebas unitarias"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la fase de diseño el objetivo es poder identificar todos aquellos recursos del sistema, físicos, lógicos, etc. que serán necesarios para poder desarrollar la aplicación."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué se hace en la fase de implementación?",
+          "options": [
+            "Se definen los requisitos",
+            "Se codifica todo lo diseñado previamente",
+            "Se realizan las pruebas de aceptación",
+            "Se despliega en producción"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la fase de implementación nos centramos en codificar todo lo diseñado previamente para tener una primera aproximación al software."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Para qué sirve la fase de documentación?",
+          "options": [
+            "Para crear manuales de usuario",
+            "Para facilitar el posterior mantenimiento de la aplicación",
+            "Para cumplir con estándares de calidad",
+            "Para entrenar a nuevos desarrolladores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la fase de documentación es necesario dejar por escrito todas las decisiones tomadas durante el desarrollo para facilitar el posterior mantenimiento de la aplicación."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué significa UML?",
+          "options": [
+            "Unified Modeling Language",
+            "Lenguaje de Modelado Unificado",
+            "Universal Markup Language",
+            "User Management Library"
+          ],
+          "correctAnswer": 1,
+          "explanation": "UML significa Lenguaje de Modelado Unificado, que permite crear una representación gráfica de los diferentes componentes de cada una de las fases del desarrollo software."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué significa CASE en el contexto de ingeniería de software?",
+          "options": [
+            "Computer Assisted System Engineering",
+            "Ingeniería de Software Asistida por Computadora",
+            "Code Analysis and System Evaluation",
+            "Computer Application Software Engineering"
+          ],
+          "correctAnswer": 1,
+          "explanation": "CASE significa Ingeniería de Software Asistida por Computadora (Computer Aided Software Engineering en inglés), como se especifica en el documento."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la característica principal del modelo de desarrollo en cascada?",
+          "options": [
+            "Se pueden ejecutar varias fases en paralelo",
+            "No se pasa a la siguiente fase hasta que se completa la fase anterior",
+            "Se puede volver a cualquier fase anterior",
+            "Las fases se ejecutan de forma aleatoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La característica principal del modelo en cascada es que no se pasa a la siguiente fase hasta que se completa la fase anterior."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el principal problema del modelo en cascada?",
+          "options": [
+            "Es muy complejo de implementar",
+            "El tiempo que se requiere para finalizar todo el proyecto",
+            "Requiere muchos recursos",
+            "No es compatible con metodologías ágiles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El principal problema del modelo en cascada es el tiempo que se requiere para finalizar todo el proyecto, debido a su funcionamiento lineal que requiere que todas las fases previas estén finalizadas."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿En qué se basa el modelo de desarrollo en espiral?",
+          "options": [
+            "En crear toda la funcionalidad de una vez",
+            "En poder crear una pequeña funcionalidad que continuamente se va agrandando",
+            "En dividir el proyecto en módulos independientes",
+            "En trabajar solo con prototipos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo en espiral se centra en poder crear una pequeña funcionalidad que continuamente se va a ir agrandando a medida que vamos desarrollando el proyecto."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son dos ejemplos de metodologías ágiles mencionadas en el documento?",
+          "options": [
+            "Waterfall y Spiral",
+            "Extreme Programming y Scrum",
+            "RAD y Prototipado",
+            "RUP y MSF"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento menciona específicamente que algunas de las metodologías ágiles más utilizadas son Extreme Programming y Scrum."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Cuál es la función principal del analista de sistema?",
+          "options": [
+            "Escribir código",
+            "Realizar el estudio del sistema para resolver el problema y garantizar las expectativas del cliente",
+            "Diseñar la interfaz de usuario",
+            "Realizar las pruebas del sistema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El analista de sistema es el encargado de realizar el estudio del sistema para llevar a cabo la resolución del problema y garantizar que se cumplen las expectativas del cliente."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿En qué fases trabaja principalmente el analista programador?",
+          "options": [
+            "Solo en implementación",
+            "Requisitos y análisis",
+            "Diseño, implementación, pruebas y mantenimiento",
+            "Solo en diseño"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El analista programador trabaja principalmente en las fases de diseño, implementación, pruebas y mantenimiento, según se especifica en el documento."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué caracteriza al arquitecto de software según el documento?",
+          "options": [
+            "Se especializa solo en programación",
+            "Es un perfil híbrido que conoce entornos de desarrollo, frameworks y tecnologías diferentes",
+            "Solo trabaja en la fase de diseño",
+            "Se encarga únicamente de la documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El arquitecto de software se trata de un perfil híbrido que permite unir el proceso de desarrollo, siendo el encargado de conocer e investigar los entornos de desarrollo, frameworks y tecnologías diferentes."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuánto duran los Sprints en Scrum según el caso práctico?",
+          "options": [
+            "Una semana",
+            "Unos 15 días",
+            "Un mes",
+            "Depende del proyecto"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según el caso práctico, en Scrum se pueden plantear ciclos denominados Sprints de unos 15 días."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué debería lograrse en cada Sprint según Scrum?",
+          "options": [
+            "Completar toda la documentación",
+            "Tener una nueva funcionalidad en el producto",
+            "Realizar todas las pruebas",
+            "Definir todos los requisitos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Según Scrum, en cada sprint deberíamos ser capaces de tener una nueva funcionalidad en el producto."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Por qué es importante no obviar la fase de requisitos según el caso práctico 1?",
+          "options": [
+            "Porque es obligatorio por ley",
+            "Porque un fallo en los requisitos puede suponer una gran pérdida económica y de recursos",
+            "Porque el cliente siempre tiene razón",
+            "Porque es la fase más fácil"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La toma de requisitos es tan importante que un fallo en ellos puede suponer una gran pérdida económica y de recursos para una empresa."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de diagramas pueden crearse con UML según el documento?",
+          "options": [
+            "Solo diagramas de casos de uso",
+            "Diagramas de casos de uso, de interacción de secuencia, de clases, etc.",
+            "Solo diagramas de clases",
+            "Solo diagramas de secuencia"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En UML existen diferentes tipos de diagramas como son los diagramas de casos de uso, de interacción de secuencia, de clases etc."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Cuál es una ventaja del modelo en espiral sobre el modelo en cascada?",
+          "options": [
+            "Es más económico",
+            "Es más ágil y permite tener un producto funcional en menor tiempo",
+            "Requiere menos documentación",
+            "Es más fácil de entender"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El modelo en espiral es más ágil que el modelo iterativo o cascada pues permite tener un producto funcional en menor tiempo."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué riesgo se corre al reducir el número de roles en el desarrollo según la resolución del caso práctico?",
+          "options": [
+            "Ahorrar demasiado dinero",
+            "Gastar realmente más dinero a posteriori",
+            "Terminar muy rápido el proyecto",
+            "Tener demasiada documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cuando se intenta ahorrar costes reduciendo el número de roles que intervienen en el diseño, análisis e implementación del sistema, corremos el riesgo de gastar realmente más dinero a posteriori."
+        }
+      ]
+    },
+    {
+      "name": "Explotación de Código",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué es necesario para generar un código que pueda entender el computador?",
+          "options": [
+            "Solo un editor de texto",
+            "Un proceso de traducción al lenguaje que la máquina pueda entender",
+            "Una conexión a internet",
+            "Un sistema operativo específico"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para poder probar nuestra solución es necesario generar un código que pueda entender el computador, a través de un proceso de traducción al lenguaje que la máquina pueda entender."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuándo pueden producirse errores lógicos en el código?",
+          "options": [
+            "Durante la compilación",
+            "Al escribir el código",
+            "Solo son detectables durante la ejecución",
+            "En la fase de diseño"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Cuando nuestro código se ejecuta, pueden producirse errores lógicos que solo son detectables durante la ejecución."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Para qué sirven los depuradores?",
+          "options": [
+            "Para compilar el código",
+            "Para facilitar la búsqueda de errores en el software",
+            "Para crear documentación",
+            "Para optimizar el rendimiento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para facilitar la búsqueda de errores en el software, podemos utilizar depuradores, ya que en programas grandes suele ser más complicado encontrar los errores que realizar su corrección."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué entiende únicamente un computador a nivel de hardware?",
+          "options": [
+            "Lenguajes de alto nivel",
+            "Código fuente",
+            "Impulsos eléctricos dentro de un determinado voltaje",
+            "Archivos de texto"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Un computador es una máquina con una electrónica que solo entiende impulsos eléctricos dentro de un determinado voltaje."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué es el lenguaje ensamblador?",
+          "options": [
+            "Un lenguaje de alto nivel",
+            "El conjunto de instrucciones que cada procesador es capaz de entender",
+            "Un lenguaje interpretado",
+            "Un editor de código"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Cada procesador es capaz de entender un conjunto determinado de instrucciones en un determinado lenguaje, que recibe el nombre de lenguaje ensamblador o lenguaje máquina."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el nivel de abstracción del lenguaje ensamblador?",
+          "options": [
+            "Alto nivel",
+            "Nivel medio",
+            "El más bajo de abstracción",
+            "Nivel intermedio"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El lenguaje ensamblador es el más cercano a la máquina, siendo el nivel más bajo de abstracción en el que se puede crear un software."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Por qué rara vez los desarrolladores trabajan con lenguaje ensamblador?",
+          "options": [
+            "Es muy difícil de aprender",
+            "Porque el código que se genera va a depender del procesador en el que se va a ejecutar",
+            "No es compatible con sistemas modernos",
+            "Es muy lento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Como desarrolladores de software en muy pocas ocasiones tendremos que lidiar con este tipo de lenguaje, pues el código que se genera va a depender del procesador en el que se va a ejecutar."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Qué elementos forman un lenguaje de programación desde el punto de vista del programador?",
+          "options": [
+            "Solo sintaxis",
+            "Léxico, sintaxis y reglas semánticas",
+            "Solo léxico y sintaxis",
+            "Compilador e intérprete"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Desde el punto de vista del programador, un lenguaje de programación está formado por un léxico, la sintaxis y unas reglas semánticas."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Qué indica el léxico en un lenguaje de programación?",
+          "options": [
+            "El orden de los elementos",
+            "Qué caracteres puede reconocer el lenguaje de programación",
+            "Las operaciones lógicas permitidas",
+            "La estructura del programa"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El léxico nos indica qué caracteres puede reconocer el lenguaje de programación."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué nos indica la sintaxis de un lenguaje de programación?",
+          "options": [
+            "Los caracteres permitidos",
+            "Cuál es el orden correcto en el que deben aparecer los elementos del lenguaje",
+            "Las operaciones matemáticas",
+            "El tipo de datos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La sintaxis nos indica cuál es el orden correcto en el que deben aparecer los determinados elementos del lenguaje."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué son las reglas semánticas en un lenguaje de programación?",
+          "options": [
+            "Las reglas de escritura",
+            "Las reglas de compilación",
+            "Las reglas que dicen qué operaciones desde el punto de vista lógico se permiten",
+            "Las reglas de optimización"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Las reglas semánticas nos dicen qué operaciones desde el punto de vista lógico se permiten en el lenguaje."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen los lenguajes compilados?",
+          "options": [
+            "No necesitan compilador",
+            "Diferencian la etapa de compilación de la etapa de ejecución",
+            "Se ejecutan línea por línea",
+            "No generan código ejecutable"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes compilados diferencian la etapa de compilación de la etapa de ejecución, lo que permite tener un mejor rendimiento al ahorrarnos la etapa de compilación continuamente."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Qué herramienta se necesita además del compilador para obtener un programa ejecutable?",
+          "options": [
+            "Un depurador",
+            "Un enlazador o linker",
+            "Un intérprete",
+            "Un editor de texto"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para poder realizar la compilación y obtener un programa ejecutable, es necesario disponer también de un enlazador o linker que permitirá resolver las dependencias."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Qué característica tienen los lenguajes interpretados?",
+          "options": [
+            "Son más rápidos que los compilados",
+            "No diferencian entre la fase de compilación y la fase de ejecución",
+            "No necesitan herramientas especiales",
+            "Solo funcionan en sistemas específicos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes interpretados son aquellos que no diferencian entre la fase de compilación y la fase de ejecución, requiriendo una compilación previa cada vez que se ejecuta el programa."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Qué es el bytecode en Java?",
+          "options": [
+            "El código fuente original",
+            "Un lenguaje intermedio al que Java traduce el código",
+            "El código ensamblador final",
+            "Un tipo de error de compilación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Java realiza una traducción a un lenguaje intermedio que recibe el nombre de bytecode, mezclando así la compilación con la interpretación."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué significa que un programa compile correctamente?",
+          "options": [
+            "Que funciona perfectamente",
+            "Que no tiene errores lógicos",
+            "Que sintácticamente el programa es capaz de tener su traducción al código ensamblador",
+            "Que está optimizado"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Cuando el programa compila, solo hemos probado que sintácticamente el programa es capaz de compilar, es decir, tener su traducción al código ensamblador, pero puede haber fallos lógicos."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué permiten hacer los depuradores?",
+          "options": [
+            "Solo compilar código",
+            "Ver el contenido de las variables y el flujo de ejecución del programa en tiempo real",
+            "Solo detectar errores de sintaxis",
+            "Optimizar el código automáticamente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los depuradores son herramientas que nos permiten ver el contenido de las variables y el flujo de ejecución del programa en tiempo real, además de parar el flujo de ejecución en cualquier momento."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿En qué se centra un buen desarrollo software según el documento?",
+          "options": [
+            "En usar solo lenguajes compilados",
+            "En crear código estructurado e independiente de un contexto determinado",
+            "En escribir la mayor cantidad de código posible",
+            "En usar solo herramientas comerciales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un buen desarrollo software se centra en crear código estructurado e independiente de un contexto determinado para poder reutilizar componentes en cualquier contexto futuro."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo de la reutilización de código?",
+          "options": [
+            "Hacer el código más complejo",
+            "Ahorrar tiempo y recursos mediante la eliminación de redundancias",
+            "Usar más memoria",
+            "Hacer el programa más lento"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La reutilización del código tiene como objetivo ahorrar tiempo y recursos mediante la eliminación de redundancias, permitiendo reutilizar partes de un programa ya escritas en otros contextos."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Por qué no es recomendable usar lenguaje ensamblador para el sistema de navegación de barcos?",
+          "options": [
+            "Porque es muy fácil de usar",
+            "Porque sería muy costosa y poco realista la solución",
+            "Porque no funciona en barcos",
+            "Porque es demasiado rápido"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Sería muy costosa porque requiere mucho tiempo de desarrollo y poco realista porque cualquier cambio de hardware requeriría verificar que todo el software sigue funcionando."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué problema tienen los lenguajes interpretados para sistemas de tiempo real crítico?",
+          "options": [
+            "Son muy difíciles de programar",
+            "Pueden introducir cierta latencia a la hora de tomar decisiones",
+            "No funcionan en sistemas críticos",
+            "Requieren mucha memoria"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los lenguajes interpretados pueden introducir cierta latencia a la hora de tomar decisiones en tiempo real, lo cual puede ser problemático en contextos donde hay vidas humanas en peligro."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué ejemplos de herramientas de gestión de librerías se mencionan?",
+          "options": [
+            "Git y SVN",
+            "Maven y CocoaPods",
+            "Visual Studio y Eclipse",
+            "Windows y Linux"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento menciona Maven y CocoaPods como ejemplos de herramientas para la gestión de librerías, siendo CocoaPods principalmente para desarrollo en iOS."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja tiene crear librerías con funcionalidades acotadas?",
+          "options": [
+            "Ocupan más espacio",
+            "Es más sencillo crear pruebas simples que sirvan para detectar errores",
+            "Son más difíciles de usar",
+            "Requieren más documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Al tener librerías que realizan funcionalidades muy acotadas, es más sencillo crear pruebas simples que sirvan para detectar errores."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Por qué es mejor usar lenguajes sencillos como C para sistemas de control críticos?",
+          "options": [
+            "Porque son más fáciles de aprender",
+            "Porque ofrecen mejor rendimiento y menor latencia para decisiones críticas",
+            "Porque son más modernos",
+            "Porque tienen mejor documentación"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para sistemas críticos como control de presas, navegación de aviones o control de túneles, es mejor usar lenguajes sencillos como C que ofrecen mejor rendimiento y menor latencia."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Qué herramientas se incluyen en el grupo necesario para traducir lenguajes de alto nivel?",
+          "options": [
+            "Solo editores de texto",
+            "Compiladores, intérpretes, enlazadores, etc.",
+            "Solo depuradores",
+            "Solo sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En el grupo de herramientas necesarias para realizar la traducción del lenguaje tendríamos que incluir los compiladores, los intérpretes, los enlazadores, etc."
+        }
+      ]
+    },
+    {
+      "name": "Introducción a los Entornos de Desarrollo",
+      "questions": [
+        {
+          "id": 1,
+          "type": "multiple_choice",
+          "question": "¿Qué significa IDE?",
+          "options": [
+            "Intelligent Development Environment",
+            "Integrated Development Environment",
+            "Interactive Design Environment",
+            "Internal Development Engine"
+          ],
+          "correctAnswer": 1,
+          "explanation": "IDE significa Integrated Development Environment (Entorno de Desarrollo Integrado), según se especifica claramente en el documento."
+        },
+        {
+          "id": 2,
+          "type": "multiple_choice",
+          "question": "¿Cuál es el objetivo principal de un IDE?",
+          "options": [
+            "Crear interfaces gráficas",
+            "Facilitar el desarrollo del software",
+            "Gestionar bases de datos",
+            "Conectar con internet"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un IDE es un tipo de aplicación cuyo objetivo es facilitar el desarrollo del software, proporcionando herramientas integradas para los programadores."
+        },
+        {
+          "id": 3,
+          "type": "multiple_choice",
+          "question": "¿Por qué es necesario que un IDE tenga interfaz gráfica para ser realmente útil?",
+          "options": [
+            "Para que sea más bonito",
+            "Para cumplir estándares de la industria",
+            "Para permitir que los programadores accedan a las funcionalidades de forma sencilla y aumentar la productividad",
+            "Para ser compatible con sistemas modernos"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Para que un IDE sea realmente útil desde el punto de vista de la productividad, es necesario que dispongan de una interfaz gráfica que permita que los programadores puedan acceder a las funcionalidades de una manera sencilla."
+        },
+        {
+          "id": 4,
+          "type": "multiple_choice",
+          "question": "¿Qué herramientas incluyen normalmente los entornos de desarrollo?",
+          "options": [
+            "Solo editores de texto",
+            "Solo compiladores",
+            "Todas las herramientas que los desarrolladores puedan requerir, como edición y compilación",
+            "Solo depuradores"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Los entornos de desarrollo normalmente incluyen todas las herramientas que los desarrolladores puedan requerir, por ejemplo, para poder editar el código rápidamente y poder realizar la compilación de una manera sencilla."
+        },
+        {
+          "id": 5,
+          "type": "multiple_choice",
+          "question": "¿Qué características tiene típicamente el editor de un IDE?",
+          "options": [
+            "Solo permite escribir texto plano",
+            "Es muy potente y ayuda con autocompletado y autoformato",
+            "Solo funciona con un lenguaje",
+            "No tiene funciones especiales"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Típicamente, un IDE incluye un editor que suele ser muy potente y ayuda al desarrollador a escribir el código de una manera más rápida a través del autocompletado y autoformato."
+        },
+        {
+          "id": 6,
+          "type": "multiple_choice",
+          "question": "¿Cómo se pueden añadir funcionalidades adicionales a muchos IDEs?",
+          "options": [
+            "Reinstalando el IDE",
+            "A través de plugins",
+            "Comprando versiones premium",
+            "Modificando el código fuente"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Con el objetivo de aumentar la potencia de los IDEs, muchos se diseñan de una forma modular, permitiendo añadir pequeñas funcionalidades al núcleo original a través de plugins."
+        },
+        {
+          "id": 7,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue el primer lenguaje soportado por un IDE?",
+          "options": [
+            "COBOL",
+            "FORTRAN",
+            "Dartmouth Basic",
+            "Assembly"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El lenguaje Dartmouth Basic fue el primer lenguaje en ser soportado por un IDE sin interfaz gráfica, centrado en utilizar la línea de comandos a través de atajos y comandos propios del IDE."
+        },
+        {
+          "id": 8,
+          "type": "multiple_choice",
+          "question": "¿Cuál fue uno de los primeros IDEs en soportar plugins?",
+          "options": [
+            "Visual Studio",
+            "Eclipse",
+            "Softbench",
+            "NetBeans"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Uno de los primeros IDEs en soportar la funcionalidad de plugins fue Softbench, según se menciona en el documento."
+        },
+        {
+          "id": 9,
+          "type": "multiple_choice",
+          "question": "¿Por qué la justificación de seguridad del caso práctico 1 no es válida para rechazar un IDE?",
+          "options": [
+            "Porque los IDEs son más seguros",
+            "Porque el compilador utilizado será el mismo, use IDE o no",
+            "Porque los IDEs tienen mejores medidas de seguridad",
+            "Porque es obligatorio usar IDEs"
+          ],
+          "correctAnswer": 1,
+          "explanation": "La justificación de seguridad no es válida, pues el compilador utilizado por el IDE o sin él, será el mismo, y de una forma u otra, el compilador generará el código ensamblador que se va a ejecutar en la solución final."
+        },
+        {
+          "id": 10,
+          "type": "multiple_choice",
+          "question": "¿Qué ventaja ofrece un IDE en cuanto a la detección de errores?",
+          "options": [
+            "Solo detecta errores después de compilar",
+            "Detecta errores solo en tiempo de ejecución",
+            "Puede detectar errores durante el desarrollo sin necesidad de compilar",
+            "No detecta errores automáticamente"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Una característica relevante de los IDEs es la posibilidad de informar al programador de los errores cometidos durante el desarrollo sin necesidad de compilar, realizando un precompilado e interpretación del código."
+        },
+        {
+          "id": 11,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de errores puede detectar el editor inteligente de un IDE?",
+          "options": [
+            "Solo errores de sintaxis",
+            "Solo errores lógicos",
+            "Errores léxicos, sintácticos, componentes no encontrados, etc.",
+            "Solo errores de compilación"
+          ],
+          "correctAnswer": 2,
+          "explanation": "El editor inteligente puede ir realizando un precompilado e interpretación del código para indicar al programador los posibles errores léxicos, sintácticos, componentes no encontrados, etc."
+        },
+        {
+          "id": 12,
+          "type": "multiple_choice",
+          "question": "¿Qué problema tienen los IDEs especializados en un solo lenguaje?",
+          "options": [
+            "Son más caros",
+            "Los desarrolladores deberán conocer diferentes IDEs para diferentes lenguajes",
+            "Son menos potentes",
+            "No tienen plugins"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Un problema de los IDEs especializados es que los desarrolladores deberán conocer diferentes IDEs para diferentes lenguajes, realizando un doble aprendizaje: el lenguaje más el IDE."
+        },
+        {
+          "id": 13,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son ejemplos de IDEs que pueden trabajar con múltiples lenguajes?",
+          "options": [
+            "Solo Visual Studio",
+            "Eclipse, NetBeans, XCode",
+            "Solo NetBeans",
+            "Solo XCode"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El documento menciona específicamente que Eclipse, NetBeans, XCode, etc., son ejemplos de IDEs que pueden trabajar con más de un lenguaje."
+        },
+        {
+          "id": 14,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son las dimensiones para diferenciar tipos de IDEs según el documento?",
+          "options": [
+            "Solo el precio",
+            "Número de lenguajes soportados, sistemas operativos soportados, características de automatización, impacto en rendimiento, plugins",
+            "Solo la velocidad",
+            "Solo la interfaz gráfica"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Se pueden diferenciar IDEs por: número de lenguajes soportados, sistemas operativos soportados, características de automatización, impacto en el rendimiento del sistema, y plugins y extensiones."
+        },
+        {
+          "id": 15,
+          "type": "multiple_choice",
+          "question": "¿Por qué es importante considerar el impacto en el rendimiento del sistema al elegir un IDE?",
+          "options": [
+            "Para ahorrar dinero",
+            "Porque muchos IDEs actuales requieren sistemas potentes y pueden afectar significativamente el rendimiento",
+            "Para cumplir normativas",
+            "Para mejorar la seguridad"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Muchos de los IDEs actuales requieren de sistemas potentes, si no disponemos de ellos puede que el rendimiento de la máquina decaiga significativamente."
+        },
+        {
+          "id": 16,
+          "type": "multiple_choice",
+          "question": "¿Qué problema identifica el caso práctico 2 sobre la selección del IDE?",
+          "options": [
+            "El IDE elegido es muy caro",
+            "Se usa una única dimensión (número de lenguajes) ignorando otros aspectos importantes",
+            "El IDE no tiene interfaz gráfica",
+            "El IDE no es compatible con el sistema"
+          ],
+          "correctAnswer": 1,
+          "explanation": "El problema es que se utiliza una única dimensión (número de lenguajes soportados) para elegir el IDE, olvidando otros aspectos relevantes como herramientas de compilación, depuración, autocompletado, etc."
+        },
+        {
+          "id": 17,
+          "type": "multiple_choice",
+          "question": "¿Qué tipo de elección de IDE recomienda el documento?",
+          "options": [
+            "El que soporte más lenguajes",
+            "El más barato",
+            "Una elección balanceada que incluya herramientas para compilar, enlazar, depurar y un buen editor",
+            "El más popular"
+          ],
+          "correctAnswer": 2,
+          "explanation": "Es importante realizar una elección más balanceada, en la que el IDE sea capaz de trabajar con 1 ó 2 lenguajes, pero incluya herramientas externas para compilar, enlazar, depurar y un buen editor de código con autocompletado."
+        },
+        {
+          "id": 18,
+          "type": "multiple_choice",
+          "question": "¿Qué beneficio obtienen las empresas cuando sus programadores conocen IDEs?",
+          "options": [
+            "Reducen costos de hardware",
+            "Aumentan la productividad y rentabilidad",
+            "Mejoran la seguridad",
+            "Reducen el número de empleados"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Desde el punto de vista de las empresas, interesa que los programadores conozcan IDEs para aumentar su rentabilidad, ya que los desarrolladores pueden ser más efectivos y realizar más tareas en menos tiempo."
+        },
+        {
+          "id": 19,
+          "type": "multiple_choice",
+          "question": "¿Qué característica se demanda más en la actualidad en los IDEs?",
+          "options": [
+            "Mayor velocidad de compilación",
+            "La posibilidad de incluir nuevas funcionalidades a través de plugins",
+            "Interfaces más coloridas",
+            "Soporte para más sistemas operativos"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una de las características que más se demanda en la actualidad en los IDEs es la posibilidad de incluir nuevas funcionalidades a través de plugins."
+        },
+        {
+          "id": 20,
+          "type": "multiple_choice",
+          "question": "¿Cuáles son los dos grandes entornos de desarrollo móvil mencionados?",
+          "options": [
+            "Windows y Linux",
+            "Android y iOS",
+            "Web y Desktop",
+            "Java y .NET"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En la actualidad existen dos grandes entornos de desarrollo móvil que son Android y iOS, según se especifica en la resolución del caso práctico."
+        },
+        {
+          "id": 21,
+          "type": "multiple_choice",
+          "question": "¿Qué IDEs se mencionan para desarrollo móvil?",
+          "options": [
+            "Solo Visual Studio",
+            "Android Studio para Android y XCode para iOS",
+            "Solo Eclipse",
+            "Solo NetBeans"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Para poder desarrollar en cada uno de estos entornos es necesario conocer la SDK y el entorno de desarrollo propio: Android Studio para Android y XCode para iOS."
+        },
+        {
+          "id": 22,
+          "type": "multiple_choice",
+          "question": "¿Qué es una aplicación híbrida según el documento?",
+          "options": [
+            "Una aplicación que solo funciona en móviles",
+            "Una aplicación que usa tecnología web además de tecnología móvil",
+            "Una aplicación que requiere internet",
+            "Una aplicación que funciona solo en tablets"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Una alternativa sería crear una aplicación híbrida en la que usemos tecnología web además de tecnología móvil."
+        },
+        {
+          "id": 23,
+          "type": "multiple_choice",
+          "question": "¿Qué se usaba antes de los archivos de texto en la programación?",
+          "options": [
+            "Discos magnéticos",
+            "Tarjetas perforadas",
+            "Cintas de papel",
+            "Pantallas táctiles"
+          ],
+          "correctAnswer": 1,
+          "explanation": "En los inicios de la programación no se utilizaban archivos de texto sino tarjetas perforadas, que requerían herramientas adecuadas para realizar la perforación requerida."
+        },
+        {
+          "id": 24,
+          "type": "multiple_choice",
+          "question": "¿Qué tipos de funcionalidades pueden incluir los IDEs según el documento?",
+          "options": [
+            "Solo edición de código",
+            "Muchas funcionalidades al alcance de los desarrolladores y herramientas para generar representación visual del código",
+            "Solo compilación",
+            "Solo depuración"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los IDEs incluyen muchas funcionalidades al alcance de los desarrolladores a través de una interfaz gráfica y herramientas para generar una representación visual del código."
+        },
+        {
+          "id": 25,
+          "type": "multiple_choice",
+          "question": "¿Por qué los IDEs permiten reducir la configuración previa del desarrollador?",
+          "options": [
+            "Porque son más simples",
+            "Para aumentar la productividad al requerir menos tiempo de configuración",
+            "Porque son automáticos",
+            "Para reducir errores"
+          ],
+          "correctAnswer": 1,
+          "explanation": "Los IDEs permiten reducir la configuración previa que debe realizar el desarrollador para comenzar a ser productivo, y al requerir menos tiempo de configuración, el programador podrá aumentar su productividad."
+        }
+      ]
+    }
+  ]
+}

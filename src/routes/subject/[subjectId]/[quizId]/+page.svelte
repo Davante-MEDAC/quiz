@@ -58,12 +58,12 @@
 {#if data.questions.length === 0}
 	<div class="mx-auto max-w-2xl p-5">
 		<div class="bg-surface border-border mb-5 rounded-2xl border-2 p-6">
-			<h1>Error loading quiz</h1>
-			<p>Unable to load quiz questions. Please try again later.</p>
+			<h1>Ocurrió un problema cargando el Quiz</h1>
+			<p>No es posible cargar la información del Quiz</p>
 			<a
 				href="/subject/{data.subjectId}"
 				class="bg-primary hover:bg-primary-dark inline-block min-w-[120px] cursor-pointer rounded-xl border-none px-6 py-4 text-center text-base font-semibold text-white no-underline transition-all duration-200 hover:-translate-y-0.5"
-				>Back to Lessons</a
+				>Volver a la Asignatura</a
 			>
 		</div>
 	</div>
@@ -79,7 +79,7 @@
 			<a
 				href="/subject/{data.subjectId}"
 				class="bg-secondary inline-block min-w-[200px] cursor-pointer rounded-xl border-none px-6 py-4 text-center text-base font-semibold text-black no-underline transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e6b300]"
-				>Back to Lessons</a
+				>Volver a la Asignatura</a
 			>
 		</div>
 	</div>

@@ -1,15 +1,27 @@
 {
   "subjects": [
     {
-      "id": "foo",
-      "title": "Foo",
-      "description": "Evaluación de Fundamentos de Programación",
-      "icon": "📦"
+      "id": "bases-de-datos",
+      "title": "Bases de Datos",
+      "description": "Cuestionario sobre los fundamentos de bases de datos, incluyendo conceptos clave, estructuras y operaciones básicas.",
+      "icon": "📀"
+    },
+    {
+      "id": "digitalizacion",
+      "title": "Digitalización Aplicada. Sec. Productivos",
+      "description": "Cuestionario sobre digitalización aplicada a los sectores productivos.",
+      "icon": "🚀"
+    },
+    {
+      "id": "entornos-de-desarrollo",
+      "title": "Entornos de Desarrollo",
+      "description": "Aprende sobre los entornos de desarrollo integrados (IDE) y su importancia en la programación.",
+      "icon": "☕️"
     },
     {
       "id": "programacion",
       "title": "Programación",
-      "description": "Evalúa tu comprensión de los conceptos de programación",
+      "description": "Cuestionario sobre los fundamentos de la programación, elementos de un programa informático y programación estructurada.",
       "icon": "👩🏻‍💻"
     }
   ]
