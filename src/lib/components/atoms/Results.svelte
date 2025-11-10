@@ -48,13 +48,13 @@
 		{score}/{totalQuestions}
 	</div>
 
-	<div class="mb-7 text-xl text-gray-800 font-semibold">
+	<div class="mb-7 text-xl font-semibold text-gray-800">
 		{message()}
 	</div>
 
 	<div class="my-7 text-left">
-		<h3 class="mb-5 text-center text-gray-900 font-bold">Respuestas</h3>
-		<div class="border-border max-h-[300px] overflow-y-auto rounded-lg border p-4 bg-background">
+		<h3 class="mb-5 text-center font-bold text-gray-900">Respuestas</h3>
+		<div class="border-border bg-background max-h-[300px] overflow-y-auto rounded-lg border p-4">
 			{#each questions as question, index (question.id)}
 				<div class="border-border mb-4 border-b pb-4 last:mb-0 last:border-0 last:pb-0">
 					<div class="mb-2 font-semibold text-gray-800">

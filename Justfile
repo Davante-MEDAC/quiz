@@ -4,6 +4,6 @@
 default:
 	just --list
 
-# Starts the Claude container
-claude:
+# Starts the development container
+dev:
 	docker compose -f dev/docker-compose.dev.yml up --build --detach

@@ -3,5 +3,11 @@ import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
 
 export default defineConfig({
-	plugins: [tailwindcss(), sveltekit()]
+	plugins: [tailwindcss(), sveltekit()],
+	define: {
+		__USE_PRODUCTION_STORE__: JSON.stringify(process.env.NODE_ENV === 'production')
+	},
+	server: {
+		host: '0.0.0.0'
+	}
 });

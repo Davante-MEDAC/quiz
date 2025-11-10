@@ -10,12 +10,14 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"format": "prettier --write . && eslint --fix .",
 		"lint": "prettier --check . && eslint .",
-		"generate-quiz-index": "bun run scripts/generate-quiz-index.ts"
+		"generate-quiz-index": "bun run scripts/generate-quiz-index.ts",
+		"test": "vitest --watch=false"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^1.4.0",
 		"@eslint/js": "^9.38.0",
 		"@sveltejs/adapter-cloudflare": "^7.2.4",
+		"@sveltejs/adapter-node": "^5.4.0",
 		"@sveltejs/kit": "^2.48.0",
 		"@sveltejs/vite-plugin-svelte": "^6.2.1",
 		"@tailwindcss/forms": "^0.5.10",
@@ -35,11 +37,12 @@
 		"tailwindcss": "^4.1.16",
 		"typescript": "^5.9.3",
 		"typescript-eslint": "^8.46.2",
-		"vite": "^7.1.12"
+		"vite": "^7.1.12",
+		"vitest": "^4.0.8"
 	},
 	"type": "module",
 	"dependencies": {
-		"@types/node": "^24.9.1",
+		"@types/node": "^24.10.0",
 		"canvas-confetti": "^1.9.4"
 	}
 }

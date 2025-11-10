@@ -26,9 +26,7 @@ function generateSubjectIndex(): void {
 
 			// Validate that the file contains the required Subject structure
 			if (!subjectData.id || !subjectData.title || !subjectData.items) {
-				console.warn(
-					`⚠️  Skipping ${file}: Missing required Subject fields (id, title, or items)`
-				);
+				console.warn(`⚠️  Skipping ${file}: Missing required Subject fields (id, title, or items)`);
 				continue;
 			}
 

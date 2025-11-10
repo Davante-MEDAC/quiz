@@ -22,6 +22,7 @@ jobs:
 
       - name: Build
         env:
+          GH_PAT: ${{ secrets.GH_PAT }}
           NODE_ENV: 'production'
           VERSION: ${{ github.ref_name }}
         run: bun run build

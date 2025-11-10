@@ -8,5 +8,17 @@ services:
     stdin_open: true
     tty: true
 
+  sveltekit:
+    image: node:20-alpine
+    working_dir: /app
+    volumes:
+      - ../:/app
+    ports:
+      - '5173:5173'
+      - '4173:4173'
+    environment:
+      - NODE_ENV=development
+    command: sh -c "npm install -g bun && bun i && bun run dev"
+
 volumes:
   claude:

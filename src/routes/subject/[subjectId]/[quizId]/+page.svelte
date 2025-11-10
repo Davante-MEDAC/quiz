@@ -145,9 +145,7 @@
 
 	{#if $quizStore.showFeedback}
 		<div class="fixed inset-0 z-50 flex items-center justify-center bg-black/60">
-			<div
-				class="bg-background border-border mx-4 max-w-md rounded-2xl border-2 p-6 shadow-xl"
-			>
+			<div class="bg-background border-border mx-4 max-w-md rounded-2xl border-2 p-6 shadow-xl">
 				<h2
 					class="mb-4 text-2xl font-bold {$quizStore.selectedAnswer ===
 					currentQuestion.correctAnswer
