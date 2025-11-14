@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Header from '$lib/components/atoms/Header.svelte';
+	import { resolve } from '$app/paths';
 
 	import type { PageData } from '$lib/$types';
 
@@ -26,7 +27,7 @@
 		<div class="flex flex-col gap-6">
 			{#each data.subjects as subject (subject.id)}
 				<a
-					href="/subject/{subject.id}"
+					href={resolve(`/subject/${subject.id}`)}
 					class="bg-primary-dark/10 hover:bg-primary-dark/20 border-border hover:border-primary grid cursor-pointer grid-cols-[100px_auto] items-center rounded-lg border-2 p-6 text-center text-inherit no-underline shadow-sm transition-all duration-150"
 				>
 					<div class="col-start-1 flex flex-col items-center justify-center text-left text-4xl">
