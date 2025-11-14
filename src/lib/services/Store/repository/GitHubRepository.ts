@@ -77,8 +77,6 @@ export class GitHubRepository implements StoreRepository {
 			throw new Error('GitHub token is required');
 		}
 
-		console.log('GitHubRepository initialized with provided token.');
-
 		this.config = {
 			token,
 			owner: 'Davante-MEDAC',
