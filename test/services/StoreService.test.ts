@@ -39,8 +39,6 @@ describe('Store Service with FS Repository', () => {
 
 		const foundAfter = await storeService.searchFiles(TEST_FILE_NAME);
 
-		console.log(foundAfter);
-
 		expect(foundAfter.files[0].content).toStrictEqual('This is an updated test file content.');
 	});
 });

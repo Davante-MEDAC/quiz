@@ -161,7 +161,6 @@ export class StoreService {
 	): Promise<RepositoryFile> {
 		try {
 			const currentFile = await this.repo.retrieveFile(path);
-			console.log('Current file SHA:', currentFile);
 			const updateOptions: UpdateFileOptions = {
 				message: message || `Update ${path}`,
 				content,

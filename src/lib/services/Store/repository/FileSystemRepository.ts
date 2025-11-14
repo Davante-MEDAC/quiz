@@ -45,8 +45,6 @@ export class FileSystemRepository implements StoreRepository {
 	private metadataDir: string;
 
 	constructor() {
-		console.log('FileSystem');
-
 		this.config = {
 			dataDirectory: './data',
 			createIfNotExists: true
