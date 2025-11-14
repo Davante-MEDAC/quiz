@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	import type { PageData } from './$types';
 
 	interface Props {
@@ -17,7 +19,7 @@
 <header class="bg-background border-border sticky top-0 z-40 border-b-2 shadow-sm">
 	<div class="mx-auto flex h-16 max-w-2xl items-center justify-between gap-4 px-5">
 		<a
-			href="/"
+			href={resolve('/')}
 			class="text-primary hover:text-primary-dark flex items-center gap-2 font-semibold no-underline transition-colors"
 		>
 			<span class="text-xl">←</span>
@@ -40,9 +42,8 @@
 		{#each data.lessons as lesson, index (lesson.id)}
 			{@const isEven = index % 2 === 0}
 			<div class="relative mb-16 last:mb-0">
-				<!-- Lesson node -->
 				<a
-					href="/subject/{data.subject.id}/{lesson.id}"
+					href={resolve(`/subject/${data.subject.id}/${lesson.id}`)}
 					class="group relative z-10 block"
 					style="margin-left: {isEven ? '0' : 'auto'}; margin-right: {isEven
 						? 'auto'

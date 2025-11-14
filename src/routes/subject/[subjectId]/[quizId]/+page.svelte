@@ -7,6 +7,7 @@
 	import Results from '$lib/components/atoms/Results.svelte';
 
 	import type { PageData } from './$types';
+	import { resolve } from '$app/paths';
 
 	interface Props {
 		data: PageData;
@@ -62,7 +63,7 @@
 			<h1 class="text-gray-900">Ocurrió un problema cargando el Quiz</h1>
 			<p class="text-gray-700">No es posible cargar la información del Quiz</p>
 			<a
-				href="/subject/{data.subjectId}"
+				href={resolve(`/subject/${data.subjectId}`)}
 				class="bg-primary hover:bg-primary-dark inline-block min-w-[120px] cursor-pointer rounded-xl border-none px-6 py-4 text-center text-base font-semibold text-white no-underline transition-all duration-200 hover:-translate-y-0.5"
 				>Volver a la Asignatura</a
 			>
@@ -78,7 +79,7 @@
 		/>
 		<div class="mt-5 flex justify-center gap-3 pb-5">
 			<a
-				href="/subject/{data.subjectId}"
+				href={resolve(`/subject/${data.subjectId}`)}
 				class="bg-secondary inline-block min-w-[200px] cursor-pointer rounded-xl border-none px-6 py-4 text-center text-base font-semibold text-black no-underline transition-all duration-200 hover:-translate-y-0.5 hover:bg-[#e6b300]"
 				>Volver a la Asignatura</a
 			>
@@ -116,10 +117,7 @@
 			class="fixed inset-0 z-50 flex items-center justify-center bg-black/60"
 			onclick={closeExitModal}
 		>
-			<div
-				class="bg-background border-border mx-4 max-w-md rounded-2xl border-2 p-6 shadow-xl"
-				onclick={(e) => e.stopPropagation()}
-			>
+			<div class="bg-background border-border mx-4 max-w-md rounded-2xl border-2 p-6 shadow-xl">
 				<h2 class="mb-4 text-2xl font-bold text-gray-900">Salir del Quiz</h2>
 				<p class="mb-6 text-gray-700">
 					¿Estás seguro de que quieres salir? Tu progreso se perderá.
@@ -133,7 +131,7 @@
 						Cancelar
 					</button>
 					<a
-						href="/subject/{data.subjectId}"
+						href={resolve(`/subject/${data.subjectId}`)}
 						class="bg-danger flex-1 rounded-xl px-6 py-3 text-center font-semibold text-white no-underline transition-all duration-200 hover:bg-[#e63946]"
 					>
 						Salir
