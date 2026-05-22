@@ -25,6 +25,8 @@ jobs:
           AUTHJS_TOKEN: ${{ secrets.AUTHJS_TOKEN }}
           AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
           DOMAIN: ${{ secrets.DOMAIN }}
+          DATABASE_URL: ${{ secrets.DATABASE_URL }}
+          TURSO_API_TOKEN: ${{ secrets.TURSO_API_TOKEN }}
           NODE_ENV: 'production'
         run: bun run build
 
