@@ -1,9 +1,9 @@
-import { AuthClient } from "./AuthClient";
+import { AuthClient } from './AuthClient';
 
-import type { HttpClientConfig } from "./HttpClient";
+import type { HttpClientConfig } from './HttpClient';
 
 export class ApiClient {
-  readonly auth: AuthClient;
+	readonly auth: AuthClient;
 
 	constructor(config: HttpClientConfig) {
 		this.auth = new AuthClient(config);
