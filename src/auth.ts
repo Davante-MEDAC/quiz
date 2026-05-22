@@ -11,6 +11,7 @@ import type {
 
 import { AuthAdapter } from '$lib/services/AuthAdapter';
 import { ApiClient } from '$lib/services/ApiClient';
+import { Database } from '$lib/services/Database';
 
 function MagicLink(options: EmailUserConfig = {}): Provider {
 	return {
@@ -22,26 +23,29 @@ function MagicLink(options: EmailUserConfig = {}): Provider {
 		async sendVerificationRequest(
 			params: EmailProviderSendVerificationRequestParams
 		): Promise<void> {
-			console.log('Sending verification request with params:', params);
-			const client = new ApiClient({ authjsToken: AUTHJS_TOKEN, baseUrl: new URL(DOMAIN) });
-			const magicLink = new URL(params.url);
-			const welcomeLink = new URL(magicLink.origin);
+			try {
+				const client = new ApiClient({ authjsToken: AUTHJS_TOKEN, baseUrl: new URL(DOMAIN) });
+				const magicLink = new URL(params.url);
+				const welcomeLink = new URL(magicLink.origin);
 
-			welcomeLink.pathname = 'magiclink/welcome';
-			welcomeLink.searchParams.set('loginUrl', magicLink.toString());
+				welcomeLink.pathname = 'magiclink/welcome';
+				welcomeLink.searchParams.set('loginUrl', magicLink.toString());
 
-			await client.auth.sendMagicLink({
-				email: params.identifier,
-				link: welcomeLink.toString()
-			});
-			return;
+				await client.auth.sendMagicLink({
+					email: params.identifier,
+					link: welcomeLink.toString()
+				});
+				return;
+			} catch (error) {
+				console.error('Error sending magic link request', error);
+			}
 		}
 	};
 }
 
 // https://github.com/nextauthjs/next-auth/issues/9886
 const { handle: authjsHandle } = SvelteKitAuth({
-	adapter: AuthAdapter(new ApiClient({ authjsToken: AUTHJS_TOKEN, baseUrl: new URL(DOMAIN) })),
+	adapter: AuthAdapter(new Database()),
 	pages: {
 		signIn: '/login',
 		signOut: '/logout',

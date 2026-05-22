@@ -1,9 +1,11 @@
 import { env } from '$env/dynamic/private';
+
 import { unauthorized, verifyBearer } from '../_helpers.js';
+
 import type { RequestHandler } from './$types.js';
 
 export const POST: RequestHandler = async ({ request }) => {
-	if (!verifyBearer(request, env.AUTH_SECRET)) return unauthorized();
+	if (!verifyBearer(request, env.AUTHJS_TOKEN)) return unauthorized();
 
 	const body: App.Api.SendMagicLinkInput = await request.json();
 

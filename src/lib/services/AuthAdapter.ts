@@ -1,6 +1,12 @@
 import { v4 as uuidv4 } from 'uuid';
 
-import type { Adapter, AdapterAccount, AdapterSession, AdapterUser, VerificationToken } from '@auth/core/adapters';
+import type {
+	Adapter,
+	AdapterAccount,
+	AdapterSession,
+	AdapterUser,
+	VerificationToken
+} from '@auth/core/adapters';
 import type { IDatabase, DbUser, DbSession, DbVerificationToken } from './Database/IDatabase.js';
 
 function toAdapterUser(user: DbUser): AdapterUser {

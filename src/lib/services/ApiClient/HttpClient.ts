@@ -16,7 +16,7 @@ export class HttpClient {
 	}
 
 	private url(path: string) {
-		return `${this.baseUrl}${path}`;
+		return new URL(path, this.baseUrl);
 	}
 
 	private async request<T>(path: string, init: RequestInit = {}): Promise<T> {
