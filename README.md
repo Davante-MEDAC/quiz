@@ -1,42 +1,34 @@
-# sv
+# Quiz
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+### Desarrollo
 
-## Creating a project
+1. Crea un copia de la base de datos SQLite
 
-If you're seeing this, you've probably already done this step. Congrats!
-
-```sh
-# create a new project
-npx sv create my-app
+```bash
+cp ./dev/database.sqlite ./database.local.sqlite
 ```
 
-To recreate this project with the same configuration:
+### Arquitectura
 
-```sh
-# recreate this project
-bun x sv@0.15.3 create --template minimal --types ts --add prettier eslint tailwindcss="plugins:typography,forms" --install bun quiz
+```mermaid
+flowchart TD
+    Browser["🌐 Browser\nUser interaction"]
+
+    subgraph SK["SvelteKit · Frontend + SSR"]
+        UI["Pages & UI\nSvelte components · +load()"]
+        Auth["AuthJS\nSession management · OAuth / credentials"]
+        Server["Server routes\nReads quiz files at build / request time"]
+    end
+
+    subgraph External["External services / data"]
+        Database["Database\nUsers, sessions, accounts"]
+        PG["PostgreSQL\nDatabase-managed DB"]
+        Quizzes["Quiz files\nJSON / Markdown (static)"]
+    end
+
+    Browser <--> UI
+    Auth -- "adapter" --> Database
+    Database --> Auth
+    Server -- "reads" --> Quizzes
+    Database --> PG
 ```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```sh
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```sh
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
