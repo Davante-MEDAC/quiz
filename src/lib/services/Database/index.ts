@@ -5,8 +5,8 @@ import type { IDatabase, DbUser, DbAccount, DbSession, DbVerificationToken } fro
 export class Database implements IDatabase {
 	private client: Client;
 
-	constructor(url: string = 'file:database.local.sqlite') {
-		this.client = createClient({ url });
+	constructor(url: string, authToken?: string) {
+		this.client = createClient({ url, authToken });
 	}
 
 	private mapUser(row: Row): DbUser {

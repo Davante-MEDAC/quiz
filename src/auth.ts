@@ -1,7 +1,13 @@
 import { SvelteKitAuth } from '@auth/sveltekit';
 import { sequence } from '@sveltejs/kit/hooks';
 
-import { AUTHJS_TOKEN, AUTH_SECRET, DOMAIN } from '$env/static/private';
+import {
+	AUTHJS_TOKEN,
+	AUTH_SECRET,
+	DATABASE_URL,
+	DOMAIN,
+	TURSO_API_TOKEN
+} from '$env/static/private';
 
 import type {
 	EmailProviderSendVerificationRequestParams,
@@ -45,7 +51,7 @@ function MagicLink(options: EmailUserConfig = {}): Provider {
 
 // https://github.com/nextauthjs/next-auth/issues/9886
 const { handle: authjsHandle } = SvelteKitAuth({
-	adapter: AuthAdapter(new Database()),
+	adapter: AuthAdapter(new Database(DATABASE_URL, TURSO_API_TOKEN)),
 	pages: {
 		signIn: '/login',
 		signOut: '/logout',

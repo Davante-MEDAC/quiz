@@ -1,8 +1,6 @@
 <script lang="ts">
 	import { resolve } from '$app/paths';
 	import { page } from '$app/stores';
-
-	// console.log($page.url.searchParams.get('loginUrl'));
 </script>
 
 <main class="isolate overflow-clip">
