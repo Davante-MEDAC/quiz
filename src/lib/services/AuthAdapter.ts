@@ -1,140 +1,142 @@
-import { ApiClient } from './ApiClient';
+import { v4 as uuidv4 } from 'uuid';
 
-import type { Adapter, AdapterSession, AdapterUser, VerificationToken } from '@auth/core/adapters';
+import type { Adapter, AdapterAccount, AdapterSession, AdapterUser, VerificationToken } from '@auth/core/adapters';
+import type { IDatabase, DbUser, DbSession, DbVerificationToken } from './Database/IDatabase.js';
 
-function toAdapterUser(user: App.Api.Auth.ApiUser): AdapterUser {
+function toAdapterUser(user: DbUser): AdapterUser {
 	return {
 		id: user.id,
 		email: user.email,
 		name: user.name,
-		emailVerified: user.emailVerified ? new Date(user.emailVerified) : null,
-		image: user.image ?? null
+		emailVerified: user.email_verified,
+		image: user.image
 	};
 }
 
-function toAdapterSession(session: App.Api.Auth.ApiSession): AdapterSession {
+function toAdapterSession(session: DbSession): AdapterSession {
 	return {
-		sessionToken: session.sessionToken,
-		userId: session.userId,
-		expires: new Date(session.expires)
+		sessionToken: session.session_token,
+		userId: session.user_id,
+		expires: session.expires
 	};
 }
 
-function toVerificationToken(token: App.Api.Auth.ApiVerificationToken): VerificationToken {
+function toVerificationToken(token: DbVerificationToken): VerificationToken {
 	return {
 		identifier: token.identifier,
 		token: token.token,
-		expires: new Date(token.expires)
+		expires: token.expires
 	};
 }
 
-export function AuthAdapter(client: ApiClient): Adapter {
+export function AuthAdapter(db: IDatabase): Adapter {
 	return {
 		async createUser(data) {
-			const user = await client.auth.createUser({
+			const user = await db.createUser({
+				id: uuidv4(),
 				email: data.email,
-				name: data.name as string
+				name: data.name ?? null,
+				email_verified: data.emailVerified,
+				image: data.image ?? null
 			});
-
-			if (user) return toAdapterUser(user);
-			throw new Error('Failed to create user');
+			return toAdapterUser(user);
 		},
 
 		async getUser(id) {
-			const { user } = await client.auth.getUserById(id);
+			const user = await db.getUser(id);
 			return user ? toAdapterUser(user) : null;
 		},
 
 		async getUserByEmail(email) {
-			try {
-				const { user } = await client.auth.getUserByEmail(email);
-				return user ? toAdapterUser(user) : null;
-			} catch (error) {
-				console.error('Error fetching user by email:', error);
-				return null;
-			}
+			const user = await db.getUserByEmail(email);
+			return user ? toAdapterUser(user) : null;
 		},
 
-		async getUserByAccount() {
-			throw new Error('getUserByAccount is not implemented in AuthAdapter');
+		async getUserByAccount({ provider, providerAccountId }) {
+			const user = await db.getUserByAccount(provider, providerAccountId);
+			return user ? toAdapterUser(user) : null;
 		},
 
 		async updateUser(data) {
-			const user = await client.auth.updateUser({
+			const user = await db.updateUser({
 				id: data.id,
 				email: data.email,
-				name: data.name as string
+				name: data.name ?? undefined,
+				email_verified: data.emailVerified ?? undefined,
+				image: data.image ?? undefined
 			});
-
-			if (user) return toAdapterUser(user);
-			throw new Error('Failed to update user');
+			return toAdapterUser(user);
 		},
 
-		async deleteUser() {
-			throw new Error('deleteUser is not implemented in AuthAdapter');
+		async deleteUser(userId) {
+			await db.deleteUser(userId);
 		},
 
-		async linkAccount() {
-			throw new Error('linkAccount is not implemented in AuthAdapter');
+		async linkAccount(account: AdapterAccount) {
+			await db.linkAccount({
+				id: uuidv4(),
+				user_id: account.userId,
+				type: account.type,
+				provider: account.provider,
+				provider_account_id: account.providerAccountId,
+				refresh_token: account.refresh_token ?? null,
+				access_token: account.access_token ?? null,
+				expires_at: account.expires_at ?? null,
+				token_type: account.token_type ?? null,
+				scope: account.scope ?? null,
+				id_token: account.id_token ?? null,
+				session_state: (account.session_state as string | null) ?? null
+			});
 		},
 
-		async unlinkAccount() {
-			throw new Error('unlinkAccount is not implemented in AuthAdapter');
+		async unlinkAccount({ provider, providerAccountId }) {
+			await db.unlinkAccount(provider, providerAccountId);
 		},
 
 		async createSession(data) {
-			const session = await client.auth.createSession({
-				userId: data.userId,
-				expires: data.expires.toISOString(),
-				sessionToken: data.sessionToken
+			const session = await db.createSession({
+				id: uuidv4(),
+				user_id: data.userId,
+				session_token: data.sessionToken,
+				expires: data.expires
 			});
-
-			if (!session) throw new Error('Failed to create session');
 			return toAdapterSession(session);
 		},
 
 		async getSessionAndUser(sessionToken) {
-			const { session, user } = await client.auth.getSessionAndUser(sessionToken);
-			if (!session || !user) return null;
-
+			const result = await db.getSessionAndUser(sessionToken);
+			if (!result) return null;
 			return {
-				session: toAdapterSession(session),
-				user: toAdapterUser(user)
+				session: toAdapterSession(result.session),
+				user: toAdapterUser(result.user)
 			};
 		},
 
 		async updateSession(data) {
-			const session = await client.auth.updateSession({
-				sessionToken: data.sessionToken,
-				userId: data.userId,
-				expires: data.expires?.toISOString()
+			const session = await db.updateSession({
+				session_token: data.sessionToken,
+				user_id: data.userId,
+				expires: data.expires
 			});
-
-			if (!session) throw new Error('Failed to update session');
-			return toAdapterSession(session);
+			return session ? toAdapterSession(session) : null;
 		},
 
 		async deleteSession(sessionToken) {
-			await client.auth.deleteSession(sessionToken);
+			await db.deleteSession(sessionToken);
 		},
 
 		async createVerificationToken(data) {
-			const token = await client.auth.createVerificationToken({
+			const token = await db.createVerificationToken({
 				identifier: data.identifier,
 				token: data.token,
-				expires: data.expires.toISOString()
+				expires: data.expires
 			});
-
 			return toVerificationToken(token);
 		},
 
-		async useVerificationToken(params) {
-			const token = await client.auth.verifyVerificationToken({
-				identifier: params.identifier,
-				token: params.token
-			});
-
-			return token ? toVerificationToken(token) : null;
+		async useVerificationToken({ identifier, token }) {
+			const result = await db.useVerificationToken(identifier, token);
+			return result ? toVerificationToken(result) : null;
 		}
 	};
 }
