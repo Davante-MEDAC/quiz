@@ -22,9 +22,10 @@ jobs:
 
       - name: Build
         env:
-          GH_PAT: ${{ secrets.GH_PAT }}
+          AUTHJS_TOKEN: ${{ secrets.AUTHJS_TOKEN }}
+          AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
+          DOMAIN: ${{ secrets.DOMAIN }}
           NODE_ENV: 'production'
-          VERSION: ${{ github.ref_name }}
         run: bun run build
 
       - name: Install NodeJS

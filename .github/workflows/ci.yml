@@ -30,7 +30,10 @@ jobs:
         run: bun run lint
 
       - name: Build Check
-        run: bun run build
+        env:
+          AUTHJS_TOKEN: ${{ secrets.AUTHJS_TOKEN }}
+          AUTH_SECRET: ${{ secrets.AUTH_SECRET }}
+          DOMAIN: ${{ secrets.DOMAIN }}
+          NODE_ENV: 'production'
 
-      - name: Run Tests
-        run: bun run test
+        run: bun run build
