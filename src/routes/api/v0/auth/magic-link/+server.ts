@@ -51,6 +51,8 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		// We only want to send the magic link on production or when this
 		// API Token is set, otherwise we can just skip sending the email.
+    console.log('Sending email.');
+    console.log(`MAILTRAP_API_TOKEN: ****${MAILTRAP_API_TOKEN?.slice(-4)}`);
 		if (MAILTRAP_API_TOKEN) {
 			const mailtrapTransport = new MailtrapTransport(MAILTRAP_API_TOKEN);
 			const emailService = new EmailService(mailtrapTransport);

@@ -27,8 +27,6 @@ export class MailtrapTransport implements IEmailTransport {
 			body: JSON.stringify(payload)
     });
 
-    console.log(res);
-
 		if (!res.ok) {
 			const text = await res.text().catch(() => '');
 			console.error(
