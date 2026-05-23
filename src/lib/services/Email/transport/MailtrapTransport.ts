@@ -18,8 +18,6 @@ export class MailtrapTransport implements IEmailTransport {
 			html
 		};
 
-		console.log('Sending', payload);
-
 		const res = await fetch(url, {
 			method: 'POST',
 			headers: {
@@ -28,8 +26,6 @@ export class MailtrapTransport implements IEmailTransport {
 			},
 			body: JSON.stringify(payload)
 		});
-
-		console.log('Sent', res);
 
 		if (!res.ok) {
 			const text = await res.text().catch(() => '');

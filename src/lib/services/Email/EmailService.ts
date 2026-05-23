@@ -29,8 +29,7 @@ export class EmailService {
 	}
 
 	async sendMagicLink(to: string, link: string): Promise<void> {
-    const { subject, html } = this.templates.magicLink(link);
-    console.log('Sending magic link');
+		const { subject, html } = this.templates.magicLink(link);
 		await this.transport.send({ to, subject, html });
 	}
 }

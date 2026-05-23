@@ -14,9 +14,10 @@ import {
 
 import { EmailService } from '$lib/services/Email/EmailService.js';
 import { RateLimiter } from '$lib/services/RateLimiter/index.js';
+import { dev } from '$app/environment';
+import { log } from '$lib/utils/log.js';
 
 import type { RequestHandler } from './$types.js';
-import { dev } from '$app/environment';
 
 const RATE_LIMIT_MAX = 5;
 const RATE_LIMIT_WINDOW_SECONDS = 15 * 60;
@@ -51,17 +52,15 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		// We only want to send the magic link on production or when this
 		// API Token is set, otherwise we can just skip sending the email.
-    console.log('Sending email.');
-    console.log(`MAILTRAP_API_TOKEN: ****${MAILTRAP_API_TOKEN?.slice(-4)}`);
 		if (MAILTRAP_API_TOKEN) {
 			const mailtrapTransport = new MailtrapTransport(MAILTRAP_API_TOKEN);
-      const emailService = new EmailService(mailtrapTransport);
+			const emailService = new EmailService(mailtrapTransport);
 			await emailService.sendMagicLink(body.email, body.link);
 		}
 
 		// Print the magic link to the console in development for testing purposes.
 		if (dev) {
-			console.log(`Magic link for ${body.email}: ${body.link}`);
+			log.info(`Magic link for ${body.email}: ${body.link}`);
 		}
 
 		return new Response(null, { status: 204 });
