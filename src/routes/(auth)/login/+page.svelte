@@ -1,6 +1,8 @@
 <script lang="ts">
 	import { signIn } from '@auth/sveltekit/client';
 
+	import { PUBLIC_TURNSTILE_SITE_KEY } from '$env/static/public';
+
 	let email = $state('');
 	let loading = $state(false);
 	let error = $state('');
@@ -15,10 +17,10 @@
 
 		const turnstileToken = new FormData(form).get('cf-turnstile-response')?.toString().trim() ?? '';
 
-		// if (!turnstileToken) {
-		// 	error = 'Completa la verificación de seguridad para continuar.';
-		// 	return;
-		// }
+		if (!turnstileToken) {
+			error = 'Completa la verificación de seguridad para continuar.';
+			return;
+		}
 
 		error = '';
 		loading = true;
@@ -76,6 +78,11 @@
 					>
 						{loading ? 'Enviando…' : 'Enviar link de ingreso'}
 					</button>
+					<div
+						class="cf-turnstile mx-auto"
+						data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
+						data-theme="light"
+					></div>
 				</form>
 			</div>
 		</div>
