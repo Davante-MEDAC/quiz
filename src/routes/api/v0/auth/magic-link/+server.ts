@@ -21,12 +21,14 @@ const RATE_LIMIT_WINDOW_SECONDS = 15 * 60;
 
 export const POST: RequestHandler = async ({ request }) => {
 	if (!verifyBearer(request, env.AUTHJS_TOKEN)) {
+		console.warn('Request not authorized');
 		return unauthorized();
 	}
 
 	const body: App.Api.SendMagicLinkInput = await request.json();
 
 	if (!isEmailAllowed(body.email)) {
+		console.warn('Email is not allowed');
 		return unauthorized();
 	}
 
@@ -40,6 +42,7 @@ export const POST: RequestHandler = async ({ request }) => {
 	const allowed = await rateLimiter.check(`magic-link:${ip}`);
 
 	if (!allowed) {
+		console.warn('Rate limit exceeded for IP');
 		return tooManyRequests();
 	}
 
