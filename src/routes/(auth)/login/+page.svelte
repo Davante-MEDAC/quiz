@@ -39,6 +39,9 @@
 <svelte:head>
 	<title>Acceder — DMDDA | Quiz</title>
 	<meta name="description" content="Ingresa tu correo para recibir tu enlace de acceso." />
+	{#if PUBLIC_TURNSTILE_SITE_KEY}
+		<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
+	{/if}
 </svelte:head>
 
 <main class="isolate overflow-clip">
