@@ -1,5 +1,4 @@
 <script lang="ts">
-	import { resolve } from '$app/paths';
 	import { page } from '$app/stores';
 </script>
 
@@ -23,12 +22,14 @@
 					</svg>
 				</div>
 				<h1 class="font-display text-2xl tracking-tight text-olive-950">Ingresa a tu cuenta</h1>
+				<!-- eslint-disable svelte/no-navigation-without-resolve -->
 				<a
-					href={resolve($page.url.searchParams.get('loginUrl'))}
+					href={$page.url.searchParams.get('loginUrl')}
 					class="rounded-full bg-olive-950 px-5 py-2.5 text-sm/7 font-medium text-white hover:bg-olive-800 disabled:opacity-50"
 				>
 					Ingresar
 				</a>
+				<!-- eslint-enable svelte/no-navigation-without-resolve -->
 			</div>
 		</div>
 	</section>
