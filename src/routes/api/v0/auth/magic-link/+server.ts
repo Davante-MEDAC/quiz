@@ -55,9 +55,8 @@ export const POST: RequestHandler = async ({ request }) => {
     console.log(`MAILTRAP_API_TOKEN: ****${MAILTRAP_API_TOKEN?.slice(-4)}`);
 		if (MAILTRAP_API_TOKEN) {
 			const mailtrapTransport = new MailtrapTransport(MAILTRAP_API_TOKEN);
-			const emailService = new EmailService(mailtrapTransport);
-
-			emailService.sendMagicLink(body.email, body.link);
+      const emailService = new EmailService(mailtrapTransport);
+			await emailService.sendMagicLink(body.email, body.link);
 		}
 
 		// Print the magic link to the console in development for testing purposes.
