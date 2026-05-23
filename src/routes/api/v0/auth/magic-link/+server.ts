@@ -1,5 +1,6 @@
-import { env } from '$env/dynamic/private';
 import { createClient } from '@libsql/client';
+
+import { env } from '$env/dynamic/private';
 import { MailtrapTransport } from '$lib/services/Email/transport/MailtrapTransport.js';
 import { MAILTRAP_API_TOKEN, DATABASE_URL, TURSO_API_TOKEN } from '$env/static/private';
 

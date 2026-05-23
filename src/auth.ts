@@ -26,12 +26,10 @@ type TurnstileVerifyResponse = {
 };
 
 async function verifyTurnstileToken(turnstileToken: string | null): Promise<void> {
+	if (!TURNSTILE_SECRET_KEY) return;
+
 	if (!turnstileToken) {
 		throw new Error('Missing Turnstile token.');
-	}
-
-	if (!TURNSTILE_SECRET_KEY) {
-		throw new Error('Missing `TURNSTILE_SECRET_KEY` environment variable.');
 	}
 
 	const body = new URLSearchParams({

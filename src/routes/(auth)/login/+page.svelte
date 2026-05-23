@@ -17,7 +17,7 @@
 
 		const turnstileToken = new FormData(form).get('cf-turnstile-response')?.toString().trim() ?? '';
 
-		if (!turnstileToken) {
+		if (PUBLIC_TURNSTILE_SITE_KEY && !turnstileToken) {
 			error = 'Completa la verificación de seguridad para continuar.';
 			return;
 		}
@@ -39,7 +39,6 @@
 <svelte:head>
 	<title>Acceder — DMDDA | Quiz</title>
 	<meta name="description" content="Ingresa tu correo para recibir tu enlace de acceso." />
-	<script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </svelte:head>
 
 <main class="isolate overflow-clip">
@@ -78,11 +77,13 @@
 					>
 						{loading ? 'Enviando…' : 'Enviar link de ingreso'}
 					</button>
-					<div
-						class="cf-turnstile mx-auto"
-						data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
-						data-theme="light"
-					></div>
+					{#if PUBLIC_TURNSTILE_SITE_KEY}
+						<div
+							class="cf-turnstile mx-auto"
+							data-sitekey={PUBLIC_TURNSTILE_SITE_KEY}
+							data-theme="light"
+						></div>
+					{/if}
 				</form>
 			</div>
 		</div>
