@@ -25,11 +25,13 @@ export class MailtrapTransport implements IEmailTransport {
 				'Content-Type': 'application/json'
 			},
 			body: JSON.stringify(payload)
-		});
+    });
+
+    console.log(res);
 
 		if (!res.ok) {
 			const text = await res.text().catch(() => '');
-			console.warn(
+			console.error(
 				`Failed to send email via Mailtrap API — status: ${res.status}, response: ${text}`
 			);
 
