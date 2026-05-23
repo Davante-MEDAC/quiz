@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+ROOT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
+DB="$ROOT_DIR/database.local.sqlite"
+MIGRATIONS_DIR="$ROOT_DIR/migrations"
+
+if [[ ! -f "$DB" ]]; then
+  echo "error: database not found at $DB" >&2
+  echo "hint: cp ./dev/database.sqlite ./database.local.sqlite" >&2
+  exit 1
+fi
+
+sqlite3 "$DB" "CREATE TABLE IF NOT EXISTS _migrations (
+  name TEXT PRIMARY KEY,
+  applied_at TEXT NOT NULL DEFAULT (datetime('now'))
+);"
+
+applied=0
+
+for file in "$MIGRATIONS_DIR"/*.sql; do
+  name="$(basename "$file")"
+
+  already_applied=$(sqlite3 "$DB" "SELECT COUNT(*) FROM _migrations WHERE name = '$name';")
+
+  if [[ "$already_applied" -eq 1 ]]; then
+    echo "skip  $name"
+    continue
+  fi
+
+  echo "apply $name"
+  sqlite3 "$DB" < "$file"
+  sqlite3 "$DB" "INSERT INTO _migrations (name) VALUES ('$name');"
+  applied=$((applied + 1))
+done
+
+echo ""
+echo "$applied migration(s) applied."

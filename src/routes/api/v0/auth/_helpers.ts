@@ -9,6 +9,31 @@ export function notFound() {
 	return json({ error: 'Not Found' }, { status: 404 });
 }
 
+export function tooManyRequests() {
+	return json({ error: 'Too Many Requests' }, { status: 429 });
+}
+
+export function getClientIp(request: Request): string {
+	return (
+		request.headers.get('CF-Connecting-IP') ??
+		request.headers.get('X-Forwarded-For')?.split(',')[0].trim() ??
+		'unknown'
+	);
+}
+
+export function isEmailAllowed(email: string): boolean {
+	const allowedDomains = ['alu.medac.es'];
+	const domain = email.toLowerCase().split('@');
+
+	if (domain.length !== 2) {
+		return false;
+	}
+
+	const emailDomain = domain[1];
+
+	return allowedDomains.includes(emailDomain);
+}
+
 export function verifyBearer(request: Request, secret: string): boolean {
 	return request.headers.get('Authorization') === `Bearer ${secret}`;
 }
