@@ -54,8 +54,6 @@ async function fetchDbFromGitHub(): Promise<string> {
 		headers
 	});
 
-	console.log(releaseRes);
-
 	if (!releaseRes.ok) {
 		throw new Error(`GitHub releases API error: ${releaseRes.status}`);
 	}

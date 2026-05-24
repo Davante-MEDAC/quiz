@@ -32,7 +32,7 @@
 				<div class="mb-3 text-5xl leading-none">{course.icon}</div>
 				<p class="font-semibold text-gray-900">{course.title}</p>
 				<p class="text-sm text-gray-500">
-					{course.items.length} lecciones
+					{course.itemCount} lecciones
 				</p>
 			</a>
 		{/each}
