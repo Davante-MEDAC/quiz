@@ -3,7 +3,7 @@
 	import QuizProgress from '../molecules/QuizProgress.svelte';
 	import QuestionCard from '../molecules/QuestionCard.svelte';
 	import AnswerOption from '../atoms/AnswerOption.svelte';
-	import PrimaryButton from '../atoms/PrimaryButton.svelte';
+	import AnswerFeedback from '../molecules/AnswerFeedback.svelte';
 
 	let {
 		questions,
@@ -48,12 +48,16 @@
 	<QuestionCard question={question.question} />
 {/key}
 
-<div class="flex flex-col gap-3">
+<div class="flex flex-col gap-3" class:pb-52={answered}>
 	{#each question.options as option, i}
 		<AnswerOption text={option} state={getState(i)} onclick={() => selectAnswer(i)} />
 	{/each}
 </div>
 
-<div class="mt-8">
-	<PrimaryButton label={isLast ? 'Finalizar' : 'Siguiente'} onclick={next} disabled={!answered} />
-</div>
+{#if answered}
+	<AnswerFeedback
+		explanation={question.explanation}
+		label={isLast ? 'Finalizar' : 'Siguiente'}
+		onclick={next}
+	/>
+{/if}

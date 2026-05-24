@@ -42,6 +42,7 @@
 					{config.icon}
 				</div>
 				<div class="min-w-0 flex-1">
+					<p class="mb-0.5 text-xs font-medium text-gray-400">{config.label} {i + 1}</p>
 					<p class="truncate font-semibold text-gray-900">{item.name}</p>
 					<p class="text-sm text-gray-500">{item.questions.length} preguntas</p>
 				</div>
