@@ -4,6 +4,13 @@
 	let { data } = $props();
 
 	const { course } = data;
+
+	const kindCounters: Record<string, number> = {};
+	const itemsWithKindIndex = course.items.map((item: QuizFileV1.Item, i: number) => {
+		kindCounters[item.kind] = (kindCounters[item.kind] ?? 0) + 1;
+		return { ...item, globalIndex: i, kindIndex: kindCounters[item.kind] };
+	});
+
 	const kindConfig = {
 		lesson: {
 			label: 'Lección',
@@ -52,10 +59,10 @@
 	</div>
 
 	<div class="flex flex-col gap-3">
-		{#each course.items as item, i (item.name)}
+		{#each itemsWithKindIndex as item (item.name)}
 			{@const config = kindConfig[item.kind]}
 			<a
-				href={resolve(`/app/${course.id}/${i}`)}
+				href={resolve(`/app/${course.id}/${item.globalIndex}`)}
 				class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm transition-shadow hover:shadow-md dark:bg-slate-800 dark:shadow-none dark:hover:bg-slate-700"
 			>
 				<div
@@ -66,7 +73,7 @@
 				<div class="min-w-0 flex-1">
 					<p class="mb-0.5 text-xs font-medium text-gray-400 dark:text-slate-500">
 						{config.label}
-						{i + 1}
+						{item.kindIndex}
 					</p>
 					<p class="truncate font-semibold text-gray-900 dark:text-white">{item.name}</p>
 					<p class="text-sm text-gray-500 dark:text-slate-400">{item.questionCount} preguntas</p>
