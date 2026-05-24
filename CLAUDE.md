@@ -23,56 +23,76 @@ bash ./bin/migrate-local   # apply pending migrations to database.local.sqlite
 
 Copy `.env.example` to `.env` and fill in values.
 
-| Variable                  | Required | Description                                          |
-| ------------------------- | -------- | ---------------------------------------------------- |
-| `AUTH_SECRET`             | Yes      | Auth.js signing secret                               |
-| `AUTHJS_TOKEN`            | Yes      | Bearer token for `/api/v0/auth/magic-link`           |
-| `DOMAIN`                  | Yes      | Base URL used to build magic link URLs               |
-| `DATABASE_URL`            | No       | libSQL URL; defaults to `file:database.local.sqlite` |
-| `TURSO_API_TOKEN`         | No       | Turso auth token; omit for local file DB             |
-| `MAILTRAP_API_TOKEN`      | No       | If unset, emails are skipped (link logged in dev)    |
-| `TURNSTILE_SECRET_KEY`    | No       | If unset, Turnstile verification is bypassed         |
-| `PUBLIC_TURNSTILE_SITE_KEY` | No     | If unset, Turnstile widget is hidden on login page   |
+| Variable                    | Required | Description                                          |
+| --------------------------- | -------- | ---------------------------------------------------- |
+| `AUTH_SECRET`               | Yes      | Auth.js signing secret                               |
+| `AUTHJS_TOKEN`              | Yes      | Bearer token for `/api/v0/auth/magic-link`           |
+| `DOMAIN`                    | Yes      | Base URL used to build magic link URLs               |
+| `DATABASE_URL`              | No       | libSQL URL; defaults to `file:database.local.sqlite` |
+| `TURSO_API_TOKEN`           | No       | Turso auth token; omit for local file DB             |
+| `MAILTRAP_API_TOKEN`        | No       | If unset, emails are skipped (link logged in dev)    |
+| `TURNSTILE_SECRET_KEY`      | No       | If unset, Turnstile verification is bypassed         |
+| `PUBLIC_TURNSTILE_SITE_KEY` | No       | If unset, Turnstile widget is hidden on login page   |
 
 ## Architecture
 
-SvelteKit app targeting **Cloudflare Pages**. Uses Svelte 5 runes mode project-wide (enforced in `svelte.config.js`).
+SvelteKit app targeting **Cloudflare Pages**. Uses Svelte 5 runes mode project-wide (enforced in `svelte.config.js`). Tailwind v4 (CSS-first config, no `tailwind.config.*` file).
+
+### Route groups
+
+- `(auth)/` — unauthenticated pages (login, magiclink). Layout redirects to `/app` when session exists.
+- `(app)/` — protected pages. Layout redirects to `/login` when no session. Session injected via layout server load.
+
+### Quiz content
+
+Course data lives in `static/db.json` and is typed as `QuizFileV1` (declared globally in `src/app.d.ts`). Shape: `{ V1: Record<courseId, Subject> }`. Each `Subject` has `items: Item[]` where each item is either a `lesson` or a `quiz`, both containing `questions: Question[]`.
+
+Page loads fetch `/db.json` via SvelteKit's `fetch` (works on server and client). The quiz routes are:
+
+```
+/app                        → course grid (all subjects)
+/app/[course]               → item list for a subject (item index = URL segment)
+/app/[course]/[lesson]      → interactive quiz (lesson index into course.items[])
+```
+
+### Quiz UI — Atomic Design (`src/lib/components/`)
+
+```
+atoms/       CloseButton, ProgressBar, CountdownTimer, AnswerOption, PrimaryButton
+molecules/   QuizProgress, QuestionCard, AnswerFeedback, ExplanationCard
+organisms/   QuizQuestion  ← manages all quiz state (current Q, selection, navigation)
+templates/   LessonTemplate
+```
+
+`QuizQuestion` is the stateful core: tracks `currentIndex` and `selected`, derives `answered`/`isLast`, reveals correct/incorrect states on selection, shows `AnswerFeedback` (fixed bottom sheet with explanation + next button) after each answer. `{#key currentIndex}` on `QuestionCard` resets the countdown timer per question. On the last question "Finalizar" calls `goto(backHref)`.
+
+`AnswerOption` states: `idle` → `correct` (blue, checkmark) / `incorrect` (red, ✕). Unselected non-correct options stay `idle` after reveal.
 
 ### Auth flow
 
-Auth.js (`@auth/sveltekit`) is configured in `src/auth.ts` and mounted via `hooks.server.ts`. The only provider is a custom `MagicLink` email provider. Auth.js is wired to the database through `AuthAdapter` (`src/lib/services/AuthAdapter.ts`), which implements the Auth.js `Adapter` interface against `IDatabase`.
+Auth.js (`@auth/sveltekit`) configured in `src/auth.ts`, mounted via `hooks.server.ts`. Only provider: custom `MagicLink`. Wired to DB through `AuthAdapter` (`src/lib/services/AuthAdapter.ts`).
 
 ```
 Auth.js → AuthAdapter → IDatabase → Database (@libsql/client)
 ```
 
-`sendVerificationRequest` in `src/auth.ts` verifies the Cloudflare Turnstile token (skipped when `TURNSTILE_SECRET_KEY` is unset), then calls `POST /api/v0/auth/magic-link` via `ApiClient`. That endpoint validates the `Authorization: Bearer ${AUTHJS_TOKEN}` header, checks the email domain against an allowlist (`alu.medac.es`), enforces IP-based rate limiting via `RateLimiter`, then sends via `MailtrapTransport` (or logs the link locally when `MAILTRAP_API_TOKEN` is unset).
-
-### Route groups
-
-- `(auth)/` — unauthenticated pages (login, magiclink). Layout redirects to `/app` when session exists.
-- `(app)/` — protected pages. Layout redirects to `/login` when no session.
+`sendVerificationRequest` verifies Cloudflare Turnstile (skipped when key unset), then calls `POST /api/v0/auth/magic-link` via `ApiClient`. That endpoint validates `Authorization: Bearer ${AUTHJS_TOKEN}`, checks email domain against allowlist (`alu.medac.es`), enforces IP rate limiting via `RateLimiter`, sends via `MailtrapTransport` (or logs link locally when `MAILTRAP_API_TOKEN` unset).
 
 ### Services (`src/lib/services/`)
 
-| Service | Purpose |
-| ------- | ------- |
-| `Database/` | `IDatabase` interface + `@libsql/client` implementation |
-| `AuthAdapter.ts` | Maps Auth.js adapter interface to `IDatabase` |
-| `ApiClient/` | `HttpClient` base + `AuthClient` for internal API calls |
-| `Email/` | `EmailService` (uses `IEmailTransport`), `EmailTemplateService`, `MagicLinkEmailTemplate`, `MailtrapTransport` |
-| `RateLimiter/` | Fixed-window rate limiter backed by the `rate_limits` DB table |
+| Service          | Purpose                                                     |
+| ---------------- | ----------------------------------------------------------- |
+| `Database/`      | `IDatabase` interface + `@libsql/client` implementation     |
+| `AuthAdapter.ts` | Maps Auth.js adapter interface to `IDatabase`               |
+| `ApiClient/`     | `HttpClient` base + `AuthClient` for internal API calls     |
+| `Email/`         | `EmailService`, `EmailTemplateService`, `MailtrapTransport` |
+| `RateLimiter/`   | Fixed-window rate limiter backed by `rate_limits` DB table  |
 
 ### Database layer
 
-`src/lib/services/Database/IDatabase.ts` defines the `IDatabase` interface. Types (`DbUser`, `DbAccount`, `DbSession`, `DbVerificationToken`) use `snake_case` matching the SQL schema.
+`IDatabase.ts` defines the interface. All types (`DbUser`, `DbAccount`, etc.) use `snake_case` matching SQL schema. Migrations live in `migrations/`; `bin/migrate-local` tracks state in a `_migrations` table.
 
-SQL schema lives in `migrations/`. `bin/migrate-local` applies unapplied migrations to `database.local.sqlite`, tracking state in a `_migrations` table. A pre-seeded dev database is at `dev/database.sqlite`.
+### Global types (`src/app.d.ts`)
 
-### Email
-
-`EmailService` instantiates `EmailTemplateService` internally. Templates live in `Email/templates/` and expose a `subject` getter and `render()` method returning HTML. New transports implement `IEmailTransport` (single `send(options)` method).
-
-### API routes
-
-`src/routes/api/v0/auth/` contains only the magic-link delivery endpoint. All other Auth.js operations go directly through `Database` via `AuthAdapter` — no HTTP hop. Shared response helpers (`unauthorized`, `tooManyRequests`, etc.) live in `_helpers.ts`.
+- `App.Api.*` — request/response shapes for the internal API
+- `QuizFileV1` / `QuizFileV1.*` — quiz content types (globally available, no import needed)
