@@ -4,10 +4,30 @@
 	import { onMount } from 'svelte';
 	import PrimaryButton from '../atoms/PrimaryButton.svelte';
 
-	let { correct, total, backHref }: { correct: number; total: number; backHref: string } = $props();
+	let {
+		correct,
+		erroneous,
+		total,
+		backHref,
+		onRetry = undefined,
+		onComplete = undefined
+	}: {
+		correct: number;
+		erroneous: number;
+		total: number;
+		backHref: string;
+		onRetry?: () => void;
+		onComplete?: (score: number) => void;
+	} = $props();
 
-	const percentage = Math.round((correct / total) * 100);
-	const passed = percentage >= 60;
+	function tFactor(n: number): number {
+		if (n >= 30) return 3;
+		if (n >= 20) return 4;
+		return 6;
+	}
+
+	const score = Math.max(0, ((correct - erroneous / tFactor(total)) / total) * 10);
+	const passed = score >= 5;
 
 	type Piece = {
 		id: number;
@@ -25,6 +45,7 @@
 	const COLORS = ['#38bdf8', '#818cf8', '#fb7185', '#34d399', '#fbbf24', '#f472b6'];
 
 	onMount(() => {
+		onComplete?.(score);
 		if (!passed) return;
 		pieces = Array.from({ length: 70 }, (_, i) => ({
 			id: i,
@@ -96,12 +117,22 @@
 		<span
 			class="text-6xl font-bold {passed ? 'text-sky-500' : 'text-gray-400 dark:text-slate-500'}"
 		>
-			{correct}/{total}
+			{score.toFixed(2)}
 		</span>
-		<p class="mt-2 text-lg text-gray-500 dark:text-slate-400">{percentage}% correcto</p>
+		<p class="mt-2 text-lg text-gray-500 dark:text-slate-400">
+			{correct} correctas · {erroneous} erróneas / {total}
+		</p>
 	</div>
 
-	<PrimaryButton label="Volver al curso" onclick={() => goto(resolve(backHref))} />
+	{#if !passed && onRetry}
+		<PrimaryButton label="Reintentar" onclick={onRetry} />
+		<button
+			class="mt-3 text-sm text-gray-400 underline-offset-2 hover:underline dark:text-slate-500"
+			onclick={() => goto(resolve(backHref))}>Volver al curso</button
+		>
+	{:else}
+		<PrimaryButton label="Volver al curso" onclick={() => goto(resolve(backHref))} />
+	{/if}
 </div>
 
 <style>
