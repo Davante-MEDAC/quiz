@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import { resolve } from '$app/paths';
 	import QuizProgress from '../molecules/QuizProgress.svelte';
 	import QuestionCard from '../molecules/QuestionCard.svelte';
 	import AnswerOption from '../atoms/AnswerOption.svelte';
@@ -27,7 +28,7 @@
 
 	function next() {
 		if (isLast) {
-			goto(backHref);
+			goto(resolve(backHref));
 			return;
 		}
 		currentIndex += 1;
@@ -49,7 +50,7 @@
 {/key}
 
 <div class="flex flex-col gap-3" class:pb-52={answered}>
-	{#each question.options as option, i}
+	{#each question.options as option, i (i)}
 		<AnswerOption text={option} state={getState(i)} onclick={() => selectAnswer(i)} />
 	{/each}
 </div>

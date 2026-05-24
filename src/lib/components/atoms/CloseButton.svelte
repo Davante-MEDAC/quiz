@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	let { href }: { href: string } = $props();
 </script>
 
 <a
-	{href}
+	href={resolve(href)}
 	class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100"
 >
 	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">

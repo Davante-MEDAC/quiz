@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	let { data } = $props();
 
 	const { course } = data;
@@ -21,7 +23,7 @@
 <div class="mx-auto max-w-sm px-4 pb-8">
 	<div class="mb-6 flex items-center gap-3">
 		<a
-			href="/app"
+			href={resolve('/app')}
 			class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
 		>
 			<svg
@@ -46,10 +48,10 @@
 	</div>
 
 	<div class="flex flex-col gap-3">
-		{#each course.items as item, i}
+		{#each course.items as item, i (item.name)}
 			{@const config = kindConfig[item.kind]}
 			<a
-				href="/app/{course.id}/{i}"
+				href={resolve(`/app/${course.id}/${i}`)}
 				class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
 			>
 				<div

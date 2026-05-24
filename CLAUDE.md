@@ -80,13 +80,13 @@ Auth.js → AuthAdapter → IDatabase → Database (@libsql/client)
 
 ### Services (`src/lib/services/`)
 
-| Service          | Purpose                                                              |
-| ---------------- | -------------------------------------------------------------------- |
-| `Database/`      | `IDatabase` interface + `@libsql/client` implementation              |
-| `AuthAdapter.ts` | Maps Auth.js adapter interface to `IDatabase`                        |
-| `ApiClient/`     | `HttpClient` base + `AuthClient` for internal API calls              |
-| `Email/`         | `EmailService`, `EmailTemplateService`, `MailtrapTransport`          |
-| `RateLimiter/`   | Fixed-window rate limiter backed by `rate_limits` DB table           |
+| Service          | Purpose                                                     |
+| ---------------- | ----------------------------------------------------------- |
+| `Database/`      | `IDatabase` interface + `@libsql/client` implementation     |
+| `AuthAdapter.ts` | Maps Auth.js adapter interface to `IDatabase`               |
+| `ApiClient/`     | `HttpClient` base + `AuthClient` for internal API calls     |
+| `Email/`         | `EmailService`, `EmailTemplateService`, `MailtrapTransport` |
+| `RateLimiter/`   | Fixed-window rate limiter backed by `rate_limits` DB table  |
 
 ### Database layer
 

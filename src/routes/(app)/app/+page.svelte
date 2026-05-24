@@ -1,4 +1,6 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
+
 	let { data } = $props();
 
 	const firstName = data.session?.user?.email?.split('@')[0] ?? 'there';
@@ -22,9 +24,9 @@
 
 	<h2 class="mb-4 text-xl font-bold text-gray-900">Cursos</h2>
 	<div class="grid grid-cols-2 gap-4">
-		{#each data.courses as course}
+		{#each data.courses as course (course.id)}
 			<a
-				href="/app/{course.id}"
+				href={resolve(`/app/${course.id}`)}
 				class="rounded-2xl bg-white p-5 text-left shadow-sm transition-shadow hover:shadow-md"
 			>
 				<div class="mb-3 text-5xl leading-none">{course.icon}</div>
