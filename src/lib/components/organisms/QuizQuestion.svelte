@@ -4,13 +4,20 @@
 	import AnswerOption from '../atoms/AnswerOption.svelte';
 	import AnswerFeedback from '../molecules/AnswerFeedback.svelte';
 	import QuizSummary from '../molecules/QuizSummary.svelte';
+	import { addErrors } from '$lib/services/errorStore';
 
 	let {
 		questions,
-		backHref
+		backHref,
+		courseId = undefined,
+		lessonIndex = undefined,
+		onCorrectAnswer = undefined
 	}: {
 		questions: QuizFileV1.Question[];
 		backHref: string;
+		courseId?: string;
+		lessonIndex?: number;
+		onCorrectAnswer?: (questionId: number) => void;
 	} = $props();
 
 	function shuffleQuestion(q: QuizFileV1.Question) {
@@ -32,6 +39,7 @@
 	let selected = $state<number | null>(null);
 	let correctCount = $state(0);
 	let erroneousCount = $state(0);
+	let erroneousIds = $state<number[]>([]);
 	let showSummary = $state(false);
 
 	const question = $derived(shuffledQuestions[currentIndex]);
@@ -41,12 +49,20 @@
 	function selectAnswer(index: number) {
 		if (answered) return;
 		selected = index;
-		if (index === question.correctAnswer) correctCount += 1;
-		else erroneousCount += 1;
+		if (index === question.correctAnswer) {
+			correctCount += 1;
+			onCorrectAnswer?.(question.id);
+		} else {
+			erroneousCount += 1;
+			erroneousIds = [...erroneousIds, question.id];
+		}
 	}
 
 	function next() {
 		if (isLast) {
+			if (courseId !== undefined && lessonIndex !== undefined && erroneousIds.length > 0) {
+				addErrors(courseId, lessonIndex, erroneousIds);
+			}
 			showSummary = true;
 			return;
 		}

@@ -4,7 +4,7 @@
 
 	let { data } = $props();
 
-	const { course, lesson } = data;
+	const { course, lesson, lessonIndex } = data;
 </script>
 
 <svelte:head>
@@ -12,5 +12,10 @@
 </svelte:head>
 
 <LessonTemplate>
-	<QuizQuestion questions={lesson.questions} backHref="/app/{course.id}" />
+	<QuizQuestion
+		questions={lesson.questions}
+		backHref="/app/{course.id}"
+		courseId={course.id}
+		{lessonIndex}
+	/>
 </LessonTemplate>

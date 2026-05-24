@@ -1,9 +1,16 @@
 <script lang="ts">
+	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
+	import { hasCourseErrors } from '$lib/services/errorStore';
 
 	let { data } = $props();
 
 	const { course } = data;
+	let hasErrors = $state(false);
+
+	onMount(() => {
+		hasErrors = hasCourseErrors(course.id);
+	});
 
 	const kindCounters: Record<string, number> = {};
 	const itemsWithKindIndex = course.items.map((item: QuizFileV1.Item, i: number) => {
@@ -59,6 +66,29 @@
 	</div>
 
 	<div class="flex flex-col gap-3">
+		{#if hasErrors}
+			<a
+				href={resolve(`/app/${course.id}/practice`)}
+				class="flex items-center gap-4 rounded-2xl border-2 border-rose-200 bg-rose-50 p-4 transition-shadow hover:shadow-md dark:border-rose-800 dark:bg-rose-950/40 dark:hover:bg-rose-950/60"
+			>
+				<div
+					class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl bg-rose-100 text-xl dark:bg-rose-900/50"
+				>
+					⚡
+				</div>
+				<div class="min-w-0 flex-1">
+					<p class="mb-0.5 text-xs font-medium text-rose-400 dark:text-rose-400">Repaso</p>
+					<p class="truncate font-semibold text-rose-700 dark:text-rose-300">Practicar errores</p>
+					<p class="text-sm text-rose-500 dark:text-rose-400">Respuestas incorrectas anteriores</p>
+				</div>
+				<span
+					class="flex-shrink-0 rounded-full bg-rose-100 px-2 py-0.5 text-xs font-medium text-rose-700 dark:bg-rose-900/50 dark:text-rose-300"
+				>
+					Repaso
+				</span>
+			</a>
+		{/if}
+
 		{#each itemsWithKindIndex as item (item.name)}
 			{@const config = kindConfig[item.kind]}
 			<a
