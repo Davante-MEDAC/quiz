@@ -22,15 +22,15 @@
 	});
 </script>
 
-<div class="relative flex h-14 w-14 items-center justify-center">
+<div class="timer relative flex h-14 w-14 items-center justify-center">
 	<svg class="absolute -rotate-90" width="56" height="56">
-		<circle cx="28" cy="28" r={radius} fill="none" stroke="#e5e7eb" stroke-width="3" />
+		<circle cx="28" cy="28" r={radius} fill="none" stroke="var(--timer-track)" stroke-width="3" />
 		<circle
 			cx="28"
 			cy="28"
 			r={radius}
 			fill="none"
-			stroke="#38bdf8"
+			stroke="var(--timer-progress)"
 			stroke-width="3"
 			stroke-linecap="round"
 			stroke-dasharray={circumference}
@@ -38,5 +38,18 @@
 			class="transition-all duration-1000"
 		/>
 	</svg>
-	<span class="relative text-sm font-bold text-gray-700">{remaining}</span>
+	<span class="relative text-sm font-bold text-gray-700 dark:text-white">{remaining}</span>
 </div>
+
+<style>
+	.timer {
+		--timer-track: #e5e7eb;
+		--timer-progress: #38bdf8;
+	}
+	@media (prefers-color-scheme: dark) {
+		.timer {
+			--timer-track: #475569;
+			--timer-progress: #38bdf8;
+		}
+	}
+</style>

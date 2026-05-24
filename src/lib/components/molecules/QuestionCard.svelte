@@ -8,7 +8,7 @@
 	<div class="absolute -top-7 left-1/2 z-10 -translate-x-1/2">
 		<CountdownTimer seconds={30} {onExpire} />
 	</div>
-	<div class="rounded-3xl bg-sky-100 px-6 pt-10 pb-6">
-		<p class="text-lg font-bold text-gray-900">{question}</p>
+	<div class="rounded-3xl bg-sky-100 px-6 pt-10 pb-6 dark:bg-slate-800">
+		<p class="text-lg font-bold text-gray-900 dark:text-white">{question}</p>
 	</div>
 </div>
