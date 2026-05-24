@@ -4,7 +4,6 @@
 	let { data } = $props();
 
 	const { course } = data;
-
 	const kindConfig = {
 		lesson: {
 			label: 'Lección',
