@@ -33,7 +33,7 @@
 		};
 	}
 
-	const shuffledQuestions = questions.map(shuffleQuestion);
+	let shuffledQuestions = $state(questions.map(shuffleQuestion));
 
 	let currentIndex = $state(0);
 	let selected = $state<number | null>(null);
@@ -45,6 +45,16 @@
 	const question = $derived(shuffledQuestions[currentIndex]);
 	const answered = $derived(selected !== null);
 	const isLast = $derived(currentIndex === shuffledQuestions.length - 1);
+
+	function retry() {
+		shuffledQuestions = questions.map(shuffleQuestion);
+		currentIndex = 0;
+		selected = null;
+		correctCount = 0;
+		erroneousCount = 0;
+		erroneousIds = [];
+		showSummary = false;
+	}
 
 	function selectAnswer(index: number) {
 		if (answered) return;
@@ -84,6 +94,7 @@
 		erroneous={erroneousCount}
 		total={shuffledQuestions.length}
 		{backHref}
+		onRetry={retry}
 	/>
 {:else}
 	<QuizProgress {backHref} current={currentIndex + 1} total={shuffledQuestions.length} />

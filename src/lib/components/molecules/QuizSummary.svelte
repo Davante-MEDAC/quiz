@@ -8,8 +8,15 @@
 		correct,
 		erroneous,
 		total,
-		backHref
-	}: { correct: number; erroneous: number; total: number; backHref: string } = $props();
+		backHref,
+		onRetry = undefined
+	}: {
+		correct: number;
+		erroneous: number;
+		total: number;
+		backHref: string;
+		onRetry?: () => void;
+	} = $props();
 
 	function tFactor(n: number): number {
 		if (n >= 30) return 3;
@@ -114,7 +121,15 @@
 		</p>
 	</div>
 
-	<PrimaryButton label="Volver al curso" onclick={() => goto(resolve(backHref))} />
+	{#if !passed && onRetry}
+		<PrimaryButton label="Reintentar" onclick={onRetry} />
+		<button
+			class="mt-3 text-sm text-gray-400 underline-offset-2 hover:underline dark:text-slate-500"
+			onclick={() => goto(resolve(backHref))}>Volver al curso</button
+		>
+	{:else}
+		<PrimaryButton label="Volver al curso" onclick={() => goto(resolve(backHref))} />
+	{/if}
 </div>
 
 <style>
