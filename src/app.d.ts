@@ -71,6 +71,35 @@ declare global {
 			}
 		}
 	}
+
+	namespace QuizFileV1 {
+		interface Question {
+			id: number;
+			type: 'multiple_choice';
+			question: string;
+			options: string[];
+			correctAnswer: number;
+			explanation: string;
+		}
+
+		interface Item {
+			kind: 'lesson' | 'quiz';
+			name: string;
+			questions: Question[];
+		}
+
+		interface Subject {
+			id: string;
+			title: string;
+			description: string;
+			icon: string;
+			items: Item[];
+		}
+	}
+
+	interface QuizFileV1 {
+		V1: Record<string, QuizFileV1.Subject>;
+	}
 }
 
 export {};
