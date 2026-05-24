@@ -20,7 +20,7 @@
 		</div>
 	</div>
 
-	<h2 class="mb-4 text-xl font-bold text-gray-900">Asignaturas</h2>
+	<h2 class="mb-4 text-xl font-bold text-gray-900">Cursos</h2>
 	<div class="grid grid-cols-2 gap-4">
 		{#each data.courses as course}
 			<a
