@@ -12,9 +12,11 @@ export const load: PageServerLoad = async ({ fetch, params }) => {
 	const lesson = subject.items[lessonIndex];
 	if (!lesson) error(404, 'Lección no encontrada');
 
+	const shuffled = [...lesson.questions].sort(() => Math.random() - 0.5).slice(0, 10);
+
 	return {
 		course: { id: subject.id },
-		lesson: { name: lesson.name, questions: lesson.questions },
+		lesson: { name: lesson.name, questions: shuffled },
 		lessonIndex
 	};
 };
