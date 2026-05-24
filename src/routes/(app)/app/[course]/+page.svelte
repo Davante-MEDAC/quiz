@@ -8,10 +8,15 @@
 		lesson: {
 			label: 'Lección',
 			icon: '📖',
-			accent: 'bg-blue-50 text-blue-700',
+			accent: 'bg-blue-50 text-blue-700 dark:bg-blue-900/30 dark:text-blue-300',
 			dot: 'bg-blue-500'
 		},
-		quiz: { label: 'Quiz', icon: '🎯', accent: 'bg-amber-50 text-amber-700', dot: 'bg-amber-500' }
+		quiz: {
+			label: 'Quiz',
+			icon: '🎯',
+			accent: 'bg-amber-50 text-amber-700 dark:bg-amber-900/30 dark:text-amber-300',
+			dot: 'bg-amber-500'
+		}
 	};
 </script>
 
@@ -23,11 +28,11 @@
 	<div class="mb-6 flex items-center gap-3">
 		<a
 			href={resolve('/app')}
-			class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-white shadow-sm"
+			class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full bg-white shadow-sm dark:bg-slate-700 dark:shadow-none"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-4 w-4 text-gray-600"
+				class="h-4 w-4 text-gray-600 dark:text-slate-300"
 				viewBox="0 0 20 20"
 				fill="currentColor"
 			>
@@ -38,12 +43,12 @@
 				/>
 			</svg>
 		</a>
-		<h1 class="text-lg font-bold text-gray-900">{course.title}</h1>
+		<h1 class="text-lg font-bold text-gray-900 dark:text-white">{course.title}</h1>
 	</div>
 
-	<div class="mb-6 rounded-2xl bg-white p-5 shadow-sm">
+	<div class="mb-6 rounded-2xl bg-white p-5 shadow-sm dark:bg-slate-800 dark:shadow-none">
 		<div class="mb-2 text-4xl">{course.icon}</div>
-		<p class="text-sm text-gray-500">{course.description}</p>
+		<p class="text-sm text-gray-500 dark:text-slate-400">{course.description}</p>
 	</div>
 
 	<div class="flex flex-col gap-3">
@@ -51,7 +56,7 @@
 			{@const config = kindConfig[item.kind]}
 			<a
 				href={resolve(`/app/${course.id}/${i}`)}
-				class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm transition-shadow hover:shadow-md"
+				class="flex items-center gap-4 rounded-2xl bg-white p-4 shadow-sm transition-shadow hover:shadow-md dark:bg-slate-800 dark:shadow-none dark:hover:bg-slate-700"
 			>
 				<div
 					class="flex h-11 w-11 flex-shrink-0 items-center justify-center rounded-xl {config.accent} text-xl"
@@ -59,9 +64,12 @@
 					{config.icon}
 				</div>
 				<div class="min-w-0 flex-1">
-					<p class="mb-0.5 text-xs font-medium text-gray-400">{config.label} {i + 1}</p>
-					<p class="truncate font-semibold text-gray-900">{item.name}</p>
-					<p class="text-sm text-gray-500">{item.questionCount} preguntas</p>
+					<p class="mb-0.5 text-xs font-medium text-gray-400 dark:text-slate-500">
+						{config.label}
+						{i + 1}
+					</p>
+					<p class="truncate font-semibold text-gray-900 dark:text-white">{item.name}</p>
+					<p class="text-sm text-gray-500 dark:text-slate-400">{item.questionCount} preguntas</p>
 				</div>
 				<span class="flex-shrink-0 rounded-full px-2 py-0.5 text-xs font-medium {config.accent}">
 					{config.label}
