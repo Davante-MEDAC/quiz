@@ -31,6 +31,7 @@
 	let currentIndex = $state(0);
 	let selected = $state<number | null>(null);
 	let correctCount = $state(0);
+	let erroneousCount = $state(0);
 	let showSummary = $state(false);
 
 	const question = $derived(shuffledQuestions[currentIndex]);
@@ -41,6 +42,7 @@
 		if (answered) return;
 		selected = index;
 		if (index === question.correctAnswer) correctCount += 1;
+		else erroneousCount += 1;
 	}
 
 	function next() {
@@ -61,7 +63,12 @@
 </script>
 
 {#if showSummary}
-	<QuizSummary correct={correctCount} total={shuffledQuestions.length} {backHref} />
+	<QuizSummary
+		correct={correctCount}
+		erroneous={erroneousCount}
+		total={shuffledQuestions.length}
+		{backHref}
+	/>
 {:else}
 	<QuizProgress {backHref} current={currentIndex + 1} total={shuffledQuestions.length} />
 
