@@ -24,7 +24,11 @@ export const GET: RequestHandler = async ({ locals, fetch }) => {
 
 	if (cache) {
 		const cached = await cache.match(CACHE_KEY);
-		if (cached) return cached;
+		if (cached)
+			return new Response(cached.body, {
+				status: cached.status,
+				headers: new Headers(cached.headers)
+			});
 	}
 
 	const json = await fetchDbFromGitHub();
