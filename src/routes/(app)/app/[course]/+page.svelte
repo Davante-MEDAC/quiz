@@ -2,14 +2,17 @@
 	import { onMount } from 'svelte';
 	import { resolve } from '$app/paths';
 	import { hasCourseErrors } from '$lib/services/errorStore';
+	import { getCourseScores } from '$lib/services/scoreStore';
 
 	let { data } = $props();
 
 	const { course } = data;
 	let hasErrors = $state(false);
+	let scores = $state<Record<number, number>>({});
 
 	onMount(() => {
 		hasErrors = hasCourseErrors(course.id);
+		scores = getCourseScores(course.id);
 	});
 
 	const kindCounters: Record<string, number> = {};
@@ -108,9 +111,20 @@
 					<p class="truncate font-semibold text-gray-900 dark:text-white">{item.name}</p>
 					<p class="text-sm text-gray-500 dark:text-slate-400">{item.questionCount} preguntas</p>
 				</div>
-				<span class="flex-shrink-0 rounded-full px-2 py-0.5 text-xs font-medium {config.accent}">
-					{config.label}
-				</span>
+				{#if scores[item.globalIndex] !== undefined}
+					{@const s = scores[item.globalIndex]}
+					<span
+						class="flex-shrink-0 rounded-full px-2 py-0.5 text-xs font-bold {s >= 5
+							? 'bg-emerald-100 text-emerald-700 dark:bg-emerald-900/40 dark:text-emerald-300'
+							: 'bg-rose-100 text-rose-700 dark:bg-rose-900/40 dark:text-rose-300'}"
+					>
+						{s.toFixed(2)}
+					</span>
+				{:else}
+					<span class="flex-shrink-0 rounded-full px-2 py-0.5 text-xs font-medium {config.accent}">
+						{config.label}
+					</span>
+				{/if}
 			</a>
 		{/each}
 	</div>

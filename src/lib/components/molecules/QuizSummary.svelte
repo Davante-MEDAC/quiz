@@ -9,13 +9,15 @@
 		erroneous,
 		total,
 		backHref,
-		onRetry = undefined
+		onRetry = undefined,
+		onComplete = undefined
 	}: {
 		correct: number;
 		erroneous: number;
 		total: number;
 		backHref: string;
 		onRetry?: () => void;
+		onComplete?: (score: number) => void;
 	} = $props();
 
 	function tFactor(n: number): number {
@@ -43,6 +45,7 @@
 	const COLORS = ['#38bdf8', '#818cf8', '#fb7185', '#34d399', '#fbbf24', '#f472b6'];
 
 	onMount(() => {
+		onComplete?.(score);
 		if (!passed) return;
 		pieces = Array.from({ length: 70 }, (_, i) => ({
 			id: i,

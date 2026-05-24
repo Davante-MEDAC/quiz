@@ -5,6 +5,7 @@
 	import AnswerFeedback from '../molecules/AnswerFeedback.svelte';
 	import QuizSummary from '../molecules/QuizSummary.svelte';
 	import { addErrors } from '$lib/services/errorStore';
+	import { saveScore } from '$lib/services/scoreStore';
 
 	let {
 		questions,
@@ -95,6 +96,9 @@
 		total={shuffledQuestions.length}
 		{backHref}
 		onRetry={retry}
+		onComplete={courseId !== undefined && lessonIndex !== undefined
+			? (score) => saveScore(courseId, lessonIndex, score)
+			: undefined}
 	/>
 {:else}
 	<QuizProgress {backHref} current={currentIndex + 1} total={shuffledQuestions.length} />
