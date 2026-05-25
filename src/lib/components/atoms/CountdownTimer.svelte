@@ -8,6 +8,7 @@
 	const radius = 22;
 	const circumference = 2 * Math.PI * radius;
 	const offset = $derived(circumference * (1 - remaining / seconds));
+	const urgent = $derived(remaining <= 10 && remaining > 0);
 
 	onMount(() => {
 		const id = setInterval(() => {
@@ -22,7 +23,7 @@
 	});
 </script>
 
-<div class="timer relative flex h-14 w-14 items-center justify-center">
+<div class="timer relative flex h-14 w-14 items-center justify-center" class:urgent>
 	<svg class="absolute -rotate-90" width="56" height="56">
 		<circle cx="28" cy="28" r={radius} fill="none" stroke="var(--timer-track)" stroke-width="3" />
 		<circle
@@ -38,18 +39,31 @@
 			class="transition-all duration-1000"
 		/>
 	</svg>
-	<span class="relative text-sm font-bold text-gray-700 dark:text-white">{remaining}</span>
+	<span
+		class="relative text-sm font-semibold"
+		class:text-olive-950={!urgent}
+		class:text-red-600={urgent}>{remaining}</span
+	>
 </div>
 
 <style>
 	.timer {
-		--timer-track: #e5e7eb;
-		--timer-progress: #38bdf8;
+		--timer-track: oklch(93% 0.007 106.5);
+		--timer-progress: oklch(46.6% 0.025 107.3);
 	}
-	@media (prefers-color-scheme: dark) {
-		.timer {
-			--timer-track: #475569;
-			--timer-progress: #38bdf8;
+
+	.timer.urgent {
+		--timer-progress: oklch(57.7% 0.245 27.3);
+		animation: pulse 1s ease-in-out infinite;
+	}
+
+	@keyframes pulse {
+		0%,
+		100% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(1.12);
 		}
 	}
 </style>

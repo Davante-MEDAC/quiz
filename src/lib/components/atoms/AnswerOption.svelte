@@ -10,26 +10,22 @@
 
 <button
 	{onclick}
-	class="flex w-full items-center justify-between rounded-2xl border-2 px-5 py-4 text-left font-medium transition-colors"
-	class:border-gray-200={state === 'idle'}
+	class="flex w-full items-center justify-between rounded-2xl border px-5 py-4 text-left font-medium transition-colors"
+	class:border-olive-200={state === 'idle'}
 	class:bg-white={state === 'idle'}
-	class:text-gray-800={state === 'idle'}
-	class:hover:border-gray-300={state === 'idle'}
-	class:dark:border-slate-600={state === 'idle'}
-	class:dark:bg-slate-800={state === 'idle'}
-	class:dark:text-white={state === 'idle'}
-	class:dark:hover:border-slate-500={state === 'idle'}
-	class:border-sky-400={state === 'correct'}
-	class:bg-sky-50={state === 'correct'}
-	class:text-sky-600={state === 'correct'}
-	class:border-red-400={state === 'incorrect'}
+	class:text-olive-950={state === 'idle'}
+	class:hover:border-olive-400={state === 'idle'}
+	class:border-olive-500={state === 'correct'}
+	class:bg-olive-50={state === 'correct'}
+	class:text-olive-700={state === 'correct'}
+	class:border-red-300={state === 'incorrect'}
 	class:bg-red-50={state === 'incorrect'}
-	class:text-red-500={state === 'incorrect'}
+	class:text-red-600={state === 'incorrect'}
 >
 	<span>{text}</span>
 	{#if state === 'correct'}
 		<span
-			class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-sky-500 text-white"
+			class="flex h-6 w-6 flex-shrink-0 items-center justify-center rounded-full bg-olive-600 text-white"
 		>
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
@@ -62,7 +58,6 @@
 			</svg>
 		</span>
 	{:else}
-		<span class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-gray-300 dark:border-slate-500"
-		></span>
+		<span class="h-6 w-6 flex-shrink-0 rounded-full border-2 border-olive-200"></span>
 	{/if}
 </button>

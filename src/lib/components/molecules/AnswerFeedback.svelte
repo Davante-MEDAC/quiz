@@ -6,9 +6,9 @@
 </script>
 
 <div
-	class="fixed right-0 bottom-0 left-0 translate-y-0 rounded-t-3xl border-t border-gray-100 bg-white px-4 pt-5 pb-8 shadow-[0_-4px_24px_rgba(0,0,0,0.08)] transition-transform duration-300 dark:border-slate-700 dark:bg-slate-800 dark:shadow-[0_-4px_24px_rgba(0,0,0,0.4)]"
+	class="fixed right-0 bottom-0 left-0 rounded-t-3xl border-t border-olive-100 bg-white px-4 pt-5 pb-8"
 >
-	<p class="mb-1 text-xs font-semibold tracking-wide text-sky-500 uppercase">Explicación</p>
-	<p class="mb-5 text-sm text-gray-700 dark:text-slate-300">{explanation}</p>
+	<p class="mb-1 text-xs font-semibold tracking-wide text-olive-600 uppercase">Explicación</p>
+	<p class="mb-5 text-sm text-olive-700">{explanation}</p>
 	<PrimaryButton {label} {onclick} />
 </div>

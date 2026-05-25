@@ -104,7 +104,12 @@
 	<QuizProgress {backHref} current={currentIndex + 1} total={shuffledQuestions.length} />
 
 	{#key currentIndex}
-		<QuestionCard question={question.question} />
+		<QuestionCard
+			question={question.question}
+			onExpire={() => {
+				if (!answered) next();
+			}}
+		/>
 	{/key}
 
 	<div class="flex flex-col gap-3" class:pb-52={answered}>

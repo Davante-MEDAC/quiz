@@ -42,7 +42,7 @@
 
 	let pieces = $state<Piece[]>([]);
 
-	const COLORS = ['#38bdf8', '#818cf8', '#fb7185', '#34d399', '#fbbf24', '#f472b6'];
+	const COLORS = ['#6b7c3a', '#8fa04d', '#c5b358', '#d4a853', '#a8975c', '#7a8f42'];
 
 	onMount(() => {
 		onComplete?.(score);
@@ -73,12 +73,10 @@
 
 <div class="flex flex-col items-center pt-16 text-center">
 	{#if passed}
-		<div
-			class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 dark:bg-sky-900"
-		>
+		<div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-olive-100">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-12 w-12 text-sky-500"
+				class="h-12 w-12 text-olive-600"
 				viewBox="0 0 24 24"
 				fill="currentColor"
 			>
@@ -87,15 +85,13 @@
 				/>
 			</svg>
 		</div>
-		<h2 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">¡Enhorabuena!</h2>
-		<p class="mb-8 text-gray-500 dark:text-slate-400">Has superado el quiz</p>
+		<h2 class="mb-2 text-3xl tracking-tight text-olive-950">¡Enhorabuena!</h2>
+		<p class="mb-8 text-olive-600">Has superado el quiz</p>
 	{:else}
-		<div
-			class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-gray-100 dark:bg-slate-700"
-		>
+		<div class="mb-6 flex h-24 w-24 items-center justify-center rounded-full bg-olive-100">
 			<svg
 				xmlns="http://www.w3.org/2000/svg"
-				class="h-12 w-12 text-gray-400 dark:text-slate-400"
+				class="h-12 w-12 text-olive-400"
 				viewBox="0 0 24 24"
 				fill="currentColor"
 			>
@@ -109,17 +105,15 @@
 				/>
 			</svg>
 		</div>
-		<h2 class="mb-2 text-2xl font-bold text-gray-900 dark:text-white">Sigue practicando</h2>
-		<p class="mb-8 text-gray-500 dark:text-slate-400">No te rindas, inténtalo de nuevo</p>
+		<h2 class="mb-2 text-3xl tracking-tight text-olive-950">Sigue practicando</h2>
+		<p class="mb-8 text-olive-600">No te rindas, inténtalo de nuevo</p>
 	{/if}
 
 	<div class="mb-8">
-		<span
-			class="text-6xl font-bold {passed ? 'text-sky-500' : 'text-gray-400 dark:text-slate-500'}"
-		>
+		<span class="text-6xl font-bold {passed ? 'text-olive-950' : 'text-olive-400'}">
 			{score.toFixed(2)}
 		</span>
-		<p class="mt-2 text-lg text-gray-500 dark:text-slate-400">
+		<p class="mt-2 text-olive-600">
 			{correct} correctas · {erroneous} erróneas / {total}
 		</p>
 	</div>
@@ -127,7 +121,7 @@
 	{#if !passed && onRetry}
 		<PrimaryButton label="Reintentar" onclick={onRetry} />
 		<button
-			class="mt-3 text-sm text-gray-400 underline-offset-2 hover:underline dark:text-slate-500"
+			class="mt-3 text-sm text-olive-500 underline-offset-2 hover:underline"
 			onclick={() => goto(resolve(backHref))}>Volver al curso</button
 		>
 	{:else}
