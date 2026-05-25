@@ -40,7 +40,19 @@
 			id: 'faq-6',
 			question: '¿Se guarda mi progreso?',
 			answer:
-				'Sí, tu progreso se guarda automáticamente. Tus puntuaciones y errores se almacenan para que puedas retomar el estudio en cualquier momento.'
+				'Sí, tu progreso se guarda localmente. Tus puntuaciones y errores se almacenan para que puedas retomar el estudio en cualquier momento.'
+		},
+		{
+			id: 'faq-7',
+			question: '¿Se guarda mi información?',
+			answer:
+				'No, todos los datos relacionados a tu desempeño se almacenan localmente en "Local Storage". Solo se almacena la dirección de correo con fines de autenticación.'
+		},
+		{
+			id: 'faq-8',
+			question: '¿Puedo entrar con mi correo personal?',
+			answer:
+				'No, solo alumnos Davante/MEDAC cuentan con acceso.'
 		}
 	];
 </script>
