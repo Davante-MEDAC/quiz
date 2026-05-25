@@ -17,7 +17,7 @@
 						/>
 					</svg>
 				</div>
-				<h1 class="font-display text-2xl tracking-tight text-olive-950">Revisa tu correo</h1>
+				<h1 class="text-2xl tracking-tight text-olive-950">Revisa tu correo</h1>
 				<p class="text-sm/7 text-olive-700">
 					Recibirás un enlace de acceso en los próximos minutos.
 				</p>

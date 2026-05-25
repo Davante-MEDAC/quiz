@@ -11,29 +11,30 @@
 </svelte:head>
 
 <div class="mx-auto max-w-sm px-4 pb-8">
-	<div class="mb-6 flex items-center justify-between">
+	<div class="mb-8 flex items-center justify-between">
 		<div>
-			<h1 class="text-2xl font-bold text-gray-900 dark:text-white">Hola, {firstName}</h1>
+			<h1 class="text-3xl tracking-tight text-olive-950">
+				Hola, {firstName}
+			</h1>
+			<p class="text-sm text-olive-600">Continúa donde lo dejaste</p>
 		</div>
 		<div
-			class="flex h-12 w-12 items-center justify-center rounded-full bg-orange-200 text-lg font-bold text-orange-700"
+			class="flex h-11 w-11 items-center justify-center rounded-full bg-olive-200 text-base font-semibold text-olive-800"
 		>
 			{firstName[0].toUpperCase()}
 		</div>
 	</div>
 
-	<h2 class="mb-4 text-xl font-bold text-gray-900 dark:text-white">Cursos</h2>
-	<div class="grid grid-cols-2 gap-4">
+	<p class="mb-3 text-xs font-semibold tracking-wide text-olive-500 uppercase">Cursos</p>
+	<div class="grid grid-cols-2 gap-3">
 		{#each data.courses as course (course.id)}
 			<a
 				href={resolve(`/app/${course.id}`)}
-				class="rounded-2xl bg-white p-5 text-left shadow-sm transition-shadow hover:shadow-md dark:bg-slate-800 dark:shadow-none"
+				class="rounded-2xl border border-olive-200 bg-white p-5 text-left"
 			>
-				<div class="mb-3 text-5xl leading-none">{course.icon}</div>
-				<p class="font-semibold text-gray-900 dark:text-white">{course.title}</p>
-				<p class="text-sm text-gray-500 dark:text-slate-400">
-					{course.itemCount} lecciones
-				</p>
+				<div class="mb-3 text-4xl leading-none">{course.icon}</div>
+				<p class="font-semibold text-olive-950">{course.title}</p>
+				<p class="text-sm text-olive-600">{course.itemCount} lecciones</p>
 			</a>
 		{/each}
 	</div>

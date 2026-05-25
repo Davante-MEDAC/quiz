@@ -6,7 +6,7 @@
 
 <a
 	href={resolve(href)}
-	class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full text-gray-500 hover:bg-gray-100 dark:text-slate-400 dark:hover:bg-slate-700"
+	class="flex h-9 w-9 flex-shrink-0 items-center justify-center rounded-full text-olive-500 transition-colors hover:bg-olive-200 hover:text-olive-700"
 >
 	<svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
 		<path

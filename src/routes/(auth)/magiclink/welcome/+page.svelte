@@ -21,7 +21,7 @@
 						/>
 					</svg>
 				</div>
-				<h1 class="font-display text-2xl tracking-tight text-olive-950">Ingresa a tu cuenta</h1>
+				<h1 class="text-2xl tracking-tight text-olive-950">Ingresa a tu cuenta</h1>
 				<!-- eslint-disable svelte/no-navigation-without-resolve -->
 				<a
 					href={$page.url.searchParams.get('loginUrl')}
