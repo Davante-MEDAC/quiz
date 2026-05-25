@@ -51,8 +51,7 @@
 		{
 			id: 'faq-8',
 			question: '¿Puedo entrar con mi correo personal?',
-			answer:
-				'No, solo alumnos Davante/MEDAC cuentan con acceso.'
+			answer: 'No, solo alumnos Davante/MEDAC cuentan con acceso.'
 		}
 	];
 </script>
