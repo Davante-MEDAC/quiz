@@ -14,6 +14,7 @@ import {
 
 import { EmailService } from '$lib/services/Email/EmailService.js';
 import { RateLimiter } from '$lib/services/RateLimiter/index.js';
+import { hashSha256 } from '$lib/utils/hash.js';
 import { dev } from '$app/environment';
 import { log } from '$lib/utils/log.js';
 
@@ -42,7 +43,7 @@ export const POST: RequestHandler = async ({ request }) => {
 			windowSeconds: RATE_LIMIT_WINDOW_SECONDS
 		});
 
-		const ip = getClientIp(request);
+		const ip = hashSha256(getClientIp(request));
 		const allowed = await rateLimiter.check(`magic-link:${ip}`);
 
 		if (!allowed) {
@@ -60,7 +61,7 @@ export const POST: RequestHandler = async ({ request }) => {
 
 		// Print the magic link to the console in development for testing purposes.
 		if (dev) {
-			log.info(`Magic link for ${body.email}: ${body.link}`);
+			log.info(`Magic link: ${body.link}`);
 		}
 
 		return new Response(null, { status: 204 });

@@ -15,7 +15,8 @@
 	},
 	"dependencies": {
 		"@auth/core": "^0.37.4",
-		"@auth/sveltekit": "^1.7.4"
+		"@auth/sveltekit": "^1.7.4",
+		"@noble/hashes": "^2.2.0"
 	},
 	"devDependencies": {
 		"@eslint/compat": "^2.0.4",
