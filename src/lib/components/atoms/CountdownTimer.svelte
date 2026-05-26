@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { onMount } from 'svelte';
 
-	let { seconds = 30, onExpire }: { seconds?: number; onExpire?: () => void } = $props();
+	let { seconds = 60, onExpire }: { seconds?: number; onExpire?: () => void } = $props();
 
 	let remaining = $state(seconds);
 

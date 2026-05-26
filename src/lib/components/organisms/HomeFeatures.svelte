@@ -161,7 +161,7 @@
 							<span class="relative text-sm font-semibold text-olive-950">25</span>
 						</div>
 						<p class="text-center text-sm text-olive-600">
-							30 segundos por pregunta para mantenerte concentrado
+							60 segundos por pregunta para mantenerte concentrado
 						</p>
 					</div>
 					<div class="flex flex-col gap-4 p-6 sm:p-10 lg:p-6">
