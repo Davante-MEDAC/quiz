@@ -3,7 +3,10 @@
 
 	let { data } = $props();
 
-	const firstName = data.session?.user?.email?.split('@')[0] ?? 'there';
+	function greet() {
+		const hour = new Date().getHours();
+		return hour < 12 ? 'Buenos días' : hour < 18 ? 'Buenas tardes' : 'Buenas noches';
+	}
 </script>
 
 <svelte:head>
@@ -14,14 +17,8 @@
 	<div class="mb-8 flex items-center justify-between">
 		<div>
 			<h1 class="text-3xl tracking-tight text-olive-950">
-				Hola, {firstName}
+				{greet()}
 			</h1>
-			<p class="text-sm text-olive-600">Continúa donde lo dejaste</p>
-		</div>
-		<div
-			class="flex h-11 w-11 items-center justify-center rounded-full bg-olive-200 text-base font-semibold text-olive-800"
-		>
-			{firstName[0].toUpperCase()}
 		</div>
 	</div>
 

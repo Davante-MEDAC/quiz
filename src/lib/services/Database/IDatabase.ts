@@ -41,7 +41,7 @@ export interface DbVerificationToken {
 }
 
 export interface IDatabase {
-	createUser(user: Omit<DbUser, 'created_at' | 'updated_at'>): Promise<DbUser>;
+	createUser(user: Omit<DbUser, 'name' | 'image' | 'created_at' | 'updated_at'>): Promise<DbUser>;
 	getUser(id: string): Promise<DbUser | null>;
 	getUserByEmail(email: string): Promise<DbUser | null>;
 	getUserByAccount(provider: string, providerAccountId: string): Promise<DbUser | null>;

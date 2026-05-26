@@ -19,6 +19,7 @@ import type {
 import { AuthAdapter } from '$lib/services/AuthAdapter';
 import { ApiClient } from '$lib/services/ApiClient';
 import { Database } from '$lib/services/Database';
+import { hashSha256 } from '$lib/utils/hash';
 
 type TurnstileVerifyResponse = {
 	success: boolean;
@@ -77,6 +78,7 @@ function MagicLink(options: EmailUserConfig = {}): Provider {
 
 				const client = new ApiClient({ authjsToken: AUTHJS_TOKEN, baseUrl: new URL(DOMAIN) });
 				const magicLink = new URL(params.url);
+				magicLink.searchParams.set('email', hashSha256(params.identifier));
 				const welcomeLink = new URL(magicLink.origin);
 
 				welcomeLink.pathname = 'magiclink/welcome';

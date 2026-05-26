@@ -1,5 +1,7 @@
 import { v4 as uuidv4 } from 'uuid';
 
+import { hashSha256 } from '$lib/utils/hash.js';
+
 import type {
 	Adapter,
 	AdapterAccount,
@@ -13,9 +15,7 @@ function toAdapterUser(user: DbUser): AdapterUser {
 	return {
 		id: user.id,
 		email: user.email,
-		name: user.name,
-		emailVerified: user.email_verified,
-		image: user.image
+		emailVerified: user.email_verified
 	};
 }
 
@@ -40,10 +40,8 @@ export function AuthAdapter(db: IDatabase): Adapter {
 		async createUser(data) {
 			const user = await db.createUser({
 				id: uuidv4(),
-				email: data.email,
-				name: data.name ?? null,
-				email_verified: data.emailVerified,
-				image: data.image ?? null
+				email: hashSha256(data.email),
+				email_verified: data.emailVerified
 			});
 			return toAdapterUser(user);
 		},
@@ -133,7 +131,7 @@ export function AuthAdapter(db: IDatabase): Adapter {
 
 		async createVerificationToken(data) {
 			const token = await db.createVerificationToken({
-				identifier: data.identifier,
+				identifier: hashSha256(data.identifier),
 				token: data.token,
 				expires: data.expires
 			});
